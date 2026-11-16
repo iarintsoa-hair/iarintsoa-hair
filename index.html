@@ -384,6 +384,23 @@
             return card;
         }
 
+        // Message destiné aux clientes ; le détail technique n'apparaît qu'en développement local (file://).
+        function showCatalogMessage(text, withWhatsApp, technicalDetail) {
+            catalogStatus.replaceChildren(text);
+            if (withWhatsApp) {
+                const whatsappLink = document.createElement("a");
+                whatsappLink.href = `https://wa.me/262693600145?text=${encodeURIComponent("Bonjour, quels modèles de perruques sont disponibles en ce moment ?")}`;
+                whatsappLink.target = "_blank";
+                whatsappLink.rel = "noopener noreferrer";
+                whatsappLink.textContent = "écrivez-nous sur WhatsApp";
+                catalogStatus.append(" ", whatsappLink, ".");
+            }
+            if (technicalDetail && window.location.protocol === "file:") {
+                catalogStatus.append(` (Développement : ${technicalDetail} Ouvrez le site avec un serveur HTTP local, par exemple Live Server.)`);
+            }
+            catalogStatus.hidden = false;
+        }
+
         async function renderProductCatalog() {
             try {
                 const ids = await window.IARINTSOAProductData.fetchCatalog();
@@ -401,15 +418,19 @@
                     .sort((first, second) => Number(Boolean(second.featured)) - Number(Boolean(first.featured)))
                     .forEach((product) => productsGrid.append(createProductCard(product)));
                 const failures = results.filter((result) => result.error);
-                if (failures.length) {
-                    catalogStatus.textContent = `Certaines fiches n’ont pas pu être chargées : ${failures.map((item) => item.id).join(", ")}.`;
+                if (failures.length === results.length && results.length > 0) {
+                    showCatalogMessage("La collection n’a pas pu être affichée. Actualisez la page ou", true,
+                        failures.map((item) => item.error.message).join(" "));
+                } else if (failures.length) {
+                    showCatalogMessage("Certains modèles sont momentanément indisponibles.", false,
+                        `Fiches en erreur : ${failures.map((item) => item.id).join(", ")}.`);
                 } else if (results.length === 0) {
-                    catalogStatus.textContent = "Aucun produit n’est défini dans le catalogue.";
+                    showCatalogMessage("Notre collection est en cours de mise à jour. Pour connaître les modèles disponibles,", true, null);
                 } else {
                     catalogStatus.hidden = true;
                 }
             } catch (error) {
-                catalogStatus.textContent = `Impossible de charger le catalogue : ${error.message}`;
+                showCatalogMessage("La collection n’a pas pu être affichée. Actualisez la page ou", true, error.message);
             }
         }
 

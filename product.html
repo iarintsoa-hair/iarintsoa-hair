@@ -1545,6 +1545,32 @@
             updateWhatsAppLinks();
         });
 
+        // Encadré visible affiché sous le bouton quand l'ajout au panier échoue.
+        function setCartError(error) {
+            let box = document.querySelector("#cart-error-message");
+            if (!error) {
+                if (box) box.hidden = true;
+                return;
+            }
+            if (!box) {
+                box = document.createElement("p");
+                box.id = "cart-error-message";
+                box.className = "cart-feedback";
+                box.setAttribute("role", "alert");
+                document.querySelector("#cart-feedback").after(box);
+            }
+            if (error.code === "cart-unreadable") {
+                const cartLink = document.createElement("a");
+                cartLink.href = "cart.html";
+                cartLink.textContent = "Ouvrir mon panier";
+                box.replaceChildren("Votre panier enregistré n’a pas pu être lu. ", cartLink, " pour le réinitialiser, puis ajoutez de nouveau ce modèle.");
+            } else {
+                box.textContent = error.message;
+            }
+            box.hidden = false;
+            document.querySelector("#cart-feedback").hidden = true;
+        }
+
         document.querySelector("#add-to-cart").addEventListener("click", () => {
             if (!currentProduct) return;
             try {
@@ -1569,9 +1595,10 @@
                 document.querySelector("#cart-count").textContent = `${count} article${count > 1 ? "s" : ""}`;
                 document.querySelector("#cart-item").textContent = selectedSummary;
                 document.querySelector("#cart-feedback").hidden = false;
+                setCartError(null);
                 cartStatus.textContent = `${selectedSummary} ajouté au panier.`;
             } catch (error) {
-                cartStatus.textContent = error.message;
+                setCartError(error);
             }
         });
 

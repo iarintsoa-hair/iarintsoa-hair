@@ -1,0 +1,71 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "jerry-curly",
+    "name": "Jerry Curly",
+    "tagline": "Des boucles généreuses, une texture naturellement soyeuse et un mouvement plein de caractère.",
+    "price": 100,
+    "currency": "EUR",
+    "priceLabel": "À partir de",
+    "promotion": null,
+    "texture": "Jerry Curly",
+    "description": "La Jerry Curly associe la douceur des cheveux humains Remy à des boucles rebondies et naturellement définies. Sa finition soignée et sa densité de 200 % offrent un volume généreux, tandis que la lace transparente se fond avec discrétion. Choisissez une longueur de 10 à 26 pouces et une dentelle 4×4, 5×5 ou 13×4. Le prix varie selon la longueur choisie ; la dentelle n’entraîne aucun supplément. Pour préserver les boucles, démêlez délicatement la perruque des pointes vers les racines et privilégiez des soins adaptés aux cheveux humains.",
+    "photos": [
+      {
+        "src": "image/wig1.jpg",
+        "alt": "Perruque Jerry Curly en cheveux humains Remy, boucles longues et définies"
+      },
+      {
+        "src": "image/IARINTSOA-Hair/image/860300558_1640630624267782_4694467854783176957_n.jpg",
+        "alt": "Détail des boucles Jerry Curly et de la lace transparente"
+      },
+      {
+        "src": "image/IARINTSOA-Hair/image/858152914_1634860678178110_3422869655284041313_n.jpg",
+        "alt": "Modèle portant la perruque Jerry Curly"
+      }
+    ],
+    "lengths": [
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26
+    ],
+    "defaultLength": 18,
+    "pricesByLength": {
+      "10": 100,
+      "12": 120,
+      "14": 150,
+      "16": 160,
+      "18": 170,
+      "20": 180,
+      "22": 200,
+      "24": 220,
+      "26": 250
+    },
+    "lace": "4x4 transparente",
+    "laceOptions": [
+      "4x4",
+      "5x5",
+      "13x4"
+    ],
+    "density": 200,
+    "stock": null,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Cuticules alignées"
+    ],
+    "similarProducts": [
+      "water-wave",
+      "body-wave",
+      "straight"
+    ],
+    "promotionPrice": null,
+    "featured": false
+  }
+}

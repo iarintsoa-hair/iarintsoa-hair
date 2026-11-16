@@ -1,0 +1,260 @@
+.receipt-main {
+    width: min(820px, calc(100% - 40px));
+    min-height: calc(100vh - 82px);
+    margin: 0 auto;
+    padding: 26px 0 84px;
+}
+
+.receipt-main .checkout-progress {
+    margin-bottom: 56px;
+}
+
+.receipt-pending,
+.receipt-confirmed {
+    padding: clamp(26px, 6vw, 58px);
+    border: 1px solid rgba(217, 198, 187, .72);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, .94);
+    box-shadow: 0 16px 48px rgba(41, 35, 33, .06);
+    text-align: center;
+}
+
+.receipt-pending-icon,
+.receipt-success-icon {
+    width: 66px;
+    height: 66px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+}
+
+.receipt-pending-icon {
+    border: 1px solid rgba(149, 88, 98, .24);
+    background: #fbf3f1;
+    color: var(--rose-deep, #955862);
+    font-size: 30px;
+    line-height: 1;
+}
+
+.receipt-success-icon {
+    background: #edf5ef;
+    color: #42674e;
+}
+
+.receipt-success-icon svg {
+    width: 31px;
+    height: 31px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+}
+
+.receipt-pending h1,
+.receipt-confirmed h1 {
+    margin: 0;
+    color: var(--ink, #292321);
+    font-family: var(--serif-editorial, "Cormorant Garamond", serif);
+    font-size: clamp(38px, 7vw, 54px);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.receipt-pending > p:not(.checkout-kicker, .receipt-reference),
+.receipt-thanks {
+    max-width: 560px;
+    margin: 14px auto 0;
+    color: var(--muted, #746966);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.receipt-reference {
+    margin: 22px 0 0;
+    color: var(--ink, #292321);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    overflow-wrap: anywhere;
+}
+
+.receipt-whatsapp,
+.receipt-home {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    padding: 12px 22px;
+    border: 1px solid #547b60;
+    border-radius: 999px;
+    color: #42674e;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+.receipt-whatsapp:hover {
+    background: #f0f7f1;
+    transform: translateY(-1px);
+}
+
+.receipt-order-card {
+    margin-top: 30px;
+    padding: 22px;
+    border: 1px solid var(--line, #e9ded8);
+    border-radius: 16px;
+    background: #fffdfc;
+    text-align: left;
+}
+
+.receipt-order-card h2 {
+    margin: 0 0 17px;
+    color: var(--ink, #292321);
+    font-family: var(--serif-editorial, "Cormorant Garamond", serif);
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.receipt-item {
+    display: grid;
+    grid-template-columns: 58px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-top: 1px solid #f0e9e5;
+}
+
+.receipt-item:first-child {
+    border-top: 0;
+}
+
+.receipt-item img {
+    width: 58px;
+    height: 68px;
+    border-radius: 8px;
+    background: #f5eeeb;
+    object-fit: cover;
+}
+
+.receipt-item-placeholder {
+    width: 58px;
+    height: 68px;
+    border-radius: 8px;
+    background: #f5eeeb;
+}
+
+.receipt-item-copy {
+    min-width: 0;
+    display: grid;
+    gap: 4px;
+}
+
+.receipt-item-copy strong {
+    color: var(--ink, #292321);
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.receipt-item-copy span,
+.receipt-item-price span {
+    color: var(--muted, #746966);
+    font-size: 11px;
+    line-height: 1.45;
+}
+
+.receipt-item-price {
+    display: grid;
+    gap: 4px;
+    text-align: right;
+}
+
+.receipt-item-price strong {
+    color: var(--ink, #292321);
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.receipt-order-card .checkout-price-breakdown {
+    border-top: 1px solid var(--line, #e9ded8);
+}
+
+.receipt-whatsapp-note {
+    margin: 20px auto 0;
+    color: var(--muted, #746966);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.receipt-home {
+    margin-left: 8px;
+    border-color: var(--line, #e9ded8);
+    color: var(--ink, #292321);
+}
+
+.receipt-home:hover {
+    background: #fbf8f6;
+}
+
+.receipt-pending[hidden],
+.receipt-confirmed[hidden],
+.receipt-reference[hidden],
+.receipt-whatsapp[hidden] {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .receipt-main {
+        width: min(100% - 28px, 520px);
+        padding-top: 20px;
+    }
+
+    .receipt-main .checkout-progress {
+        margin-bottom: 34px;
+    }
+
+    .receipt-pending,
+    .receipt-confirmed {
+        padding: 27px 19px;
+        border-radius: 18px;
+    }
+
+    .receipt-order-card {
+        padding: 16px 12px;
+    }
+
+    .receipt-item {
+        grid-template-columns: 48px minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .receipt-item img {
+        width: 48px;
+        height: 58px;
+    }
+
+    .receipt-item-placeholder {
+        width: 48px;
+        height: 58px;
+    }
+
+    .receipt-item-price {
+        grid-column: 2;
+        justify-self: start;
+        text-align: left;
+    }
+
+    .receipt-home {
+        margin-left: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .receipt-whatsapp,
+    .receipt-home {
+        transition: none;
+    }
+}

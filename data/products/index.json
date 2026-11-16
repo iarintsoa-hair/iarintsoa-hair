@@ -1,0 +1,10 @@
+{
+  "format": "iarintsoa-product-catalog",
+  "version": 1,
+  "products": [
+    "jerry-curly",
+    "body-wave",
+    "straight",
+    "water-wave"
+  ]
+}

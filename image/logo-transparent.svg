@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+    <defs>
+        <filter id="remove-beige-background" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values="
+                1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                9.362 -2.146 -10.217 0 1
+            "/>
+        </filter>
+    </defs>
+    <image href="logo.png" width="1024" height="1024" filter="url(#remove-beige-background)"/>
+</svg>

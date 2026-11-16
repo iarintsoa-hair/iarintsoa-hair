@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F8F5F2">
+    <meta name="description" content="Finalisez votre commande IARINTSOA Hair et choisissez votre mode de livraison.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Finaliser ma commande | IARINTSOA Hair</title>
+    <link rel="icon" type="image/svg+xml" href="image/logo-transparent.svg">
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="visual-effects.css">
+</head>
+<body class="checkout-page">
+    <header class="site-header checkout-header">
+        <a class="brand" href="index.html#accueil" aria-label="IARINTSOA Hair, accueil">
+            <img class="logo" src="image/logo.png" alt="IARINTSOA Hair" width="1024" height="1024">
+        </a>
+        <a class="cart-continue-link" href="cart.html">Retour au panier</a>
+        <a class="site-cart" href="cart.html" data-cart-link aria-label="Ouvrir le panier">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L21 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+            <span class="site-cart-count" data-cart-count hidden>0</span>
+        </a>
+    </header>
+
+    <main class="checkout-main">
+        <nav class="checkout-progress" aria-label="Étapes de commande">
+            <ol>
+                <li class="is-complete"><a href="cart.html"><span>1</span>Panier</a></li>
+                <li class="is-current" aria-current="step"><span>2</span>Livraison</li>
+                <li><span>3</span>Paiement</li>
+                <li><span>4</span>Confirmation</li>
+            </ol>
+        </nav>
+
+        <div class="checkout-heading">
+            <p class="checkout-kicker">Quelques dernières informations</p>
+            <h1>Finaliser ma commande</h1>
+            <p>Votre sélection est conservée pendant que vous complétez vos coordonnées.</p>
+        </div>
+
+        <p class="checkout-status" id="checkout-status" role="status" aria-live="polite"></p>
+        <p class="checkout-error" id="checkout-error" role="alert" hidden></p>
+
+        <div class="checkout-layout">
+            <form class="checkout-form" id="checkout-form">
+                <section class="checkout-panel" aria-labelledby="customer-title">
+                    <div class="checkout-panel-heading">
+                        <span class="checkout-step-number">01</span>
+                        <div>
+                            <p class="checkout-section-kicker">Vos coordonnées</p>
+                            <h2 id="customer-title">Informations client</h2>
+                        </div>
+                    </div>
+
+                    <div class="checkout-fields-grid">
+                        <label class="checkout-field">
+                            <span>Prénom <b aria-hidden="true">*</b></span>
+                            <input name="firstName" type="text" autocomplete="given-name" required>
+                        </label>
+                        <label class="checkout-field">
+                            <span>Nom <b aria-hidden="true">*</b></span>
+                            <input name="lastName" type="text" autocomplete="family-name" required>
+                        </label>
+                        <label class="checkout-field">
+                            <span>Téléphone <b aria-hidden="true">*</b></span>
+                            <input name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+                        </label>
+                        <label class="checkout-field">
+                            <span>E-mail <small>(facultatif)</small></span>
+                            <input name="email" type="email" autocomplete="email">
+                        </label>
+                        <label class="checkout-field checkout-field--wide">
+                            <span>Adresse complète <b aria-hidden="true">*</b></span>
+                            <textarea name="address" autocomplete="street-address" rows="2" required></textarea>
+                        </label>
+                        <label class="checkout-field">
+                            <span>Code postal <b aria-hidden="true">*</b></span>
+                            <input name="postalCode" type="text" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" title="Saisissez un code postal à 5 chiffres." required>
+                        </label>
+                        <label class="checkout-field">
+                            <span>Commune <b aria-hidden="true">*</b></span>
+                            <input name="commune" type="text" autocomplete="address-level2" required>
+                        </label>
+                    </div>
+                    <p class="checkout-privacy-note">Ces informations sont enregistrées dans ce navigateur pour éviter de les ressaisir. Elles sont incluses au récapitulatif WhatsApp lorsque vous validez votre commande.</p>
+                </section>
+
+                <section class="checkout-panel" aria-labelledby="delivery-title">
+                    <div class="checkout-panel-heading">
+                        <span class="checkout-step-number">02</span>
+                        <div>
+                            <p class="checkout-section-kicker">À votre convenance</p>
+                            <h2 id="delivery-title">Mode de livraison</h2>
+                        </div>
+                    </div>
+                    <fieldset class="checkout-delivery-options" id="checkout-delivery-options">
+                        <legend class="visually-hidden">Choisissez une option de livraison</legend>
+                    </fieldset>
+                </section>
+
+                <section class="checkout-panel" aria-labelledby="payment-title">
+                    <div class="checkout-panel-heading">
+                        <span class="checkout-step-number">03</span>
+                        <div>
+                            <p class="checkout-section-kicker">Moyen de paiement</p>
+                            <h2 id="payment-title">Moyen de paiement</h2>
+                        </div>
+                    </div>
+                    <fieldset class="checkout-payment-options">
+                        <legend class="visually-hidden">Choisissez un moyen de paiement</legend>
+                        <label class="checkout-payment-option" for="payment-wero">
+                            <input id="payment-wero" name="payment-method" type="radio" value="wero" checked required>
+                            <span class="wero-payment-mark" aria-hidden="true">W</span>
+                            <span>
+                                <strong>Wero</strong>
+                                <small>Le paiement s’ouvrira via Wero si l’intégration est disponible. Sinon, votre commande sera enregistrée et une page de préparation s’affichera, sans paiement simulé.</small>
+                            </span>
+                            <span class="wero-selected">Sélectionné</span>
+                        </label>
+                    </fieldset>
+                </section>
+
+                <section class="checkout-terms-section" aria-label="Conditions de vente">
+                    <label class="checkout-terms">
+                        <input id="checkout-terms" name="termsAccepted" type="checkbox" required>
+                        <span>J'accepte les Conditions Générales de Vente.</span>
+                    </label>
+                </section>
+
+                <div class="checkout-actions">
+                    <a class="checkout-continue-shopping" href="index.html#collection">Continuer les achats</a>
+                    <button class="checkout-whatsapp" id="checkout-whatsapp" type="button">Commander sur WhatsApp</button>
+                    <button class="checkout-payment" id="checkout-submit" type="submit">Payer maintenant <span aria-hidden="true">→</span></button>
+                </div>
+            </form>
+
+            <aside class="checkout-order-summary" aria-labelledby="checkout-summary-title">
+                <p class="checkout-summary-kicker">Votre sélection</p>
+                <h2 id="checkout-summary-title">Récapitulatif de commande</h2>
+                <p class="checkout-empty" id="checkout-empty" hidden>Votre panier est vide. <a href="index.html#collection">Découvrir la collection</a></p>
+                <div class="checkout-order-items" id="checkout-items"></div>
+                <div class="checkout-price-breakdown" id="checkout-totals" aria-live="polite"></div>
+                <p class="checkout-summary-note" id="checkout-summary-note"></p>
+            </aside>
+        </div>
+
+    </main>
+
+    <script src="js/product-data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/order-storage.js"></script>
+    <script src="js/wero-checkout.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/visual-effects.js"></script>
+</body>
+</html>

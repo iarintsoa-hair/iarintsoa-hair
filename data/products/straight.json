@@ -1,0 +1,27 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "straight",
+    "name": "Straight",
+    "tagline": "Une texture lisse au fini naturellement élégant.",
+    "price": 160,
+    "currency": "EUR",
+    "priceLabel": "À partir de",
+    "promotion": null,
+    "texture": "Straight",
+    "description": "Découvrez la texture Straight et son fini lisse. Contactez-nous pour confirmer les longueurs, les caractéristiques et la disponibilité de ce modèle.",
+    "photos": [
+      {
+        "src": "image/wig3.jpg",
+        "alt": "Perruque Straight au fini lisse"
+      }
+    ],
+    "lengths": [],
+    "lace": null,
+    "density": null,
+    "stock": null,
+    "characteristics": [],
+    "similarProducts": ["body-wave", "water-wave", "jerry-curly"]
+  }
+}

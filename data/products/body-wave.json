@@ -1,0 +1,58 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "body-wave",
+    "name": "Body Wave",
+    "tagline": "Une ondulation souple au mouvement élégant.",
+    "price": 180,
+    "currency": "EUR",
+    "priceLabel": "À partir de",
+    "promotion": null,
+    "texture": "Body Wave",
+    "description": "Découvrez la texture Body Wave et son mouvement ondulé. Contactez-nous pour confirmer les longueurs, les caractéristiques et la disponibilité de ce modèle.",
+    "photos": [
+      {
+        "src": "image/wig2.jpg",
+        "alt": "Perruque Body Wave aux ondulations souples"
+      }
+    ],
+    "lengths": [
+  10,
+  12,
+  14,
+  16,
+  18,
+  20,
+  22,
+  24,
+  26
+],
+"defaultLength": 18,
+"pricesByLength": {
+  "10": 100,
+  "12": 120,
+  "14": 150,
+  "16": 160,
+  "18": 170,
+  "20": 180,
+  "22": 200,
+  "24": 220,
+  "26": 250
+},
+   "lace": "4x4 transparente",
+"laceOptions": [
+  "4x4",
+  "5x5",
+  "13x4"
+],"lacePrices": {
+  "4x4": 0,
+  "5x5": 10,
+  "13x4": 20
+},
+    "density": null,
+    "stock": null,
+    "characteristics": [],
+    "similarProducts": ["water-wave", "straight", "jerry-curly"]
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F8F5F2">
+    <meta name="description" content="Retrouvez votre sélection de perruques IARINTSOA Hair.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Votre panier | IARINTSOA Hair</title>
+    <link rel="icon" type="image/svg+xml" href="image/logo-transparent.svg">
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="visual-effects.css">
+</head>
+<body class="cart-page">
+    <header class="site-header cart-page-header">
+        <a class="brand" href="index.html#accueil" aria-label="IARINTSOA Hair, accueil">
+            <img class="logo" src="image/logo.png" alt="IARINTSOA Hair" width="1024" height="1024">
+        </a>
+        <a class="cart-continue-link" href="index.html#collection">Continuer mes achats</a>
+        <a class="site-cart" href="cart.html" data-cart-link aria-label="Ouvrir le panier">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L21 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+            <span class="site-cart-count" data-cart-count hidden>0</span>
+        </a>
+    </header>
+
+    <main class="cart-main">
+        <p class="cart-breadcrumb"><a href="index.html">Accueil</a> <span aria-hidden="true">/</span> Votre panier</p>
+        <h1 class="cart-title">Votre panier</h1>
+        <p class="cart-intro">Vérifiez votre sélection avant de choisir la livraison et le moyen de paiement.</p>
+        <p class="cart-page-status" id="cart-page-status" role="status" aria-live="polite"></p>
+        <p class="cart-error" id="cart-error" role="alert" hidden></p>
+
+        <section class="cart-layout" aria-label="Contenu du panier">
+            <div class="cart-items" id="cart-items"></div>
+            <aside class="cart-summary" id="cart-summary" aria-labelledby="cart-summary-title" hidden>
+                <p class="cart-summary-kicker">Votre commande</p>
+                <h2 id="cart-summary-title">Récapitulatif</h2>
+                <fieldset class="delivery-options" id="delivery-options">
+                    <legend>Choisissez votre livraison</legend>
+                    <label class="delivery-option" for="delivery-colissimo">
+                        <input id="delivery-colissimo" type="radio" name="delivery-method" value="colissimo">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v11H3zM14 10h4l3 3v4h-7z"/><circle cx="7.5" cy="19" r="1.5"/><circle cx="17.5" cy="19" r="1.5"/><path d="M6 9h5m-5 3h4"/></svg>
+                        <span class="delivery-option-copy">
+                            <strong>Colissimo La Poste</strong>
+                            <small>Partout sur l’île · livraison avec suivi</small>
+                        </span>
+                        <strong class="delivery-option-price">10 €</strong>
+                    </label>
+                    <label class="delivery-option" for="delivery-relay">
+                        <input id="delivery-relay" type="radio" name="delivery-method" value="relay">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/><path d="M8 3 6 5m10-2 2 2"/></svg>
+                        <span class="delivery-option-copy">
+                            <strong>Point Relais</strong>
+                            <small>Partout sur l’île, selon les points relais disponibles</small>
+                        </span>
+                        <strong class="delivery-option-price">5 €</strong>
+                    </label>
+                    <label class="delivery-option" for="delivery-pickup">
+                        <input id="delivery-pickup" type="radio" name="delivery-method" value="pickup">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8v10H3z"/><path d="M9 21v-7h6v7m-6-12h.01m6 0h.01"/><path d="M5 5h4"/></svg>
+                        <span class="delivery-option-copy">
+                            <strong>Retrait à Saint-Pierre</strong>
+                            <small>Samedi matin · sur rendez-vous après confirmation</small>
+                        </span>
+                        <strong class="delivery-option-price">5 €</strong>
+                    </label>
+                </fieldset>
+                <div id="cart-totals" aria-live="polite"></div>
+                <p class="cart-summary-note" id="cart-summary-note">Les modalités seront confirmées avec notre équipe avant validation.</p>
+                <a class="cart-checkout-link" id="cart-checkout-link" href="checkout.html">Commander</a>
+                <a class="cart-order cart-order--whatsapp" id="cart-order" href="#delivery-options" aria-disabled="true" tabindex="-1">Choisir un mode de livraison</a>
+                <p class="cart-secure-note"><span aria-hidden="true">✦</span> Confirmation de commande directement avec notre équipe</p>
+            </aside>
+        </section>
+
+        <section class="cart-empty" id="cart-empty" aria-labelledby="cart-empty-title" hidden>
+            <h2 id="cart-empty-title">Votre panier est encore vide</h2>
+            <p>Découvrez notre collection et choisissez votre prochaine perruque.</p>
+            <a href="index.html#collection">Découvrir la collection</a>
+        </section>
+    </main>
+
+    <script src="js/product-data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/visual-effects.js"></script>
+</body>
+</html>

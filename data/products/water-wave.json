@@ -1,0 +1,27 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "water-wave",
+    "name": "Water Wave",
+    "tagline": "Des ondulations généreuses au mouvement aérien.",
+    "price": 170,
+    "currency": "EUR",
+    "priceLabel": "À partir de",
+    "promotion": null,
+    "texture": "Water Wave",
+    "description": "Découvrez la texture Water Wave et ses ondulations généreuses. Contactez-nous pour confirmer les longueurs, les caractéristiques et la disponibilité de ce modèle.",
+    "photos": [
+      {
+        "src": "image/wig4.jpg",
+        "alt": "Perruque Water Wave aux ondulations généreuses"
+      }
+    ],
+    "lengths": [],
+    "lace": null,
+    "density": null,
+    "stock": null,
+    "characteristics": [],
+    "similarProducts": ["body-wave", "straight", "jerry-curly"]
+  }
+}

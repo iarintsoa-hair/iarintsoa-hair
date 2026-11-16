@@ -281,7 +281,16 @@
         try {
             items = cart.getItems();
         } catch (error) {
-            showError(error.message);
+            if (error.code === "cart-unreadable") {
+                // Panier abîmé : la page panier propose de le réinitialiser.
+                const cartLink = document.createElement("a");
+                cartLink.href = "cart.html";
+                cartLink.textContent = "Ouvrir mon panier";
+                errorState.hidden = false;
+                errorState.replaceChildren("Votre panier enregistré n’a pas pu être lu. ", cartLink, " pour le réinitialiser, puis reprenez votre commande.");
+            } else {
+                showError(error.message);
+            }
             checkoutItems.replaceChildren();
             totals.replaceChildren();
             document.querySelector("#checkout-empty").hidden = true;
@@ -479,6 +488,7 @@
 
     refreshCheckout();
     refreshMissingPrices().then(refreshCheckout).catch((error) => {
+        if (error.code === "cart-unreadable") return; // déjà expliqué par refreshCheckout()
         showError(`Les prix enregistrés du panier n’ont pas pu être actualisés. ${error.message}`);
     });
     restoreCustomerData();

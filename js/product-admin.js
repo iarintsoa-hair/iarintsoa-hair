@@ -477,6 +477,13 @@
             featured: productForm.elements.namedItem("featured").checked
         };
 
+        // Les tarifs par longueur ne sont pas encore modifiables dans ce formulaire : on conserve
+        // uniquement ceux des longueurs toujours proposées, sinon la validation bloquerait l'enregistrement.
+        if (product.pricesByLength) {
+            product.pricesByLength = Object.fromEntries(Object.entries(product.pricesByLength)
+                .filter(([length]) => lengths.includes(Number(length))));
+        }
+
         dataApi.validateProductDocument({
             format: "iarintsoa-product",
             version: 1,

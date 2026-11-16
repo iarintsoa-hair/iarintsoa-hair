@@ -454,19 +454,32 @@
         }
     }
 
-    async function sendWhatsAppOrder() {
+    // whatsappWindow : onglet ouvert pendant le clic (voir le gestionnaire du bouton), ou null s'il a été bloqué.
+    async function sendWhatsAppOrder(whatsappWindow) {
+        const closeWhatsAppWindow = () => {
+            if (whatsappWindow && !whatsappWindow.closed) whatsappWindow.close();
+        };
         await refreshMissingPrices();
         refreshCheckout();
-        if (!validateCheckout()) return;
+        if (!validateCheckout()) {
+            closeWhatsAppWindow();
+            return;
+        }
         const order = createOrderSnapshot("whatsapp_request");
         try {
             await saveOrder(order, false);
         } catch (error) {
+            closeWhatsAppWindow();
             showError(`La commande n’a pas pu être enregistrée. ${error.message}`);
             return;
         }
         const whatsappUrl = `https://wa.me/262693600145?text=${encodeURIComponent(buildOrderMessage(order))}`;
-        global.open(whatsappUrl, "_blank", "noopener,noreferrer");
+        if (whatsappWindow && !whatsappWindow.closed) {
+            whatsappWindow.opener = null; // l'onglet WhatsApp ne doit pas pouvoir agir sur la boutique
+            whatsappWindow.location.href = whatsappUrl;
+        } else {
+            global.location.href = whatsappUrl; // onglet bloqué : WhatsApp s'ouvre dans l'onglet actuel
+        }
         status.textContent = `La commande ${order.reference} est enregistrée. Envoyez le récapitulatif ouvert dans WhatsApp ; si l’application ne s’ouvre pas, réessayez avec « Commander sur WhatsApp ». Notre équipe vérifiera ensuite la commande et vous transmettra la demande de paiement Wero.`;
     }
 
@@ -477,7 +490,16 @@
         continueToWero().catch((error) => showError(`Le paiement n’a pas pu être préparé. ${error.message}`));
     });
     whatsappButton.addEventListener("click", () => {
-        sendWhatsAppOrder().catch((error) => showError(`La demande WhatsApp n’a pas pu être préparée. ${error.message}`));
+        // Safari (iPhone) n'autorise l'ouverture d'un onglet que pendant le clic lui-même :
+        // on vérifie le formulaire tout de suite, on ouvre l'onglet, puis on y charge WhatsApp
+        // une fois la commande enregistrée.
+        refreshCheckout();
+        if (!validateCheckout()) return;
+        const whatsappWindow = global.open("", "_blank");
+        sendWhatsAppOrder(whatsappWindow).catch((error) => {
+            if (whatsappWindow && !whatsappWindow.closed) whatsappWindow.close();
+            showError(`La demande WhatsApp n’a pas pu être préparée. ${error.message}`);
+        });
     });
     global.addEventListener("iarintsoa-cart-updated", refreshCheckout);
     global.addEventListener("storage", (event) => {

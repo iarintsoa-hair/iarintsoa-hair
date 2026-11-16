@@ -421,7 +421,7 @@
                 hasUnpricedItems ? "Certains prix restent à confirmer." : "",
                 !hasUnpricedItems && hasEstimatedItems ? "Le total est calculé à partir des prix de départ ; le montant final sera confirmé avec la longueur." : "",
                 "Pouvez-vous confirmer la disponibilité et les modalités ?"
-            ].filter(Boolean).join(" ");
+            ].filter(Boolean).join("\n");
             orderLink.href = createWhatsAppUrl(message);
             orderLink.removeAttribute("aria-disabled");
             orderLink.removeAttribute("tabindex");

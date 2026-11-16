@@ -93,7 +93,7 @@
             fieldNames.forEach((name) => {
                 form.elements.namedItem(name).value = data[name];
             });
-            document.querySelector("#checkout-terms").checked = data.termsAccepted;
+            // La case CGV n'est jamais restaurée : l'acceptation doit être un geste volontaire à chaque commande.
         } catch (error) {
             showError(error.message);
         }

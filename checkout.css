@@ -436,7 +436,11 @@
 
 .checkout-order-summary {
     position: sticky;
-    top: 22px;
+    /* Sous l'en-tête collant (83 px) + 16 px ; défilement interne si le bloc dépasse l'écran. */
+    top: 100px;
+    max-height: calc(100vh - 116px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
 }
 
 .checkout-summary-kicker {
@@ -737,6 +741,8 @@
 
     .checkout-order-summary {
         position: static;
+        max-height: none;
+        overflow-y: visible;
         grid-row: 1;
     }
 }

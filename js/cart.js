@@ -48,8 +48,19 @@
         try {
             return validateItems(JSON.parse(stored));
         } catch (error) {
-            throw new Error(`Impossible de lire le panier enregistré : ${error.message}`);
+            const readError = new Error(`Impossible de lire le panier enregistré : ${error.message}`);
+            readError.code = "cart-unreadable";
+            throw readError;
         }
+    }
+
+    function clearItems() {
+        try {
+            global.localStorage.removeItem(storageKey);
+        } catch (error) {
+            throw new Error("Impossible de vider le panier dans ce navigateur.");
+        }
+        global.dispatchEvent(new CustomEvent("iarintsoa-cart-updated"));
     }
 
     function saveItems(items) {
@@ -427,6 +438,19 @@
                 summary.hidden = true;
                 errorState.hidden = false;
                 errorState.textContent = error.message;
+                if (error.code === "cart-unreadable") {
+                    const resetButton = createButton("Vider le panier", "Vider le panier enregistré pour reprendre vos achats", "cart-remove");
+                    resetButton.addEventListener("click", () => {
+                        try {
+                            clearItems();
+                            status.textContent = "Votre panier a été vidé. Vous pouvez reprendre vos achats.";
+                        } catch (clearError) {
+                            status.textContent = clearError.message;
+                        }
+                    });
+                    errorState.textContent = "Votre panier enregistré n’a pas pu être lu ; il provient peut-être d’une ancienne version du site. Videz-le pour reprendre vos achats.";
+                    errorState.append(" ", resetButton);
+                }
                 checkoutLink.href = "#cart-items";
                 checkoutLink.setAttribute("aria-disabled", "true");
                 checkoutLink.tabIndex = -1;

@@ -4,666 +4,465 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="theme-color" content="#111010">
-    <title>Aperçu du nouveau design | IARINTSOA Hair</title>
-    <meta name="description" content="Démonstration du futur design premium de la boutique IARINTSOA Hair.">
-    <link rel="icon" type="image/png" href="image/logo.png">
+    <meta name="theme-color" content="#0d0c0b">
+    <title>IARINTSOA Hair — Votre Signature. Notre Excellence. | Aperçu du design</title>
+    <meta name="description" content="Maison de perruques en cheveux humains Remy, qualité premium, livraison partout à La Réunion. Votre Signature. Notre Excellence.">
+    <link rel="icon" type="image/svg+xml" href="image/favicon-ih.svg">
+    <link rel="apple-touch-icon" href="image/logo.png">
+    <link rel="preload" as="image" href="image/hero.jpg" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
     <!--
-        ============================================================
-        IARINTSOA Hair — PAGE DE DÉMONSTRATION DU DESIGN PREMIUM
-        ------------------------------------------------------------
-        Fichier autonome : il ne modifie et n'utilise aucun fichier
-        CSS/JS du site actuel (seules les photos de /image sont lues).
-        Les avis clients affichés sont des EXEMPLES de mise en page.
-        ============================================================
+        =====================================================================
+        IARINTSOA Hair — DÉMONSTRATION DU DESIGN PREMIUM (version 2)
+        ---------------------------------------------------------------------
+        Page autonome : n'utilise aucun CSS/JS du site actuel, seulement les
+        photos du dossier /image. Avis, avant/après, Instagram et newsletter
+        sont des EXEMPLES de mise en page, signalés comme tels à l'écran.
+        Signature de marque : « Vos cheveux, votre signature. »
+        =====================================================================
     -->
     <style>
-        /* ========== 1. Jetons de design (couleurs, typographies, espacements) ========== */
+        /* ================= 1. Identité : couleurs, typographies, rythme ================= */
         :root {
-            --white: #ffffff;
-            --ivory: #faf7f2;
-            --sand: #efe6da;
-            --sand-deep: #e2d4c1;
-            --ink: #141212;
-            --black: #0e0d0d;
-            --muted: #6b625c;
-            --line: #e7ddd1;
-            --gold: #b8945a;          /* touches décoratives */
-            --gold-light: #d9bf8c;    /* doré sur fond noir */
-            --gold-text: #86683a;     /* doré lisible sur fond clair (contraste AA) */
+            --black: #0d0c0b;
+            --ink: #171514;
+            --ivory: #fbf8f3;
+            --beige: #f1e8dc;
+            --beige-deep: #e6d8c5;
+            --champagne: #c9a96e;        /* doré décoratif */
+            --champagne-light: #e3cf9f;  /* doré sur fond noir */
+            --champagne-text: #86683b;   /* doré lisible sur fond clair (contraste AA) */
+            --muted: #6c625b;
+            --line: #e6dccf;
             --serif: "Cormorant Garamond", "Times New Roman", serif;
             --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
-            --radius: 4px;
             --ease: cubic-bezier(.22, .61, .36, 1);
-            --gutter: clamp(20px, 5vw, 72px);
+            --gutter: clamp(20px, 5vw, 80px);
             --max: 1360px;
-            --header-h: 76px;
+            --header-h: 104px;
         }
 
         *, *::before, *::after { box-sizing: border-box; }
         html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-        body {
-            margin: 0;
-            background: var(--white);
-            color: var(--ink);
-            font-family: var(--sans);
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-        img { display: block; max-width: 100%; }
+        body { margin: 0; overflow-x: hidden; background: var(--ivory); color: var(--ink); font-family: var(--sans); font-size: 16px; font-weight: 400; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+        img { display: block; max-width: 100%; height: auto; }
         a { color: inherit; text-decoration: none; }
-        button { font: inherit; color: inherit; }
-        :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+        button, input { font: inherit; color: inherit; }
+        :focus-visible { outline: 2px solid var(--champagne); outline-offset: 3px; }
         .container { width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto; }
         .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
-        .skip-link { position: absolute; left: 12px; top: -60px; z-index: 100; padding: 10px 16px; background: var(--black); color: var(--white); }
+        .skip-link { position: absolute; left: 12px; top: -80px; z-index: 100; padding: 10px 16px; background: var(--black); color: var(--ivory); }
         .skip-link:focus { top: 12px; }
+        .icon { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; flex: 0 0 auto; }
 
-        /* Titres et sur-titres */
-        .eyebrow {
-            margin: 0 0 14px;
-            color: var(--gold-text);
-            font-size: 12px;
-            font-weight: 500;
-            letter-spacing: .28em;
-            text-transform: uppercase;
-        }
-        .section-title {
-            margin: 0;
-            font-family: var(--serif);
-            font-size: clamp(34px, 4.6vw, 56px);
-            font-weight: 400;
-            letter-spacing: -.01em;
-            line-height: 1.08;
-        }
-        .section-title em { font-style: italic; color: var(--gold-text); }
-        .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: clamp(32px, 4vw, 52px); }
-        .section-head p { max-width: 460px; margin: 14px 0 0; color: var(--muted); }
-        .section { padding-block: clamp(72px, 9vw, 128px); }
+        /* Typographie éditoriale */
+        .eyebrow { margin: 0 0 16px; color: var(--champagne-text); font-size: 12px; font-weight: 500; letter-spacing: .3em; text-transform: uppercase; }
+        .title { margin: 0; font-family: var(--serif); font-size: clamp(36px, 4.8vw, 60px); font-weight: 400; letter-spacing: -.01em; line-height: 1.06; }
+        .title em { color: var(--champagne-text); font-style: italic; }
+        .section { padding-block: clamp(80px, 10vw, 140px); }
+        .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 28px; margin-bottom: clamp(36px, 4.4vw, 60px); }
+        .section-head p { max-width: 440px; margin: 0; color: var(--muted); }
+        .center { text-align: center; }
+        .center .section-head { flex-direction: column; align-items: center; }
+        .demo-note { display: inline-block; margin-top: 18px; padding: 6px 12px; border: 1px dashed var(--champagne-text); color: var(--champagne-text); font-size: 12px; letter-spacing: .06em; }
+
+        /* Trait de signature doré (élément d'identité) */
+        .signature-stroke { display: block; width: 100%; height: auto; overflow: visible; }
+        .signature-stroke path { fill: none; stroke: var(--champagne); stroke-width: 1.6; stroke-linecap: round; stroke-dasharray: 420; stroke-dashoffset: 420; }
+        .is-drawn .signature-stroke path, .signature-stroke.is-drawn path { animation: draw 2.2s var(--ease) forwards; }
+        .divider { width: 150px; margin: 0 auto 26px; }
+        /* Monogramme IH : l'arc doré se trace une seule fois au chargement */
+        .ih-arc { stroke-dasharray: 150; stroke-dashoffset: 150; animation: draw 1.8s .3s var(--ease) forwards; }
 
         /* Boutons */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            min-height: 52px;
-            padding: 0 30px;
-            border: 1px solid transparent;
-            border-radius: var(--radius);
-            font-size: 13px;
-            font-weight: 500;
-            letter-spacing: .18em;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: background-color .35s var(--ease), color .35s var(--ease), border-color .35s var(--ease), transform .35s var(--ease);
-        }
-        .btn svg { width: 16px; height: 16px; transition: transform .35s var(--ease); }
-        .btn:hover svg { transform: translateX(4px); }
-        .btn--light { background: var(--ivory); color: var(--black); }
-        .btn--light:hover { background: var(--gold-light); }
-        .btn--ghost { border-color: rgba(255, 255, 255, .7); color: var(--white); }
-        .btn--ghost:hover { background: var(--white); color: var(--black); }
-        .btn--dark { background: var(--black); color: var(--white); }
-        .btn--dark:hover { background: #2a2624; }
-        .btn--outline { border-color: var(--ink); color: var(--ink); }
-        .btn--outline:hover { background: var(--ink); color: var(--white); }
-        .link-arrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding-bottom: 4px;
-            border-bottom: 1px solid currentColor;
-            font-size: 13px;
-            font-weight: 500;
-            letter-spacing: .16em;
-            text-transform: uppercase;
-            white-space: nowrap;
-        }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 54px; padding: 0 32px; border: 1px solid transparent; border-radius: 0; font-size: 12px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; cursor: pointer; transition: background-color .45s var(--ease), color .45s var(--ease), border-color .45s var(--ease); }
+        /* Reflet de lumière qui traverse le bouton au survol */
+        .btn { position: relative; overflow: hidden; isolation: isolate; }
+        .btn::before { position: absolute; inset: 0; z-index: -1; background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, .38) 50%, transparent 70%); content: ""; pointer-events: none; transform: translateX(-130%); transition: transform 1.1s var(--ease); }
+        .btn:hover::before { transform: translateX(130%); }
+        .btn .icon { width: 16px; height: 16px; transition: transform .45s var(--ease); }
+        .btn:hover .icon { transform: translateX(4px); }
+        .btn--champagne { background: var(--champagne-light); color: var(--black); }
+        .btn--champagne:hover { background: var(--ivory); }
+        .btn--ghost-light { border-color: rgba(251, 248, 243, .55); color: var(--ivory); }
+        .btn--ghost-light:hover { border-color: var(--champagne-light); color: var(--champagne-light); }
+        .btn--dark { background: var(--black); color: var(--ivory); }
+        .btn--dark:hover { background: #2a2622; }
+        .btn--line { border-color: var(--ink); color: var(--ink); }
+        .btn--line:hover { background: var(--ink); color: var(--ivory); }
+        .link-line { display: inline-flex; align-items: center; gap: 10px; padding-bottom: 5px; border-bottom: 1px solid currentColor; font-size: 12px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; white-space: nowrap; }
+        .link-line .icon { width: 15px; height: 15px; }
 
-        /* Icônes en trait fin */
-        .icon { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
-
-        /* ========== 2. Barre d'annonce ========== */
-        .announce {
-            position: relative;
-            z-index: 31;
-            height: 40px;
-            overflow: hidden;
-            background: var(--black);
-            color: var(--gold-light);
-            font-size: 12px;
-            letter-spacing: .2em;
-            text-align: center;
-            text-transform: uppercase;
-        }
-        .announce p {
-            position: absolute;
-            inset: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            padding: 0 16px;
-            opacity: 0;
-            transform: translateY(8px);
-            transition: opacity .6s var(--ease), transform .6s var(--ease);
-        }
+        /* ================= 2. Barre d'annonce ================= */
+        .announce { position: relative; height: 40px; overflow: hidden; background: var(--black); color: var(--champagne-light); font-size: 12px; letter-spacing: .22em; text-align: center; text-transform: uppercase; }
+        .announce p { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; margin: 0; padding: 0 16px; opacity: 0; transform: translateY(8px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
         .announce p.is-active { opacity: 1; transform: none; }
-        .announce strong { color: var(--white); font-weight: 500; }
+        .announce strong { color: var(--ivory); font-weight: 500; }
 
-        /* ========== 3. En-tête et menu premium ========== */
-        .header {
-            position: sticky;
-            top: 0;
-            z-index: 30;
-            background: rgba(255, 255, 255, .96);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid transparent;
-            transition: border-color .4s var(--ease), box-shadow .4s var(--ease);
-        }
-        .header.is-scrolled { border-color: var(--line); box-shadow: 0 10px 30px rgba(20, 18, 18, .05); }
-        .header-inner {
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            align-items: center;
-            height: var(--header-h);
-        }
-        .wordmark { display: grid; justify-items: center; line-height: 1; }
-        .wordmark strong { font-family: var(--serif); font-size: 27px; font-weight: 500; letter-spacing: .26em; padding-left: .26em; }
-        .wordmark span { margin-top: 6px; color: var(--gold-text); font-size: 10px; font-weight: 500; letter-spacing: .62em; padding-left: .62em; }
-        .nav { display: flex; align-items: center; gap: clamp(18px, 2.4vw, 34px); }
-        .nav > a, .nav-item > button {
-            position: relative;
-            padding: 26px 0;
-            border: 0;
-            background: none;
-            font-size: 13px;
-            font-weight: 500;
-            letter-spacing: .16em;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
-        .nav > a::after, .nav-item > button::after {
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 20px;
-            height: 1px;
-            background: var(--gold);
-            content: "";
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform .4s var(--ease);
-        }
-        .nav > a:hover::after, .nav-item:hover > button::after, .nav-item:focus-within > button::after { transform: scaleX(1); }
-        .header-actions { display: flex; align-items: center; justify-content: flex-end; gap: 6px; }
-        .icon-btn {
-            position: relative;
-            display: inline-grid;
-            place-items: center;
-            width: 44px;
-            height: 44px;
-            border: 0;
-            border-radius: 50%;
-            background: none;
-            cursor: pointer;
-            transition: background-color .3s var(--ease);
-        }
-        .icon-btn:hover { background: var(--ivory); }
-        .cart-count {
-            position: absolute;
-            top: 5px;
-            right: 4px;
-            min-width: 18px;
-            height: 18px;
-            padding: 0 5px;
-            border-radius: 9px;
-            background: var(--black);
-            color: var(--gold-light);
-            font-size: 11px;
-            line-height: 18px;
-            text-align: center;
-        }
+        /* ================= 3. Navigation : logo centré, menu discret ================= */
+        .header { position: sticky; top: 0; z-index: 30; background: rgba(251, 248, 243, .94); backdrop-filter: blur(14px); border-bottom: 1px solid transparent; transition: border-color .5s var(--ease), box-shadow .5s var(--ease); }
+        .header.is-scrolled { border-color: var(--line); box-shadow: 0 12px 34px rgba(13, 12, 11, .05); }
+        .header-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: var(--header-h); }
+        /* Logo minimaliste : monogramme IH + IARINTSOA HAIR (animation d'ouverture sans décalage de mise en page) */
+        .brand { display: inline-flex; align-items: center; gap: 18px; padding: 6px 4px; }
+        .brand-mark { width: 64px; height: 64px; color: var(--ink); transition: transform .8s var(--ease); }
+        .brand:hover .brand-mark { transform: rotate(-6deg); }
+        .brand-name { display: grid; justify-items: center; line-height: 1; }
+        .brand-name strong { padding-left: .28em; font-family: var(--serif); font-size: 29px; font-weight: 500; letter-spacing: .28em; animation: write-in 1.6s .55s var(--ease) both; }
+        .brand-name span { display: flex; align-items: center; gap: 10px; margin-top: 9px; color: var(--champagne-text); font-size: 11px; font-weight: 500; letter-spacing: .55em; padding-left: .55em; animation: fade-in 1.2s 1.3s var(--ease) both; }
+        .brand-name span::before, .brand-name span::after { width: 22px; height: 1px; background: var(--champagne); content: ""; }
+        .ih-letter { animation: fade-in 1.2s .15s var(--ease) both; }
+        .nav { display: flex; align-items: center; gap: clamp(20px, 2.4vw, 36px); }
+        .nav a, .nav-item > button { position: relative; padding: 30px 0; border: 0; background: none; font-size: 12px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; cursor: pointer; }
+        .nav a::after, .nav-item > button::after { position: absolute; left: 0; right: 0; bottom: 24px; height: 1px; background: var(--champagne); content: ""; transform: scaleX(0); transform-origin: left; transition: transform .5s var(--ease); }
+        .nav a:hover::after, .nav-item:hover > button::after, .nav-item:focus-within > button::after { transform: scaleX(1); }
+        .header-actions { display: flex; align-items: center; justify-content: flex-end; gap: 4px; }
+        .icon-btn { position: relative; display: inline-grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 50%; background: none; cursor: pointer; transition: background-color .3s; }
+        .icon-btn:hover { background: var(--beige); }
+        .cart-count { position: absolute; top: 4px; right: 3px; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px; background: var(--black); color: var(--champagne-light); font-size: 11px; line-height: 18px; text-align: center; }
         .burger { display: none; }
 
         /* Méga-menu */
-        .mega {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 100%;
-            padding: 44px 0 52px;
-            border-top: 1px solid var(--line);
-            background: var(--white);
-            box-shadow: 0 30px 60px rgba(20, 18, 18, .08);
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-6px);
-            transition: opacity .35s var(--ease), transform .35s var(--ease), visibility .35s;
-        }
+        .mega { position: absolute; left: 0; right: 0; top: 100%; padding: 48px 0 56px; border-top: 1px solid var(--line); background: var(--ivory); box-shadow: 0 34px 60px rgba(13, 12, 11, .07); opacity: 0; visibility: hidden; transform: translateY(-6px); transition: opacity .4s var(--ease), transform .4s var(--ease), visibility .4s; }
         .nav-item:hover .mega, .nav-item:focus-within .mega, .nav-item.is-open .mega { opacity: 1; visibility: visible; transform: none; }
-        .mega-grid { display: grid; grid-template-columns: repeat(3, 1fr) 1.3fr; gap: 40px; }
-        .mega h3 { margin: 0 0 18px; color: var(--gold-text); font-size: 12px; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; }
+        .mega-grid { display: grid; grid-template-columns: repeat(3, 1fr) 1.3fr; gap: 44px; }
+        .mega h3 { margin: 0 0 18px; color: var(--champagne-text); font-size: 12px; font-weight: 500; letter-spacing: .26em; text-transform: uppercase; }
         .mega ul { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
-        .mega li a { font-family: var(--serif); font-size: 21px; transition: color .3s; }
-        .mega li a:hover { color: var(--gold-text); }
-        .mega-feature { position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: var(--sand); }
-        .mega-feature img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; transition: transform 1.2s var(--ease); }
-        .mega-feature:hover img { transform: scale(1.04); }
-        .mega-feature span { position: absolute; left: 20px; bottom: 18px; color: var(--white); font-family: var(--serif); font-size: 24px; text-shadow: 0 2px 16px rgba(0, 0, 0, .4); }
+        .mega li a { font-family: var(--serif); font-size: 22px; transition: color .3s; }
+        .mega li a:hover { color: var(--champagne-text); }
+        .mega-feature { position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: var(--beige); }
+        .mega-feature span { position: absolute; z-index: 1; left: 22px; bottom: 18px; color: var(--ivory); font-family: var(--serif); font-size: 25px; text-shadow: 0 2px 18px rgba(0, 0, 0, .45); }
 
-        /* Menu mobile (tiroir) */
+        /* Menu mobile */
         .drawer { position: fixed; inset: 0; z-index: 60; visibility: hidden; }
         .drawer.is-open { visibility: visible; }
-        .drawer-backdrop { position: absolute; inset: 0; background: rgba(14, 13, 13, .45); opacity: 0; transition: opacity .4s var(--ease); }
+        .drawer-backdrop { position: absolute; inset: 0; background: rgba(13, 12, 11, .45); opacity: 0; transition: opacity .45s var(--ease); }
         .drawer.is-open .drawer-backdrop { opacity: 1; }
-        .drawer-panel {
-            position: absolute;
-            inset: 0 auto 0 0;
-            width: min(88vw, 400px);
-            display: flex;
-            flex-direction: column;
-            padding: 22px 26px 30px;
-            background: var(--white);
-            transform: translateX(-100%);
-            transition: transform .45s var(--ease);
-            overflow-y: auto;
-        }
+        .drawer-panel { position: absolute; inset: 0 auto 0 0; display: flex; flex-direction: column; width: min(88vw, 400px); padding: 22px 26px 30px; overflow-y: auto; background: var(--ivory); transform: translateX(-100%); transition: transform .5s var(--ease); }
         .drawer.is-open .drawer-panel { transform: none; }
-        .drawer-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 26px; }
+        .drawer-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+        .drawer-top .brand-mark { width: 46px; height: 46px; }
         .drawer nav a { display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 24px; }
-        .drawer nav a small { align-self: center; color: var(--gold-text); font-family: var(--sans); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; }
+        .drawer nav a small { align-self: center; color: var(--champagne-text); font-family: var(--sans); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; }
         .drawer-foot { margin-top: auto; padding-top: 28px; color: var(--muted); font-size: 14px; }
         .drawer-foot .btn { width: 100%; margin-top: 14px; }
 
-        /* ========== 4. Hero pleine largeur : panneau noir et or + deux grandes photos ========== */
-        .hero {
-            display: grid;
-            grid-template-columns: minmax(400px, 1.05fr) 1fr 1fr;
-            height: min(calc(100svh - 116px), 780px);
-            min-height: 580px;
-            overflow: hidden;
-            background: var(--black);
-        }
+        /* ================= 4. Hero ================= */
+        .hero { display: grid; grid-template-columns: minmax(460px, 1.25fr) 1fr 1fr; height: min(calc(100svh - 132px), 800px); min-height: 600px; overflow: hidden; background: var(--black); }
         .hero figure { position: relative; margin: 0; overflow: hidden; }
-        .hero figure img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            animation: hero-zoom 14s var(--ease) both;
-        }
-        .hero figure + figure { border-left: 1px solid rgba(255, 255, 255, .12); }
-        .hero-panel {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 56px clamp(28px, 4.4vw, 72px);
-            color: var(--white);
-        }
-        .hero-panel::before {
-            position: absolute;
-            top: 56px;
-            left: clamp(28px, 4.4vw, 72px);
-            width: 56px;
-            height: 1px;
-            background: var(--gold-light);
-            content: "";
-        }
-        .hero-panel .eyebrow { color: var(--gold-light); }
-        .hero h1 {
-            margin: 0;
-            font-family: var(--serif);
-            font-size: clamp(46px, 5.2vw, 80px);
-            font-weight: 400;
-            letter-spacing: -.015em;
-            line-height: 1;
-        }
-        .hero h1 em { color: var(--gold-light); }
-        .hero p.lead { max-width: 420px; margin: 24px 0 34px; color: rgba(255, 255, 255, .8); font-size: 17px; font-weight: 300; }
+        .hero figure img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: slow-zoom 16s var(--ease) both; }
+        .hero figure + figure { border-left: 1px solid rgba(251, 248, 243, .12); }
+        .hero-panel { position: relative; display: flex; flex-direction: column; justify-content: center; padding: 60px clamp(28px, 4.6vw, 76px); overflow: hidden; color: var(--ivory); }
+        .hero-panel::before { position: absolute; top: -30%; left: -30%; width: 90%; height: 90%; background: radial-gradient(circle, rgba(227, 207, 159, .1), rgba(227, 207, 159, 0) 65%); content: ""; pointer-events: none; }
+        .hero-panel .eyebrow { color: var(--champagne-light); }
+        .hero-watermark { position: absolute; right: -110px; bottom: -120px; width: 340px; height: 340px; color: var(--champagne-light); opacity: .06; pointer-events: none; }
+        .hero h1 { position: relative; margin: 0; font-family: var(--serif); font-size: clamp(42px, 3.9vw, 60px); font-weight: 400; letter-spacing: -.01em; line-height: 1.12; }
+        .hero h1 .signature-word { position: relative; display: inline-block; color: var(--champagne-light); font-style: italic; }
+        .hero h1 .signature-word .signature-stroke { position: absolute; left: -4%; right: -6%; bottom: -14px; width: 110%; }
+        .hero .lead { max-width: 430px; margin: 34px 0 14px; color: rgba(251, 248, 243, .82); font-size: 17px; font-weight: 300; }
+        .hero-points { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0 0 36px; padding: 0; color: var(--champagne-light); font-size: 12px; letter-spacing: .14em; list-style: none; text-transform: uppercase; }
+        .hero-points li { display: flex; align-items: center; gap: 8px; }
+        .hero-points li::before { width: 5px; height: 5px; border-radius: 50%; background: var(--champagne); content: ""; }
         .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-        .hero-panel > * { animation: rise 1s var(--ease) both; }
-        .hero-panel .eyebrow { animation-delay: .15s; }
-        .hero h1 { animation-delay: .25s; }
-        .hero p.lead { animation-delay: .4s; }
-        .hero-actions { animation-delay: .55s; }
+        .hero-panel > * { animation: rise 1.1s var(--ease) both; }
+        .hero-panel > :nth-child(2) { animation-delay: .1s; }
+        .hero-panel > :nth-child(3) { animation-delay: .22s; }
+        .hero-panel > :nth-child(4) { animation-delay: .38s; }
+        .hero-panel > :nth-child(5) { animation-delay: .5s; }
+        .hero-panel > :nth-child(6) { animation-delay: .62s; }
+        .hero-panel > .hero-watermark { animation: none; } /* garde son opacité très faible */
 
-        /* Recadrages : masquent les textes incrustés dans certaines photos (hero.jpg, bob.jpg). */
+        /* Recadrages qui masquent les textes incrustés dans certaines photos */
         .crop-hero, .crop-bob { max-width: none !important; }
         .crop-hero { position: absolute !important; inset: auto !important; left: 0 !important; top: -6% !important; width: 135% !important; height: 112% !important; object-fit: cover; object-position: left top !important; }
         .crop-bob { position: absolute !important; inset: auto !important; left: -42% !important; top: -24% !important; width: 150% !important; height: 150% !important; object-fit: cover; object-position: center !important; }
-        @media (max-width: 760px) {
-            .hero .crop-hero { width: 135% !important; height: 135% !important; left: -10% !important; top: -20% !important; }
-        }
 
-        /* ========== 5. Bandeau de réassurance ========== */
+        /* ================= 5. Réassurance ================= */
         .trust { border-bottom: 1px solid var(--line); background: var(--ivory); }
         .trust ul { display: grid; grid-template-columns: repeat(4, 1fr); margin: 0; padding: 0; list-style: none; }
-        .trust li { display: flex; align-items: center; justify-content: center; gap: 14px; padding: 26px 12px; font-size: 14px; }
+        .trust li { display: flex; align-items: center; justify-content: center; gap: 14px; padding: 28px 12px; font-size: 14px; }
         .trust li + li { border-left: 1px solid var(--line); }
-        .trust .icon { width: 26px; height: 26px; color: var(--gold); flex: 0 0 auto; }
-        .trust strong { display: block; font-weight: 500; letter-spacing: .02em; }
+        .trust .icon { width: 26px; height: 26px; color: var(--champagne); }
+        .trust strong { display: block; font-weight: 500; }
         .trust span { color: var(--muted); font-size: 13px; }
 
-        /* ========== 6. Collections (cartes luxueuses) ========== */
-        .collections-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(12px, 1.6vw, 22px); }
-        .collection-card { position: relative; display: block; overflow: hidden; aspect-ratio: 3 / 4.3; background: var(--sand); }
-        .collection-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.4s var(--ease); }
-        .collection-card:hover img { transform: scale(1.06); }
-        .collection-card::after { position: absolute; inset: 0; background: linear-gradient(to top, rgba(14, 13, 13, .62), rgba(14, 13, 13, 0) 52%); content: ""; }
-        .collection-card .label { position: absolute; z-index: 1; left: 22px; right: 22px; bottom: 22px; color: var(--white); }
-        .collection-card h3 { margin: 0; font-family: var(--serif); font-size: clamp(26px, 2.4vw, 34px); font-weight: 400; line-height: 1.1; }
-        .collection-card .label span { display: inline-flex; align-items: center; gap: 8px; margin-top: 8px; color: var(--gold-light); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; }
-        .collection-card .label span::after { width: 22px; height: 1px; background: currentColor; content: ""; transition: width .4s var(--ease); }
-        .collection-card:hover .label span::after { width: 40px; }
+        /* ================= 6. La Maison — pourquoi choisir IARINTSOA Hair ================= */
+        .maison-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(48px, 8vw, 120px); align-items: center; }
+        .medallion { position: relative; width: min(100%, 440px); margin-inline: auto; aspect-ratio: 1; }
+        /* Le cadre rond coupe réellement l'image agrandie (aucun débordement de page sur mobile) */
+        .medallion-clip { position: absolute; inset: 2%; overflow: hidden; border-radius: 50%; background: #f2e3d5; }
+        .medallion img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.22); transition: transform 2.4s var(--ease); }
+        .medallion:hover img { transform: scale(1.27); }
+        .medallion::before { position: absolute; inset: 0; border: 1px solid var(--champagne); border-radius: 50%; content: ""; }
+        .medallion::after { position: absolute; inset: -4%; border: 1px solid rgba(201, 169, 110, .32); border-radius: 50%; content: ""; }
+        .maison-quote { margin: 26px 0 0; font-family: var(--serif); font-size: clamp(26px, 2.6vw, 34px); font-style: italic; line-height: 1.3; }
+        .maison-copy > p { max-width: 560px; color: var(--muted); }
+        .pillars-title { margin: 40px 0 16px; color: var(--champagne-text); font-size: 12px; font-weight: 500; letter-spacing: .28em; text-transform: uppercase; }
+        .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; border: 1px solid var(--line); background: var(--line); }
+        .pillar { position: relative; padding: 26px 24px; background: var(--ivory); transition: background-color .6s var(--ease); }
+        .pillar::before { position: absolute; top: -1px; left: 0; right: 0; height: 1px; background: var(--champagne); content: ""; transform: scaleX(0); transform-origin: left; transition: transform .7s var(--ease); }
+        .pillar:hover { background: #fffdf9; }
+        .pillar:hover::before { transform: scaleX(1); }
 
-        /* ========== 7. Best-sellers (cartes produits) ========== */
-        .bestsellers { background: var(--ivory); }
+        /* Séparateur au monogramme IH */
+        .mono-divider { display: flex; align-items: center; justify-content: center; gap: 18px; margin: 0 auto 26px; color: var(--ink); }
+        .mono-divider svg { width: 46px; height: 46px; flex: 0 0 auto; }
+        .mono-divider span { width: 90px; height: 1px; background: linear-gradient(90deg, rgba(201, 169, 110, 0), var(--champagne)); }
+        .mono-divider span:last-child { background: linear-gradient(90deg, var(--champagne), rgba(201, 169, 110, 0)); }
+        .mono-divider--left { justify-content: flex-start; margin-left: 0; }
+        .mono-divider--left span { background: linear-gradient(90deg, var(--champagne), rgba(201, 169, 110, 0)); }
+        .pillar .icon { width: 28px; height: 28px; color: var(--champagne); }
+        .pillar h3 { margin: 14px 0 6px; font-family: var(--serif); font-size: 23px; font-weight: 500; }
+        .pillar p { margin: 0; color: var(--muted); font-size: 14px; }
+
+        /* ================= 7. Bandeau signature défilant ================= */
+        .ribbon { overflow: hidden; border-block: 1px solid var(--line); background: var(--beige); }
+        .ribbon-track { display: flex; width: max-content; animation: marquee 48s linear infinite; }
+        .ribbon-track span { display: flex; align-items: center; gap: 46px; padding: 22px 23px; font-family: var(--serif); font-size: clamp(24px, 2.6vw, 34px); font-style: italic; white-space: nowrap; }
+        .ribbon-track span::after { width: 7px; height: 7px; background: var(--champagne); content: ""; transform: rotate(45deg); }
+
+        /* ================= 8. Collections ================= */
+        .collections-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(12px, 1.6vw, 22px); }
+        .collection-card { position: relative; display: block; overflow: hidden; aspect-ratio: 3 / 4.3; background: var(--beige); }
+        .collection-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1.6s var(--ease); }
+        .collection-card:hover img { transform: scale(1.06); }
+        .collection-card::after { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13, 12, 11, .64), rgba(13, 12, 11, 0) 52%); content: ""; }
+        .collection-card .label { position: absolute; z-index: 1; left: 22px; right: 22px; bottom: 22px; color: var(--ivory); }
+        .collection-card h3 { margin: 0; font-family: var(--serif); font-size: clamp(26px, 2.4vw, 34px); font-weight: 400; line-height: 1.1; }
+        .collection-card .label span { display: inline-flex; align-items: center; gap: 8px; margin-top: 8px; color: var(--champagne-light); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; }
+        .collection-card .label span::after { width: 22px; height: 1px; background: currentColor; content: ""; transition: width .5s var(--ease); }
+        .collection-card:hover .label span::after { width: 42px; }
+        .collection-card::before { position: absolute; inset: 0; z-index: 1; background: radial-gradient(circle at 50% 0%, rgba(255, 244, 222, .28), rgba(255, 244, 222, 0) 60%); content: ""; opacity: 0; pointer-events: none; transition: opacity .9s var(--ease); }
+        .collection-card:hover::before { opacity: 1; }
+
+        /* ================= 9. Best-sellers ================= */
+        .bestsellers { background: var(--beige); }
         .product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(14px, 2vw, 28px); }
-        .product-card { position: relative; }
-        .product-visual { position: relative; } /* cadre de la photo : badge, favori et ajout rapide s'y accrochent */
-        .product-media { position: relative; display: block; overflow: hidden; aspect-ratio: 4 / 5; background: var(--sand); }
-        .product-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity .7s var(--ease), transform 1.2s var(--ease); }
+        .product-visual { position: relative; transition: box-shadow .8s var(--ease), transform .8s var(--ease); }
+        .product-card:hover .product-visual { box-shadow: 0 34px 60px -34px rgba(13, 12, 11, .45); transform: translateY(-4px); }
+        .product-info h3 { transition: color .4s; }
+        .product-card:hover .product-info h3 { color: var(--champagne-text); }
+        .product-media { position: relative; display: block; overflow: hidden; aspect-ratio: 4 / 5; background: var(--beige-deep); }
+        .product-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity .8s var(--ease), transform 1.4s var(--ease); }
         .product-media .alt-img { opacity: 0; }
         .product-card:hover .alt-img { opacity: 1; }
-        .product-card:hover .product-media img { transform: scale(1.03); }
-        .badge {
-            position: absolute;
-            z-index: 2;
-            top: 14px;
-            left: 14px;
-            padding: 7px 12px 6px;
-            background: var(--white);
-            color: var(--ink);
-            font-size: 11px;
-            font-weight: 500;
-            letter-spacing: .18em;
-            text-transform: uppercase;
-        }
-        .badge--dark { background: var(--black); color: var(--gold-light); }
-        .badge--gold { background: var(--gold); color: var(--black); }
-        .wish {
-            position: absolute;
-            z-index: 2;
-            top: 10px;
-            right: 10px;
-            display: grid;
-            place-items: center;
-            width: 40px;
-            height: 40px;
-            border: 0;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, .9);
-            cursor: pointer;
-            transition: transform .3s var(--ease);
-        }
+        .product-card:hover .product-media img { transform: scale(1.05); }
+        .badges { position: absolute; z-index: 2; top: 14px; left: 14px; display: grid; gap: 6px; justify-items: start; }
+        .badge { padding: 7px 11px 6px; background: var(--ivory); color: var(--ink); font-size: 11px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; }
+        .badge--black { background: var(--black); color: var(--champagne-light); }
+        .badge--gold { background: var(--champagne); color: var(--black); }
+        .wish { position: absolute; z-index: 2; top: 10px; right: 10px; display: grid; place-items: center; width: 40px; height: 40px; border: 0; border-radius: 50%; background: rgba(251, 248, 243, .92); cursor: pointer; transition: transform .35s var(--ease); }
         .wish:hover { transform: scale(1.08); }
         .wish .icon { width: 18px; height: 18px; }
-        .wish[aria-pressed="true"] .icon { fill: var(--gold); stroke: var(--gold); }
-        .quick-add {
-            position: absolute;
-            z-index: 2;
-            left: 12px;
-            right: 12px;
-            bottom: 12px;
-            min-height: 46px;
-            border: 0;
-            background: rgba(14, 13, 13, .92);
-            color: var(--white);
-            font-size: 12px;
-            font-weight: 500;
-            letter-spacing: .2em;
-            text-transform: uppercase;
-            cursor: pointer;
-            opacity: 0;
-            transform: translateY(10px);
-            transition: opacity .4s var(--ease), transform .4s var(--ease), background-color .3s;
-        }
-        .quick-add:hover { background: var(--black); color: var(--gold-light); }
+        .wish[aria-pressed="true"] .icon { fill: var(--champagne); stroke: var(--champagne); }
+        .quick-add { position: absolute; z-index: 2; left: 12px; right: 12px; bottom: 12px; min-height: 48px; border: 0; background: rgba(13, 12, 11, .92); color: var(--ivory); font-size: 12px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; cursor: pointer; opacity: 0; transform: translateY(10px); transition: opacity .45s var(--ease), transform .45s var(--ease), color .3s; }
+        .quick-add:hover { color: var(--champagne-light); }
         .product-card:hover .quick-add, .quick-add:focus-visible { opacity: 1; transform: none; }
         .product-info { padding-top: 18px; }
-        .product-info h3 { margin: 0; font-family: var(--serif); font-size: 24px; font-weight: 500; line-height: 1.15; }
+        .product-info h3 { margin: 0; font-family: var(--serif); font-size: 25px; font-weight: 500; line-height: 1.15; }
         .product-meta { margin: 6px 0 10px; color: var(--muted); font-size: 13px; }
-        .product-price { display: flex; align-items: baseline; gap: 10px; font-size: 15px; }
+        .product-price { display: flex; align-items: baseline; gap: 10px; margin: 0; font-size: 15px; }
         .product-price strong { font-weight: 500; }
         .product-price small { color: var(--muted); font-size: 13px; }
-        .swatches { display: flex; gap: 6px; margin-top: 12px; }
-        .swatches span { padding: 4px 9px; border: 1px solid var(--line); color: var(--muted); font-size: 12px; }
 
-        /* ========== 8. Guide « choisir en 3 étapes » ========== */
-        .guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
-        .guide-step { padding: clamp(28px, 3.4vw, 48px); background: var(--white); }
-        .guide-step b { display: block; margin-bottom: 18px; color: var(--gold); font-family: var(--serif); font-size: 54px; font-weight: 400; line-height: 1; }
-        .guide-step h3 { margin: 0 0 10px; font-family: var(--serif); font-size: 28px; font-weight: 500; }
-        .guide-step p { margin: 0; color: var(--muted); }
+        /* ================= 10. Avant / Après ================= */
+        .compare-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(40px, 7vw, 100px); align-items: center; }
+        .compare { position: relative; overflow: hidden; aspect-ratio: 4 / 4.6; background: var(--beige); user-select: none; }
+        .compare img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+        .compare .after { position: absolute; inset: 0; overflow: hidden; clip-path: inset(0 0 0 var(--pos, 50%)); }
+        .compare-line { position: absolute; top: 0; bottom: 0; left: var(--pos, 50%); width: 1px; background: var(--ivory); pointer-events: none; }
+        .compare-line::after { position: absolute; top: 50%; left: 50%; width: 46px; height: 46px; border: 1px solid var(--ivory); border-radius: 50%; background: rgba(13, 12, 11, .5); content: "⟷"; color: var(--ivory); font-size: 18px; line-height: 44px; text-align: center; transform: translate(-50%, -50%); }
+        .compare-tag { position: absolute; z-index: 2; top: 16px; padding: 6px 12px; background: rgba(13, 12, 11, .7); color: var(--ivory); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; }
+        .compare-tag--before { left: 16px; }
+        .compare-tag--after { right: 16px; }
+        .compare input { position: absolute; inset: 0; z-index: 3; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+        .compare-copy p { color: var(--muted); }
 
-        /* ========== 9. Bannière Livraison à La Réunion ========== */
-        .delivery { position: relative; overflow: hidden; background: var(--black); color: var(--white); }
-        .delivery::before {
-            position: absolute;
-            right: -120px;
-            top: -120px;
-            width: 520px;
-            height: 520px;
-            border: 1px solid rgba(217, 191, 140, .22);
-            border-radius: 50%;
-            content: "";
-        }
-        .delivery-inner { position: relative; display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(40px, 6vw, 96px); align-items: center; }
-        .delivery .eyebrow { color: var(--gold-light); }
-        .delivery .section-title em { color: var(--gold-light); }
-        .delivery p.lead { max-width: 440px; margin: 18px 0 30px; color: rgba(255, 255, 255, .78); font-weight: 300; }
-        .delivery-options { display: grid; gap: 14px; }
-        .delivery-option {
-            display: grid;
-            grid-template-columns: 44px 1fr auto;
-            align-items: center;
-            gap: 18px;
-            padding: 22px 24px;
-            border: 1px solid rgba(255, 255, 255, .14);
-            transition: border-color .4s var(--ease), background-color .4s var(--ease);
-        }
-        .delivery-option:hover { border-color: var(--gold-light); background: rgba(255, 255, 255, .03); }
-        .delivery-option .icon { width: 30px; height: 30px; color: var(--gold-light); }
-        .delivery-option strong { display: block; font-family: var(--serif); font-size: 24px; font-weight: 500; }
-        .delivery-option span { color: rgba(255, 255, 255, .7); font-size: 14px; }
-        .delivery-option em { color: var(--gold-light); font-family: var(--serif); font-size: 26px; font-style: normal; }
-
-        /* ========== 10. Avis clients ========== */
-        .reviews { background: var(--sand); }
-        .demo-note {
-            display: inline-block;
-            margin-top: 16px;
-            padding: 6px 12px;
-            border: 1px dashed var(--gold-text);
-            color: var(--gold-text);
-            font-size: 12px;
-            letter-spacing: .08em;
-        }
-        .reviews-track {
-            display: grid;
-            grid-auto-flow: column;
-            grid-auto-columns: calc((100% - 3 * 22px) / 3.2);
-            gap: 22px;
-            overflow-x: auto;
-            padding-bottom: 8px;
-            scroll-snap-type: x mandatory;
-            scrollbar-width: none;
-        }
+        /* ================= 11. Témoignages ================= */
+        .reviews { background: var(--ivory); }
+        .reviews-track { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 3 * 22px) / 3.2); gap: 22px; overflow-x: auto; padding-bottom: 8px; scroll-snap-type: x mandatory; scrollbar-width: none; }
         .reviews-track::-webkit-scrollbar { display: none; }
-        .review { display: flex; flex-direction: column; padding: 34px 30px; background: var(--white); scroll-snap-align: start; }
-        .stars { color: var(--gold); font-size: 17px; letter-spacing: .2em; }
-        .review blockquote { flex: 1; margin: 18px 0 24px; font-family: var(--serif); font-size: 22px; line-height: 1.4; }
+        .review { position: relative; display: flex; flex-direction: column; padding: 38px 32px; border: 1px solid var(--line); background: #fff; scroll-snap-align: start; transition: border-color .6s var(--ease), box-shadow .6s var(--ease); }
+        .review::before { position: absolute; top: -1px; left: 32px; right: 32px; height: 1px; background: var(--champagne); content: ""; transform: scaleX(0); transition: transform .8s var(--ease); }
+        .review:hover { border-color: var(--beige-deep); box-shadow: 0 26px 50px -36px rgba(13, 12, 11, .35); }
+        .review:hover::before { transform: scaleX(1); }
+        .stars { color: var(--champagne); font-size: 16px; letter-spacing: .22em; }
+        .review blockquote { flex: 1; margin: 20px 0 26px; font-family: var(--serif); font-size: 23px; font-style: italic; line-height: 1.4; }
         .review footer { display: flex; align-items: center; gap: 12px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 14px; }
-        .review footer b { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--sand); font-weight: 500; }
+        .review footer b { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: var(--beige); font-family: var(--serif); font-size: 18px; font-weight: 500; }
         .review footer span { color: var(--muted); font-size: 13px; }
         .slider-nav { display: flex; gap: 10px; }
-        .slider-nav button { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid var(--ink); border-radius: 50%; background: none; cursor: pointer; transition: background-color .3s, color .3s; }
-        .slider-nav button:hover { background: var(--ink); color: var(--white); }
+        .slider-nav button { display: grid; place-items: center; width: 50px; height: 50px; border: 1px solid var(--ink); border-radius: 50%; background: none; cursor: pointer; transition: background-color .3s, color .3s; }
+        .slider-nav button:hover { background: var(--ink); color: var(--ivory); }
 
-        /* ========== 11. Bloc conseil WhatsApp ========== */
-        .advice { display: grid; grid-template-columns: 1fr 1fr; min-height: 560px; background: var(--ivory); }
-        .advice figure { position: relative; margin: 0; overflow: hidden; }
-        .advice-copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(40px, 7vw, 110px); }
-        .advice-copy p { max-width: 440px; margin: 18px 0 30px; color: var(--muted); }
+        /* ================= 12. Conseils ================= */
+        .tips-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(18px, 2.4vw, 32px); }
+        .tip-media { position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: var(--beige); }
+        .tip-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1.4s var(--ease); }
+        .tip:hover .tip-media img { transform: scale(1.05); }
+        .tip small { display: block; margin: 20px 0 8px; color: var(--champagne-text); font-size: 12px; letter-spacing: .22em; text-transform: uppercase; }
+        .tip h3 { margin: 0 0 10px; font-family: var(--serif); font-size: 27px; font-weight: 500; line-height: 1.15; }
+        .tip p { margin: 0 0 16px; color: var(--muted); }
 
-        /* ========== 12. Footer de luxe ========== */
-        .footer { background: var(--black); color: rgba(255, 255, 255, .78); font-size: 14px; }
-        .footer-top { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 40px; padding-block: 80px 60px; }
-        .footer .wordmark { justify-items: start; color: var(--white); }
-        .footer .wordmark span { color: var(--gold-light); }
-        .footer-brand p { max-width: 300px; margin: 22px 0 26px; }
-        .footer h4 { margin: 0 0 20px; color: var(--gold-light); font-size: 12px; font-weight: 500; letter-spacing: .26em; text-transform: uppercase; }
+        /* ================= 13. Livraison ================= */
+        .delivery { position: relative; overflow: hidden; background: var(--black); color: var(--ivory); }
+        .delivery::before { position: absolute; right: -140px; top: -140px; width: 560px; height: 560px; border: 1px solid rgba(227, 207, 159, .2); border-radius: 50%; content: ""; }
+        .delivery-inner { position: relative; display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(40px, 6vw, 96px); align-items: center; }
+        .delivery .eyebrow, .delivery .title em { color: var(--champagne-light); }
+        .delivery .lead { max-width: 440px; margin: 20px 0 32px; color: rgba(251, 248, 243, .78); font-weight: 300; }
+        .delivery-options { display: grid; gap: 14px; }
+        .delivery-option { display: grid; grid-template-columns: 44px 1fr auto; align-items: center; gap: 18px; padding: 24px; border: 1px solid rgba(251, 248, 243, .14); transition: border-color .45s var(--ease); }
+        .delivery-option:hover { border-color: var(--champagne-light); }
+        .delivery-option .icon { width: 30px; height: 30px; color: var(--champagne-light); }
+        .delivery-option strong { display: block; font-family: var(--serif); font-size: 25px; font-weight: 500; }
+        .delivery-option span { color: rgba(251, 248, 243, .7); font-size: 14px; }
+        .delivery-option em { color: var(--champagne-light); font-family: var(--serif); font-size: 27px; font-style: normal; }
+
+        /* ================= 14. FAQ ================= */
+        .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(40px, 7vw, 110px); }
+        .faq-list { border-top: 1px solid var(--line); }
+        .faq-list details { border-bottom: 1px solid var(--line); }
+        .faq-list summary { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 24px 46px 24px 0; font-family: var(--serif); font-size: 23px; cursor: pointer; list-style: none; }
+        .faq-list summary::-webkit-details-marker { display: none; }
+        .faq-list summary::after { position: absolute; right: 4px; width: 14px; height: 14px; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); content: ""; transform: translateY(-4px) rotate(45deg); transition: transform .45s var(--ease); }
+        .faq-list details[open] summary::after { transform: translateY(3px) rotate(-135deg); }
+        .faq-list details p { margin: -6px 0 24px; padding-right: 46px; color: var(--muted); animation: rise .5s var(--ease) both; }
+
+        /* ================= 15. Instagram ================= */
+        .insta-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
+        .insta-tile { position: relative; display: block; overflow: hidden; aspect-ratio: 1; background: var(--beige); }
+        .insta-tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
+        .insta-tile::after { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(13, 12, 11, .38); color: var(--ivory); content: "@hairiarintsoahair"; font-size: 12px; letter-spacing: .12em; opacity: 0; transition: opacity .45s var(--ease); }
+        .insta-tile:hover img { transform: scale(1.06); }
+        .insta-tile:hover::after { opacity: 1; }
+
+        /* ================= 16. Newsletter ================= */
+        .newsletter { background: var(--beige); }
+        .newsletter-box { max-width: 720px; margin-inline: auto; text-align: center; }
+        .newsletter-box > p { max-width: 520px; margin: 18px auto 32px; color: var(--muted); }
+        .newsletter form { display: flex; max-width: 560px; margin: 0 auto; border-bottom: 1px solid var(--ink); }
+        .newsletter input[type="email"] { flex: 1; min-width: 0; min-height: 56px; padding: 0 4px; border: 0; background: transparent; font-size: 16px; }
+        .newsletter input[type="email"]:focus { outline: none; }
+        .newsletter form:focus-within { border-color: var(--champagne-text); }
+        .newsletter button { border: 0; background: none; font-size: 12px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; cursor: pointer; }
+        .consent { display: flex; justify-content: center; align-items: flex-start; gap: 10px; max-width: 560px; margin: 18px auto 0; color: var(--muted); font-size: 13px; text-align: left; }
+        .consent input { margin-top: 4px; accent-color: var(--black); }
+
+        /* ================= 17. Footer ================= */
+        .footer { background: var(--black); color: rgba(251, 248, 243, .76); font-size: 14px; }
+        .footer-signature { padding-block: 72px 56px; border-bottom: 1px solid rgba(251, 248, 243, .1); text-align: center; }
+        .footer-medallion { width: 112px; height: 112px; margin: 0 auto 26px; overflow: hidden; border: 1px solid var(--champagne); border-radius: 50%; box-shadow: 0 0 0 6px var(--black), 0 0 0 7px rgba(227, 207, 159, .3); }
+        .footer-medallion img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.22); }
+        .footer-signature p { margin: 0; color: var(--ivory); font-family: var(--serif); font-size: clamp(30px, 3.6vw, 46px); font-style: italic; line-height: 1.1; }
+        .footer-signature .signature-stroke { width: 200px; margin: 12px auto 0; }
+        .footer-top { display: grid; grid-template-columns: 1.3fr repeat(3, 1fr); gap: 40px; padding-block: 64px 54px; }
+        .footer .brand { color: var(--ivory); }
+        .footer .brand-mark { color: var(--ivory); }
+        .footer .brand-name span { color: var(--champagne-light); }
+        .footer-brand p { max-width: 310px; margin: 22px 0 26px; }
+        .footer h4 { margin: 0 0 20px; color: var(--champagne-light); font-size: 12px; font-weight: 500; letter-spacing: .28em; text-transform: uppercase; }
         .footer ul { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
-        .footer ul a { transition: color .3s; }
-        .footer ul a:hover { color: var(--gold-light); }
+        .footer ul a:hover { color: var(--champagne-light); }
         .socials { display: flex; gap: 10px; }
-        .socials a { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid rgba(255, 255, 255, .22); border-radius: 50%; transition: border-color .3s, color .3s; }
-        .socials a:hover { border-color: var(--gold-light); color: var(--gold-light); }
+        .socials a { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid rgba(251, 248, 243, .22); border-radius: 50%; transition: border-color .3s, color .3s; }
+        .socials a:hover { border-color: var(--champagne-light); color: var(--champagne-light); }
         .socials .icon { width: 18px; height: 18px; }
-        .footer-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding-block: 26px; border-top: 1px solid rgba(255, 255, 255, .12); font-size: 13px; }
-        .payments { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
-        .pay {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            height: 34px;
-            padding: 0 12px;
-            border: 1px solid rgba(255, 255, 255, .22);
-            border-radius: 4px;
-            color: var(--white);
-            font-size: 12px;
-            letter-spacing: .06em;
-        }
-        .pay .icon { width: 17px; height: 17px; color: var(--gold-light); }
-        .pay--wero b { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 5px; background: var(--gold-light); color: var(--black); font-family: var(--serif); font-size: 14px; }
+        .footer-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding-block: 26px; border-top: 1px solid rgba(251, 248, 243, .1); font-size: 13px; }
+        .payments { display: flex; flex-wrap: wrap; gap: 10px; }
+        .pay { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 12px; border: 1px solid rgba(251, 248, 243, .22); color: var(--ivory); font-size: 12px; letter-spacing: .06em; }
+        .pay .icon { width: 17px; height: 17px; color: var(--champagne-light); }
+        .pay b { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 5px; background: var(--champagne-light); color: var(--black); font-family: var(--serif); font-size: 14px; }
 
-        /* WhatsApp flottant, toast et pastille « démonstration » */
-        .float-wa {
-            position: fixed;
-            z-index: 40;
-            right: max(18px, env(safe-area-inset-right));
-            bottom: max(18px, env(safe-area-inset-bottom));
-            display: grid;
-            place-items: center;
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            background: var(--black);
-            color: var(--gold-light);
-            box-shadow: 0 14px 32px rgba(14, 13, 13, .28);
-            transition: transform .3s var(--ease);
-        }
+        /* WhatsApp flottant et notification */
+        .float-wa { position: fixed; z-index: 40; right: max(18px, env(safe-area-inset-right)); bottom: max(18px, env(safe-area-inset-bottom)); display: grid; place-items: center; width: 56px; height: 56px; border: 1px solid rgba(227, 207, 159, .4); border-radius: 50%; background: var(--black); color: var(--champagne-light); box-shadow: 0 14px 32px rgba(13, 12, 11, .28); transition: transform .35s var(--ease); }
         .float-wa:hover { transform: translateY(-3px); }
-        .toast {
-            position: fixed;
-            z-index: 70;
-            left: 50%;
-            bottom: 28px;
-            padding: 14px 22px;
-            background: var(--black);
-            color: var(--white);
-            font-size: 14px;
-            opacity: 0;
-            pointer-events: none;
-            transform: translate(-50%, 12px);
-            transition: opacity .4s var(--ease), transform .4s var(--ease);
-        }
+        .toast { position: fixed; z-index: 70; left: 50%; bottom: 28px; max-width: calc(100% - 40px); padding: 14px 22px; background: var(--black); color: var(--ivory); font-size: 14px; opacity: 0; pointer-events: none; transform: translate(-50%, 12px); transition: opacity .45s var(--ease), transform .45s var(--ease); }
         .toast.is-visible { opacity: 1; transform: translate(-50%, 0); }
-        .demo-pill {
-            position: fixed;
-            z-index: 40;
-            left: max(14px, env(safe-area-inset-left));
-            bottom: max(14px, env(safe-area-inset-bottom));
-            padding: 8px 14px;
-            border: 1px solid var(--gold);
-            border-radius: 999px;
-            background: rgba(255, 255, 255, .94);
-            color: var(--gold-text);
-            font-size: 12px;
-            letter-spacing: .08em;
-        }
 
-        /* ========== 13. Animations ========== */
-        @keyframes hero-zoom { from { transform: scale(1.08); } to { transform: scale(1); } }
-        @keyframes rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
-        .reveal { opacity: 0; transform: translateY(28px); transition: opacity 1s var(--ease), transform 1s var(--ease); }
+        /* ================= 18. Animations ================= */
+        @keyframes slow-zoom { from { transform: scale(1.08); } to { transform: scale(1); } }
+        @keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+        @keyframes draw { to { stroke-dashoffset: 0; } }
+        @keyframes marquee { to { transform: translateX(-50%); } }
+        @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes write-in { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+        .reveal { opacity: 0; transform: translateY(26px); transition: opacity 1.1s var(--ease), transform 1.1s var(--ease); }
         .reveal.is-in { opacity: 1; transform: none; }
-        .reveal-stagger > .reveal:nth-child(2) { transition-delay: .1s; }
-        .reveal-stagger > .reveal:nth-child(3) { transition-delay: .2s; }
-        .reveal-stagger > .reveal:nth-child(4) { transition-delay: .3s; }
-
+        .stagger > .reveal:nth-child(2) { transition-delay: .1s; }
+        .stagger > .reveal:nth-child(3) { transition-delay: .2s; }
+        .stagger > .reveal:nth-child(4) { transition-delay: .3s; }
         @media (prefers-reduced-motion: reduce) {
             *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
             .reveal { opacity: 1; transform: none; }
+            .signature-stroke path, .ih-arc { stroke-dashoffset: 0; }
         }
 
-        /* ========== 14. Responsive ========== */
+        /* ================= 19. Responsive ================= */
         @media (max-width: 1080px) {
             .nav { display: none; }
             .burger { display: inline-grid; }
-            .header-inner { grid-template-columns: 1fr auto 1fr; }
-            .collections-grid, .product-grid { grid-template-columns: repeat(2, 1fr); }
             .hero { grid-template-columns: 1fr 1fr; }
             .hero-photo-second { display: none; }
+            .collections-grid, .product-grid { grid-template-columns: repeat(2, 1fr); }
             .trust ul { grid-template-columns: repeat(2, 1fr); }
             .trust li:nth-child(3) { border-left: 0; }
             .trust li:nth-child(n + 3) { border-top: 1px solid var(--line); }
+            .maison-grid, .compare-grid, .faq-grid { grid-template-columns: 1fr; }
             .reviews-track { grid-auto-columns: calc((100% - 22px) / 2.1); }
+            .tips-grid { grid-template-columns: 1fr 1fr; }
+            .tips-grid .tip:last-child { display: none; }
+            .insta-grid { grid-template-columns: repeat(3, 1fr); }
             .footer-top { grid-template-columns: 1fr 1fr; }
             .footer-brand { grid-column: 1 / -1; }
         }
-
         @media (max-width: 760px) {
-            :root { --header-h: 64px; }
+            :root { --header-h: 78px; }
             body { font-size: 15px; }
-            .wordmark strong { font-size: 19px; letter-spacing: .18em; padding-left: .18em; }
-            .wordmark span { font-size: 9px; }
-            .header-actions a[href^="https://wa.me"] { display: none; } /* le bouton WhatsApp flottant prend le relais */
+            .brand { gap: 10px; padding: 0; }
+            .brand-mark { width: 48px; height: 48px; }
+            .brand-name strong { font-size: 20px; letter-spacing: .17em; padding-left: .17em; }
+            .brand-name span { margin-top: 7px; font-size: 10px; letter-spacing: .42em; padding-left: .42em; }
+            .brand-name span::before, .brand-name span::after { width: 12px; }
+            .header-actions .hide-mobile { display: none; }
             .hero { grid-template-columns: 1fr; height: auto; min-height: 0; }
-            .hero-photo-main { order: -1; height: 62svh; min-height: 380px; max-height: 560px; }
-            .hero-panel { padding: 40px 22px 46px; }
-            .hero-panel::before { top: 24px; left: 22px; }
-            .hero p.lead { font-size: 16px; margin: 16px 0 26px; }
+            .hero-photo-main { order: -1; height: 60svh; min-height: 380px; max-height: 560px; }
+            .hero .crop-hero { width: 135% !important; height: 135% !important; left: -10% !important; top: -20% !important; }
+            .hero-panel { padding: 44px 22px 50px; }
+            .hero h1 { font-size: clamp(40px, 11.4vw, 52px); }
+            .hero .lead { margin-top: 30px; font-size: 16px; }
             .hero-actions .btn { flex: 1 1 100%; }
-            .trust ul { grid-template-columns: 1fr 1fr; }
             .trust li { flex-direction: column; gap: 8px; padding: 20px 10px; text-align: center; }
             .section-head { flex-direction: column; align-items: flex-start; }
-            .collections-grid { grid-template-columns: 1fr 1fr; }
+            .center .section-head { align-items: center; }
+            .pillars { grid-template-columns: 1fr; }
             .collection-card .label { left: 14px; right: 14px; bottom: 14px; }
-            .collection-card .label span { font-size: 12px; letter-spacing: .12em; }
-            .product-grid { gap: 22px 12px; }
-            .product-info h3 { font-size: 20px; }
-            .swatches { display: none; }
+            .product-grid { gap: 26px 12px; }
+            .product-info h3 { font-size: 21px; }
             .quick-add { opacity: 1; transform: none; min-height: 40px; left: 8px; right: 8px; bottom: 8px; font-size: 11px; letter-spacing: .14em; }
-            .badge { top: 8px; left: 8px; padding: 6px 8px 5px; font-size: 11px; letter-spacing: .1em; }
+            .badges { top: 8px; left: 8px; }
+            .badge { padding: 6px 8px 5px; letter-spacing: .1em; }
             .wish { top: 6px; right: 6px; width: 36px; height: 36px; }
-            .guide-grid { grid-template-columns: 1fr; }
-            .delivery-inner { grid-template-columns: 1fr; }
+            .reviews-track { grid-auto-columns: 86%; gap: 14px; }
+            .review { padding: 28px 22px; }
+            .review blockquote { font-size: 21px; }
+            .tips-grid { grid-template-columns: 1fr; }
+            .tips-grid .tip:last-child { display: block; }
             .delivery::before { display: none; }
+            .delivery-inner { grid-template-columns: 1fr; }
             .delivery-option { grid-template-columns: 34px 1fr auto; gap: 12px; padding: 18px 16px; }
             .delivery-option strong { font-size: 21px; }
-            .delivery-option em { font-size: 22px; }
-            .reviews-track { grid-auto-columns: 86%; gap: 14px; }
-            .review { padding: 26px 22px; }
-            .review blockquote { font-size: 20px; }
-            .advice { grid-template-columns: 1fr; }
-            .advice figure { height: 380px; }
-            .footer-top { grid-template-columns: 1fr 1fr; gap: 34px 20px; padding-block: 56px 40px; }
+            .faq-list summary { font-size: 21px; }
+            .insta-grid { grid-template-columns: repeat(3, 1fr); gap: 4px; }
+            .newsletter form { flex-direction: column; border-bottom: 0; }
+            .newsletter input[type="email"] { border-bottom: 1px solid var(--ink); }
+            .newsletter button { min-height: 52px; margin-top: 14px; background: var(--black); color: var(--ivory); }
+            .footer-top { grid-template-columns: 1fr 1fr; gap: 34px 20px; padding-block: 52px 40px; }
             .footer-bottom { flex-direction: column; align-items: flex-start; }
-            .demo-pill { display: none; }
         }
-
         @media (max-width: 380px) {
-            .hero h1 { font-size: 42px; }
+            .brand-name strong { font-size: 17px; letter-spacing: .14em; }
             .collections-grid { grid-template-columns: 1fr; }
         }
     </style>
@@ -671,8 +470,15 @@
 <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-    <!-- Symboles d'icônes réutilisés dans la page -->
+    <!-- Bibliothèque d'icônes et logo minimaliste (monogramme IH) -->
     <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="logo-ih" viewBox="0 0 64 64">
+            <path class="ih-arc" d="M47 8.5A27 27 0 1 0 54.5 50" fill="none" stroke="#c9a96e" stroke-width="1.3" stroke-linecap="round"/>
+            <text class="ih-letter" x="18" y="38" font-family="Cormorant Garamond, serif" font-size="30" font-weight="500" fill="currentColor">I</text>
+            <text class="ih-letter" x="26.5" y="47" font-family="Cormorant Garamond, serif" font-size="30" font-weight="500" fill="currentColor">H</text>
+            <path d="M16 50.5l1.3-3.2 1.3 3.2 3.2 1.3-3.2 1.3-1.3 3.2-1.3-3.2-3.2-1.3z" fill="#c9a96e"/>
+        </symbol>
+        <symbol id="stroke" viewBox="0 0 300 40"><path d="M4 30C42 8 78 38 118 22S190 4 226 18s52 14 70-2"/></symbol>
         <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
         <symbol id="i-wa" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.5-4.7A8.5 8.5 0 1 1 20.5 11.7Z"/><path d="M9 8.5c.2-.4.5-.5.8-.5h.4l.9 2-.6.8c.5 1 1.3 1.8 2.3 2.3l.8-.6 2 .9v.4c0 .3-.1.6-.5.8-.9.5-2.2.3-3.6-.7a8 8 0 0 1-2.2-2.4c-.7-1.3-.8-2.3-.3-3Z"/></symbol>
         <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
@@ -682,6 +488,7 @@
         <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
         <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></symbol>
         <symbol id="i-strand" viewBox="0 0 24 24"><path d="M8 3c-3 4 3 6 0 10s3 6 0 8M14 3c-3 4 3 6 0 10s3 6 0 8"/></symbol>
+        <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 4h12l3 5-9 11L3 9l3-5Z"/><path d="M3 9h18M9 4l3 16 3-16"/></symbol>
         <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/></symbol>
         <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 19 6v5c0 4.6-3 8-7 10-4-2-7-5.4-7-10V6l7-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
         <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5Z"/><path d="M8 10h8M8 13h5"/></symbol>
@@ -694,14 +501,14 @@
         <symbol id="i-tt" viewBox="0 0 24 24"><path d="M14 4v10.5a4.5 4.5 0 1 1-4-4.5"/><path d="M14 4c.5 3 2.5 5 5 5"/></symbol>
     </svg>
 
-    <!-- 1. Barre d'annonce (messages qui alternent) -->
+    <!-- Barre d'annonce -->
     <div class="announce" role="region" aria-label="Annonces">
         <p class="is-active"><span>Livraison partout à <strong>La Réunion</strong></span></p>
         <p><span>Cheveux <strong>100 % humains Remy</strong></span></p>
         <p><span>Conseil personnalisé sur <strong>WhatsApp</strong></span></p>
     </div>
 
-    <!-- 2. En-tête : menu premium avec méga-menu -->
+    <!-- Navigation : logo centré, menu discret -->
     <header class="header" id="header">
         <div class="container header-inner">
             <div>
@@ -709,58 +516,35 @@
                     <svg class="icon"><use href="#i-menu"/></svg>
                 </button>
                 <nav class="nav" aria-label="Navigation principale">
-                    <a href="#nouveautes">Nouveautés</a>
                     <div class="nav-item">
                         <button type="button" aria-expanded="false" aria-controls="mega-perruques">Perruques</button>
                         <div class="mega" id="mega-perruques">
                             <div class="container mega-grid">
-                                <div>
-                                    <h3>Par texture</h3>
-                                    <ul>
-                                        <li><a href="#collections">Bouclées</a></li>
-                                        <li><a href="#collections">Ondulées</a></li>
-                                        <li><a href="#collections">Lisses</a></li>
-                                        <li><a href="#collections">Carrés &amp; bobs</a></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h3>Par longueur</h3>
-                                    <ul>
-                                        <li><a href="#collections">Courtes · 10–14″</a></li>
-                                        <li><a href="#collections">Mi-longues · 16–20″</a></li>
-                                        <li><a href="#collections">Longues · 22–26″</a></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h3>Par dentelle</h3>
-                                    <ul>
-                                        <li><a href="#collections">Lace 4×4</a></li>
-                                        <li><a href="#collections">Lace 5×5</a></li>
-                                        <li><a href="#collections">Frontal 13×4</a></li>
-                                    </ul>
-                                </div>
-                                <a class="mega-feature" href="#nouveautes">
-                                    <img class="crop-hero" src="image/hero.jpg" alt="" loading="lazy" decoding="async">
-                                    <span>Le best-seller Jerry Curly</span>
-                                </a>
+                                <div><h3>Par texture</h3><ul><li><a href="#collections">Bouclées</a></li><li><a href="#collections">Ondulées</a></li><li><a href="#collections">Lisses</a></li><li><a href="#collections">Carrés &amp; bobs</a></li></ul></div>
+                                <div><h3>Par longueur</h3><ul><li><a href="#collections">Courtes · 10–14″</a></li><li><a href="#collections">Mi-longues · 16–20″</a></li><li><a href="#collections">Longues · 22–26″</a></li></ul></div>
+                                <div><h3>Par dentelle</h3><ul><li><a href="#collections">Lace 4×4</a></li><li><a href="#collections">Lace 5×5</a></li><li><a href="#collections">Frontal 13×4</a></li></ul></div>
+                                <a class="mega-feature" href="#best-sellers"><img class="crop-hero" src="image/hero.jpg" alt="" width="735" height="971" loading="lazy" decoding="async"><span>Le best-seller Jerry Curly</span></a>
                             </div>
                         </div>
                     </div>
-                    <a href="#nouveautes">Best-sellers</a>
-                    <a href="#guide">Conseils</a>
+                    <a href="#best-sellers">Best-sellers</a>
+                    <a href="#maison">La Maison</a>
                 </nav>
             </div>
 
-            <a class="wordmark" href="#contenu" aria-label="IARINTSOA Hair, accueil">
-                <strong>IARINTSOA</strong>
-                <span>HAIR</span>
+            <a class="brand" href="#contenu" aria-label="IARINTSOA Hair, accueil">
+                <svg class="brand-mark" aria-hidden="true"><use href="#logo-ih"/></svg>
+                <span class="brand-name"><strong>IARINTSOA</strong><span>HAIR</span></span>
             </a>
 
             <div class="header-actions">
-                <a class="icon-btn" href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer" aria-label="Nous écrire sur WhatsApp">
+                <a class="icon-btn hide-mobile" href="#conseils" aria-label="Conseils">
+                    <svg class="icon"><use href="#i-chat"/></svg>
+                </a>
+                <a class="icon-btn hide-mobile" href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer" aria-label="Nous écrire sur WhatsApp">
                     <svg class="icon"><use href="#i-wa"/></svg>
                 </a>
-                <a class="icon-btn" href="#nouveautes" aria-label="Panier, 0 article" data-cart-link>
+                <a class="icon-btn" href="#best-sellers" aria-label="Panier, 0 article" data-cart-link>
                     <svg class="icon"><use href="#i-bag"/></svg>
                     <span class="cart-count" data-cart-count>0</span>
                 </a>
@@ -773,46 +557,46 @@
         <div class="drawer-backdrop" data-drawer-close></div>
         <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu">
             <div class="drawer-top">
-                <span class="wordmark" aria-hidden="true"><strong>IARINTSOA</strong><span>HAIR</span></span>
-                <button class="icon-btn" type="button" aria-label="Fermer le menu" data-drawer-close>
-                    <svg class="icon"><use href="#i-close"/></svg>
-                </button>
+                <span class="brand" aria-hidden="true"><svg class="brand-mark"><use href="#logo-ih"/></svg><span class="brand-name"><strong>IARINTSOA</strong><span>HAIR</span></span></span>
+                <button class="icon-btn" type="button" aria-label="Fermer le menu" data-drawer-close><svg class="icon"><use href="#i-close"/></svg></button>
             </div>
             <nav aria-label="Navigation mobile">
-                <a href="#nouveautes" data-drawer-close>Nouveautés <small>New</small></a>
                 <a href="#collections" data-drawer-close>Perruques bouclées</a>
                 <a href="#collections" data-drawer-close>Perruques ondulées</a>
                 <a href="#collections" data-drawer-close>Perruques lisses</a>
-                <a href="#nouveautes" data-drawer-close>Best-sellers</a>
-                <a href="#guide" data-drawer-close>Bien choisir</a>
-                <a href="#livraison" data-drawer-close>Livraison</a>
+                <a href="#best-sellers" data-drawer-close>Best-sellers <small>Premium</small></a>
+                <a href="#maison" data-drawer-close>La Maison</a>
+                <a href="#conseils" data-drawer-close>Conseils</a>
+                <a href="#faq" data-drawer-close>Questions fréquentes</a>
             </nav>
             <div class="drawer-foot">
-                Une question sur une texture ou une longueur ?
-                <a class="btn btn--dark" href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon"><use href="#i-wa"/></svg> Conseil WhatsApp
-                </a>
+                <em>Votre Signature. Notre Excellence.</em>
+                <a class="btn btn--dark" href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-wa"/></svg> Conseil WhatsApp</a>
             </div>
         </div>
     </div>
 
     <main id="contenu">
-        <!-- 3. Hero pleine largeur -->
-        <section class="hero" aria-label="Présentation">
+        <!-- HERO : la signature de la marque -->
+        <section class="hero" aria-labelledby="hero-title">
             <div class="hero-panel">
                 <p class="eyebrow">Maison de perruques · La Réunion</p>
-                <h1>Vos cheveux,<br>votre <em>signature.</em></h1>
-                <p class="lead">Des perruques en cheveux humains Remy, sélectionnées pour leur douceur, leur mouvement et leur finition naturelle.</p>
+                <h1 id="hero-title">Votre <span class="signature-word">Signature.<svg class="signature-stroke" viewBox="0 0 300 40" aria-hidden="true"><path d="M4 30C42 8 78 38 118 22S190 4 226 18s52 14 70-2"/></svg></span><br>Notre Excellence.</h1>
+                <p class="lead">Des perruques en cheveux 100 % humains Remy, d’une qualité premium sélectionnée avec exigence, livrées partout à La Réunion.</p>
+                <ul class="hero-points" aria-label="Nos engagements">
+                    <li>Cheveux Remy</li><li>Qualité premium</li><li>Toute La Réunion</li>
+                </ul>
                 <div class="hero-actions">
-                    <a class="btn btn--light" href="#collections">Découvrir la collection <svg class="icon"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--ghost" href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer">Conseil WhatsApp</a>
+                    <a class="btn btn--champagne" href="#collections">Découvrir la collection <svg class="icon"><use href="#i-arrow"/></svg></a>
+                    <a class="btn btn--ghost-light" href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer">Conseil personnalisé</a>
                 </div>
+                <svg class="hero-watermark" aria-hidden="true"><use href="#logo-ih"/></svg>
             </div>
-            <figure class="hero-photo-main"><img class="crop-hero" src="image/hero.jpg" alt="Femme portant une perruque bouclée IARINTSOA Hair" fetchpriority="high"></figure>
-            <figure class="hero-photo-second"><img class="crop-bob" src="image/bob.jpg" alt="Femme portant une perruque carré lisse" fetchpriority="high"></figure>
+            <figure class="hero-photo-main"><img class="crop-hero" src="image/hero.jpg" alt="Femme portant une perruque bouclée IARINTSOA Hair" width="735" height="971" fetchpriority="high"></figure>
+            <figure class="hero-photo-second"><img class="crop-bob" src="image/bob.jpg" alt="Femme portant une perruque carré lisse IARINTSOA Hair" width="734" height="1025" decoding="async"></figure>
         </section>
 
-        <!-- 4. Réassurance -->
+        <!-- Réassurance -->
         <section class="trust" aria-label="Nos engagements">
             <ul class="container">
                 <li><svg class="icon"><use href="#i-strand"/></svg><div><strong>Cheveux humains Remy</strong><span>Cuticules alignées</span></div></li>
@@ -822,148 +606,171 @@
             </ul>
         </section>
 
-        <!-- 5. Collections -->
+        <!-- La Maison : pourquoi choisir IARINTSOA Hair -->
+        <section class="section" id="maison" aria-labelledby="maison-title">
+            <div class="container maison-grid">
+                <div class="reveal">
+                    <div class="medallion"><div class="medallion-clip"><img src="image/logo.png" alt="Logo officiel IARINTSOA Hair : monogramme IH, portrait de femme et cercle doré" width="1080" height="1080" loading="lazy" decoding="async"></div></div>
+                </div>
+                <div class="maison-copy reveal">
+                    <div class="mono-divider mono-divider--left" aria-hidden="true"><svg><use href="#logo-ih"/></svg><span></span></div>
+                    <p class="eyebrow">Notre histoire</p>
+                    <h2 class="title" id="maison-title">Une maison née d’une conviction : <em>chaque femme mérite sa signature</em></h2>
+                    <p class="maison-quote">« Votre Signature. Notre Excellence. »</p>
+                    <p>Tout commence par un regard dans le miroir : celui d’une femme qui se reconnaît, qui se sent belle et sûre d’elle. Une perruque n’est pas un accessoire, c’est une part de votre allure et de votre confiance.</p>
+                    <p>Nous sélectionnons chaque texture pour sa douceur, son mouvement et la finesse de sa dentelle, puis nous vous accompagnons, une à une, jusqu’au choix qui vous ressemble.</p>
+                    <h3 class="pillars-title">Pourquoi choisir IARINTSOA Hair</h3>
+                    <div class="pillars">
+                        <div class="pillar"><svg class="icon"><use href="#i-strand"/></svg><h3>100 % Remy</h3><p>Cheveux humains, cuticules alignées, toucher naturel.</p></div>
+                        <div class="pillar"><svg class="icon"><use href="#i-gem"/></svg><h3>Qualité premium</h3><p>Densité, dentelle et finitions contrôlées.</p></div>
+                        <div class="pillar"><svg class="icon"><use href="#i-chat"/></svg><h3>Conseil sur mesure</h3><p>Une équipe qui vous répond sur WhatsApp.</p></div>
+                        <div class="pillar"><svg class="icon"><use href="#i-pin"/></svg><h3>Ancrée à La Réunion</h3><p>Livraison sur toute l’île, retrait à Saint-Pierre.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bandeau signature -->
+        <div class="ribbon" aria-hidden="true">
+            <div class="ribbon-track">
+                <span>Votre Signature. Notre Excellence.</span><span>Cheveux humains Remy</span><span>Féminité</span><span>Élégance</span><span>La Réunion</span>
+                <span>Votre Signature. Notre Excellence.</span><span>Cheveux humains Remy</span><span>Féminité</span><span>Élégance</span><span>La Réunion</span>
+            </div>
+        </div>
+
+        <!-- Nos collections -->
         <section class="section" id="collections" aria-labelledby="collections-title">
             <div class="container">
                 <div class="section-head reveal">
-                    <div>
-                        <p class="eyebrow">Collections</p>
-                        <h2 class="section-title" id="collections-title">Trouvez votre <em>texture</em></h2>
-                    </div>
-                    <a class="link-arrow" href="#nouveautes">Tout voir <svg class="icon" style="width:16px;height:16px"><use href="#i-arrow"/></svg></a>
+                    <div><p class="eyebrow">Nos collections</p><h2 class="title" id="collections-title">Chaque texture raconte <em>une histoire</em></h2></div>
+                    <p>Bouclée, ondulée ou lisse : choisissez le mouvement qui révèle votre féminité.</p>
                 </div>
-                <div class="collections-grid reveal-stagger">
-                    <a class="collection-card reveal" href="#nouveautes">
-                        <img src="image/wig1.jpg" alt="" loading="lazy" decoding="async" style="object-position: center 25%">
-                        <div class="label"><h3>Bouclées</h3><span>Jerry Curly</span></div>
-                    </a>
-                    <a class="collection-card reveal" href="#nouveautes">
-                        <img src="image/wig4.jpg" alt="" loading="lazy" decoding="async" style="object-position: center 20%">
-                        <div class="label"><h3>Water Wave</h3><span>Volume aérien</span></div>
-                    </a>
-                    <a class="collection-card reveal" href="#nouveautes">
-                        <img src="image/wig2.jpg" alt="" loading="lazy" decoding="async" style="object-position: center 15%">
-                        <div class="label"><h3>Lisses</h3><span>Fini soyeux</span></div>
-                    </a>
-                    <a class="collection-card reveal" href="#nouveautes">
-                        <img class="crop-bob" src="image/bob.jpg" alt="" loading="lazy" decoding="async">
-                        <div class="label"><h3>Carrés &amp; bobs</h3><span>Élégance courte</span></div>
-                    </a>
+                <div class="collections-grid stagger">
+                    <a class="collection-card reveal" href="#best-sellers"><img src="image/wig1.jpg" alt="" width="1320" height="1560" loading="lazy" decoding="async" style="object-position:center 25%"><div class="label"><h3>Bouclées</h3><span>Jerry Curly</span></div></a>
+                    <a class="collection-card reveal" href="#best-sellers"><img src="image/wig4.jpg" alt="" width="941" height="1279" loading="lazy" decoding="async" style="object-position:center 20%"><div class="label"><h3>Water Wave</h3><span>Volume aérien</span></div></a>
+                    <a class="collection-card reveal" href="#best-sellers"><img src="image/wig2.jpg" alt="" width="1320" height="1860" loading="lazy" decoding="async" style="object-position:center 15%"><div class="label"><h3>Lisses</h3><span>Fini soyeux</span></div></a>
+                    <a class="collection-card reveal" href="#best-sellers"><img class="crop-bob" src="image/bob.jpg" alt="" width="734" height="1025" loading="lazy" decoding="async"><div class="label"><h3>Carrés &amp; bobs</h3><span>Élégance courte</span></div></a>
                 </div>
             </div>
         </section>
 
-        <!-- 6. Best-sellers -->
-        <section class="section bestsellers" id="nouveautes" aria-labelledby="best-title">
+        <!-- Nos best-sellers -->
+        <section class="section bestsellers" id="best-sellers" aria-labelledby="best-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div><p class="eyebrow">Les plus désirées</p><h2 class="title" id="best-title">Nos <em>best-sellers</em></h2></div>
+                    <p>Les pièces que nos clientes portent avec le plus de fierté, de 10 à 26 pouces.</p>
+                </div>
+                <div class="product-grid stagger">
+                    <article class="product-card reveal">
+                        <div class="product-visual">
+                            <a class="product-media" href="#best-sellers" aria-label="Voir Jerry Curly"><img src="image/wig1.jpg" alt="Perruque Jerry Curly" width="1320" height="1560" loading="lazy" decoding="async"><img class="alt-img" src="image/wig3.jpg" alt="" width="1320" height="1650" loading="lazy" decoding="async"></a>
+                            <div class="badges"><span class="badge badge--black">Best Seller</span><span class="badge badge--gold">Premium</span></div>
+                            <button class="wish" type="button" aria-label="Ajouter Jerry Curly à mes favoris" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+                            <button class="quick-add" type="button" data-product="Jerry Curly">Achat rapide</button>
+                        </div>
+                        <div class="product-info"><h3>Jerry Curly</h3><p class="product-meta">Remy · Densité 200 % · Lace 13×4</p><p class="product-price"><small>À partir de</small><strong>100,00 €</strong></p></div>
+                    </article>
+                    <article class="product-card reveal">
+                        <div class="product-visual">
+                            <a class="product-media" href="#best-sellers" aria-label="Voir Water Wave"><img src="image/wig4.jpg" alt="Perruque Water Wave" width="941" height="1279" loading="lazy" decoding="async" style="object-position:center 20%"><img class="alt-img crop-hero" src="image/hero.jpg" alt="" width="735" height="971" loading="lazy" decoding="async"></a>
+                            <div class="badges"><span class="badge">New</span></div>
+                            <button class="wish" type="button" aria-label="Ajouter Water Wave à mes favoris" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+                            <button class="quick-add" type="button" data-product="Water Wave">Achat rapide</button>
+                        </div>
+                        <div class="product-info"><h3>Water Wave</h3><p class="product-meta">Remy · Ondulations aériennes</p><p class="product-price"><small>À partir de</small><strong>170,00 €</strong></p></div>
+                    </article>
+                    <article class="product-card reveal">
+                        <div class="product-visual">
+                            <a class="product-media" href="#best-sellers" aria-label="Voir Straight"><img src="image/wig2.jpg" alt="Perruque Straight" width="1320" height="1860" loading="lazy" decoding="async" style="object-position:center 15%"><img class="alt-img crop-bob" src="image/bob.jpg" alt="" width="734" height="1025" loading="lazy" decoding="async"></a>
+                            <div class="badges"><span class="badge badge--gold">Limited Edition</span></div>
+                            <button class="wish" type="button" aria-label="Ajouter Straight à mes favoris" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+                            <button class="quick-add" type="button" data-product="Straight">Achat rapide</button>
+                        </div>
+                        <div class="product-info"><h3>Straight</h3><p class="product-meta">Remy · Fini lisse et soyeux</p><p class="product-price"><small>À partir de</small><strong>160,00 €</strong></p></div>
+                    </article>
+                    <article class="product-card reveal">
+                        <div class="product-visual">
+                            <a class="product-media" href="#best-sellers" aria-label="Voir Carré lisse"><img class="crop-bob" src="image/bob.jpg" alt="Perruque carré lisse" width="734" height="1025" loading="lazy" decoding="async"><img class="alt-img" src="image/wig2.jpg" alt="" width="1320" height="1860" loading="lazy" decoding="async" style="object-position:center 15%"></a>
+                            <div class="badges"><span class="badge">New</span><span class="badge badge--gold">Premium</span></div>
+                            <button class="wish" type="button" aria-label="Ajouter Carré lisse à mes favoris" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+                            <button class="quick-add" type="button" data-product="Carré lisse">Achat rapide</button>
+                        </div>
+                        <div class="product-info"><h3>Carré lisse</h3><p class="product-meta">Remy · Coupe bob</p><p class="product-price"><small>Prix</small><strong>sur demande</strong></p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Avant / Après -->
+        <section class="section" aria-labelledby="compare-title">
+            <div class="container compare-grid">
+                <div class="compare reveal" id="compare" style="--pos:50%">
+                    <img src="image/wig3.jpg" alt="La perruque bouclée présentée sur mannequin" width="1320" height="1650" loading="lazy" decoding="async">
+                    <div class="after"><img class="crop-hero" src="image/hero.jpg" alt="La même texture bouclée une fois portée" width="735" height="971" loading="lazy" decoding="async"></div>
+                    <span class="compare-line" aria-hidden="true"></span>
+                    <span class="compare-tag compare-tag--before">Sur mannequin</span>
+                    <span class="compare-tag compare-tag--after">Portée</span>
+                    <label class="visually-hidden" for="compare-range">Comparer avant et après</label>
+                    <input type="range" id="compare-range" min="0" max="100" value="50">
+                </div>
+                <div class="compare-copy reveal">
+                    <p class="eyebrow">Avant / Après</p>
+                    <h2 class="title" id="compare-title">La métamorphose, <em>en un geste</em></h2>
+                    <p>Faites glisser le curseur : de la présentation à la mise en beauté, une dentelle qui se fond, un mouvement naturel. Ce moment où l’on se découvre plus belle, plus sûre de soi.</p>
+                    <span class="demo-note">Exemple de mise en page — à illustrer avec vos photos avant/après</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Témoignages -->
+        <section class="section reviews" aria-labelledby="reviews-title">
             <div class="container">
                 <div class="section-head reveal">
                     <div>
-                        <p class="eyebrow">Les incontournables</p>
-                        <h2 class="section-title" id="best-title">Nos <em>best-sellers</em></h2>
+                        <p class="eyebrow">Témoignages</p>
+                        <h2 class="title" id="reviews-title">La confiance, <em>notre plus belle récompense</em></h2>
+                        <span class="demo-note">Exemples de mise en page — à remplacer par vos vrais avis</span>
                     </div>
-                    <p>Des textures choisies pour leur tenue et leur rendu naturel, de 10 à 26 pouces.</p>
+                    <div class="slider-nav">
+                        <button type="button" aria-label="Témoignages précédents" data-slide="-1"><svg class="icon"><use href="#i-left"/></svg></button>
+                        <button type="button" aria-label="Témoignages suivants" data-slide="1"><svg class="icon"><use href="#i-right"/></svg></button>
+                    </div>
                 </div>
-                <div class="product-grid reveal-stagger">
-                    <article class="product-card reveal">
-                        <div class="product-visual">
-                        <a class="product-media" href="#nouveautes" aria-label="Voir Jerry Curly">
-                            <img src="image/wig1.jpg" alt="Perruque Jerry Curly" loading="lazy" decoding="async">
-                            <img class="alt-img" src="image/wig3.jpg" alt="" loading="lazy" decoding="async">
-                        </a>
-                        <span class="badge badge--dark">Best Seller</span>
-                        <button class="wish" type="button" aria-label="Ajouter Jerry Curly à mes favoris" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
-                        <button class="quick-add" type="button" data-product="Jerry Curly">Ajout rapide</button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Jerry Curly</h3>
-                            <p class="product-meta">Remy · Densité 200 % · Lace 13×4</p>
-                            <p class="product-price"><small>À partir de</small><strong>100,00 €</strong></p>
-                            <div class="swatches" aria-label="Longueurs"><span>10″</span><span>18″</span><span>26″</span></div>
-                        </div>
-                    </article>
-                    <article class="product-card reveal">
-                        <div class="product-visual">
-                        <a class="product-media" href="#nouveautes" aria-label="Voir Water Wave">
-                            <img src="image/wig4.jpg" alt="Perruque Water Wave" loading="lazy" decoding="async" style="object-position: center 20%">
-                            <img class="alt-img crop-hero" src="image/hero.jpg" alt="" loading="lazy" decoding="async">
-                        </a>
-                        <span class="badge">New</span>
-                        <button class="wish" type="button" aria-label="Ajouter Water Wave à mes favoris" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
-                        <button class="quick-add" type="button" data-product="Water Wave">Ajout rapide</button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Water Wave</h3>
-                            <p class="product-meta">Remy · Ondulations aériennes</p>
-                            <p class="product-price"><small>À partir de</small><strong>170,00 €</strong></p>
-                            <div class="swatches" aria-label="Longueurs"><span>12″</span><span>16″</span><span>20″</span></div>
-                        </div>
-                    </article>
-                    <article class="product-card reveal">
-                        <div class="product-visual">
-                        <a class="product-media" href="#nouveautes" aria-label="Voir Straight">
-                            <img src="image/wig2.jpg" alt="Perruque Straight" loading="lazy" decoding="async" style="object-position: center 15%">
-                            <img class="alt-img crop-bob" src="image/bob.jpg" alt="" loading="lazy" decoding="async">
-                        </a>
-                        <span class="badge badge--gold">Limited Edition</span>
-                        <button class="wish" type="button" aria-label="Ajouter Straight à mes favoris" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
-                        <button class="quick-add" type="button" data-product="Straight">Ajout rapide</button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Straight</h3>
-                            <p class="product-meta">Remy · Fini lisse et soyeux</p>
-                            <p class="product-price"><small>À partir de</small><strong>160,00 €</strong></p>
-                            <div class="swatches" aria-label="Longueurs"><span>14″</span><span>20″</span><span>26″</span></div>
-                        </div>
-                    </article>
-                    <article class="product-card reveal">
-                        <div class="product-visual">
-                        <a class="product-media" href="#nouveautes" aria-label="Voir Carré lisse">
-                            <img class="crop-bob" src="image/bob.jpg" alt="Perruque carré lisse" loading="lazy" decoding="async">
-                            <img class="alt-img" src="image/wig2.jpg" alt="" loading="lazy" decoding="async" style="object-position: center 15%">
-                        </a>
-                        <span class="badge">New</span>
-                        <button class="wish" type="button" aria-label="Ajouter Carré lisse à mes favoris" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
-                        <button class="quick-add" type="button" data-product="Carré lisse">Ajout rapide</button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Carré lisse</h3>
-                            <p class="product-meta">Remy · Coupe bob</p>
-                            <p class="product-price"><small>Prix</small><strong>sur demande</strong></p>
-                            <div class="swatches" aria-label="Longueurs"><span>10″</span><span>12″</span></div>
-                        </div>
-                    </article>
+                <div class="reviews-track" id="reviews-track" tabindex="0" aria-label="Témoignages, faire défiler horizontalement">
+                    <article class="review"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><blockquote>« Exemple : des boucles d’un naturel saisissant, la dentelle est invisible. »</blockquote><footer><b aria-hidden="true">A</b><div>Prénom A.<br><span>Jerry Curly · 18″</span></div></footer></article>
+                    <article class="review"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><blockquote>« Exemple : un conseil attentif pour choisir la bonne longueur. »</blockquote><footer><b aria-hidden="true">B</b><div>Prénom B.<br><span>Water Wave · 14″</span></div></footer></article>
+                    <article class="review"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><blockquote>« Exemple : cheveux doux et brillants, livraison soignée en point relais. »</blockquote><footer><b aria-hidden="true">C</b><div>Prénom C.<br><span>Straight · 22″</span></div></footer></article>
+                    <article class="review"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><blockquote>« Exemple : je me sens moi-même, en plus sûre de moi. »</blockquote><footer><b aria-hidden="true">D</b><div>Prénom D.<br><span>Carré lisse · 12″</span></div></footer></article>
                 </div>
             </div>
         </section>
 
-        <!-- 7. Guide : choisir en 3 étapes -->
-        <section class="section" id="guide" aria-labelledby="guide-title">
+        <!-- Conseils -->
+        <section class="section" id="conseils" aria-labelledby="tips-title">
             <div class="container">
                 <div class="section-head reveal">
-                    <div>
-                        <p class="eyebrow">Bien choisir</p>
-                        <h2 class="section-title" id="guide-title">Votre perruque en <em>trois étapes</em></h2>
-                    </div>
-                    <p>Hésitez-vous entre deux textures ou deux longueurs ? Notre équipe vous guide sur WhatsApp.</p>
+                    <div><p class="eyebrow">Le rituel beauté</p><h2 class="title" id="tips-title">L’art de prendre soin <em>de votre beauté</em></h2></div>
+                    <a class="link-line" href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer">Poser une question <svg class="icon"><use href="#i-arrow"/></svg></a>
                 </div>
-                <div class="guide-grid reveal-stagger">
-                    <div class="guide-step reveal"><b>01</b><h3>La texture</h3><p>Bouclée, ondulée ou lisse : choisissez le mouvement qui vous ressemble.</p></div>
-                    <div class="guide-step reveal"><b>02</b><h3>La longueur</h3><p>De 10 à 26 pouces, de la coupe courte à la longueur spectaculaire.</p></div>
-                    <div class="guide-step reveal"><b>03</b><h3>La dentelle</h3><p>4×4, 5×5 ou frontal 13×4, pour une ligne frontale plus ou moins libre.</p></div>
+                <div class="tips-grid stagger">
+                    <article class="tip reveal"><div class="tip-media"><img src="image/wig1.jpg" alt="" width="1320" height="1560" loading="lazy" decoding="async" style="object-position:center 30%"></div><small>Entretien</small><h3>Préserver la définition des boucles</h3><p>Démêlez délicatement des pointes vers les racines, avec des soins adaptés aux cheveux humains.</p></article>
+                    <article class="tip reveal"><div class="tip-media"><img src="image/wig3.jpg" alt="" width="1320" height="1650" loading="lazy" decoding="async" style="object-position:center 20%"></div><small>Bien choisir</small><h3>4×4, 5×5 ou 13×4 : quelle dentelle&#8239;?</h3><p>Plus la dentelle est large, plus la raie et la ligne frontale sont libres et naturelles.</p></article>
+                    <article class="tip reveal"><div class="tip-media"><img src="image/wig2.jpg" alt="" width="1320" height="1860" loading="lazy" decoding="async" style="object-position:center 25%"></div><small>Coiffage</small><h3>La chaleur, avec mesure</h3><p>Appliquez un protecteur thermique et commencez à température modérée pour préserver la fibre.</p></article>
                 </div>
             </div>
         </section>
 
-        <!-- 8. Livraison à La Réunion -->
+        <!-- Livraison -->
         <section class="section delivery" id="livraison" aria-labelledby="delivery-title">
             <div class="container delivery-inner">
                 <div class="reveal">
                     <p class="eyebrow">Livraison</p>
-                    <h2 class="section-title" id="delivery-title">Partout à <em>La Réunion</em></h2>
-                    <p class="lead">Votre perruque est préparée avec soin puis livrée selon l’option de votre choix. Les délais vous sont confirmés avec votre commande.</p>
-                    <a class="btn btn--light" href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer">Demander un délai <svg class="icon"><use href="#i-arrow"/></svg></a>
+                    <h2 class="title" id="delivery-title">Jusqu’à vous, <em>partout à La Réunion</em></h2>
+                    <p class="lead">Chaque perruque est préparée avec soin, comme un présent, puis livrée selon l’option de votre choix. Les délais vous sont confirmés avec votre commande.</p>
+                    <a class="btn btn--champagne" href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer">Demander un délai <svg class="icon"><use href="#i-arrow"/></svg></a>
                 </div>
-                <div class="delivery-options reveal-stagger">
+                <div class="delivery-options stagger">
                     <div class="delivery-option reveal"><svg class="icon"><use href="#i-truck"/></svg><div><strong>Colissimo</strong><span>Livraison suivie partout sur l’île</span></div><em>10 €</em></div>
                     <div class="delivery-option reveal"><svg class="icon"><use href="#i-pin"/></svg><div><strong>Point Relais</strong><span>Selon les relais disponibles</span></div><em>5 €</em></div>
                     <div class="delivery-option reveal"><svg class="icon"><use href="#i-store"/></svg><div><strong>Retrait à Saint-Pierre</strong><span>Samedi matin, sur rendez-vous</span></div><em>5 €</em></div>
@@ -971,86 +778,86 @@
             </div>
         </section>
 
-        <!-- 9. Avis clients (EXEMPLES de mise en page) -->
-        <section class="section reviews" aria-labelledby="reviews-title">
-            <div class="container">
-                <div class="section-head reveal">
-                    <div>
-                        <p class="eyebrow">Avis clientes</p>
-                        <h2 class="section-title" id="reviews-title">Elles portent <em>IARINTSOA</em></h2>
-                        <span class="demo-note">Exemples de mise en page — à remplacer par vos vrais avis</span>
-                    </div>
-                    <div class="slider-nav">
-                        <button type="button" aria-label="Avis précédents" data-slide="-1"><svg class="icon"><use href="#i-left"/></svg></button>
-                        <button type="button" aria-label="Avis suivants" data-slide="1"><svg class="icon"><use href="#i-right"/></svg></button>
-                    </div>
+        <!-- FAQ -->
+        <section class="section" id="faq" aria-labelledby="faq-title">
+            <div class="container faq-grid">
+                <div class="reveal">
+                    <p class="eyebrow">Questions fréquentes</p>
+                    <h2 class="title" id="faq-title">Tout savoir, <em>en toute sérénité</em></h2>
+                    <p style="color:var(--muted);max-width:380px;margin-top:20px">Une autre question&#8239;? Notre équipe vous répond personnellement sur WhatsApp.</p>
                 </div>
-                <div class="reviews-track" id="reviews-track" tabindex="0" aria-label="Avis clientes, faire défiler horizontalement">
-                    <article class="review"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><blockquote>« Exemple : boucles très naturelles, la dentelle se fond parfaitement. »</blockquote><footer><b aria-hidden="true">A</b><div>Prénom A.<br><span>Jerry Curly · 18″</span></div></footer></article>
-                    <article class="review"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><blockquote>« Exemple : conseil très rassurant sur WhatsApp pour choisir la longueur. »</blockquote><footer><b aria-hidden="true">B</b><div>Prénom B.<br><span>Water Wave · 14″</span></div></footer></article>
-                    <article class="review"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><blockquote>« Exemple : cheveux doux, aucune odeur, livraison rapide en point relais. »</blockquote><footer><b aria-hidden="true">C</b><div>Prénom C.<br><span>Straight · 22″</span></div></footer></article>
-                    <article class="review"><div class="stars" aria-label="4 étoiles sur 5">★★★★☆</div><blockquote>« Exemple : très belle qualité, j’ai fait recouper légèrement la frange. »</blockquote><footer><b aria-hidden="true">D</b><div>Prénom D.<br><span>Carré lisse · 12″</span></div></footer></article>
+                <div class="faq-list reveal">
+                    <details open><summary>Les cheveux sont-ils 100 % naturels&#8239;?</summary><p>Oui. Nos perruques sont en cheveux humains Remy, aux cuticules alignées, pour un toucher doux et un rendu naturel.</p></details>
+                    <details><summary>Quelle longueur choisir&#8239;?</summary><p>De 10 à 26 pouces : 10–14″ pour un carré, 16–20″ pour une longueur épaules à poitrine, 22–26″ pour une longueur spectaculaire.</p></details>
+                    <details><summary>Livrez-vous partout à La Réunion&#8239;?</summary><p>Oui : Colissimo (10 €), Point Relais (5 €) ou retrait à Saint-Pierre le samedi matin (5 €).</p></details>
+                    <details><summary>Peut-on lisser ou boucler la perruque&#8239;?</summary><p>Les cheveux humains se coiffent à la chaleur : utilisez un protecteur thermique et une température modérée.</p></details>
+                    <details><summary>Comment entretenir ma perruque&#8239;?</summary><p>Démêlez des pointes vers les racines, lavez avec des soins adaptés et laissez sécher complètement avant de la ranger.</p></details>
                 </div>
             </div>
         </section>
 
-        <!-- 10. Conseil WhatsApp -->
-        <section class="advice" aria-labelledby="advice-title">
-            <figure class="reveal"><img class="crop-bob" src="image/bob.jpg" alt="" loading="lazy" decoding="async"></figure>
-            <div class="advice-copy reveal">
-                <p class="eyebrow">Conseil personnalisé</p>
-                <h2 class="section-title" id="advice-title">Une hésitation ?<br><em>Parlons-en.</em></h2>
-                <p>Texture, longueur, densité, entretien : envoyez-nous une photo ou vos envies, nous vous orientons vers le modèle qui vous ira le mieux.</p>
-                <div><a class="btn btn--dark" href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-wa"/></svg> Écrire sur WhatsApp</a></div>
+        <!-- Instagram -->
+        <section class="section center" aria-labelledby="insta-title" style="padding-bottom:0">
+            <div class="container">
+                <div class="mono-divider reveal" aria-hidden="true"><span></span><svg><use href="#logo-ih"/></svg><span></span></div>
+                <div class="section-head reveal">
+                    <div><p class="eyebrow">Le cercle IARINTSOA sur Instagram</p><h2 class="title" id="insta-title">@hair<em>iarintsoa</em>hair</h2></div>
+                    <a class="link-line" href="https://www.instagram.com/hairiarintsoahair" target="_blank" rel="noopener noreferrer">Nous suivre <svg class="icon"><use href="#i-arrow"/></svg></a>
+                </div>
+            </div>
+            <div class="insta-grid">
+                <a class="insta-tile" href="https://www.instagram.com/hairiarintsoahair" target="_blank" rel="noopener noreferrer" aria-label="Instagram IARINTSOA Hair, photo 1"><img class="crop-hero" src="image/hero.jpg" alt="" width="735" height="971" loading="lazy" decoding="async"></a>
+                <a class="insta-tile" href="https://www.instagram.com/hairiarintsoahair" target="_blank" rel="noopener noreferrer" aria-label="Instagram IARINTSOA Hair, photo 2"><img src="image/wig4.jpg" alt="" width="941" height="1279" loading="lazy" decoding="async" style="object-position:center 22%"></a>
+                <a class="insta-tile" href="https://www.instagram.com/hairiarintsoahair" target="_blank" rel="noopener noreferrer" aria-label="Instagram IARINTSOA Hair, photo 3"><img src="image/wig1.jpg" alt="" width="1320" height="1560" loading="lazy" decoding="async" style="object-position:center 30%"></a>
+                <a class="insta-tile" href="https://www.instagram.com/hairiarintsoahair" target="_blank" rel="noopener noreferrer" aria-label="Instagram IARINTSOA Hair, photo 4"><img class="crop-bob" src="image/bob.jpg" alt="" width="734" height="1025" loading="lazy" decoding="async"></a>
+                <a class="insta-tile" href="https://www.instagram.com/hairiarintsoahair" target="_blank" rel="noopener noreferrer" aria-label="Instagram IARINTSOA Hair, photo 5"><img src="image/wig2.jpg" alt="" width="1320" height="1860" loading="lazy" decoding="async" style="object-position:center 18%"></a>
+                <a class="insta-tile" href="https://www.instagram.com/hairiarintsoahair" target="_blank" rel="noopener noreferrer" aria-label="Instagram IARINTSOA Hair, photo 6"><img src="image/wig3.jpg" alt="" width="1320" height="1650" loading="lazy" decoding="async" style="object-position:center 25%"></a>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="section newsletter" aria-labelledby="news-title">
+            <div class="container newsletter-box reveal">
+                <div class="mono-divider" aria-hidden="true"><span></span><svg><use href="#logo-ih"/></svg><span></span></div>
+                <p class="eyebrow">La lettre IARINTSOA</p>
+                <h2 class="title" id="news-title">L’excellence, <em>en avant-première</em></h2>
+                <p>Nouvelles textures, rituels d’entretien et invitations réservées : une lettre rare et soignée, pour celles qui ont fait de leurs cheveux une signature.</p>
+                <form id="newsletter-form" novalidate>
+                    <label class="visually-hidden" for="news-email">Adresse e-mail</label>
+                    <input id="news-email" type="email" placeholder="Votre adresse e-mail" autocomplete="email" required>
+                    <button type="submit">S’inscrire</button>
+                </form>
+                <label class="consent"><input type="checkbox" id="news-consent" required> J’accepte de recevoir la lettre d’IARINTSOA Hair et je peux me désinscrire à tout moment.</label>
             </div>
         </section>
     </main>
 
-    <!-- 11. Footer de luxe -->
+    <!-- Footer premium -->
     <footer class="footer">
+        <div class="container footer-signature">
+            <div class="footer-medallion"><img src="image/logo.png" alt="Logo officiel IARINTSOA Hair" width="1080" height="1080" loading="lazy" decoding="async"></div>
+            <p>Votre Signature.<br>Notre Excellence.</p>
+            <svg class="signature-stroke" viewBox="0 0 300 40" aria-hidden="true"><path d="M4 30C42 8 78 38 118 22S190 4 226 18s52 14 70-2"/></svg>
+        </div>
         <div class="container footer-top">
             <div class="footer-brand">
-                <span class="wordmark"><strong>IARINTSOA</strong><span>HAIR</span></span>
+                <span class="brand"><svg class="brand-mark" aria-hidden="true"><use href="#logo-ih"/></svg><span class="brand-name"><strong>IARINTSOA</strong><span>HAIR</span></span></span>
                 <p>Perruques en cheveux humains Remy, sélectionnées avec exigence et livrées partout à La Réunion.</p>
                 <div class="socials">
-                    <a href="https://www.instagram.com/hairiarintsoahair" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="icon"><use href="#i-ig"/></svg></a>
-                    <a href="https://www.facebook.com/share/1a8YLU5VuQ/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="icon"><use href="#i-fb"/></svg></a>
-                    <a href="https://www.tiktok.com/@tsiory.damour5" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg class="icon"><use href="#i-tt"/></svg></a>
                     <a href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg class="icon"><use href="#i-wa"/></svg></a>
+                    <a href="https://www.facebook.com/share/1a8YLU5VuQ/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="icon"><use href="#i-fb"/></svg></a>
+                    <a href="https://www.instagram.com/hairiarintsoahair" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="icon"><use href="#i-ig"/></svg></a>
+                    <a href="https://www.tiktok.com/@tsiory.damour5" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg class="icon"><use href="#i-tt"/></svg></a>
                 </div>
             </div>
-            <div>
-                <h4>Boutique</h4>
-                <ul>
-                    <li><a href="#collections">Perruques bouclées</a></li>
-                    <li><a href="#collections">Perruques ondulées</a></li>
-                    <li><a href="#collections">Perruques lisses</a></li>
-                    <li><a href="#nouveautes">Best-sellers</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Aide</h4>
-                <ul>
-                    <li><a href="#livraison">Livraison</a></li>
-                    <li><a href="#guide">Bien choisir</a></li>
-                    <li><a href="#guide">Entretien</a></li>
-                    <li><a href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer">Nous contacter</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>La maison</h4>
-                <ul>
-                    <li><a href="#contenu">À propos</a></li>
-                    <li><a href="#contenu">Mentions légales</a></li>
-                    <li><a href="#contenu">CGV</a></li>
-                    <li><a href="#contenu">Confidentialité</a></li>
-                </ul>
-            </div>
+            <div><h4>Boutique</h4><ul><li><a href="#collections">Perruques bouclées</a></li><li><a href="#collections">Perruques ondulées</a></li><li><a href="#collections">Perruques lisses</a></li><li><a href="#best-sellers">Best-sellers</a></li></ul></div>
+            <div><h4>Livraison</h4><ul><li><a href="#livraison">Colissimo · 10 €</a></li><li><a href="#livraison">Point Relais · 5 €</a></li><li><a href="#livraison">Retrait Saint-Pierre · 5 €</a></li><li><a href="#faq">Questions fréquentes</a></li></ul></div>
+            <div><h4>La Maison</h4><ul><li><a href="#maison">Notre histoire</a></li><li><a href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer">Contact WhatsApp</a></li><li><a href="#contenu">Mentions légales</a></li><li><a href="#contenu">CGV · Confidentialité</a></li></ul></div>
         </div>
         <div class="container footer-bottom">
-            <span>© 2026 IARINTSOA Hair — La Réunion · Page de démonstration du nouveau design</span>
+            <span>© 2026 IARINTSOA Hair — La Réunion · Démonstration du nouveau design</span>
             <div class="payments" aria-label="Moyens de paiement">
-                <span class="pay pay--wero"><b aria-hidden="true">W</b>Wero</span>
+                <span class="pay"><b aria-hidden="true">W</b>Wero</span>
                 <span class="pay"><svg class="icon"><use href="#i-card"/></svg>Carte bancaire</span>
                 <span class="pay"><svg class="icon"><use href="#i-bank"/></svg>Virement</span>
             </div>
@@ -1061,30 +868,45 @@
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
     <script>
-        /* Interactions de la démonstration (aucune donnée n'est enregistrée). */
+        /* Interactions de la démonstration — aucune donnée n'est enregistrée ni envoyée. */
         (function () {
             "use strict";
             const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            const $ = (selector, root = document) => root.querySelector(selector);
+            const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
 
-            // Barre d'annonce : les messages alternent toutes les 4 secondes.
-            const messages = document.querySelectorAll(".announce p");
+            // Notification discrète
+            const toast = $("#toast");
+            let toastTimer;
+            function notify(message) {
+                toast.textContent = message;
+                toast.classList.add("is-visible");
+                clearTimeout(toastTimer);
+                toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 2800);
+            }
+
+            // Barre d'annonce : messages alternés
+            const messages = $$(".announce p");
             let current = 0;
             if (!reduceMotion && messages.length > 1) {
                 setInterval(() => {
                     messages[current].classList.remove("is-active");
                     current = (current + 1) % messages.length;
                     messages[current].classList.add("is-active");
-                }, 4000);
+                }, 4200);
             }
 
-            // En-tête : léger filet dès que l'on fait défiler.
-            const header = document.getElementById("header");
+            // En-tête : filet au défilement
+            const header = $("#header");
             const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 8);
             window.addEventListener("scroll", onScroll, { passive: true });
             onScroll();
 
-            // Méga-menu accessible au clavier et au toucher.
-            document.querySelectorAll(".nav-item > button").forEach((button) => {
+            // Trait de signature du hero : se dessine au chargement
+            requestAnimationFrame(() => $(".hero").classList.add("is-drawn"));
+
+            // Méga-menu (clavier et tactile)
+            $$(".nav-item > button").forEach((button) => {
                 button.addEventListener("click", () => {
                     const item = button.parentElement;
                     const open = !item.classList.contains("is-open");
@@ -1093,74 +915,72 @@
                 });
             });
 
-            // Menu mobile (tiroir).
-            const drawer = document.getElementById("drawer");
-            const burger = document.querySelector("[data-drawer-open]");
+            // Menu mobile
+            const drawer = $("#drawer");
+            const burger = $("[data-drawer-open]");
             function setDrawer(open) {
                 drawer.classList.toggle("is-open", open);
                 drawer.setAttribute("aria-hidden", String(!open));
                 burger.setAttribute("aria-expanded", String(open));
                 document.body.style.overflow = open ? "hidden" : "";
-                if (open) drawer.querySelector("[data-drawer-close].icon-btn").focus();
-                else burger.focus();
+                if (open) $(".drawer-top .icon-btn", drawer).focus(); else burger.focus();
             }
             burger.addEventListener("click", () => setDrawer(true));
-            drawer.querySelectorAll("[data-drawer-close]").forEach((el) => el.addEventListener("click", () => setDrawer(false)));
+            $$("[data-drawer-close]", drawer).forEach((el) => el.addEventListener("click", () => setDrawer(false)));
             document.addEventListener("keydown", (event) => {
                 if (event.key !== "Escape") return;
                 if (drawer.classList.contains("is-open")) setDrawer(false);
-                document.querySelectorAll(".nav-item.is-open").forEach((item) => {
-                    item.classList.remove("is-open");
-                    item.querySelector("button").setAttribute("aria-expanded", "false");
-                });
+                $$(".nav-item.is-open").forEach((item) => { item.classList.remove("is-open"); $("button", item).setAttribute("aria-expanded", "false"); });
             });
 
-            // Apparition douce des blocs au défilement.
-            const revealItems = document.querySelectorAll(".reveal");
+            // Apparitions douces au défilement (et dessin des traits de signature)
+            const animated = $$(".reveal, .signature-stroke:not(.hero .signature-stroke)");
             if ("IntersectionObserver" in window && !reduceMotion) {
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach((entry) => {
                         if (!entry.isIntersecting) return;
-                        entry.target.classList.add("is-in");
+                        entry.target.classList.add(entry.target.classList.contains("signature-stroke") ? "is-drawn" : "is-in");
                         observer.unobserve(entry.target);
                     });
                 }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
-                revealItems.forEach((el) => observer.observe(el));
+                animated.forEach((el) => observer.observe(el));
             } else {
-                revealItems.forEach((el) => el.classList.add("is-in"));
+                $$(".reveal").forEach((el) => el.classList.add("is-in"));
             }
 
-            // Ajout rapide (démonstration) : compteur et message de confirmation.
-            const toast = document.getElementById("toast");
-            const count = document.querySelector("[data-cart-count]");
-            let toastTimer;
-            document.querySelectorAll(".quick-add").forEach((button) => {
-                button.addEventListener("click", () => {
-                    const total = Number(count.textContent) + 1;
-                    count.textContent = String(total);
-                    document.querySelector("[data-cart-link]").setAttribute("aria-label", `Panier, ${total} article${total > 1 ? "s" : ""}`);
-                    toast.textContent = `${button.dataset.product} ajouté au panier (démonstration)`;
-                    toast.classList.add("is-visible");
-                    clearTimeout(toastTimer);
-                    toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 2600);
-                });
-            });
+            // Achat rapide et favoris (démonstration)
+            const count = $("[data-cart-count]");
+            $$(".quick-add").forEach((button) => button.addEventListener("click", () => {
+                const total = Number(count.textContent) + 1;
+                count.textContent = String(total);
+                $("[data-cart-link]").setAttribute("aria-label", `Panier, ${total} article${total > 1 ? "s" : ""}`);
+                notify(`${button.dataset.product} ajouté au panier (démonstration)`);
+            }));
+            $$(".wish").forEach((button) => button.addEventListener("click", () => {
+                button.setAttribute("aria-pressed", String(button.getAttribute("aria-pressed") !== "true"));
+            }));
 
-            // Favoris (démonstration).
-            document.querySelectorAll(".wish").forEach((button) => {
-                button.addEventListener("click", () => {
-                    button.setAttribute("aria-pressed", String(button.getAttribute("aria-pressed") !== "true"));
-                });
-            });
+            // Avant / Après
+            const compare = $("#compare");
+            $("#compare-range").addEventListener("input", (event) => compare.style.setProperty("--pos", `${event.target.value}%`));
 
-            // Avis : flèches de défilement.
-            const track = document.getElementById("reviews-track");
-            document.querySelectorAll("[data-slide]").forEach((button) => {
-                button.addEventListener("click", () => {
-                    const card = track.querySelector(".review");
-                    const step = card ? card.getBoundingClientRect().width + 22 : 320;
-                    track.scrollBy({ left: Number(button.dataset.slide) * step, behavior: reduceMotion ? "auto" : "smooth" });
-                });
+            // Témoignages : flèches
+            const track = $("#reviews-track");
+            $$("[data-slide]").forEach((button) => button.addEventListener("click", () => {
+                const card = $(".review", track);
+                const step = card ? card.getBoundingClientRect().width + 22 : 320;
+                track.scrollBy({ left: Number(button.dataset.slide) * step, behavior: reduceMotion ? "auto" : "smooth" });
+            }));
+
+            // Newsletter (démonstration : rien n'est envoyé)
+            $("#newsletter-form").addEventListener("submit", (event) => {
+                event.preventDefault();
+                const email = $("#news-email");
+                if (!email.checkValidity()) { email.reportValidity(); return; }
+                if (!$("#news-consent").checked) { notify("Merci de cocher votre accord pour recevoir la lettre."); return; }
+                notify("Merci ! Inscription simulée (démonstration, aucun envoi).");
+                event.target.reset();
+                $("#news-consent").checked = false;
             });
         })();
     </script>

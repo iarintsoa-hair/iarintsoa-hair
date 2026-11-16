@@ -1598,7 +1598,23 @@
             } catch (error) {
                 loadingMessage.hidden = true;
                 errorMessage.hidden = false;
-                errorMessage.textContent = `${error.message} Ouvrez le site avec un serveur HTTP local (par exemple Live Server) pour charger les fichiers JSON.`;
+                document.title = "Modèle introuvable | IARINTSOA Hair";
+                const collectionLink = document.createElement("a");
+                collectionLink.href = "index.html#collection";
+                collectionLink.textContent = "découvrir la collection";
+                const whatsappLink = document.createElement("a");
+                whatsappLink.href = createWhatsAppUrl("Bonjour, je n’arrive pas à afficher un modèle sur votre site. Pouvez-vous m’aider ?");
+                whatsappLink.target = "_blank";
+                whatsappLink.rel = "noopener noreferrer";
+                whatsappLink.textContent = "nous écrire sur WhatsApp";
+                errorMessage.replaceChildren(
+                    "Ce modèle n’a pas pu être affiché : il n’est peut-être plus disponible ou le lien est incorrect. Vous pouvez ",
+                    collectionLink, " ou ", whatsappLink, "."
+                );
+                // Détail technique réservé au développement local (site ouvert sans serveur).
+                if (window.location.protocol === "file:") {
+                    errorMessage.append(` (Développement : ${error.message} Ouvrez le site avec un serveur HTTP local, par exemple Live Server.)`);
+                }
             }
         }
 

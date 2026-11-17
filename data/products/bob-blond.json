@@ -1,0 +1,33 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "bob-blond",
+    "name": "Bob blond",
+    "tagline": "Un carré blond lumineux, net et moderne.",
+    "price": 120,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": null,
+    "promotionPrice": null,
+    "texture": "Bob",
+    "description": "Le Bob blond illumine le visage d’un carré lisse et lumineux, à la coupe nette et moderne.\n\nConfectionné en cheveux naturels brésiliens Remy, en 10 pouces, il offre une densité de 200 % et une dentelle 4×4. Sans colle, avec cordon de sécurité fourni.",
+    "photos": [
+      { "src": "image/produits/bob-blond/bob-blond-1.jpg", "alt": "Perruque bob blond 10 pouces vue de profil, carré lisse lumineux" }
+    ],
+    "lengths": [10],
+    "lace": "4x4",
+    "laceOptions": ["4x4"],
+    "density": 200,
+    "stock": null,
+    "available": true,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Couleur : Blond",
+      "Origine : cheveux naturels brésiliens",
+      "Pose : sans colle, cordon de sécurité fourni"
+    ],
+    "similarProducts": ["bob-bordeaux", "bob-noir", "straight-hd-lace"],
+    "featured": false
+  }
+}

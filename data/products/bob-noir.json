@@ -1,0 +1,33 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "bob-noir",
+    "name": "Bob noir",
+    "tagline": "Un carré lisse noir, net et intemporel.",
+    "price": 110,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": null,
+    "promotionPrice": null,
+    "texture": "Bob",
+    "description": "Le Bob noir offre un carré lisse, net et brillant, d’un noir naturel profond : une coupe intemporelle, élégante et facile à porter.\n\nConfectionné en cheveux naturels brésiliens Remy, il affiche une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni. La longueur vous est confirmée sur WhatsApp.",
+    "photos": [
+      { "src": "image/produits/bob-noir/bob-noir-1.jpg", "alt": "Perruque bob noir lisse sur mannequin, carré net, dentelle 4×4 transparente" }
+    ],
+    "lengths": [],
+    "lace": "4x4 transparente",
+    "laceOptions": ["4x4"],
+    "density": 200,
+    "stock": null,
+    "available": true,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Origine : cheveux naturels brésiliens",
+      "Couleur : Noir naturel",
+      "Pose : sans colle, cordon de sécurité fourni"
+    ],
+    "similarProducts": ["bob-blond", "bob-bordeaux", "pixie-noir"],
+    "featured": false
+  }
+}

@@ -11,11 +11,23 @@
     "promotion": null,
     "promotionPrice": null,
     "texture": "Jerry Curly",
-    "description": "La Jerry Curly HD Lace réunit des boucles naturelles, souples et rebondies à la finesse d’une dentelle HD 4×4 transparente, qui se fond avec discrétion sur la peau pour une naissance des cheveux d’un naturel saisissant.\n\nConfectionnée en cheveux 100 % humains Remy, en noir naturel, elle offre une densité de 200 % pour un volume généreux et plein de caractère. Elle se lisse, se boucle, se colore et se décolore selon vos envies.\n\nSon bonnet confortable, doté d’un cordon de sécurité, assure un maintien sûr et agréable tout au long de la journée. Disponible en 20, 22 et 24 pouces.",
+    "description": "La Jerry Curly HD Lace réunit des boucles naturelles, souples et rebondies à la finesse d’une dentelle HD 4×4 transparente, qui se fond avec discrétion sur la peau pour une naissance des cheveux d’un naturel saisissant.\n\nConfectionnée en cheveux 100 % humains Remy, en noir naturel, elle offre une densité de 200 % pour un volume généreux et plein de caractère. Elle se lisse, se boucle, se colore et se décolore selon vos envies.\n\nSon bonnet confortable, doté d’un cordon de sécurité, assure un maintien sûr et agréable tout au long de la journée. Disponible en 20, 22 et 24 pouces.\n\nPhotos : modèle présenté en 16 pouces ; les longueurs 20, 22 et 24 pouces tombent plus bas, consultez le guide des longueurs.",
     "photos": [
       {
-        "src": "image/produits/photo-a-venir.svg",
-        "alt": "Perruque Jerry Curly HD Lace en cheveux humains Remy — photos bientôt disponibles"
+        "src": "image/produits/jerry-curly-hd-lace/jerry-curly-hd-lace-1.jpg",
+        "alt": "Perruque Jerry Curly HD Lace noir naturel vue de face en 16 pouces, boucles volumineuses et dentelle HD 4×4 transparente"
+      },
+      {
+        "src": "image/produits/jerry-curly-hd-lace/jerry-curly-hd-lace-2.jpg",
+        "alt": "Jerry Curly HD Lace de trois quarts (16 pouces) : raie centrale et naissance des cheveux naturelle"
+      },
+      {
+        "src": "image/produits/jerry-curly-hd-lace/jerry-curly-hd-lace-3.jpg",
+        "alt": "Jerry Curly HD Lace vue de dos (16 pouces) : boucles denses et définies, densité 200 %"
+      },
+      {
+        "src": "image/produits/jerry-curly-hd-lace/jerry-curly-hd-lace-4.jpg",
+        "alt": "Jerry Curly HD Lace vue de profil (16 pouces) : volume et tenue des boucles"
       }
     ],
     "lengths": [20, 22, 24],

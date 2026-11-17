@@ -1,0 +1,32 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "body-wave-26-pouces",
+    "name": "Body Wave 26 pouces",
+    "tagline": "26 pouces de larges ondulations glamour, pour une allure de star.",
+    "price": 250,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": null,
+    "promotionPrice": null,
+    "texture": "Body Wave",
+    "description": "La Body Wave 26 pouces déploie de larges ondulations souples sur 66 cm, pour une chevelure longue, glamour et pleine de mouvement.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+    "photos": [
+      { "src": "image/produits/body-wave-26-pouces/body-wave-26-pouces-1.jpg", "alt": "Perruque Body Wave 26 pouces portée, longues ondulations glamour" }
+    ],
+    "lengths": [26],
+    "lace": "4x4 transparente",
+    "laceOptions": ["4x4"],
+    "density": 200,
+    "stock": null,
+    "available": true,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Origine : cheveux naturels brésiliens",
+      "Pose : sans colle, cordon de sécurité fourni"
+    ],
+    "similarProducts": ["body-wave", "natural-wave", "vague-naturelle"],
+    "featured": false
+  }
+}

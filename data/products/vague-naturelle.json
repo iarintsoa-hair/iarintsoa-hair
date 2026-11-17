@@ -1,0 +1,32 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "vague-naturelle",
+    "name": "Vague naturelle",
+    "tagline": "Des ondulations souples et naturelles, pour un style féminin au quotidien.",
+    "price": 200,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": null,
+    "promotionPrice": null,
+    "texture": "Natural Wave",
+    "description": "La Vague naturelle offre des ondulations souples et légères, pour une chevelure féminine qui bouge naturellement avec vous.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 22 pouces, elle affiche une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+    "photos": [
+      { "src": "image/produits/vague-naturelle/vague-naturelle-1.jpg", "alt": "Perruque vague naturelle 22 pouces sur mannequin, dentelle 4×4 transparente" }
+    ],
+    "lengths": [22],
+    "lace": "4x4 transparente",
+    "laceOptions": ["4x4"],
+    "density": 200,
+    "stock": null,
+    "available": true,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Origine : cheveux naturels brésiliens",
+      "Pose : sans colle, cordon de sécurité fourni"
+    ],
+    "similarProducts": ["vague-naturelle-hd", "body-wave", "wave-frontale"],
+    "featured": false
+  }
+}

@@ -9,7 +9,7 @@
     <meta name="description" content="Maison de perruques en cheveux humains Remy, qualité premium, livraison partout à La Réunion. Votre Signature. Notre Excellence.">
     <link rel="icon" type="image/svg+xml" href="image/favicon-ih.svg">
     <link rel="apple-touch-icon" href="image/logo.png">
-    <link rel="preload" as="image" href="image/hero.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="image/bob.jpg" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
@@ -176,12 +176,15 @@
 
         /* ================= 4. Hero ================= */
         /* Le hero passe sous l'en-tête transparent ; un dégradé discret garantit la lisibilité du logo et du menu */
-        .hero { position: relative; display: grid; grid-template-columns: minmax(460px, 1.25fr) 1fr 1fr; margin-top: calc(-1 * var(--header-h) - 1px); /* -1px : bordure de l'en-tête */ height: min(calc(100svh - 40px), 880px); min-height: 660px; overflow: hidden; background: var(--black); }
-        .hero::after { position: absolute; inset: 0 0 auto; z-index: 1; height: calc(var(--header-h) + 70px); background: linear-gradient(rgba(13, 12, 11, .55), rgba(13, 12, 11, 0)); content: ""; pointer-events: none; }
-        .hero figure { position: relative; margin: 0; overflow: hidden; }
-        .hero figure img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: slow-zoom 16s var(--ease) both; }
-        .hero figure + figure { border-left: 1px solid rgba(251, 248, 243, .12); }
-        .hero-panel { position: relative; display: flex; flex-direction: column; justify-content: center; padding: calc(var(--header-h) + 40px) clamp(28px, 4.6vw, 76px) 60px; overflow: hidden; color: var(--ivory); }
+        /* Hero : une seule grande photo (carré lisse), point focal. Sur ordinateur, elle est ancrée à droite à sa
+           taille quasi native (reste nette) et se fond dans le noir à gauche ; sur mobile, elle couvre tout l'écran. */
+        .hero { --hero-h: max(min(calc(100svh - 40px), 900px), 640px); position: relative; display: flex; align-items: center; margin-top: calc(-1 * var(--header-h) - 1px); /* -1px : bordure de l'en-tête */ height: var(--hero-h); overflow: hidden; background: var(--black); }
+        .hero::after { position: absolute; inset: 0 0 auto; z-index: 2; height: calc(var(--header-h) + 70px); background: linear-gradient(rgba(13, 12, 11, .55), rgba(13, 12, 11, 0)); content: ""; pointer-events: none; }
+        .hero-media { position: absolute; z-index: 0; top: 0; right: 0; bottom: 0; width: clamp(560px, 56vw, calc(var(--hero-h) * .82)); margin: 0; overflow: hidden; }
+        .hero-media::before { position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, var(--black) 0%, rgba(13, 12, 11, .55) 16%, rgba(13, 12, 11, 0) 42%), linear-gradient(0deg, rgba(13, 12, 11, .4) 0%, rgba(13, 12, 11, 0) 32%); content: ""; pointer-events: none; }
+        /* Recadrage : masque le logo (en haut à gauche) et le texte (en bas) incrustés dans la photo */
+        .hero-img { position: absolute; left: -35%; top: -22%; width: 141%; height: 149%; max-width: none; object-fit: cover; object-position: center; animation: slow-zoom 16s var(--ease) both; }
+        .hero-panel { position: relative; z-index: 3; display: flex; flex-direction: column; justify-content: center; width: min(100%, 680px); height: 100%; padding: calc(var(--header-h) + 30px) clamp(28px, 6vw, 96px) 60px; overflow: hidden; color: var(--ivory); }
         .hero-panel::before { position: absolute; top: -30%; left: -30%; width: 90%; height: 90%; background: radial-gradient(circle, rgba(227, 207, 159, .1), rgba(227, 207, 159, 0) 65%); content: ""; pointer-events: none; }
         .hero-panel .eyebrow { color: var(--champagne-light); }
         .hero-watermark { position: absolute; right: -110px; bottom: -120px; width: 340px; height: 340px; color: var(--champagne-light); opacity: .06; pointer-events: none; }
@@ -403,8 +406,10 @@
         .pay b { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 5px; background: var(--champagne-light); color: var(--black); font-family: var(--serif); font-size: 14px; }
 
         /* WhatsApp flottant et notification */
-        .float-wa { position: fixed; z-index: 40; right: max(18px, env(safe-area-inset-right)); bottom: max(18px, env(safe-area-inset-bottom)); display: grid; place-items: center; width: 56px; height: 56px; border: 1px solid rgba(227, 207, 159, .4); border-radius: 50%; background: var(--black); color: var(--champagne-light); box-shadow: 0 14px 32px rgba(13, 12, 11, .28); transition: transform .35s var(--ease); }
-        .float-wa:hover { transform: translateY(-3px); }
+        .float-wa { position: fixed; z-index: 40; right: max(18px, env(safe-area-inset-right)); bottom: max(18px, env(safe-area-inset-bottom)); display: grid; place-items: center; width: 56px; height: 56px; border: 1px solid rgba(227, 207, 159, .4); border-radius: 50%; background: var(--black); color: var(--champagne-light); box-shadow: 0 14px 32px rgba(13, 12, 11, .28); opacity: 0; visibility: hidden; transform: translateY(14px); transition: transform .5s var(--ease), opacity .5s var(--ease), visibility .5s; }
+        /* Le bouton flottant n'apparaît qu'une fois le hero dépassé (le hero a déjà son bouton WhatsApp) */
+        .float-wa.is-visible { opacity: 1; visibility: visible; transform: none; }
+        .float-wa.is-visible:hover { transform: translateY(-3px); }
         .toast { position: fixed; z-index: 70; left: 50%; bottom: 28px; max-width: calc(100% - 40px); padding: 14px 22px; background: var(--black); color: var(--ivory); font-size: 14px; opacity: 0; pointer-events: none; transform: translate(-50%, 12px); transition: opacity .45s var(--ease), transform .45s var(--ease); }
         .toast.is-visible { opacity: 1; transform: translate(-50%, 0); }
 
@@ -430,8 +435,6 @@
         @media (max-width: 1080px) {
             .nav { display: none; }
             .burger { display: inline-grid; }
-            .hero { grid-template-columns: 1fr 1fr; }
-            .hero-photo-second { display: none; }
             .collections-grid, .product-grid { grid-template-columns: repeat(2, 1fr); }
             .trust ul { grid-template-columns: repeat(2, 1fr); }
             .trust li:nth-child(3) { border-left: 0; }
@@ -444,6 +447,15 @@
             .footer-top { grid-template-columns: 1fr 1fr; }
             .footer-brand { grid-column: 1 / -1; }
         }
+        /* Hero mobile et tablette portrait : photo plein écran, texte posé en bas sur un dégradé sombre */
+        @media (max-width: 820px) {
+            .hero { align-items: flex-end; }
+            .hero-media { width: 100%; }
+            .hero-media::before { background: linear-gradient(0deg, rgba(13, 12, 11, .94) 0%, rgba(13, 12, 11, .74) 34%, rgba(13, 12, 11, .12) 60%, rgba(13, 12, 11, 0) 72%); }
+            .hero-img { left: -18%; top: -30%; width: 125%; } /* le recadrage vertical masque déjà le logo incrusté : moins d'agrandissement, photo plus nette */
+            .hero-panel { width: 100%; height: auto; padding: 0 clamp(22px, 6vw, 56px) 40px; }
+            .hero-watermark, .hero-points { display: none; }
+        }
         @media (max-width: 760px) {
             :root { --header-h: 78px; }
             body { font-size: 15px; }
@@ -453,10 +465,7 @@
             .brand-name span { margin-top: 7px; font-size: 10px; letter-spacing: .42em; padding-left: .42em; }
             .brand-name span::before, .brand-name span::after { width: 12px; }
             .header-actions .hide-mobile { display: none; }
-            .hero { grid-template-columns: 1fr; height: auto; min-height: 0; }
-            .hero-photo-main { order: -1; height: calc(60svh + var(--header-h)); min-height: 460px; max-height: 640px; }
-            .hero .crop-hero { width: 135% !important; height: 135% !important; left: -10% !important; top: -14% !important; }
-            .hero-panel { padding: 44px 22px 50px; }
+            .hero-panel { padding: 0 22px 34px; }
             .header-actions .hide-mobile-2 { display: none; }
             .hero h1 { font-size: clamp(40px, 11.4vw, 52px); }
             .hero .lead { margin-top: 30px; font-size: 16px; }
@@ -679,8 +688,7 @@
                 </div>
                 <svg class="hero-watermark" aria-hidden="true"><use href="#logo-ih"/></svg>
             </div>
-            <figure class="hero-photo-main"><img class="crop-hero" src="image/hero.jpg" alt="Femme portant une perruque bouclée IARINTSOA Hair" width="735" height="971" fetchpriority="high"></figure>
-            <figure class="hero-photo-second"><img class="crop-bob" src="image/bob.jpg" alt="Femme portant une perruque carré lisse IARINTSOA Hair" width="734" height="1025" decoding="async"></figure>
+            <figure class="hero-media"><img class="hero-img" src="image/bob.jpg" alt="Femme portant une perruque carré lisse IARINTSOA Hair" width="734" height="1025" fetchpriority="high"></figure>
         </section>
 
         <!-- Réassurance -->
@@ -986,7 +994,13 @@
             // En-tête : transparent au-dessus du hero, ivoire dès que l'on défile (une mise à jour par image)
             const header = $("#header");
             let headerTicking = false;
-            const updateHeader = () => { headerTicking = false; header.classList.toggle("is-solid", window.scrollY > 10); };
+            const floatWa = $(".float-wa");
+            const heroSection = $(".hero");
+            const updateHeader = () => {
+                headerTicking = false;
+                header.classList.toggle("is-solid", window.scrollY > 10);
+                floatWa.classList.toggle("is-visible", window.scrollY > heroSection.offsetHeight * .7);
+            };
             window.addEventListener("scroll", () => { if (!headerTicking) { headerTicking = true; requestAnimationFrame(updateHeader); } }, { passive: true });
             updateHeader();
 

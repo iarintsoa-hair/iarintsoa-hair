@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Vérification avant mise en ligne | IARINTSOA Hair</title>
+    <link rel="icon" type="image/svg+xml" href="../image/favicon-ih.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
+    <!-- Outil LOCAL de vérification (dossier outils-local) : à ne pas mettre en ligne. -->
+    <style>
+        :root { --black: #0d0c0b; --ink: #171514; --ivory: #fbf8f3; --beige: #f1e8dc; --champagne: #c9a96e; --champagne-text: #86683b; --rose: #e8c7cf; --rose-text: #8e5a6b; --muted: #6f655e; --line: #e6dccf; --serif: "Cormorant Garamond", Georgia, serif; --sans: "Jost", "Helvetica Neue", Arial, sans-serif; }
+        * { box-sizing: border-box; }
+        body { margin: 0; background: var(--ivory); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.6; }
+        a { color: inherit; }
+        .wrap { width: min(1100px, calc(100% - 40px)); margin: 0 auto; padding: 40px 0 80px; }
+        .eyebrow { margin: 0 0 10px; color: var(--champagne-text); font-size: 12px; font-weight: 500; letter-spacing: .3em; text-transform: uppercase; }
+        h1 { margin: 0; font-family: var(--serif); font-size: clamp(36px, 5vw, 54px); font-weight: 400; line-height: 1.05; }
+        h1 em, h2 em { color: var(--rose-text); }
+        h2 { margin: 46px 0 6px; font-family: var(--serif); font-size: 32px; font-weight: 400; }
+        .lead { max-width: 720px; color: var(--muted); }
+        .banner { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin: 26px 0 0; padding: 18px 22px; border: 1px solid var(--line); border-left: 3px solid var(--champagne); background: #fff; }
+        .banner strong { font-family: var(--serif); font-size: 22px; font-weight: 500; }
+        .progress { margin-left: auto; color: var(--muted); }
+        .progress b { color: var(--ink); }
+        .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 20px; border: 1px solid var(--black); background: var(--black); color: var(--ivory); font: inherit; font-size: 12px; letter-spacing: .2em; text-decoration: none; text-transform: uppercase; cursor: pointer; }
+        .btn--ghost { background: transparent; color: var(--ink); }
+        .list { display: grid; gap: 8px; margin: 16px 0 0; padding: 0; list-style: none; }
+        .item { display: grid; grid-template-columns: 26px 64px minmax(0, 1fr) auto; align-items: center; gap: 14px; padding: 12px 14px; border: 1px solid var(--line); background: #fff; }
+        .item.no-thumb { grid-template-columns: 26px minmax(0, 1fr) auto; }
+        .item input { width: 20px; height: 20px; accent-color: var(--black); cursor: pointer; }
+        .item img { width: 64px; height: 80px; object-fit: cover; background: var(--beige); }
+        .item b { display: block; font-family: var(--serif); font-size: 21px; font-weight: 500; line-height: 1.15; }
+        .item small { color: var(--muted); font-size: 13px; }
+        .item a.open { padding: 8px 14px; border: 1px solid var(--line); font-size: 12px; letter-spacing: .14em; text-decoration: none; text-transform: uppercase; white-space: nowrap; }
+        .item a.open:hover { border-color: var(--black); }
+        .item:has(input:checked) { border-color: var(--champagne); background: #fffdf8; }
+        .item:has(input:checked) b { color: var(--champagne-text); }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 22px; }
+        .tips { display: grid; gap: 10px; margin: 16px 0 0; padding: 0; list-style: none; }
+        .tips li { padding: 14px 18px; border: 1px solid var(--line); background: #fff; }
+        .tips li strong { font-weight: 500; }
+        kbd { padding: 1px 6px; border: 1px solid var(--line); border-radius: 4px; background: var(--ivory); font-family: var(--sans); font-size: 13px; }
+        .warn { border-left: 3px solid var(--rose) !important; }
+        @media (max-width: 760px) { .grid-2 { grid-template-columns: 1fr; } .item { grid-template-columns: 24px 52px minmax(0, 1fr); } .item a.open { grid-column: 2 / -1; justify-self: start; } .item.no-thumb a.open { grid-column: 2 / -1; } .progress { margin-left: 0; } }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <p class="eyebrow">IARINTSOA Hair · prévisualisation locale</p>
+        <h1>Vérification <em>avant la mise en ligne</em></h1>
+        <p class="lead">Le site n’est visible que sur cet ordinateur : rien n’est publié sur Internet. Ouvrez chaque page, vérifiez-la, puis cochez-la. Vos coches restent enregistrées dans ce navigateur.</p>
+        <div class="banner">
+            <strong>Votre progression</strong>
+            <span class="progress" id="progress">—</span>
+            <a class="btn" href="../index.html" target="_blank" rel="noopener">Ouvrir l’accueil</a>
+            <button class="btn btn--ghost" type="button" id="reset">Tout décocher</button>
+        </div>
+
+        <h2>Les pages <em>principales</em></h2>
+        <ul class="list" id="pages"></ul>
+
+        <h2>Les 35 <em>fiches perruques</em></h2>
+        <p class="lead">Pour chaque fiche : photos, prix de chaque longueur, dentelle, description, caractéristiques et bouton WhatsApp.</p>
+        <ul class="list grid-2" id="products"><li class="item no-thumb"><span></span><span>Chargement du catalogue…</span></li></ul>
+
+        <h2>Points <em>à vérifier</em></h2>
+        <ul class="tips">
+            <li><strong>Voir le site comme sur un téléphone :</strong> dans Chrome ou Edge, appuyez sur <kbd>F12</kbd>, puis sur l’icône téléphone/tablette (ou <kbd>Ctrl</kbd> + <kbd>Maj</kbd> + <kbd>M</kbd>), choisissez « iPhone » en haut de l’écran et rechargez la page.</li>
+            <li class="warn"><strong>WhatsApp :</strong> les boutons « Commander sur WhatsApp » ouvrent une vraie conversation avec le numéro de la boutique (06 93 60 01 45). Vous pouvez vérifier le message sans l’envoyer.</li>
+            <li><strong>Panier :</strong> ajoutez 2 ou 3 perruques depuis les fiches, changez les quantités, choisissez une livraison, puis allez jusqu’à « Finaliser ma commande ».</li>
+            <li><strong>Boutique de l’accueil :</strong> testez les filtres (Bouclées, Ondulées, Lisses, Carrés & pixies, longueurs, Lace HD, Promotions) et le bouton « Voir plus ».</li>
+            <li><strong>Recherche :</strong> la loupe en haut à droite permet de chercher « kinky », « bob », « tissage »…</li>
+            <li><strong>Informations légales :</strong> la page affiche « en cours de mise à jour » pour l’identité de l’entreprise ; elle sera complétée plus tard.</li>
+            <li><strong>Une erreur ou une correction ?</strong> Notez le nom de la page et ce qui ne va pas, et transmettez-le pour correction avant la mise en ligne.</li>
+        </ul>
+    </div>
+
+    <script>
+        (function () {
+            "use strict";
+            const KEY = "iarintsoa-hair.verification.v1";
+            let done = {};
+            try { done = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { done = {}; }
+            const save = () => { try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {} };
+            const pages = [
+                ["Accueil", "Hero, best-sellers, collections, boutique filtrable, FAQ, pied de page", "../index.html"],
+                ["Boutique (35 perruques)", "Filtres, « Voir plus », liens vers les fiches", "../index.html#boutique"],
+                ["Tissages", "10 textures, 11 longueurs, nombre de paquets, prix, WhatsApp", "../tissages.html"],
+                ["Panier", "Ajoutez d’abord des perruques depuis les fiches", "../cart.html"],
+                ["Finaliser ma commande", "Coordonnées, livraison, conditions, envoi WhatsApp", "../checkout.html"],
+                ["Informations légales", "Mentions légales, conditions de vente, confidentialité (en attente)", "../informations-legales.html"],
+                ["Page d’erreur 404", "Ce qui s’affiche pour une adresse qui n’existe pas", "../une-page-qui-n-existe-pas"],
+                ["Ancienne adresse d’une fiche", "Doit rediriger vers la nouvelle fiche Bob blond", "../product.html?id=bob-blond"]
+            ];
+            function row(id, title, sub, href, thumb) {
+                const li = document.createElement("li");
+                li.className = thumb ? "item" : "item no-thumb";
+                const box = document.createElement("input");
+                box.type = "checkbox"; box.checked = Boolean(done[id]); box.setAttribute("aria-label", `${title} vérifiée`);
+                box.addEventListener("change", () => { if (box.checked) done[id] = true; else delete done[id]; save(); update(); });
+                const text = document.createElement("span");
+                const b = document.createElement("b"); b.textContent = title;
+                const s = document.createElement("small"); s.textContent = sub;
+                text.append(b, s);
+                const a = document.createElement("a");
+                a.className = "open"; a.href = href; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Ouvrir";
+                li.append(box);
+                if (thumb) { const img = document.createElement("img"); img.src = thumb; img.alt = ""; img.loading = "lazy"; li.append(img); }
+                li.append(text, a);
+                return li;
+            }
+            function update() {
+                const boxes = Array.from(document.querySelectorAll(".item input"));
+                const n = boxes.filter((x) => x.checked).length;
+                document.getElementById("progress").innerHTML = "";
+                const b = document.createElement("b"); b.textContent = `${n} / ${boxes.length}`;
+                document.getElementById("progress").append(b, " pages vérifiées");
+            }
+            document.getElementById("pages").append(...pages.map(([t, s, h]) => row("page:" + h, t, s, h)));
+            document.getElementById("reset").addEventListener("click", () => { done = {}; save(); document.querySelectorAll(".item input").forEach((x) => { x.checked = false; }); update(); });
+            const euro = (n) => new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR" }).format(n);
+            fetch("../data/products/index.json", { cache: "no-store" }).then((r) => r.json()).then((cat) => Promise.all(cat.products.map((id) => fetch(`../data/products/${id}.json`, { cache: "no-store" }).then((r) => r.json()).then((j) => j.product).catch(() => null))))
+                .then((list) => {
+                    const ul = document.getElementById("products");
+                    ul.replaceChildren(...list.filter(Boolean).map((p) => {
+                        const prices = p.pricesByLength ? Object.values(p.pricesByLength) : [];
+                        const promo = p.promotion && p.promotionPrice < p.price;
+                        const price = prices.length > 1 ? `de ${euro(Math.min(...prices))} à ${euro(Math.max(...prices))}` : euro(prices[0] || (promo ? p.promotionPrice : p.price));
+                        const lengths = p.lengths.length ? p.lengths.map((l) => l + "″").join(", ") : (p.lengthNote || "sur demande");
+                        const photo = p.photos[0] && (p.photos[0].src || p.photos[0]);
+                        return row("fiche:" + p.id, p.name, `${price}${promo ? " (promo)" : ""} · ${lengths} · ${p.photos.length} photo${p.photos.length > 1 ? "s" : ""}`, `../fiche-produit.html?id=${encodeURIComponent(p.id)}`, photo ? "../" + photo : null);
+                    }));
+                    update();
+                })
+                .catch(() => { document.getElementById("products").innerHTML = "<li class=\"item no-thumb\"><span></span><span>Le catalogue n’a pas pu être lu : lancez le site avec Voir-le-site.bat.</span></li>"; update(); });
+            update();
+        })();
+    </script>
+</body>
+</html>

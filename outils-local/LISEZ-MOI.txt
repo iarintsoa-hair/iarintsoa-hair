@@ -1,0 +1,21 @@
+IARINTSOA Hair — voir le site sur cet ordinateur (prévisualisation)
+====================================================================
+
+1. Dans le dossier du site, double-cliquez sur « Voir-le-site.bat ».
+2. Une fenêtre noire s'ouvre (c'est le petit serveur local) : laissez-la ouverte.
+3. Le navigateur affiche la page « Vérification avant la mise en ligne » :
+   toutes les pages et les 35 fiches, avec des cases à cocher.
+4. Pour arrêter : fermez la fenêtre noire.
+
+Adresse habituelle : http://localhost:5501/
+(si ce port est déjà utilisé, la fenêtre noire indique l'adresse exacte : 5502, 5503…)
+
+Important
+- Rien n'est publié sur Internet : le site n'est visible que sur cet ordinateur.
+- Ne pas ouvrir index.html par un double-clic direct : les fiches et la boutique
+  ont besoin du serveur local pour lire le catalogue.
+- Pour voir la version mobile : touche F12, puis l'icône téléphone (Ctrl + Maj + M).
+- Si Windows demande l'autorisation d'exécuter le fichier, choisissez « Exécuter quand même ».
+
+Lors de la mise en ligne (Netlify), ce dossier « outils-local » et le fichier
+« Voir-le-site.bat » ne seront pas publiés.

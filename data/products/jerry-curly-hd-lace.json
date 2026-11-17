@@ -1,0 +1,57 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "jerry-curly-hd-lace",
+    "name": "Jerry Curly HD Lace",
+    "tagline": "Des boucles naturelles, souples et pleines de volume pour un look irrésistible.",
+    "price": 190,
+    "currency": "EUR",
+    "priceLabel": "À partir de",
+    "promotion": null,
+    "promotionPrice": null,
+    "texture": "Jerry Curly",
+    "description": "La Jerry Curly HD Lace réunit des boucles naturelles, souples et rebondies à la finesse d’une dentelle HD 4×4 transparente, qui se fond avec discrétion sur la peau pour une naissance des cheveux d’un naturel saisissant.\n\nConfectionnée en cheveux 100 % humains Remy, en noir naturel, elle offre une densité de 200 % pour un volume généreux et plein de caractère. Elle se lisse, se boucle, se colore et se décolore selon vos envies.\n\nSon bonnet confortable, doté d’un cordon de sécurité, assure un maintien sûr et agréable tout au long de la journée. Disponible en 20, 22 et 24 pouces.",
+    "photos": [
+      {
+        "src": "image/produits/photo-a-venir.svg",
+        "alt": "Perruque Jerry Curly HD Lace en cheveux humains Remy — photos bientôt disponibles"
+      }
+    ],
+    "lengths": [20, 22, 24],
+    "defaultLength": 20,
+    "pricesByLength": {
+      "20": 190,
+      "22": 210,
+      "24": 230
+    },
+    "lace": "HD 4x4 transparente",
+    "laceOptions": ["HD 4x4"],
+    "laceDescriptions": {
+      "HD 4x4": "Dentelle HD ultra fine et transparente : raie centrale, fonte invisible sur la peau."
+    },
+    "density": 200,
+    "stock": null,
+    "available": true,
+    "badges": ["Best Seller"],
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Couleur : Noir naturel",
+      "Coiffage : lissage, boucles, coloration et décoloration possibles",
+      "Bonnet : confortable, avec cordon de sécurité"
+    ],
+    "highlights": [
+      { "title": "Dentelle HD invisible", "text": "Une dentelle 4×4 ultra fine et transparente qui se fond sur la peau pour une naissance naturelle." },
+      { "title": "Densité 200 %", "text": "Des boucles pleines de volume, généreuses et rebondies, contrôlées avant chaque envoi." },
+      { "title": "Liberté de style", "text": "100 % cheveux humains Remy : se lisse, se boucle, se colore et se décolore." },
+      { "title": "Confort et maintien", "text": "Un bonnet confortable avec cordon de sécurité pour un maintien sûr toute la journée." }
+    ],
+    "faq": [
+      { "q": "Qu’est-ce qu’une dentelle HD ?", "a": "La dentelle HD (haute définition) est plus fine et plus transparente qu’une dentelle classique : elle se fond sur la peau pour une ligne frontale très naturelle. Elle est aussi plus délicate, manipulez-la avec douceur." },
+      { "q": "Peut-on colorer ou décolorer cette perruque ?", "a": "Oui, ce sont des cheveux 100 % humains Remy. Pour une coloration claire ou une décoloration, faites appel à un professionnel : la décoloration fragilise toujours le cheveu et la dentelle." },
+      { "q": "À quoi sert le cordon de sécurité ?", "a": "Le cordon ajuste le bonnet à votre tour de tête et maintient la perruque bien en place, avec ou sans colle." }
+    ],
+    "similarProducts": ["jerry-curly", "water-wave", "body-wave"],
+    "featured": false
+  }
+}

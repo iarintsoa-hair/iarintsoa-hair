@@ -125,6 +125,7 @@
             ? { "@type": "AggregateOffer", priceCurrency: p.currency || "EUR", lowPrice: String(Math.min(...Object.values(p.pricesByLength))), highPrice: String(Math.max(...Object.values(p.pricesByLength))), offerCount: String(Object.keys(p.pricesByLength).length) }
             : Number.isFinite(minPrice(p)) ? { "@type": "Offer", priceCurrency: p.currency || "EUR", price: String(minPrice(p)) } : undefined;
         if (offers && Number.isInteger(p.stock)) offers.availability = p.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/OutOfStock";
+        else if (offers && p.available === true) offers.availability = "https://schema.org/InStock";
         const data = { "@context": "https://schema.org", "@type": "Product", name: `Perruque ${p.name}`, brand: { "@type": "Brand", name: "IARINTSOA Hair" }, description: p.description, image: p.photos.map((ph) => new URL(photoSrc(ph), location.href).href) };
         if (offers) data.offers = offers;
         const script = el("script", { type: "application/ld+json" });
@@ -194,7 +195,8 @@
             if (e.key === "ArrowRight") stepLightbox(1);
             if (e.key === "ArrowLeft") stepLightbox(-1);
         });
-        if (slides.length < 2) { $("#thumbs").hidden = true; $("#dots").hidden = true; }
+        // Une seule photo : miniatures invisibles mais leur colonne reste en place (mise en page inchangée)
+        if (slides.length < 2) { $("#thumbs").style.visibility = "hidden"; $("#dots").hidden = true; }
         setupVideo();
         show(0);
     }
@@ -324,7 +326,11 @@
             ["Longueurs", minLen !== null ? `${minLen} à ${maxLen} pouces (${Math.round(minLen * 2.54)} à ${Math.round(maxLen * 2.54)} cm)` : "Sur demande"],
             ["Dentelle", laces.length ? laces.map((l) => String(l).replace(/x/gi, "×")).join(", ") + (typeof p.lace === "string" && /transparent/i.test(p.lace) ? " — transparente" : "") : p.lace || "Confirmée avec notre équipe"]
         ];
-        (p.characteristics || []).filter((c) => !/remy|cuticule/i.test(c)).forEach((c) => rows.push(["Détail", c]));
+        // « Couleur : Noir naturel » → ligne « Couleur | Noir naturel » ; sinon ligne « Détail »
+        (p.characteristics || []).filter((c) => !/remy|cuticule/i.test(c)).forEach((c) => {
+            const m = /^([^:]{2,30}?)\s*:\s*(.+)$/.exec(c);
+            rows.push(m ? [m[1], m[2]] : ["Détail", c]);
+        });
         rows.forEach(([k, v]) => $("#spec-table").append(el("tr", null, el("th", { text: k }), el("td", { text: v }))));
     }
 
@@ -430,7 +436,7 @@
     function renderFaq(p, laces) {
         const sameLacePrice = !p.lacePrices || Object.values(p.lacePrices).every((v) => !v);
         const items = [
-            laces.length && { q: "Quelle dentelle choisir ?", a: `La 4×4 offre une raie centrale et une pose facile ; la 5×5 laisse la raie plus libre ; le frontal 13×4 couvre d’une oreille à l’autre pour une ligne frontale totalement naturelle.${sameLacePrice ? " Toutes les dentelles sont au même prix." : ""}` },
+            laces.length > 1 && { q: "Quelle dentelle choisir ?", a: `La 4×4 offre une raie centrale et une pose facile ; la 5×5 laisse la raie plus libre ; le frontal 13×4 couvre d’une oreille à l’autre pour une ligne frontale totalement naturelle.${sameLacePrice ? " Toutes les dentelles sont au même prix." : ""}` },
             p.lengths.length ? { q: "Comment choisir ma longueur ?", a: "Consultez le guide des longueurs : 10–14″ pour un carré, 16–20″ pour une longueur épaules à poitrine, 22–26″ pour une longueur spectaculaire." } : { q: "Quelles longueurs sont disponibles ?", a: "Les longueurs de ce modèle sont confirmées sur demande : écrivez-nous sur WhatsApp, nous vous conseillons la longueur idéale." },
             { q: "Les cheveux sont-ils 100 % naturels ?", a: "Oui : cheveux humains Remy aux cuticules alignées, pour un toucher doux et un rendu naturel." },
             { q: "Peut-on la coiffer à la chaleur ?", a: "Les cheveux humains se coiffent à la chaleur : appliquez un protecteur thermique et commencez à température modérée." },
@@ -518,7 +524,7 @@
         const add = $("#add-to-cart");
         if (p.stock === 0) { av.dataset.state = "out"; av.textContent = "Rupture de stock — écrivez-nous pour le prochain arrivage"; }
         else if (Number.isInteger(p.stock) && p.stock <= 3) { av.dataset.state = "low"; av.textContent = `Plus que ${p.stock} en stock`; }
-        else if (Number.isInteger(p.stock)) { av.dataset.state = "in"; av.textContent = "En stock — expédition après confirmation"; }
+        else if (Number.isInteger(p.stock) || p.available === true) { av.dataset.state = "in"; av.textContent = "En stock — expédition après confirmation"; }
         else { av.dataset.state = "ask"; av.textContent = "Disponibilité confirmée avec vous avant validation"; }
         add.disabled = p.stock === 0;
         $("#mb-add").disabled = p.stock === 0;

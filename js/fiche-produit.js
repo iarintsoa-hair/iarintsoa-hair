@@ -96,6 +96,7 @@
         state.length = p.lengths.length ? (p.lengths.includes(p.defaultLength) ? p.defaultLength : p.lengths[Math.floor((p.lengths.length - 1) / 2)]) : null;
         const laces = Array.isArray(p.laceOptions) && p.laceOptions.length ? p.laceOptions : [];
         state.lace = laces.length ? (laces.includes(p.defaultLace) ? p.defaultLace : laces.find((l) => typeof p.lace === "string" && p.lace.toLowerCase().startsWith(l.toLowerCase())) || laces[0]) : null;
+        state.lace = forcedLace(p, state.length) || state.lace;
 
         renderMeta(p);
         renderGallery(p);
@@ -297,7 +298,12 @@
             const input = el("input", { type: "radio", name: "length", value: len, checked: len === state.length });
             $("#lengths").append(el("label", { class: "choice" }, input, el("span", { class: "choice-box" }, el("b", { text: `${len}″` }), el("small", { text: `${Math.round(len * 2.54)} cm` }))));
         });
-        $("#lengths").addEventListener("change", (e) => { state.length = Number(e.target.value); update(); });
+        $("#lengths").addEventListener("change", (e) => {
+            state.length = Number(e.target.value);
+            const forced = forcedLace(p, state.length);
+            if (forced) { state.lace = forced; syncLaces(p); }
+            update();
+        });
         $("#open-size").addEventListener("click", () => $("#size-dialog").showModal());
     }
 
@@ -312,6 +318,20 @@
                 el("b", { text: String(lace).replace(/x/gi, "×") }), el("em", { text: extra > 0 ? `+ ${euro(extra, p.currency)}` : /^13x/i.test(lace) ? "Frontal · inclus" : "Inclus" }), el("small", { text: desc }))));
         });
         $("#laces").addEventListener("change", (e) => { state.lace = e.target.value; update(); });
+        syncLaces(p);
+    }
+    // Dentelle imposée par la longueur (champ optionnel laceByLength, ex. { "20": "13x4", "24": "4x4" })
+    function forcedLace(p, len) {
+        const lace = p.laceByLength && len !== null ? p.laceByLength[String(len)] : null;
+        return typeof lace === "string" && Array.isArray(p.laceOptions) && p.laceOptions.includes(lace) ? lace : null;
+    }
+    // Seule la dentelle disponible pour la longueur choisie reste visible
+    function syncLaces(p) {
+        const forced = forcedLace(p, state.length);
+        $$("#laces input").forEach((input) => {
+            input.checked = input.value === state.lace;
+            input.closest("label").hidden = Boolean(forced) && input.value !== forced;
+        });
     }
 
     // ---------- Description et caractéristiques techniques ----------
@@ -324,7 +344,7 @@
             ["Texture", p.texture || p.name],
             ["Densité", Number.isFinite(p.density) ? `${p.density} %` : "Confirmée avec notre équipe"],
             ["Longueurs", minLen !== null ? `${minLen} à ${maxLen} pouces (${Math.round(minLen * 2.54)} à ${Math.round(maxLen * 2.54)} cm)` : "Sur demande"],
-            ["Dentelle", laces.length ? laces.map((l) => String(l).replace(/x/gi, "×")).join(", ") + (typeof p.lace === "string" && /transparent/i.test(p.lace) ? " — transparente" : "") : p.lace || "Confirmée avec notre équipe"]
+            ["Dentelle", p.laceByLength && laces.length ? Object.entries(p.laceByLength).map(([len, l]) => `${String(l).replace(/x/gi, "×")} (${len}″)`).join(", ") + (typeof p.lace === "string" && /transparent/i.test(p.lace) ? " — transparente" : "") : laces.length ? laces.map((l) => String(l).replace(/x/gi, "×")).join(", ") + (typeof p.lace === "string" && /transparent/i.test(p.lace) ? " — transparente" : "") : p.lace || "Confirmée avec notre équipe"]
         ];
         // « Couleur : Noir naturel » → ligne « Couleur | Noir naturel » ; sinon ligne « Détail »
         (p.characteristics || []).filter((c) => !/remy|cuticule/i.test(c)).forEach((c) => {
@@ -436,7 +456,7 @@
     function renderFaq(p, laces) {
         const sameLacePrice = !p.lacePrices || Object.values(p.lacePrices).every((v) => !v);
         const items = [
-            laces.length > 1 && { q: "Quelle dentelle choisir ?", a: `La 4×4 offre une raie centrale et une pose facile ; la 5×5 laisse la raie plus libre ; le frontal 13×4 couvre d’une oreille à l’autre pour une ligne frontale totalement naturelle.${sameLacePrice ? " Toutes les dentelles sont au même prix." : ""}` },
+            laces.length > 1 && !p.laceByLength && { q: "Quelle dentelle choisir ?", a: `La 4×4 offre une raie centrale et une pose facile ; la 5×5 laisse la raie plus libre ; le frontal 13×4 couvre d’une oreille à l’autre pour une ligne frontale totalement naturelle.${sameLacePrice ? " Toutes les dentelles sont au même prix." : ""}` },
             p.lengths.length ? { q: "Comment choisir ma longueur ?", a: "Consultez le guide des longueurs : 10–14″ pour un carré, 16–20″ pour une longueur épaules à poitrine, 22–26″ pour une longueur spectaculaire." } : { q: "Quelles longueurs sont disponibles ?", a: "Les longueurs de ce modèle sont confirmées sur demande : écrivez-nous sur WhatsApp, nous vous conseillons la longueur idéale." },
             { q: "Les cheveux sont-ils 100 % naturels ?", a: "Oui : cheveux humains Remy aux cuticules alignées, pour un toucher doux et un rendu naturel." },
             { q: "Peut-on la coiffer à la chaleur ?", a: "Les cheveux humains se coiffent à la chaleur : appliquez un protecteur thermique et commencez à température modérée." },

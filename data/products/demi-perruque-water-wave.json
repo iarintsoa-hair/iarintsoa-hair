@@ -1,0 +1,40 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "demi-perruque-water-wave",
+    "name": "Demi-perruque Water Wave",
+    "tagline": "Des vagues pleines de volume en demi-perruque : pose express, rendu naturel.",
+    "price": 160,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": "Promo",
+    "promotionPrice": 140,
+    "texture": "Water Wave",
+    "description": "La Demi-perruque Water Wave offre de petites vagues volumineuses en 18 pouces, dans un format pratique qui se pose en quelques minutes.\n\nUne demi-perruque se place à l’arrière de la tête et laisse apparaître la naissance de vos propres cheveux, que vous fondez avec la perruque : sans colle et sans dentelle, pour un rendu naturel. Confectionnée en cheveux naturels brésiliens Remy.",
+    "photos": [
+      { "src": "image/produits/demi-perruque-water-wave/demi-perruque-water-wave-1.jpg", "alt": "Demi-perruque Water Wave 18 pouces sur mannequin, petites vagues volumineuses" }
+    ],
+    "lengths": [18],
+    "lace": "Sans dentelle (demi-perruque)",
+    "density": null,
+    "stock": null,
+    "available": true,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Format : demi-perruque",
+      "Origine : cheveux naturels brésiliens"
+    ],
+    "highlights": [
+      { "title": "Pose express", "text": "Une demi-perruque se pose en quelques minutes, sans colle ni dentelle." },
+      { "title": "Votre naissance des cheveux", "text": "Vos propres cheveux restent visibles devant, pour un rendu parfaitement naturel." },
+      { "title": "Volume Water Wave", "text": "De petites vagues effet mouillé, pleines de volume et de caractère." },
+      { "title": "Accompagnée à La Réunion", "text": "Conseil personnalisé sur WhatsApp et livraison sur toute l’île." }
+    ],
+    "faq": [
+      { "q": "Qu’est-ce qu’une demi-perruque ?", "a": "Une demi-perruque se pose à l’arrière de la tête et laisse visible la naissance de vos propres cheveux, que vous lissez ou coiffez pour les fondre avec la perruque. La pose est rapide, sans colle ni dentelle." }
+    ],
+    "similarProducts": ["water-wave", "water-wave-frontale", "perruque-bandeau"],
+    "featured": false
+  }
+}

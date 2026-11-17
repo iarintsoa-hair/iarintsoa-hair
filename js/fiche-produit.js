@@ -80,7 +80,7 @@
     const maxQty = () => (Number.isInteger(state.product.stock) && state.product.stock > 0 ? Math.min(state.product.stock, 10) : 10);
 
     // ---------- Chargement ----------
-    const id = new URLSearchParams(location.search).get("id") || "jerry-curly";
+    const id = new URLSearchParams(location.search).get("id") || "jerry-curly-hd-lace";
     const api = window.IARINTSOAProductData;
     if (!api) { showError(); return; }
     api.fetchProduct(id).then(render).catch(showError);

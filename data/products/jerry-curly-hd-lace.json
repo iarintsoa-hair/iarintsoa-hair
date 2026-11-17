@@ -5,13 +5,13 @@
     "id": "jerry-curly-hd-lace",
     "name": "Jerry Curly HD Lace",
     "tagline": "Des boucles naturelles, souples et pleines de volume pour un look irrésistible.",
-    "price": 190,
+    "price": 160,
     "currency": "EUR",
     "priceLabel": "À partir de",
     "promotion": null,
     "promotionPrice": null,
     "texture": "Jerry Curly",
-    "description": "La Jerry Curly HD Lace réunit des boucles naturelles, souples et rebondies à la finesse d’une dentelle HD 4×4 transparente, qui se fond avec discrétion sur la peau pour une naissance des cheveux d’un naturel saisissant.\n\nConfectionnée en cheveux 100 % humains Remy, en noir naturel, elle offre une densité de 200 % pour un volume généreux et plein de caractère. Elle se lisse, se boucle, se colore et se décolore selon vos envies.\n\nSon bonnet confortable, doté d’un cordon de sécurité, assure un maintien sûr et agréable tout au long de la journée. Disponible en 20, 22 et 24 pouces.\n\nPhotos : modèle présenté en 16 pouces ; les longueurs 20, 22 et 24 pouces tombent plus bas, consultez le guide des longueurs.",
+    "description": "La Jerry Curly HD Lace réunit des boucles naturelles, souples et rebondies à la finesse d’une dentelle HD 4×4 transparente, qui se fond avec discrétion sur la peau pour une naissance des cheveux d’un naturel saisissant.\n\nConfectionnée en cheveux 100 % humains Remy, en noir naturel, elle offre une densité de 200 % pour un volume généreux et plein de caractère. Elle se lisse, se boucle, se colore et se décolore selon vos envies.\n\nSon bonnet confortable, doté d’un cordon de sécurité, assure un maintien sûr et agréable tout au long de la journée. Disponible en 16, 20, 22 et 24 pouces.\n\nPhotos : modèle présenté en 16 pouces ; les longueurs 20, 22 et 24 pouces tombent plus bas, consultez le guide des longueurs.",
     "photos": [
       {
         "src": "image/produits/jerry-curly-hd-lace/jerry-curly-hd-lace-1.jpg",
@@ -30,9 +30,10 @@
         "alt": "Jerry Curly HD Lace vue de profil (16 pouces) : volume et tenue des boucles"
       }
     ],
-    "lengths": [20, 22, 24],
-    "defaultLength": 20,
+    "lengths": [16, 20, 22, 24],
+    "defaultLength": 16,
     "pricesByLength": {
+      "16": 160,
       "20": 190,
       "22": 210,
       "24": 230
@@ -63,7 +64,7 @@
       { "q": "Peut-on colorer ou décolorer cette perruque ?", "a": "Oui, ce sont des cheveux 100 % humains Remy. Pour une coloration claire ou une décoloration, faites appel à un professionnel : la décoloration fragilise toujours le cheveu et la dentelle." },
       { "q": "À quoi sert le cordon de sécurité ?", "a": "Le cordon ajuste le bonnet à votre tour de tête et maintient la perruque bien en place, avec ou sans colle." }
     ],
-    "similarProducts": ["jerry-curly", "water-wave", "body-wave"],
+    "similarProducts": ["straight-hd-lace", "water-wave", "body-wave"],
     "featured": false
   }
 }

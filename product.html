@@ -1615,7 +1615,7 @@
         });
 
         async function loadProductPage() {
-            const productId = new URLSearchParams(window.location.search).get("id") || "jerry-curly";
+            const productId = new URLSearchParams(window.location.search).get("id") || "jerry-curly-hd-lace";
             try {
                 const product = await window.IARINTSOAProductData.fetchProduct(productId);
                 renderProduct(product);

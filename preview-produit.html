@@ -390,6 +390,65 @@
             .lengths { grid-template-columns: repeat(3, 1fr); }
         }
 
+        /* ================= 13 bis. Vidéo, FAQ, WhatsApp toujours visible, recherche, favoris ================= */
+        .slide--video { cursor: default; background: var(--black); }
+        .slide--video video, .slide--video .video-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+        .slide--video .video-poster { filter: brightness(.72); }
+        .video-play { position: absolute; z-index: 2; left: 50%; top: 50%; display: grid; place-items: center; width: 86px; height: 86px; border: 1px solid rgba(251, 248, 243, .7); border-radius: 50%; background: rgba(13, 12, 11, .45); color: var(--ivory); backdrop-filter: blur(4px); cursor: pointer; transform: translate(-50%, -50%); transition: background-color .4s var(--ease), color .4s var(--ease), opacity .4s; }
+        .video-play .icon { width: 30px; height: 30px; margin-left: 4px; fill: currentColor; stroke: none; }
+        .video-play:hover { background: var(--black); color: var(--rose, #e8c7cf); }
+        .slide--video.is-playing .video-play, .slide--video.is-playing .video-poster, .slide--video.is-playing .video-label { opacity: 0; pointer-events: none; }
+        .video-label { position: absolute; z-index: 2; left: 50%; bottom: 26px; margin: 0; padding: 8px 16px; background: rgba(13, 12, 11, .7); color: var(--ivory); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; white-space: nowrap; transform: translateX(-50%); transition: opacity .4s; }
+        .thumbs .thumb--video::after { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(13, 12, 11, .35); color: var(--ivory); content: "▶"; font-size: 18px; }
+        .lightbox-track video { max-width: 100%; max-height: 100%; }
+        .lightbox-track .lb-soon { display: grid; justify-items: center; gap: 18px; }
+        .lightbox-track .lb-soon img { max-height: 70dvh; filter: brightness(.7); }
+
+        .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(40px, 7vw, 110px); }
+        .faq-list { border-top: 1px solid var(--line); }
+        .faq-list details { border-bottom: 1px solid var(--line); }
+        .faq-list summary { position: relative; padding: 22px 46px 22px 0; font-family: var(--serif); font-size: 22px; cursor: pointer; list-style: none; }
+        .faq-list summary::-webkit-details-marker { display: none; }
+        .faq-list summary::after { position: absolute; right: 4px; top: 50%; width: 13px; height: 13px; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); content: ""; transform: translateY(-70%) rotate(45deg); transition: transform .45s var(--ease); }
+        .faq-list details[open] summary::after { transform: translateY(-20%) rotate(-135deg); }
+        .faq-list details p { margin: -6px 0 22px; padding-right: 46px; color: var(--muted); animation: rise .5s var(--ease) both; }
+
+        /* Bouton WhatsApp toujours visible ; il envoie la sélection en cours */
+        /* Compact (rond) par défaut pour ne jamais masquer le contenu ; le libellé se déploie au survol ou au clavier */
+        .float-wa { position: fixed; z-index: 44; right: max(20px, env(safe-area-inset-right)); bottom: max(20px, env(safe-area-inset-bottom)); display: inline-flex; align-items: center; gap: 0; min-height: 56px; padding: 0 16px; border: 1px solid rgba(227, 207, 159, .45); border-radius: 999px; background: var(--black); color: var(--ivory); box-shadow: 0 16px 36px rgba(13, 12, 11, .3); font-size: 12px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; transition: transform .45s var(--ease), opacity .45s var(--ease), gap .5s var(--ease), padding .5s var(--ease), color .3s; }
+        .float-wa .icon { width: 22px; height: 22px; color: var(--champagne-light); }
+        .float-wa span { max-width: 0; overflow: hidden; white-space: nowrap; transition: max-width .5s var(--ease); }
+        .float-wa:hover, .float-wa:focus-visible { gap: 10px; padding-right: 22px; transform: translateY(-3px); }
+        .float-wa:hover span, .float-wa:focus-visible span { max-width: 220px; }
+        .float-wa.is-tucked { opacity: 0; pointer-events: none; transform: translateY(16px); }
+
+        /* Recherche (identique à l'accueil) */
+        .search-panel { position: fixed; inset: 0 0 auto; z-index: 70; padding: 34px 0 44px; background: var(--ivory); box-shadow: 0 30px 60px rgba(13, 12, 11, .12); transform: translateY(-100%); visibility: hidden; transition: transform .55s var(--ease), visibility .55s; }
+        .search-panel.is-open { transform: none; visibility: visible; }
+        .search-backdrop { position: fixed; inset: 0; z-index: 69; background: rgba(13, 12, 11, .4); opacity: 0; visibility: hidden; transition: opacity .5s var(--ease), visibility .5s; }
+        .search-backdrop.is-open { opacity: 1; visibility: visible; }
+        .search-row { display: flex; align-items: center; gap: 16px; border-bottom: 1px solid var(--ink); }
+        .search-row .icon { width: 26px; height: 26px; color: var(--champagne-text); }
+        .search-row input { flex: 1; min-width: 0; min-height: 72px; border: 0; background: transparent; font-family: var(--serif); font-size: clamp(26px, 3.4vw, 40px); }
+        .search-row input:focus { outline: none; }
+        .search-suggest { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 22px 0 0; padding: 0; list-style: none; }
+        .search-suggest .label { margin-right: 6px; color: var(--muted); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; }
+        .search-suggest a { display: inline-flex; align-items: center; gap: 10px; padding: 10px 16px; border: 1px solid var(--line); background: #fff; font-size: 14px; }
+        .search-suggest a small { color: var(--champagne-text); }
+        .search-empty { margin: 18px 0 0; color: var(--muted); }
+        .title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+        .wish-btn { flex: 0 0 auto; display: grid; place-items: center; width: 48px; height: 48px; margin-top: 6px; border: 1px solid var(--line); border-radius: 50%; background: #fff; cursor: pointer; transition: border-color .3s, transform .3s var(--ease); }
+        .wish-btn:hover { transform: scale(1.06); }
+        .wish-btn[aria-pressed="true"] .icon { fill: var(--rose-deep, #a66e81); stroke: var(--rose-deep, #a66e81); }
+        @media (max-width: 1080px) { .faq-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 760px) {
+            .float-wa { width: 54px; padding: 0; justify-content: center; }
+            .float-wa span { display: none; }
+            .float-wa.is-tucked { transform: translateY(80px); }
+            .header-actions .hide-mobile-2 { display: none; }
+            .faq-list summary { font-size: 20px; }
+        }
+
         /* ================= 14. Accent rose poudré (touche féminine — jamais dominante) =================
            #E8C7CF : fonds, survols et éléments sur fond noir · #A66E81 : grands titres et icônes sur fond clair (≥ 3:1 sur ivoire et beige)
            #8E5A6B : petits textes (contraste AA) · #F6E8EC : voile de survol. Bloc indépendant, retirable. */
@@ -429,6 +488,10 @@
             <path d="M16 50.5l1.3-3.2 1.3 3.2 3.2 1.3-3.2 1.3-1.3 3.2-1.3-3.2-3.2-1.3z" fill="#c9a96e"/>
         </symbol>
         <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+        <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+        <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20.5c1.2-3.8 4-5.6 7.5-5.6s6.3 1.8 7.5 5.6"/></symbol>
+        <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></symbol>
+        <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5-13-7.5Z"/></symbol>
         <symbol id="i-wa" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.5-4.7A8.5 8.5 0 1 1 20.5 11.7Z"/><path d="M9 8.5c.2-.4.5-.5.8-.5h.4l.9 2-.6.8c.5 1 1.3 1.8 2.3 2.3l.8-.6 2 .9v.4c0 .3-.1.6-.5.8-.9.5-2.2.3-3.6-.7a8 8 0 0 1-2.2-2.4c-.7-1.3-.8-2.3-.3-3Z"/></symbol>
         <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
         <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
@@ -463,11 +526,27 @@
                 <span class="brand-name"><strong>IARINTSOA</strong><span>HAIR</span></span>
             </a>
             <div class="header-actions">
-                <a class="icon-btn hide-mobile" href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer" aria-label="Nous écrire sur WhatsApp"><svg class="icon"><use href="#i-wa"/></svg></a>
+                <button class="icon-btn" type="button" aria-label="Rechercher" aria-controls="search-panel" aria-expanded="false" data-search-open><svg class="icon"><use href="#i-search"/></svg></button>
+                <button class="icon-btn hide-mobile-2" type="button" aria-label="Mon compte" data-account><svg class="icon"><use href="#i-user"/></svg></button>
+                <a class="icon-btn hide-mobile-2" href="#produit" aria-label="Mes favoris, 0 modèle" data-wish-link><svg class="icon"><use href="#i-heart"/></svg><span class="cart-count" data-wish-count hidden>0</span></a>
                 <a class="icon-btn" href="#produit" aria-label="Panier, 0 article" data-cart-link><svg class="icon"><use href="#i-bag"/></svg><span class="cart-count" data-cart-count>0</span></a>
             </div>
         </div>
     </header>
+
+    <!-- Recherche (identique à l'accueil) -->
+    <div class="search-backdrop" data-search-close></div>
+    <div class="search-panel" id="search-panel" role="dialog" aria-modal="true" aria-label="Rechercher une perruque">
+        <div class="container">
+            <div class="search-row">
+                <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+                <label class="visually-hidden" for="search-input">Rechercher une perruque</label>
+                <input id="search-input" type="search" placeholder="Rechercher une texture, une longueur…" autocomplete="off">
+                <button class="icon-btn" type="button" aria-label="Fermer la recherche" data-search-close><svg class="icon"><use href="#i-close"/></svg></button>
+            </div>
+            <ul class="search-suggest" id="search-results" aria-live="polite"></ul>
+        </div>
+    </div>
 
     <main id="produit">
         <nav class="container breadcrumb" aria-label="Fil d’Ariane">
@@ -484,11 +563,17 @@
                         <figure class="slide"><img src="image/wig3.jpg" alt="Jerry Curly, détail des boucles et de la dentelle" width="1320" height="1650" loading="lazy" decoding="async"></figure>
                         <figure class="slide"><img src="image/hero.jpg" alt="Jerry Curly portée, coupe mi-longue" width="735" height="971" loading="lazy" decoding="async" style="object-position:30% 30%"></figure>
                         <figure class="slide"><img src="image/wig4.jpg" alt="Jerry Curly portée avec un bandeau" width="941" height="1279" loading="lazy" decoding="async" style="object-position:center 20%"></figure>
+                        <!-- Vidéo : déposer le fichier video/jerry-curly.mp4 pour l'activer (sinon : « Vidéo bientôt disponible ») -->
+                        <figure class="slide slide--video" data-poster="image/wig3.jpg" data-video="video/jerry-curly.mp4">
+                            <img class="video-poster" src="image/wig3.jpg" alt="Vidéo de présentation de la Jerry Curly" width="1320" height="1650" loading="lazy" decoding="async">
+                            <button class="video-play" type="button" aria-label="Lire la vidéo de la Jerry Curly"><svg class="icon"><use href="#i-play"/></svg></button>
+                            <p class="video-label">La Jerry Curly en mouvement</p>
+                        </figure>
                     </div>
                     <div class="stage-badges"><span class="badge badge--black">Best Seller</span><span class="badge badge--gold">Premium</span></div>
                     <span class="zoom-hint" aria-hidden="true">Survolez pour zoomer</span>
                     <div class="stage-tools">
-                        <span class="stage-counter" id="stage-counter" aria-live="polite">1 / 4</span>
+                        <span class="stage-counter" id="stage-counter" aria-live="polite">1 / 5</span>
                         <button type="button" id="open-lightbox" aria-label="Afficher les photos en plein écran"><svg class="icon"><use href="#i-expand"/></svg></button>
                     </div>
                     <div class="dots" id="dots" aria-hidden="true"></div>
@@ -498,7 +583,10 @@
             <!-- Panneau d'achat -->
             <section class="buy" aria-labelledby="product-title">
                 <div class="buy-badges"><span class="badge badge--gold">Premium</span><span class="badge">Cheveux humains Remy</span></div>
-                <h1 id="product-title">Jerry Curly</h1>
+                <div class="title-row">
+                    <h1 id="product-title">Jerry Curly</h1>
+                    <button class="wish-btn" type="button" aria-label="Ajouter Jerry Curly à mes favoris" aria-pressed="false" id="wish-btn"><svg class="icon"><use href="#i-heart"/></svg></button>
+                </div>
                 <p class="buy-tagline">Des boucles généreuses, une texture soyeuse, un mouvement plein de caractère.</p>
                 <a class="rating" href="#avis"><span class="stars" aria-hidden="true">★★★★★</span><span>Voir les avis (exemples)</span></a>
 
@@ -641,6 +729,26 @@
             </div>
         </section>
 
+        <!-- FAQ produit -->
+        <section class="section" id="faq" style="padding-top:0" aria-labelledby="faq-title">
+            <div class="container faq-grid">
+                <div class="reveal">
+                    <p class="eyebrow">Questions fréquentes</p>
+                    <h2 class="title" id="faq-title">Tout savoir sur <em>la Jerry Curly</em></h2>
+                    <p style="color:var(--muted);max-width:380px;margin:20px 0 26px">Une autre question ? Notre équipe vous répond personnellement sur WhatsApp.</p>
+                    <a class="btn btn--whatsapp" data-wa-link href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-wa"/></svg> Poser ma question</a>
+                </div>
+                <div class="faq-list reveal">
+                    <details open><summary>Quelle dentelle choisir&#8239;?</summary><p>La 4×4 offre une raie centrale et une pose facile ; la 5×5 laisse la raie plus libre ; le frontal 13×4 couvre d’une oreille à l’autre pour une ligne frontale totalement naturelle. Les trois sont au même prix.</p></details>
+                    <details><summary>Comment choisir ma longueur&#8239;?</summary><p>Consultez le guide des longueurs ci-dessus : 10–14″ pour un carré, 16–20″ pour une longueur épaules à poitrine, 22–26″ pour une longueur spectaculaire. Les boucles raccourcissent visuellement la longueur.</p></details>
+                    <details><summary>Les cheveux sont-ils 100 % naturels&#8239;?</summary><p>Oui : cheveux humains Remy aux cuticules alignées, pour un toucher doux et un rendu naturel.</p></details>
+                    <details><summary>Peut-on la coiffer à la chaleur&#8239;?</summary><p>Les cheveux humains se coiffent à la chaleur : appliquez un protecteur thermique et commencez à température modérée pour préserver la définition des boucles.</p></details>
+                    <details><summary>Quels sont les modes de livraison&#8239;?</summary><p>Partout à La Réunion : Colissimo suivi (10 €), Point Relais (5 €) ou retrait à Saint-Pierre le samedi matin sur rendez-vous (5 €). Le délai vous est confirmé avec votre commande.</p></details>
+                    <details><summary>Comment se passe le paiement&#8239;?</summary><p>Votre commande et son montant sont d’abord confirmés avec notre équipe ; la demande de paiement vous est ensuite transmise. Aucun paiement n’est prélevé sans votre accord.</p></details>
+                </div>
+            </div>
+        </section>
+
         <!-- Produits similaires -->
         <section class="section" style="padding-top:0" aria-labelledby="similar-title">
             <div class="container">
@@ -676,7 +784,7 @@
         <button class="lightbox-close" type="button" aria-label="Fermer" data-close><svg class="icon"><use href="#i-close"/></svg></button>
         <button class="lightbox-nav lightbox-nav--prev" type="button" aria-label="Photo précédente" data-step="-1"><svg class="icon"><use href="#i-left"/></svg></button>
         <button class="lightbox-nav lightbox-nav--next" type="button" aria-label="Photo suivante" data-step="1"><svg class="icon"><use href="#i-right"/></svg></button>
-        <span class="lightbox-count" id="lightbox-count">1 / 4</span>
+        <span class="lightbox-count" id="lightbox-count">1 / 5</span>
     </dialog>
 
     <!-- Guide des longueurs (fenêtre) -->
@@ -696,6 +804,8 @@
         <div class="mb-price"><b data-price-full>170,00 €</b><small data-selection>18″ · 13×4</small></div>
         <button class="btn btn--dark" type="button" id="mb-add" tabindex="-1">Ajouter</button>
     </div>
+    <!-- WhatsApp toujours visible : le message contient la sélection en cours -->
+    <a class="float-wa" id="float-wa" data-wa-link href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer" aria-label="Commander ou poser une question sur WhatsApp"><svg class="icon"><use href="#i-wa"/></svg><span>Conseil WhatsApp</span></a>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
     <script>
@@ -772,6 +882,7 @@
                 const href = `https://wa.me/262693600145?text=${encodeURIComponent(message)}`;
                 $("#whatsapp-order").href = href;
                 $("#mb-whatsapp").href = href;
+                $$("[data-wa-link]").forEach((a) => { a.href = href; }); // bouton flottant + FAQ : toujours la sélection en cours
             }
             lengthsBox.addEventListener("change", (e) => { state.length = Number(e.target.value); render(); });
             $("#laces").addEventListener("change", (e) => { state.lace = e.target.value; render(); });
@@ -799,17 +910,23 @@
             const thumbs = $("#thumbs");
             const dots = $("#dots");
             let active = 0;
+            const isVideoSlide = (slide) => slide.classList.contains("slide--video");
             slides.forEach((slide, i) => {
                 const img = $("img", slide);
                 const li = document.createElement("li");
-                li.innerHTML = `<button type="button" aria-label="Afficher la photo ${i + 1}"${i === 0 ? ' aria-current="true"' : ""}><img src="${img.getAttribute("src")}" alt="" width="84" height="105" loading="lazy" decoding="async" style="${img.getAttribute("style") || ""}"></button>`;
+                const label = isVideoSlide(slide) ? "Afficher la vidéo" : `Afficher la photo ${i + 1}`;
+                li.innerHTML = `<button type="button"${isVideoSlide(slide) ? ' class="thumb--video"' : ""} aria-label="${label}"${i === 0 ? ' aria-current="true"' : ""}><img src="${img.getAttribute("src")}" alt="" width="84" height="105" loading="lazy" decoding="async" style="${img.getAttribute("style") || ""}"></button>`;
                 $("button", li).addEventListener("click", () => show(i));
                 thumbs.append(li);
                 dots.append(document.createElement("span"));
             });
             function show(i, fromScroll) {
                 active = (i + slides.length) % slides.length;
-                slides.forEach((s, k) => s.classList.toggle("is-active", k === active));
+                slides.forEach((s, k) => {
+                    s.classList.toggle("is-active", k === active);
+                    const v = $("video", s);
+                    if (v && k !== active) { v.pause(); s.classList.remove("is-playing"); } // la vidéo s'arrête quand on change d'image
+                });
                 $$("button", thumbs).forEach((b, k) => b.setAttribute("aria-current", String(k === active)));
                 $$("span", dots).forEach((d, k) => d.classList.toggle("is-active", k === active));
                 $("#stage-counter").textContent = `${active + 1} / ${slides.length}`;
@@ -824,6 +941,7 @@
             }, { passive: true });
             const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
             slides.forEach((slide) => {
+                if (isVideoSlide(slide)) return; // pas de zoom ni de plein écran au clic sur la vidéo (bouton lecture)
                 const img = $("img", slide);
                 slide.addEventListener("mousemove", (e) => {
                     if (!finePointer.matches || isMobile()) return;
@@ -865,7 +983,100 @@
             lbTrack.addEventListener("scroll", updateLbCount, { passive: true });
             $("#open-lightbox").addEventListener("click", openLightbox);
             $$("[data-step]", lightbox).forEach((b) => b.addEventListener("click", () => stepLightbox(Number(b.dataset.step))));
-            lightbox.addEventListener("close", () => show(lbCurrent));
+            lightbox.addEventListener("close", () => {
+                $$("video", lbTrack).forEach((v) => v.pause());
+                show(lbCurrent);
+            });
+
+            // ---- Vidéo : activée si le fichier existe, sinon « Vidéo bientôt disponible » ----
+            const videoSlide = $(".slide--video");
+            let videoAvailable = false;
+            if (videoSlide) {
+                const videoSrc = videoSlide.dataset.video;
+                const lbFigure = lbTrack.children[slides.indexOf(videoSlide)];
+                fetch(videoSrc, { method: "HEAD" }).then((r) => { videoAvailable = r.ok; }).catch(() => {}).finally(() => {
+                    if (!videoAvailable) {
+                        $(".video-label", videoSlide).textContent = "Vidéo bientôt disponible";
+                        videoSlide.classList.add("is-unavailable");
+                        lbFigure.innerHTML = `<div class="lb-soon"><img src="${videoSlide.dataset.poster}" alt=""><p>Vidéo bientôt disponible</p></div>`;
+                    } else {
+                        lbFigure.innerHTML = `<video controls playsinline preload="none" poster="${videoSlide.dataset.poster}" src="${videoSrc}"></video>`;
+                    }
+                });
+                $(".video-play", videoSlide).addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    if (!videoAvailable) {
+                        toast.textContent = "La vidéo de ce modèle sera bientôt disponible.";
+                        toast.classList.add("is-visible");
+                        clearTimeout(toastTimer);
+                        toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 2800);
+                        return;
+                    }
+                    let v = $("video", videoSlide);
+                    if (!v) {
+                        v = document.createElement("video");
+                        Object.assign(v, { src: videoSrc, poster: videoSlide.dataset.poster, controls: true, playsInline: true, preload: "metadata" });
+                        videoSlide.prepend(v);
+                    }
+                    videoSlide.classList.add("is-playing");
+                    v.play().catch(() => {});
+                });
+            }
+
+            // ---- Recherche, compte, favoris (comme sur l'accueil) ----
+            const catalog = [
+                { name: "Jerry Curly", tags: "bouclée boucles curly 13x4 5x5 4x4", price: "Dès 100 €", href: "preview-produit.html" },
+                { name: "Water Wave", tags: "ondulée ondulations vagues wave", price: "Dès 170 €", href: "preview.html#best-sellers" },
+                { name: "Body Wave", tags: "ondulée ondulations souple wave", price: "Prix à confirmer", href: "preview.html#best-sellers" },
+                { name: "Straight", tags: "lisse raide soyeux", price: "Dès 160 €", href: "preview.html#best-sellers" },
+                { name: "Carré lisse", tags: "bob carré court lisse", price: "Sur demande", href: "preview.html#best-sellers" }
+            ];
+            const searchPanel = $("#search-panel"), searchBackdrop = $(".search-backdrop"), searchInput = $("#search-input"), searchResults = $("#search-results"), searchOpener = $("[data-search-open]");
+            const normalize = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+            function renderSearch() {
+                const query = normalize(searchInput.value.trim());
+                const found = catalog.filter((p) => !query || normalize(`${p.name} ${p.tags}`).includes(query));
+                searchResults.replaceChildren();
+                const label = document.createElement("li");
+                label.className = "label";
+                label.textContent = query ? `${found.length} résultat${found.length > 1 ? "s" : ""}` : "Recherches populaires";
+                searchResults.append(label);
+                found.forEach((p) => {
+                    const li = document.createElement("li"), a = document.createElement("a"), small = document.createElement("small");
+                    a.href = p.href; a.append(p.name); small.textContent = p.price; a.append(small);
+                    li.append(a); searchResults.append(li);
+                });
+                if (!found.length) {
+                    const li = document.createElement("li");
+                    li.className = "search-empty";
+                    li.textContent = "Aucun modèle trouvé. Notre équipe peut vous conseiller sur WhatsApp.";
+                    searchResults.append(li);
+                }
+            }
+            function setSearch(open) {
+                searchPanel.classList.toggle("is-open", open);
+                searchBackdrop.classList.toggle("is-open", open);
+                searchOpener.setAttribute("aria-expanded", String(open));
+                if (open) { renderSearch(); setTimeout(() => searchInput.focus(), 80); } else searchOpener.focus();
+            }
+            searchOpener.addEventListener("click", () => setSearch(true));
+            $$("[data-search-close]").forEach((el) => el.addEventListener("click", () => setSearch(false)));
+            searchInput.addEventListener("input", renderSearch);
+            document.addEventListener("keydown", (e) => { if (e.key === "Escape" && searchPanel.classList.contains("is-open")) setSearch(false); });
+            $$("[data-account]").forEach((el) => el.addEventListener("click", () => {
+                toast.textContent = "Espace client : bientôt disponible (démonstration).";
+                toast.classList.add("is-visible");
+                clearTimeout(toastTimer);
+                toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 2800);
+            }));
+            const wishBtn = $("#wish-btn"), wishCount = $("[data-wish-count]");
+            wishBtn.addEventListener("click", () => {
+                const on = wishBtn.getAttribute("aria-pressed") !== "true";
+                wishBtn.setAttribute("aria-pressed", String(on));
+                wishCount.textContent = on ? "1" : "0";
+                wishCount.hidden = !on;
+                $("[data-wish-link]").setAttribute("aria-label", `Mes favoris, ${on ? 1 : 0} modèle`);
+            });
 
             // ---- Guide des longueurs (fenêtre) ----
             const sizeDialog = $("#size-dialog");
@@ -887,6 +1098,8 @@
                 bar.classList.toggle("is-visible", visible);
                 bar.setAttribute("aria-hidden", String(!visible));
                 $$("a, button", bar).forEach((el) => { el.tabIndex = visible ? 0 : -1; });
+                // Sur mobile, la barre d'achat contient déjà WhatsApp : le bouton flottant s'efface pour ne pas la chevaucher
+                $("#float-wa").classList.toggle("is-tucked", visible && isMobile());
             }
             window.addEventListener("scroll", () => {
                 if (!barTicking) { barTicking = true; requestAnimationFrame(updateBar); }

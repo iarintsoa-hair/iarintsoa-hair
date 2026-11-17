@@ -89,6 +89,9 @@
         .nav a { position: relative; padding: 8px 0; font-size: 12px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; }
         .nav a::after { position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--champagne); content: ""; transform: scaleX(0); transform-origin: left; transition: transform .5s var(--ease); }
         .nav a:hover::after, .nav a[aria-current="page"]::after { transform: scaleX(1); }
+        .nav a { white-space: nowrap; }
+        @media (max-width: 1440px) { .nav { gap: clamp(16px, 1.8vw, 28px); } .nav a { font-size: 11px; letter-spacing: .14em; } }
+        @media (max-width: 1180px) { .nav a:last-child { display: none; } }
         .brand { display: inline-flex; align-items: center; gap: 20px; }
         .brand-mark { width: 72px; height: 72px; color: var(--ink); transition: transform .8s var(--ease); }
         .brand:hover .brand-mark { transform: rotate(-6deg); }
@@ -518,6 +521,7 @@
                 <nav class="nav" aria-label="Navigation principale">
                     <a href="preview.html#collections" aria-current="page">Perruques</a>
                     <a href="preview.html#best-sellers">Best-sellers</a>
+                    <a href="tissages.html">Tissages</a>
                     <a href="preview.html#maison">La Maison</a>
                 </nav>
             </div>

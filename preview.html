@@ -143,6 +143,9 @@
         .nav a, .nav-item > button { position: relative; padding: 30px 0; border: 0; background: none; font-size: 12px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; cursor: pointer; }
         .nav a::after, .nav-item > button::after { position: absolute; left: 0; right: 0; bottom: 24px; height: 1px; background: var(--champagne); content: ""; transform: scaleX(0); transform-origin: left; transition: transform .5s var(--ease); }
         .nav a:hover::after, .nav-item:hover > button::after, .nav-item:focus-within > button::after { transform: scaleX(1); }
+        .nav a, .nav-item > button { white-space: nowrap; }
+        @media (max-width: 1440px) { .nav { gap: clamp(16px, 1.8vw, 28px); } .nav a, .nav-item > button { font-size: 11px; letter-spacing: .14em; } }
+        @media (max-width: 1180px) { .nav > a:last-child { display: none; } }
         .header-actions { display: flex; align-items: center; justify-content: flex-end; gap: 4px; }
         .icon-btn { position: relative; display: inline-grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 50%; background: none; cursor: pointer; transition: background-color .3s; }
         .icon-btn:hover { background: var(--beige); }
@@ -645,6 +648,7 @@
                         </div>
                     </div>
                     <a href="#best-sellers">Best-sellers</a>
+                    <a href="tissages.html">Tissages</a>
                     <a href="#maison">La Maison</a>
                 </nav>
             </div>
@@ -699,6 +703,7 @@
                 <a href="#collections" data-drawer-close>Perruques bouclées</a>
                 <a href="#collections" data-drawer-close>Perruques ondulées</a>
                 <a href="#collections" data-drawer-close>Perruques lisses</a>
+                <a href="tissages.html">Tissages <small>100 g</small></a>
                 <a href="#best-sellers" data-drawer-close>Best-sellers <small>Premium</small></a>
                 <a href="#maison" data-drawer-close>La Maison</a>
                 <a href="#conseils" data-drawer-close>Conseils</a>
@@ -987,7 +992,7 @@
                     <a href="https://www.tiktok.com/@tsiory.damour5" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg class="icon"><use href="#i-tt"/></svg></a>
                 </div>
             </div>
-            <div><h4>Boutique</h4><ul><li><a href="#collections">Perruques bouclées</a></li><li><a href="#collections">Perruques ondulées</a></li><li><a href="#collections">Perruques lisses</a></li><li><a href="#best-sellers">Best-sellers</a></li></ul></div>
+            <div><h4>Boutique</h4><ul><li><a href="#collections">Perruques bouclées</a></li><li><a href="#collections">Perruques ondulées</a></li><li><a href="#collections">Perruques lisses</a></li><li><a href="#best-sellers">Best-sellers</a></li><li><a href="tissages.html">Tissages</a></li></ul></div>
             <div><h4>Livraison</h4><ul><li><a href="#livraison">Colissimo · 10 €</a></li><li><a href="#livraison">Point Relais · 5 €</a></li><li><a href="#livraison">Retrait Saint-Pierre · 5 €</a></li><li><a href="#faq">Questions fréquentes</a></li></ul></div>
             <div><h4>La Maison</h4><ul><li><a href="#maison">Notre histoire</a></li><li><a href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer">Contact WhatsApp</a></li><li><a href="#contenu">Mentions légales</a></li><li><a href="#contenu">CGV · Confidentialité</a></li></ul></div>
         </div>

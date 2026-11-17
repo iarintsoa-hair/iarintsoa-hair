@@ -2352,3 +2352,19 @@ body:not(:has(:target)) .site-nav a[href="#accueil"]::after {
         align-self: flex-start;
     }
 }
+
+/* Menu de la fiche produit : liens sur une ligne (lien « Tissages » ajouté), version compacte sur écrans moyens */
+.site-nav a {
+    white-space: nowrap;
+}
+
+@media (max-width: 1440px) and (min-width: 681px) {
+    .site-nav {
+        gap: clamp(14px, 2vw, 30px);
+    }
+
+    .site-nav a {
+        font-size: clamp(12px, 1.05vw, 15px);
+        letter-spacing: .04em;
+    }
+}

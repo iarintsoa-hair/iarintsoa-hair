@@ -13,6 +13,7 @@
     "texture": "Bouclée",
     "description": "La Bouclée courte offre des boucles pétillantes en 14 pouces, pour une coupe légère, pratique et pleine de caractère au quotidien.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle est montée sur une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
     "photos": [
+      { "src": "image/produits/bouclee-courte/bouclee-courte-hd-1.jpg", "alt": "Perruque bouclée courte 14 pouces vue de face, boucles pétillantes" },
       { "src": "image/produits/bouclee-courte/bouclee-courte-1.jpg", "alt": "Perruque bouclée courte 14 pouces sur mannequin, dentelle 4×4 transparente" }
     ],
     "lengths": [14],

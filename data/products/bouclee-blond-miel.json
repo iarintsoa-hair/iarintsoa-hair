@@ -11,11 +11,14 @@
     "promotion": null,
     "promotionPrice": null,
     "texture": "Bouclée",
-    "description": "La Bouclée blond miel illumine le visage de boucles serrées aux reflets miel, pour un volume solaire et plein de caractère.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 20 pouces, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni. Aussi disponible en 24 pouces : prix sur demande sur WhatsApp.",
+    "description": "La Bouclée blond miel illumine le visage de boucles serrées aux reflets miel, pour un volume solaire et plein de caractère.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 20 ou 24 pouces, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
     "photos": [
-      { "src": "image/produits/bouclee-blond-miel/bouclee-blond-miel-1.jpg", "alt": "Perruque bouclée blond miel 20 pouces sur mannequin, boucles volumineuses" }
+      { "src": "image/produits/bouclee-blond-miel/bouclee-blond-miel-hd-1.jpg", "alt": "Perruque bouclée blond miel racines foncées sur mannequin, boucles volumineuses" },
+      { "src": "image/produits/bouclee-blond-miel/bouclee-blond-miel-1.jpg", "alt": "Perruque bouclée blond miel 20 pouces sur mannequin, boucles solaires" }
     ],
-    "lengths": [20],
+    "lengths": [20, 24],
+    "defaultLength": 20,
+    "pricesByLength": { "20": 190, "24": 240 },
     "lace": "4x4 transparente",
     "laceOptions": ["4x4"],
     "density": 200,
@@ -25,7 +28,6 @@
       "Cheveux 100 % humains Remy",
       "Couleur : Blond miel",
       "Origine : cheveux naturels brésiliens",
-      "Autres longueurs : 24 pouces sur demande",
       "Pose : sans colle, cordon de sécurité fourni"
     ],
     "similarProducts": ["jerry-curly-piano", "bouclee-coloree-brun-chocolat", "blonde-mechee"],

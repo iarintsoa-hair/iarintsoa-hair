@@ -11,11 +11,11 @@
     "promotion": null,
     "promotionPrice": null,
     "texture": "Bob",
-    "description": "Le Bob noir offre un carré lisse, net et brillant, d’un noir naturel profond : une coupe intemporelle, élégante et facile à porter.\n\nConfectionné en cheveux naturels brésiliens Remy, il affiche une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni. La longueur vous est confirmée sur WhatsApp.",
+    "description": "Le Bob noir offre un carré lisse, net et brillant, d’un noir naturel profond : une coupe intemporelle, élégante et facile à porter.\n\nConfectionné en cheveux naturels brésiliens Remy, en 10 pouces, il affiche une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
     "photos": [
-      { "src": "image/produits/bob-noir/bob-noir-1.jpg", "alt": "Perruque bob noir lisse sur mannequin, carré net, dentelle 4×4 transparente" }
+      { "src": "image/produits/bob-noir/bob-noir-1.jpg", "alt": "Perruque bob noir 10 pouces lisse sur mannequin, carré net, dentelle 4×4 transparente" }
     ],
-    "lengths": [],
+    "lengths": [10],
     "lace": "4x4 transparente",
     "laceOptions": ["4x4"],
     "density": 200,

@@ -13,7 +13,9 @@
     "texture": "Jerry Curly",
     "description": "La Jerry Curly piano mêle plusieurs nuances dans des boucles rebondies et définies : un coloris piano qui apporte lumière et relief à chaque mouvement.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 22 pouces, elle offre une densité de 200 % et une dentelle HD 4×4 qui se fond sur la peau. Sans colle, avec cordon de sécurité fourni.",
     "photos": [
-      { "src": "image/produits/jerry-curly-piano/jerry-curly-piano-1.jpg", "alt": "Perruque Jerry Curly piano 22 pouces sur mannequin, boucles aux reflets méchés" }
+      { "src": "image/produits/jerry-curly-piano/jerry-curly-piano-hd-1.jpg", "alt": "Perruque Jerry Curly piano 22 pouces sur mannequin, boucles aux reflets méchés" },
+      { "src": "image/produits/jerry-curly-piano/jerry-curly-piano-hd-2.jpg", "alt": "Jerry Curly piano de trois quarts, boucles définies et dentelle HD 4×4" },
+      { "src": "image/produits/jerry-curly-piano/jerry-curly-piano-hd-3.jpg", "alt": "Jerry Curly piano vue de dos, boucles volumineuses aux nuances méchées" }
     ],
     "lengths": [22],
     "lace": "HD 4x4",

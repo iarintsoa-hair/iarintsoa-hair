@@ -13,7 +13,7 @@
     "texture": "Straight",
     "description": "La Lisse noire offre une chevelure parfaitement lisse, d’un noir profond et naturel, avec une chute fluide et une brillance soyeuse.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle affiche une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni. Disponible de 20 à 28 pouces : la photo présente le modèle en 22 pouces.",
     "photos": [
-      { "src": "image/produits/lisse-noire/lisse-noire-1.jpg", "alt": "Perruque lisse noire 22 pouces sur mannequin, dentelle 4×4 transparente" },
+      { "src": "image/produits/lisse-noire/lisse-noire-hd-1.jpg", "alt": "Perruque lisse noire 22 pouces sur mannequin, dentelle 4×4 transparente" },
       { "src": "image/produits/lisse-noire/lisse-noire-2.jpg", "alt": "Perruque lisse noire longue, chute fluide et brillante" }
     ],
     "lengths": [20, 22, 24, 26, 28],

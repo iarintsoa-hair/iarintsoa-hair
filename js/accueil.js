@@ -12,6 +12,7 @@
     const BESTSELLERS = ["jerry-curly-16-pouces", "straight-hd-lace", "jerry-curly-piano", "natural-wave"];
     const PAGE_SIZE = 12;
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
     const $ = (s, r = document) => r.querySelector(s);
     const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
     const euro = (n) => new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR" }).format(n);
@@ -128,7 +129,8 @@
         const first = p.photos[0], second = p.photos[1];
         const media = el("a", { class: "product-media", href: url, "aria-label": `Voir la fiche ${p.name}` },
             el("img", { src: photoSrc(first), alt: (typeof first === "object" && first.alt) || `Perruque ${p.name}`, loading: "lazy", decoding: "async" }));
-        if (second) media.append(el("img", { class: "alt-img", src: photoSrc(second), alt: "", loading: "lazy", decoding: "async" }));
+        // 2e photo au survol : uniquement avec une souris (sur mobile elle ne serait jamais vue, mais téléchargée)
+        if (second && canHover) media.append(el("img", { class: "alt-img", src: photoSrc(second), alt: "", loading: "lazy", decoding: "async" }));
         const badges = el("div", { class: "badges" });
         (Array.isArray(p.badges) ? p.badges : []).forEach((b) => badges.append(el("span", { class: badgeClass(b), text: b })));
         if (hasPromotion(p)) badges.append(el("span", { class: "badge", text: p.promotion }));

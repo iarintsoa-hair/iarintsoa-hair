@@ -1,0 +1,15 @@
+# IARINTSOA Hair — consignes pour les moteurs de recherche
+User-agent: *
+Allow: /
+
+# Outils internes et anciennes adresses (redirections)
+Disallow: /admin-products.html
+Disallow: /admin-product-jerry-curly.html
+Disallow: /preview.html
+Disallow: /preview-produit.html
+Disallow: /product.html
+Disallow: /product-jerry-curly.html
+Disallow: /order-received.html
+
+# À AJOUTER une fois le nom de domaine choisi :
+# Sitemap: https://VOTRE-DOMAINE/sitemap.xml

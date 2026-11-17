@@ -474,7 +474,7 @@
             if (items.length > 0) {
                 checkoutLink.removeAttribute("aria-disabled");
                 checkoutLink.removeAttribute("tabindex");
-                checkoutLink.textContent = "Commander";
+                checkoutLink.textContent = "Finaliser ma commande";
             } else {
                 checkoutLink.setAttribute("aria-disabled", "true");
                 checkoutLink.tabIndex = -1;

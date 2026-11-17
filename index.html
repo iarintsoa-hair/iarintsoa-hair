@@ -341,10 +341,11 @@
             imageLink.className = "product-image";
             imageLink.href = url;
             imageLink.setAttribute("aria-label", `Découvrir ${product.name}`);
-            image.src = typeof photo === "string" ? photo : photo.src || photo.dataUrl || photo.path;
-            image.alt = typeof photo === "string" ? `Perruque ${product.name}` : photo.alt || `Perruque ${product.name}`;
+            // « lazy » AVANT src : sinon le navigateur télécharge tout de suite les 35 photos
             image.loading = "lazy";
             image.decoding = "async";
+            image.src = typeof photo === "string" ? photo : photo.src || photo.dataUrl || photo.path;
+            image.alt = typeof photo === "string" ? `Perruque ${product.name}` : photo.alt || `Perruque ${product.name}`;
             imageLink.append(image);
 
             details.className = "product-details";

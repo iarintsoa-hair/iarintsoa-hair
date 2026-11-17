@@ -172,9 +172,9 @@
             button.setAttribute("aria-current", String(product.id === activeProductId));
             const src = photoSource(product.photos[0]);
             if (src) {
+                image.loading = "lazy";
                 image.src = src;
                 image.alt = "";
-                image.loading = "lazy";
                 image.decoding = "async";
                 button.append(image);
             } else {
@@ -245,9 +245,9 @@
 
             card.className = "admin-photo-card";
             card.dataset.main = String(index === mainPhotoIndex);
+            image.loading = "lazy";
             image.src = photo.src;
             image.alt = photo.alt;
-            image.loading = "lazy";
             image.decoding = "async";
             name.className = "admin-photo-name";
             name.textContent = photo.name || photo.src.split("/").pop().slice(0, 40);

@@ -19,7 +19,8 @@
         Données : data/products/<identifiant>.json  (même format que le site actuel)
         Champs optionnels reconnus par ce modèle (ignorés sans erreur s'ils manquent) :
           badges[]           ex. ["Best Seller", "New", "Limited Edition"]
-          video              { "src": "video/xxx.mp4", "poster": "image/xxx.jpg" }
+          video              { "src": "video/<identifiant>.mp4", "poster": "image/produits/<identifiant>/<photo>.jpg" }
+          Photos : image/produits/<identifiant>/ ; sans photo, utiliser "image/produits/photo-a-venir.svg"
           lacePrices         { "5x5": 10, "13x4": 20 }  (supplément en euros)
           laceDescriptions   { "4x4": "…" }  (sinon : textes par défaut)
           laceByLength       { "20": "13x4", "24": "4x4" }  dentelle imposée par la longueur

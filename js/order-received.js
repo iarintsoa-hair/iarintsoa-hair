@@ -134,9 +134,9 @@
             article.className = "receipt-item";
             if (item.image) {
                 const image = document.createElement("img");
+                image.loading = "lazy";
                 image.src = item.image;
                 image.alt = "";
-                image.loading = "lazy";
                 article.append(image);
             } else {
                 const placeholder = document.createElement("span");

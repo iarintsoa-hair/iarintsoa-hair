@@ -183,9 +183,9 @@
 
             row.className = "checkout-order-item";
             image.className = "checkout-item-image";
+            image.loading = "lazy";
             image.src = item.image || "image/wig1.jpg";
             image.alt = `Perruque ${item.name}`;
-            image.loading = "lazy";
             image.decoding = "async";
             copy.className = "checkout-item-copy";
             title.textContent = item.name;

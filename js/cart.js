@@ -496,9 +496,9 @@
                 card.className = "cart-item";
                 card.dataset.lineId = item.lineId;
                 image.className = "cart-item-image";
+                image.loading = "lazy";
                 image.src = item.image || "image/wig1.jpg";
                 image.alt = `Perruque ${item.name}`;
-                image.loading = "lazy";
                 image.decoding = "async";
 
                 details.className = "cart-item-details";

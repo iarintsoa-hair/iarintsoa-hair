@@ -1,0 +1,33 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "jerry-curly-noire",
+    "name": "Jerry Curly noire",
+    "tagline": "Des boucles noires rebondies et généreuses, en 20 pouces.",
+    "price": 180,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": null,
+    "promotionPrice": null,
+    "texture": "Jerry Curly",
+    "description": "La Jerry Curly noire offre des boucles rebondies et naturellement définies, d’un noir profond, pour un volume généreux et plein de caractère.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 20 pouces, elle est montée sur une dentelle 4×4 transparente qui se fond avec discrétion. Sans colle, avec cordon de sécurité fourni.",
+    "photos": [
+      { "src": "image/produits/jerry-curly-noire/jerry-curly-noire-1.jpg", "alt": "Perruque Jerry Curly noire 20 pouces sur mannequin, boucles rebondies" }
+    ],
+    "lengths": [20],
+    "lace": "4x4 transparente",
+    "laceOptions": ["4x4"],
+    "density": null,
+    "stock": null,
+    "available": true,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Origine : cheveux naturels brésiliens",
+      "Couleur : Noir naturel",
+      "Pose : sans colle, cordon de sécurité fourni"
+    ],
+    "similarProducts": ["jerry-curly-16-pouces", "bouclee-naturelle", "kinky-curly"],
+    "featured": false
+  }
+}

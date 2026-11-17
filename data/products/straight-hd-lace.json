@@ -11,11 +11,11 @@
     "promotion": null,
     "promotionPrice": null,
     "texture": "Straight",
-    "description": "La Straight HD Lace incarne l’élégance intemporelle des cheveux parfaitement lisses : une chute fluide, un toucher soyeux et une brillance naturelle qui accompagne chacun de vos mouvements.\n\nConfectionnée en cheveux 100 % humains Remy, dans un ombré 1B/27 (des racines noir naturel qui se fondent dans un blond miel lumineux), elle offre une densité de 200 % pour une chevelure dense et lumineuse. Elle se lisse, se boucle, se colore et se décolore selon vos envies.\n\nEn 20 pouces, elle est montée sur un frontal 13×4 transparent, d’une oreille à l’autre ; en 24 pouces, sur une dentelle 4×4 transparente à raie centrale. Fournie avec un cordon de sécurité pour un maintien sûr et confortable.",
+    "description": "La Straight HD Lace incarne l’élégance intemporelle des cheveux parfaitement lisses : une chute fluide, un toucher soyeux et une brillance naturelle qui accompagne chacun de vos mouvements.\n\nConfectionnée en cheveux 100 % humains Remy, dans un Ombré 1B/27 Blond Miel (des racines noir naturel qui se fondent dans un blond miel lumineux), elle offre une densité de 200 % pour une chevelure dense et lumineuse. Elle se lisse, se boucle, se colore et se décolore selon vos envies.\n\nEn 20 pouces, elle est montée sur un frontal 13×4 transparent, d’une oreille à l’autre ; en 24 pouces, sur une dentelle 4×4 transparente à raie centrale. Fournie avec un cordon de sécurité pour un maintien sûr et confortable.",
     "photos": [
       {
         "src": "image/produits/photo-a-venir.svg",
-        "alt": "Perruque Straight HD Lace lisse ombré 1B/27 en cheveux humains Remy — photos bientôt disponibles"
+        "alt": "Perruque Straight HD Lace lisse Ombré 1B/27 Blond Miel en cheveux humains Remy — photos bientôt disponibles"
       }
     ],
     "lengths": [20, 24],
@@ -40,7 +40,7 @@
     "badges": ["New"],
     "characteristics": [
       "Cheveux 100 % humains Remy",
-      "Couleur : Ombré 1B/27 (racines noir naturel, longueurs blond miel)",
+      "Couleur : Ombré 1B/27 Blond Miel (racines noir naturel)",
       "Coiffage : lissage, boucles, coloration et décoloration possibles",
       "Accessoire : cordon de sécurité fourni"
     ],

@@ -1,0 +1,40 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "jerry-curly-16-pouces",
+    "name": "Jerry Curly 16 pouces",
+    "tagline": "Des boucles rebondies et pleines de volume, posées en moins de 5 minutes.",
+    "price": 160,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": null,
+    "promotionPrice": null,
+    "texture": "Jerry Curly",
+    "description": "La Jerry Curly 16 pouces offre des boucles rebondies, souples et naturellement définies, pour un volume généreux qui encadre joliment le visage.\n\nConfectionnée en cheveux naturels brésiliens Remy aux cuticules alignées, elle affiche une densité de 200 % et une dentelle 4×4 transparente qui se fond avec discrétion. Sans colle, avec cordon de sécurité fourni, elle se pose en moins de 5 minutes.\n\nColorable et décolorable, elle se coiffe comme vos propres cheveux.",
+    "photos": [
+      { "src": "image/produits/jerry-curly-16-pouces/jerry-curly-16-pouces-1.jpg", "alt": "Perruque Jerry Curly 16 pouces vue de face, boucles volumineuses et dentelle 4×4 transparente" },
+      { "src": "image/produits/jerry-curly-16-pouces/jerry-curly-16-pouces-2.jpg", "alt": "Jerry Curly 16 pouces de trois quarts : raie centrale et naissance des cheveux naturelle" },
+      { "src": "image/produits/jerry-curly-16-pouces/jerry-curly-16-pouces-3.jpg", "alt": "Jerry Curly 16 pouces vue de dos : boucles denses et définies" },
+      { "src": "image/produits/jerry-curly-16-pouces/jerry-curly-16-pouces-4.jpg", "alt": "Jerry Curly 16 pouces vue de profil : volume et tenue des boucles" },
+      { "src": "image/produits/jerry-curly-16-pouces/jerry-curly-16-pouces-5.jpg", "alt": "Jerry Curly 16 pouces sur mannequin, boucles noires rebondies" },
+      { "src": "image/produits/jerry-curly-16-pouces/jerry-curly-16-pouces-6.jpg", "alt": "Jerry Curly 16 pouces, longueur épaules, boucles définies" }
+    ],
+    "lengths": [16],
+    "lace": "4x4 transparente",
+    "laceOptions": ["4x4"],
+    "density": 200,
+    "stock": null,
+    "available": true,
+    "badges": ["Best Seller"],
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Origine : cheveux naturels brésiliens",
+      "Couleur : Noir naturel",
+      "Pose : sans colle, en moins de 5 minutes, cordon de sécurité fourni",
+      "Coiffage : colorable, décolorable, se coiffe comme vos cheveux"
+    ],
+    "similarProducts": ["jerry-curly-noire", "jerry-curly-hd-lace", "kinky-curly"],
+    "featured": false
+  }
+}

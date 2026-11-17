@@ -50,7 +50,7 @@
         svg.append(use);
         return svg;
     }
-    const laceLabel = (l) => (/^13x|^frontal/i.test(l) ? "Frontal " : "") + String(l).replace(/x/gi, "×");
+    const laceLabel = (l) => (/^13x/i.test(l) ? "Frontal " : "") + String(l).replace(/(\d)x(\d)/gi, "$1×$2");
     const photoSrc = (p) => (typeof p === "string" ? p : p && (p.src || p.dataUrl || p.path));
     const toast = $("#toast");
     let toastTimer;
@@ -292,6 +292,8 @@
             $("#length-option").hidden = true;
             $("#length-request").hidden = false;
             $("#guide").hidden = true;
+            // Modèle à longueur unique (ex. « Coupe courte ») : on le dit au lieu de « sur demande »
+            if (p.lengthNote) $("#length-request").firstChild.textContent = `${p.lengthNote} : modèle en longueur unique. `;
             return;
         }
         p.lengths.forEach((len) => {
@@ -343,7 +345,9 @@
             ["Cheveux", "100 % humains Remy, cuticules alignées"],
             ["Texture", p.texture || p.name],
             ["Densité", Number.isFinite(p.density) ? `${p.density} %` : "Confirmée avec notre équipe"],
-            ["Longueurs", minLen !== null ? `${minLen} à ${maxLen} pouces (${Math.round(minLen * 2.54)} à ${Math.round(maxLen * 2.54)} cm)` : "Sur demande"],
+            ["Longueurs", minLen === null ? p.lengthNote || "Sur demande"
+                : minLen === maxLen ? `${minLen} pouces (${Math.round(minLen * 2.54)} cm)`
+                : `${minLen} à ${maxLen} pouces (${Math.round(minLen * 2.54)} à ${Math.round(maxLen * 2.54)} cm)`],
             ["Dentelle", p.laceByLength && laces.length ? Object.entries(p.laceByLength).map(([len, l]) => `${String(l).replace(/x/gi, "×")} (${len}″)`).join(", ") + (typeof p.lace === "string" && /transparent/i.test(p.lace) ? " — transparente" : "") : laces.length ? laces.map((l) => String(l).replace(/x/gi, "×")).join(", ") + (typeof p.lace === "string" && /transparent/i.test(p.lace) ? " — transparente" : "") : p.lace || "Confirmée avec notre équipe"]
         ];
         // « Couleur : Noir naturel » → ligne « Couleur | Noir naturel » ; sinon ligne « Détail »
@@ -457,7 +461,7 @@
         const sameLacePrice = !p.lacePrices || Object.values(p.lacePrices).every((v) => !v);
         const items = [
             laces.length > 1 && !p.laceByLength && { q: "Quelle dentelle choisir ?", a: `La 4×4 offre une raie centrale et une pose facile ; la 5×5 laisse la raie plus libre ; le frontal 13×4 couvre d’une oreille à l’autre pour une ligne frontale totalement naturelle.${sameLacePrice ? " Toutes les dentelles sont au même prix." : ""}` },
-            p.lengths.length ? { q: "Comment choisir ma longueur ?", a: "Consultez le guide des longueurs : 10–14″ pour un carré, 16–20″ pour une longueur épaules à poitrine, 22–26″ pour une longueur spectaculaire." } : { q: "Quelles longueurs sont disponibles ?", a: "Les longueurs de ce modèle sont confirmées sur demande : écrivez-nous sur WhatsApp, nous vous conseillons la longueur idéale." },
+            p.lengths.length ? { q: "Comment choisir ma longueur ?", a: "Consultez le guide des longueurs : 10–14″ pour un carré, 16–20″ pour une longueur épaules à poitrine, 22–26″ pour une longueur spectaculaire." } : p.lengthNote ? { q: "Quelle est la longueur de cette perruque ?", a: `${p.lengthNote} : ce modèle est proposé en une seule longueur, prête à porter. Notre équipe vous conseille sur WhatsApp si besoin.` } : { q: "Quelles longueurs sont disponibles ?", a: "Les longueurs de ce modèle sont confirmées sur demande : écrivez-nous sur WhatsApp, nous vous conseillons la longueur idéale." },
             { q: "Les cheveux sont-ils 100 % naturels ?", a: "Oui : cheveux humains Remy aux cuticules alignées, pour un toucher doux et un rendu naturel." },
             { q: "Peut-on la coiffer à la chaleur ?", a: "Les cheveux humains se coiffent à la chaleur : appliquez un protecteur thermique et commencez à température modérée." },
             { q: "Quels sont les modes de livraison ?", a: "Partout à La Réunion : Colissimo suivi (10 €), Point Relais (5 €) ou retrait à Saint-Pierre le samedi matin sur rendez-vous (5 €). Le délai vous est confirmé avec votre commande." },
@@ -522,7 +526,7 @@
         const extra = state.lace ? laceExtra(p, state.lace) : 0;
         $("#price-caption").textContent = total === null ? "Confirmé avec notre équipe" : [
             state.qty > 1 ? `${state.qty} × ${euro(unit, p.currency)}` : null,
-            state.length !== null ? `pour ${state.length} pouces` : "prix de départ",
+            state.length !== null ? `pour ${state.length} pouces` : p.lengthNote ? p.lengthNote.toLowerCase() : "prix de départ",
             lace ? (extra > 0 ? `dentelle ${lace} (+ ${euro(extra, p.currency)})` : "dentelle incluse") : null
         ].filter(Boolean).join(" · ");
         const min = minPrice(p);
@@ -551,7 +555,7 @@
         // WhatsApp : toujours la sélection en cours
         const message = [
             `Bonjour, je souhaite commander la perruque ${p.name}`,
-            `— Longueur : ${state.length !== null ? `${state.length} pouces (${Math.round(state.length * 2.54)} cm)` : "à préciser"}`,
+            `— Longueur : ${state.length !== null ? `${state.length} pouces (${Math.round(state.length * 2.54)} cm)` : p.lengthNote || "à préciser"}`,
             lace ? `— Dentelle : ${lace}` : null,
             `— Quantité : ${state.qty}`,
             `— Prix : ${total === null ? "à confirmer" : euro(total, p.currency)}`,

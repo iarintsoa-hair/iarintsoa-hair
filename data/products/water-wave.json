@@ -4,24 +4,29 @@
   "product": {
     "id": "water-wave",
     "name": "Water Wave",
-    "tagline": "Des ondulations généreuses au mouvement aérien.",
+    "tagline": "De petites vagues effet mouillé, pleines de volume et de caractère.",
     "price": 170,
     "currency": "EUR",
-    "priceLabel": "À partir de",
+    "priceLabel": null,
     "promotion": null,
+    "promotionPrice": null,
     "texture": "Water Wave",
-    "description": "Découvrez la texture Water Wave et ses ondulations généreuses. Contactez-nous pour confirmer les longueurs, les caractéristiques et la disponibilité de ce modèle.",
+    "description": "La Water Wave réunit de petites vagues serrées à l’effet mouillé, pour un volume généreux et un mouvement plein de vie.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 18 pouces, elle offre une densité de 200 % et une dentelle 5×5 transparente qui laisse la raie plus libre. Sans colle, avec cordon de sécurité fourni.",
     "photos": [
-      {
-        "src": "image/wig4.jpg",
-        "alt": "Perruque Water Wave aux ondulations généreuses"
-      }
+      { "src": "image/produits/water-wave/water-wave-1.jpg", "alt": "Perruque Water Wave 18 pouces portée, petites vagues volumineuses" }
     ],
-    "lengths": [],
-    "lace": null,
-    "density": null,
+    "lengths": [18],
+    "lace": "5x5 transparente",
+    "laceOptions": ["5x5"],
+    "density": 200,
     "stock": null,
-    "characteristics": [],
-    "similarProducts": ["body-wave", "jerry-curly-hd-lace", "straight-hd-lace"]
+    "available": true,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Origine : cheveux naturels brésiliens",
+      "Pose : sans colle, cordon de sécurité fourni"
+    ],
+    "similarProducts": ["water-wave-frontale", "demi-perruque-water-wave", "wave-frontale"],
+    "featured": false
   }
 }

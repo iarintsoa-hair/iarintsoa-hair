@@ -187,6 +187,14 @@
         /* Recadrage : masque le logo (en haut à gauche) et le texte (en bas) incrustés dans la photo */
         .hero-img { position: absolute; left: -35%; top: -22%; width: 141%; height: 149%; max-width: none; object-fit: cover; object-position: center; will-change: transform; animation: ken-burns 26s ease-in-out infinite alternate; }
         .hero.is-offscreen .hero-img { animation-play-state: paused; } /* économie de batterie hors écran */
+        /* Traitement premium de la photo (5 à 8 %, calques réversibles, aucune retouche du fichier).
+           Mode « darken » : n'agit que sur les pixels plus clairs que la teinte → hautes lumières et reflets,
+           sans toucher les tons foncés (cheveux, perruque) ni les tons moyens (peau). */
+        .hero-tone { position: absolute; inset: 0; pointer-events: none; }
+        .hero-tone--light { background: #e8c7cf; mix-blend-mode: darken; opacity: .14; }
+        .hero-tone--fuchsia { background: #f0a6c4; mix-blend-mode: darken; opacity: .09; }
+        /* Halo rose poudré en anneau autour de la silhouette ; le centre (visage) reste transparent */
+        .hero-tone--halo { background: radial-gradient(ellipse 62% 54% at 58% 34%, rgba(232, 199, 207, 0) 0%, rgba(232, 199, 207, 0) 62%, rgba(232, 199, 207, 1) 80%, rgba(232, 199, 207, 0) 100%); mix-blend-mode: screen; opacity: .12; }
         .hero-panel { position: relative; z-index: 3; display: flex; flex-direction: column; justify-content: center; width: min(100%, 680px); height: 100%; padding: calc(var(--header-h) + 30px) clamp(28px, 6vw, 96px) 60px; overflow: hidden; color: var(--ivory); }
         .hero-panel::before { position: absolute; top: -30%; left: -30%; width: 90%; height: 90%; background: radial-gradient(circle, rgba(227, 207, 159, .1), rgba(227, 207, 159, 0) 65%); content: ""; pointer-events: none; }
         .hero-panel .eyebrow { color: var(--champagne-light); }
@@ -469,6 +477,7 @@
             .hero-media { width: 100%; }
             .hero-media::before { background: linear-gradient(0deg, rgba(13, 12, 11, .94) 0%, rgba(13, 12, 11, .74) 34%, rgba(13, 12, 11, .12) 60%, rgba(13, 12, 11, 0) 72%); }
             .hero-img { left: -18%; top: -30%; width: 125%; } /* le recadrage vertical masque déjà le logo incrusté : moins d'agrandissement, photo plus nette */
+            .hero-tone--halo { background: radial-gradient(ellipse 70% 40% at 55% 26%, rgba(232, 199, 207, 0) 0%, rgba(232, 199, 207, 0) 62%, rgba(232, 199, 207, 1) 80%, rgba(232, 199, 207, 0) 100%); }
             .hero-panel { width: 100%; height: auto; padding: 0 clamp(22px, 6vw, 56px) 40px; }
             .hero-watermark, .hero-points { display: none; }
         }
@@ -705,7 +714,7 @@
                 </div>
                 <svg class="hero-watermark" aria-hidden="true"><use href="#logo-ih"/></svg>
             </div>
-            <figure class="hero-media"><img class="hero-img" src="image/bob.jpg" alt="Femme portant une perruque carré lisse IARINTSOA Hair" width="734" height="1025" fetchpriority="high"></figure>
+            <figure class="hero-media"><img class="hero-img" src="image/bob.jpg" alt="Femme portant une perruque carré lisse IARINTSOA Hair" width="734" height="1025" fetchpriority="high"><span class="hero-tone hero-tone--light" aria-hidden="true"></span><span class="hero-tone hero-tone--fuchsia" aria-hidden="true"></span><span class="hero-tone hero-tone--halo" aria-hidden="true"></span></figure>
         </section>
 
         <!-- Réassurance -->

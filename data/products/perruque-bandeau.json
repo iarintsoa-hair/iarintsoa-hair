@@ -1,0 +1,40 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "perruque-bandeau",
+    "name": "Perruque bandeau bouclée",
+    "tagline": "Des boucles volumineuses à enfiler en quelques secondes, sans colle ni dentelle.",
+    "price": 160,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": null,
+    "promotionPrice": null,
+    "texture": "Bouclée",
+    "description": "La Perruque bandeau bouclée offre des boucles volumineuses en 18 pouces, dans le format le plus simple à porter : elle s’enfile en quelques secondes et se maintient grâce à son bandeau.\n\nSans colle et sans dentelle, elle est idéale pour un look soigné en un instant, tout en préservant vos cheveux naturels. Confectionnée en cheveux naturels brésiliens Remy.",
+    "photos": [
+      { "src": "image/produits/perruque-bandeau/perruque-bandeau-1.jpg", "alt": "Perruque bandeau bouclée 18 pouces sur mannequin, bandeau noir" }
+    ],
+    "lengths": [18],
+    "lace": "Sans dentelle (bandeau)",
+    "density": null,
+    "stock": null,
+    "available": true,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Format : perruque bandeau",
+      "Origine : cheveux naturels brésiliens"
+    ],
+    "highlights": [
+      { "title": "Pose en quelques secondes", "text": "Elle s’enfile comme un bonnet et se maintient grâce à son bandeau." },
+      { "title": "Sans colle ni dentelle", "text": "Aucune préparation : un look soigné en un instant, en préservant vos cheveux." },
+      { "title": "Boucles volumineuses", "text": "Des boucles généreuses en 18 pouces, pleines de caractère." },
+      { "title": "Accompagnée à La Réunion", "text": "Conseil personnalisé sur WhatsApp et livraison sur toute l’île." }
+    ],
+    "faq": [
+      { "q": "Comment se pose une perruque bandeau ?", "a": "Elle s’enfile comme un bonnet, puis se maintient grâce à son bandeau : aucune colle ni dentelle à poser. Vous pouvez changer de bandeau pour varier les looks." }
+    ],
+    "similarProducts": ["demi-perruque-water-wave", "jerry-curly-16-pouces", "bouclee-naturelle"],
+    "featured": false
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "jerry-curly-bordeaux",
+    "name": "Jerry Curly bordeaux",
+    "tagline": "Des boucles bordeaux intenses aux racines noires, sur dentelle HD.",
+    "price": 240,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": "Promo",
+    "promotionPrice": 220,
+    "texture": "Jerry Curly",
+    "description": "La Jerry Curly bordeaux associe des boucles rebondies d’un bordeaux intense à des racines noir naturel, pour un look audacieux et lumineux.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 24 pouces, elle est montée sur une dentelle HD qui se fond sur la peau. Sans colle, avec cordon de sécurité fourni.",
+    "photos": [
+      { "src": "image/produits/jerry-curly-bordeaux/jerry-curly-bordeaux-1.jpg", "alt": "Perruque Jerry Curly bordeaux racines noires 24 pouces sur mannequin, dentelle HD" }
+    ],
+    "lengths": [24],
+    "lace": "HD",
+    "laceOptions": ["HD"],
+    "laceDescriptions": { "HD": "Dentelle HD ultra fine et transparente : fonte invisible sur la peau." },
+    "density": null,
+    "stock": null,
+    "available": true,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Couleur : Bordeaux, racines noires",
+      "Origine : cheveux naturels brésiliens",
+      "Pose : sans colle, cordon de sécurité fourni"
+    ],
+    "similarProducts": ["bordeaux-racines-noires", "jerry-curly-piano", "bob-bordeaux"],
+    "featured": false
+  }
+}

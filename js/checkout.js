@@ -11,7 +11,8 @@
     const totals = document.querySelector("#checkout-totals");
     const summaryNote = document.querySelector("#checkout-summary-note");
     const deliveryOptions = document.querySelector("#checkout-delivery-options");
-    const submitButton = document.querySelector("#checkout-submit");
+    // Ancien bouton « Payer maintenant » (paiement en ligne) retiré : objet neutre pour le code existant
+    const submitButton = document.querySelector("#checkout-submit") || { disabled: false };
     const whatsappButton = document.querySelector("#checkout-whatsapp");
     let items = [];
     let selectedDelivery = null;
@@ -345,7 +346,7 @@
             customer: getCustomerData(),
             items: JSON.parse(JSON.stringify(items)),
             delivery: Object.assign({}, selectedDelivery),
-            paymentMethod: "Wero",
+            paymentMethod: "à convenir sur WhatsApp, après confirmation de la commande",
             subtotal: Object.fromEntries(subtotalByCurrency),
             total: Object.fromEntries(finalTotalsByCurrency)
         };
@@ -402,58 +403,6 @@
         ].filter(Boolean).join("\n");
     }
 
-    async function continueToWero() {
-        await refreshMissingPrices();
-        refreshCheckout();
-        if (!validateCheckout()) return;
-        if (hasUnpricedItems || hasEstimatedItems) {
-            status.textContent = "Un ou plusieurs produits n’ont pas encore de prix définitif. Aucun paiement Wero n’a été lancé ; confirmez la longueur et le montant sur WhatsApp.";
-            return;
-        }
-
-        submitButton.disabled = true;
-        const order = createOrderSnapshot("payment_pending");
-        status.textContent = "Enregistrement sécurisé de votre commande…";
-        try {
-            await saveOrder(order, false);
-        } catch (error) {
-            showError(`La commande n’a pas pu être enregistrée. Aucun paiement n’a été lancé. ${error.message}`);
-            submitButton.disabled = false;
-            return;
-        }
-
-        const provider = global.IARINTSOAWeroCheckout || {};
-        if (provider.configured !== true || typeof provider.createSession !== "function") {
-            status.textContent = `La commande ${order.reference} est enregistrée. Wero n’est pas encore connecté ; aucun paiement n’a été demandé. Redirection vers la page de préparation.`;
-            const preparationUrl = new URL("order-received.html", global.location.href);
-            preparationUrl.searchParams.set("order_reference", order.reference);
-            global.location.assign(preparationUrl.href);
-            return;
-        }
-
-        status.textContent = "Préparation de votre paiement Wero…";
-        try {
-            const returnUrl = new URL("order-received.html", global.location.href);
-            returnUrl.searchParams.set("order_reference", order.reference);
-            const result = await provider.createSession(order, { returnUrl: returnUrl.href });
-            if (!result || typeof result.checkoutUrl !== "string"
-                || typeof result.sessionId !== "string" || !result.sessionId) {
-                throw new Error("Le service Wero n’a pas retourné une session de paiement valide.");
-            }
-            const checkoutUrl = new URL(result.checkoutUrl);
-            if (checkoutUrl.protocol !== "https:" || checkoutUrl.username || checkoutUrl.password) {
-                throw new Error("Le lien de paiement Wero doit être une adresse HTTPS valide.");
-            }
-            order.sessionId = result.sessionId;
-            await saveOrder(order, true);
-            global.location.assign(checkoutUrl.href);
-        } catch (error) {
-            showError(`Le paiement Wero n’a pas été lancé. Aucun paiement n’a été effectué. ${error.message}`);
-            status.textContent = `La commande ${order.reference} reste enregistrée et en attente.`;
-            submitButton.disabled = false;
-        }
-    }
-
     // whatsappWindow : onglet ouvert pendant le clic (voir le gestionnaire du bouton), ou null s'il a été bloqué.
     async function sendWhatsAppOrder(whatsappWindow) {
         const closeWhatsAppWindow = () => {
@@ -480,14 +429,15 @@
         } else {
             global.location.href = whatsappUrl; // onglet bloqué : WhatsApp s'ouvre dans l'onglet actuel
         }
-        status.textContent = `La commande ${order.reference} est enregistrée. Envoyez le récapitulatif ouvert dans WhatsApp ; si l’application ne s’ouvre pas, réessayez avec « Commander sur WhatsApp ». Notre équipe vérifiera ensuite la commande et vous transmettra la demande de paiement Wero.`;
+        status.textContent = `La commande ${order.reference} est enregistrée. Envoyez le récapitulatif ouvert dans WhatsApp ; si l’application ne s’ouvre pas, réessayez avec « Commander sur WhatsApp ». Notre équipe vérifiera ensuite la commande et vous indiquera le moyen de paiement.`;
     }
 
     form.addEventListener("input", saveCustomerData);
     form.addEventListener("change", saveCustomerData);
+    // Commandes uniquement via WhatsApp : la touche Entrée envoie aussi la commande sur WhatsApp
     form.addEventListener("submit", (event) => {
         event.preventDefault();
-        continueToWero().catch((error) => showError(`Le paiement n’a pas pu être préparé. ${error.message}`));
+        whatsappButton.click();
     });
     whatsappButton.addEventListener("click", () => {
         // Safari (iPhone) n'autorise l'ouverture d'un onglet que pendant le clic lui-même :

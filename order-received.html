@@ -2,76 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#F8F5F2">
-    <meta name="description" content="Suivez l’état de votre commande IARINTSOA Hair.">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Suivi de commande | IARINTSOA Hair</title>
-    <link rel="icon" type="image/svg+xml" href="image/logo-transparent.svg">
-    <link rel="icon" type="image/png" href="image/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cart.css">
-    <link rel="stylesheet" href="checkout.css">
-    <link rel="stylesheet" href="order-received.css">
-    <link rel="stylesheet" href="visual-effects.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, follow">
+    <meta http-equiv="refresh" content="0; url=index.html">
+    <title>IARINTSOA Hair</title>
+    <link rel="icon" type="image/svg+xml" href="image/favicon-ih.svg">
 </head>
-<body class="checkout-page">
-    <header class="site-header checkout-header">
-        <a class="brand" href="index.html#accueil" aria-label="IARINTSOA Hair, accueil">
-            <img class="logo" src="image/logo.png" alt="IARINTSOA Hair" width="1024" height="1024">
-        </a>
-        <a class="cart-continue-link" href="index.html#collection">Continuer les achats</a>
-        <a class="site-cart" href="cart.html" data-cart-link aria-label="Ouvrir le panier">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L21 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
-            <span class="site-cart-count" data-cart-count hidden>0</span>
-        </a>
-    </header>
-
-    <main class="receipt-main">
-        <nav class="checkout-progress" aria-label="Étapes de commande">
-            <ol>
-                <li class="is-complete"><a href="cart.html"><span>1</span>Panier</a></li>
-                <li class="is-complete"><span>2</span>Livraison</li>
-                <li class="is-current" aria-current="step"><span>3</span>Paiement</li>
-                <li><span>4</span>Confirmation</li>
-            </ol>
-        </nav>
-
-        <section class="receipt-pending" id="receipt-pending" aria-labelledby="receipt-pending-title">
-            <span class="receipt-pending-icon" aria-hidden="true">…</span>
-            <p class="checkout-kicker">Paiement Wero</p>
-            <h1 id="receipt-pending-title">Confirmation en attente</h1>
-            <p id="receipt-pending-message">Nous vérifions le statut du paiement auprès du service Wero. Cette page ne confirme pas un paiement tant que le serveur ne l’a pas validé.</p>
-            <p class="receipt-reference" id="receipt-pending-reference" hidden></p>
-            <a class="receipt-whatsapp" id="receipt-pending-whatsapp" href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer" hidden>Contacter IARINTSOA Hair sur WhatsApp</a>
-        </section>
-
-        <section class="receipt-confirmed" id="receipt-confirmed" aria-labelledby="receipt-title" hidden>
-            <span class="receipt-success-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></svg>
-            </span>
-            <p class="checkout-kicker">Merci pour votre confiance</p>
-            <h1 id="receipt-title">Merci pour votre commande</h1>
-            <p class="receipt-thanks" id="receipt-thanks"></p>
-            <p class="receipt-reference" id="receipt-reference"></p>
-            <div class="receipt-order-card">
-                <h2>Récapitulatif</h2>
-                <div id="receipt-items"></div>
-                <div class="checkout-price-breakdown" id="receipt-totals"></div>
-            </div>
-            <p class="receipt-whatsapp-note" id="receipt-whatsapp-note"></p>
-            <a class="receipt-whatsapp" id="receipt-whatsapp" href="#" target="_blank" rel="noopener noreferrer">Envoyer le récapitulatif sur WhatsApp</a>
-            <a class="receipt-home" href="index.html#accueil">Retour à la boutique</a>
-        </section>
-    </main>
-
-    <script src="js/cart.js"></script>
-    <script src="js/order-storage.js"></script>
-    <script src="js/wero-checkout.js"></script>
-    <script src="js/order-received.js"></script>
-    <script src="js/visual-effects.js"></script>
+<body>
+    <!-- Ancienne page de retour de paiement en ligne : les commandes se font uniquement sur WhatsApp. -->
+    <p><a href="index.html">Retour à la boutique IARINTSOA Hair</a></p>
+    <script>window.location.replace("index.html");</script>
 </body>
 </html>

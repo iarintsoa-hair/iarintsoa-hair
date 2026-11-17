@@ -273,7 +273,6 @@
         const texture = `${p.texture || ""} ${p.name}`;
         $("#crumb-collection").textContent = /curl|boucl/i.test(texture) ? "Perruques bouclées" : /wave|ond/i.test(texture) ? "Perruques ondulées" : /straight|lisse|bob|carr/i.test(texture) ? "Perruques lisses" : "Perruques";
         $("#product-tagline").textContent = p.tagline || "";
-        $("#wish-btn").setAttribute("aria-label", `Ajouter ${p.name} à mes favoris`);
         const reviews = Array.isArray(p.reviews) ? p.reviews : [];
         const link = $("#rating-link");
         if (reviews.length) {
@@ -599,17 +598,6 @@
     $$("[data-search-close]").forEach((x) => x.addEventListener("click", () => setSearch(false)));
     searchInput.addEventListener("input", renderSearch);
     document.addEventListener("keydown", (e) => { if (e.key === "Escape" && searchPanel.classList.contains("is-open")) setSearch(false); });
-
-    // ---------- Compte et favoris (démonstration) ----------
-    $$("[data-account]").forEach((x) => x.addEventListener("click", () => notify("Espace client : bientôt disponible.")));
-    $("#wish-btn").addEventListener("click", () => {
-        const btn = $("#wish-btn");
-        const on = btn.getAttribute("aria-pressed") !== "true";
-        btn.setAttribute("aria-pressed", String(on));
-        $("[data-wish-count]").textContent = on ? "1" : "0";
-        $("[data-wish-count]").hidden = !on;
-        $("[data-wish-link]").setAttribute("aria-label", `Mes favoris, ${on ? 1 : 0} modèle`);
-    });
 
     // ---------- Barre d'achat mobile + bouton WhatsApp flottant ----------
     let barVisible = false, barTicking = false;

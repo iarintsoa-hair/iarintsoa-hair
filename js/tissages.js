@@ -98,9 +98,6 @@
     searchInput.addEventListener("input", renderSearch);
     document.addEventListener("keydown", (e) => { if (e.key === "Escape" && searchPanel.classList.contains("is-open")) setSearch(false); });
 
-    // ---------- Compte (démonstration) ----------
-    $$("[data-account]").forEach((x) => x.addEventListener("click", () => notify("Espace client : bientôt disponible.")));
-
     // ---------- WhatsApp flottant : rangé quand le panneau de commande est visible sur mobile ----------
     const floatWa = $("#float-wa");
     let ticking = false;

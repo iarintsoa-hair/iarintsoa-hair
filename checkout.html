@@ -19,7 +19,7 @@
 </head>
 <body class="checkout-page">
     <header class="site-header checkout-header">
-        <a class="brand" href="index.html#accueil" aria-label="IARINTSOA Hair, accueil">
+        <a class="brand" href="index.html" aria-label="IARINTSOA Hair, accueil">
             <img class="logo" src="image/logo.png" alt="IARINTSOA Hair" width="1024" height="1024">
         </a>
         <a class="cart-continue-link" href="cart.html">Retour au panier</a>
@@ -34,7 +34,7 @@
             <ol>
                 <li class="is-complete"><a href="cart.html"><span>1</span>Panier</a></li>
                 <li class="is-current" aria-current="step"><span>2</span>Livraison</li>
-                <li><span>3</span>Paiement</li>
+                <li><span>3</span>Envoi sur WhatsApp</li>
                 <li><span>4</span>Confirmation</li>
             </ol>
         </nav>
@@ -109,42 +109,30 @@
                     <div class="checkout-panel-heading">
                         <span class="checkout-step-number">03</span>
                         <div>
-                            <p class="checkout-section-kicker">Moyen de paiement</p>
-                            <h2 id="payment-title">Moyen de paiement</h2>
+                            <p class="checkout-section-kicker">Paiement</p>
+                            <h2 id="payment-title">Paiement après confirmation</h2>
                         </div>
                     </div>
-                    <fieldset class="checkout-payment-options">
-                        <legend class="visually-hidden">Choisissez un moyen de paiement</legend>
-                        <label class="checkout-payment-option" for="payment-wero">
-                            <input id="payment-wero" name="payment-method" type="radio" value="wero" checked required>
-                            <span class="wero-payment-mark" aria-hidden="true">W</span>
-                            <span>
-                                <strong>Wero</strong>
-                                <small>Le paiement s’ouvrira via Wero si l’intégration est disponible. Sinon, votre commande sera enregistrée et une page de préparation s’affichera, sans paiement simulé.</small>
-                            </span>
-                            <span class="wero-selected">Sélectionné</span>
-                        </label>
-                    </fieldset>
+                    <p class="checkout-privacy-note">Aucun paiement n’est demandé sur ce site. Votre commande est envoyée sur WhatsApp : notre équipe vous confirme la disponibilité, le montant total et la livraison, puis vous indique le moyen de paiement. Rien n’est prélevé sans votre accord.</p>
                 </section>
 
                 <section class="checkout-terms-section" aria-label="Conditions de vente">
                     <label class="checkout-terms">
                         <input id="checkout-terms" name="termsAccepted" type="checkbox" required>
-                        <span>J'accepte les Conditions Générales de Vente.</span>
+                        <span>J'accepte les <a href="informations-legales.html#conditions" target="_blank" rel="noopener">conditions de vente</a>.</span>
                     </label>
                 </section>
 
                 <div class="checkout-actions">
-                    <a class="checkout-continue-shopping" href="index.html#collection">Continuer les achats</a>
+                    <a class="checkout-continue-shopping" href="index.html#boutique">Continuer les achats</a>
                     <button class="checkout-whatsapp" id="checkout-whatsapp" type="button">Commander sur WhatsApp</button>
-                    <button class="checkout-payment" id="checkout-submit" type="submit">Payer maintenant <span aria-hidden="true">→</span></button>
                 </div>
             </form>
 
             <aside class="checkout-order-summary" aria-labelledby="checkout-summary-title">
                 <p class="checkout-summary-kicker">Votre sélection</p>
                 <h2 id="checkout-summary-title">Récapitulatif de commande</h2>
-                <p class="checkout-empty" id="checkout-empty" hidden>Votre panier est vide. <a href="index.html#collection">Découvrir la collection</a></p>
+                <p class="checkout-empty" id="checkout-empty" hidden>Votre panier est vide. <a href="index.html#boutique">Découvrir la collection</a></p>
                 <div class="checkout-order-items" id="checkout-items"></div>
                 <div class="checkout-price-breakdown" id="checkout-totals" aria-live="polite"></div>
                 <p class="checkout-summary-note" id="checkout-summary-note"></p>
@@ -156,7 +144,6 @@
     <script src="js/product-data.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/order-storage.js"></script>
-    <script src="js/wero-checkout.js"></script>
     <script src="js/checkout.js"></script>
     <script src="js/visual-effects.js"></script>
 </body>

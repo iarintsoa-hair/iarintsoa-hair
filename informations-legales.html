@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0d0c0b">
+    <meta name="robots" content="noindex, follow">
+    <title>Informations légales | IARINTSOA Hair</title>
+    <meta name="description" content="Mentions légales, conditions de vente et politique de confidentialité d’IARINTSOA Hair, perruques et tissages à La Réunion.">
+    <link rel="icon" type="image/svg+xml" href="image/favicon-ih.svg">
+    <link rel="apple-touch-icon" href="image/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
+    <!-- IARINTSOA Hair — INFORMATIONS LÉGALES (en attente). Rechercher « À COMPLÉTER » pour les informations à ajouter. Page exclue de Google (noindex) tant qu’elle n’est pas définitive : retirer la ligne robots une fois complétée. -->
+    <style>
+        /* ================= 1. Identité ================= */
+        :root {
+            --black: #0d0c0b; --ink: #171514; --ivory: #fbf8f3; --beige: #f1e8dc; --beige-deep: #e6d8c5;
+            --champagne: #c9a96e; --champagne-light: #e3cf9f; --champagne-text: #86683b;
+            --muted: #6c625b; --line: #e6dccf;
+            --serif: "Cormorant Garamond", "Times New Roman", serif;
+            --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+            --ease: cubic-bezier(.22, .61, .36, 1);
+            --gutter: clamp(20px, 5vw, 80px);
+            --max: 1400px;
+            --header-h: 112px;
+        }
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+        body { margin: 0; overflow-x: hidden; background: var(--ivory); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+        img { display: block; max-width: 100%; height: auto; }
+        a { color: inherit; text-decoration: none; }
+        button, input { font: inherit; color: inherit; }
+        :focus-visible { outline: 2px solid var(--champagne); outline-offset: 3px; }
+        .container { width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto; }
+        .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+        .skip-link { position: absolute; left: 12px; top: -80px; z-index: 100; padding: 10px 16px; background: var(--black); color: var(--ivory); }
+        .skip-link:focus { top: 12px; }
+        .icon { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; flex: 0 0 auto; }
+        .eyebrow { margin: 0 0 14px; color: var(--champagne-text); font-size: 12px; font-weight: 500; letter-spacing: .3em; text-transform: uppercase; }
+        .title { margin: 0; font-family: var(--serif); font-size: clamp(34px, 4.2vw, 54px); font-weight: 400; line-height: 1.08; }
+        .title em { color: var(--champagne-text); font-style: italic; }
+        .section { padding-block: clamp(72px, 9vw, 128px); }
+        .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 28px; margin-bottom: clamp(32px, 4vw, 52px); }
+        .section-head p { max-width: 440px; margin: 0; color: var(--muted); }
+        .demo-note { display: inline-block; margin-top: 16px; padding: 6px 12px; border: 1px dashed var(--champagne-text); color: var(--champagne-text); font-size: 12px; letter-spacing: .06em; }
+
+        /* Boutons premium avec reflet de lumière */
+        .btn { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 56px; padding: 0 30px; border: 1px solid transparent; font-size: 12px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; cursor: pointer; transition: background-color .45s var(--ease), color .45s var(--ease), border-color .45s var(--ease); }
+        .btn::before { position: absolute; inset: 0; z-index: -1; background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, .36) 50%, transparent 70%); content: ""; pointer-events: none; transform: translateX(-130%); transition: transform 1.1s var(--ease); }
+        .btn:hover::before { transform: translateX(130%); }
+        .btn .icon { width: 18px; height: 18px; }
+        .btn--dark { background: var(--black); color: var(--ivory); }
+        .btn--dark:hover { background: #2a2622; }
+        .btn--whatsapp { border-color: var(--black); background: var(--ivory); color: var(--black); }
+        .btn--whatsapp .icon { color: var(--champagne-text); transition: color .4s; }
+        .btn--whatsapp:hover { background: var(--black); color: var(--champagne-light); }
+        .btn--whatsapp:hover .icon { color: var(--champagne-light); }
+        .link-line { display: inline-flex; align-items: center; gap: 8px; padding: 0 0 3px; border: 0; border-bottom: 1px solid currentColor; background: none; font-size: 12px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; cursor: pointer; }
+
+        /* ================= 2. Annonce + en-tête (logo agrandi) ================= */
+        .announce { height: 40px; display: flex; align-items: center; justify-content: center; padding: 0 16px; background: var(--black); color: var(--champagne-light); font-size: 12px; letter-spacing: .22em; text-align: center; text-transform: uppercase; }
+        .announce strong { color: var(--ivory); font-weight: 500; }
+        .header { position: sticky; top: 0; z-index: 30; background: rgba(251, 248, 243, .94); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+        .header-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: var(--header-h); }
+        .nav { display: flex; gap: clamp(20px, 2.4vw, 36px); }
+        .nav a { position: relative; padding: 8px 0; font-size: 12px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; }
+        .nav a::after { position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--champagne); content: ""; transform: scaleX(0); transform-origin: left; transition: transform .5s var(--ease); }
+        .nav a:hover::after, .nav a[aria-current="page"]::after { transform: scaleX(1); }
+        .nav a { white-space: nowrap; }
+        @media (max-width: 1440px) { .nav { gap: clamp(16px, 1.8vw, 28px); } .nav a { font-size: 11px; letter-spacing: .14em; } }
+        @media (max-width: 1180px) { .nav a:last-child { display: none; } }
+        .brand { display: inline-flex; align-items: center; gap: 20px; }
+        .brand-mark { width: 72px; height: 72px; color: var(--ink); transition: transform .8s var(--ease); }
+        .brand:hover .brand-mark { transform: rotate(-6deg); }
+        .brand-name { display: grid; justify-items: center; line-height: 1; }
+        .brand-name strong { padding-left: .28em; font-family: var(--serif); font-size: 32px; font-weight: 500; letter-spacing: .28em; animation: write-in 1.6s .55s var(--ease) both; }
+        .brand-name span { display: flex; align-items: center; gap: 10px; margin-top: 10px; padding-left: .55em; color: var(--champagne-text); font-size: 11px; font-weight: 500; letter-spacing: .55em; animation: fade-in 1.2s 1.3s var(--ease) both; }
+        .brand-name span::before, .brand-name span::after { width: 24px; height: 1px; background: var(--champagne); content: ""; }
+        .ih-letter { animation: fade-in 1.2s .15s var(--ease) both; }
+        .ih-arc { stroke-dasharray: 150; stroke-dashoffset: 150; animation: draw 1.8s .3s var(--ease) forwards; }
+        .header-actions { display: flex; justify-content: flex-end; gap: 4px; }
+        .icon-btn { position: relative; display: inline-grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 50%; background: none; cursor: pointer; transition: background-color .3s; }
+        .icon-btn:hover { background: var(--beige); }
+        .cart-count { position: absolute; top: 4px; right: 3px; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px; background: var(--black); color: var(--champagne-light); font-size: 11px; line-height: 18px; text-align: center; }
+        .burger { display: none; }
+
+        /* ================= 3. Fil d'Ariane ================= */
+        .breadcrumb { padding: 22px 0 6px; color: var(--muted); font-size: 13px; letter-spacing: .04em; }
+        .breadcrumb ol { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
+        .breadcrumb li + li::before { margin-right: 10px; color: var(--champagne); content: "/"; }
+        .breadcrumb a:hover { color: var(--ink); }
+
+        /* ================= 4. Produit : galerie + panneau d'achat ================= */
+        .product { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(380px, .88fr); gap: clamp(36px, 5vw, 88px); align-items: start; padding: 18px 0 clamp(64px, 8vw, 110px); }
+
+        /* Galerie immersive */
+        .gallery { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 18px; position: sticky; top: calc(var(--header-h) + 20px); }
+        .thumbs { display: grid; align-content: start; gap: 12px; margin: 0; padding: 0; list-style: none; }
+        .thumbs button { position: relative; display: block; width: 84px; aspect-ratio: 4 / 5; overflow: hidden; padding: 0; border: 1px solid transparent; background: var(--beige); cursor: pointer; opacity: .62; transition: opacity .4s, border-color .4s; }
+        .thumbs button:hover { opacity: 1; }
+        .thumbs button[aria-current="true"] { border-color: var(--ink); opacity: 1; }
+        .thumbs img { width: 100%; height: 100%; object-fit: cover; }
+        .stage { position: relative; overflow: hidden; aspect-ratio: 4 / 5; background: var(--beige); }
+        .stage-track { position: absolute; inset: 0; }
+        .slide { position: absolute; inset: 0; margin: 0; overflow: hidden; opacity: 0; visibility: hidden; transition: opacity .8s var(--ease), visibility .8s; cursor: zoom-in; }
+        .slide.is-active { opacity: 1; visibility: visible; }
+        .slide img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s var(--ease); }
+        .slide.is-zooming img { transform: scale(2.1); transition: transform .25s ease-out; }
+        .stage-badges { position: absolute; z-index: 2; top: 18px; left: 18px; display: grid; gap: 6px; justify-items: start; pointer-events: none; }
+        .badge { padding: 7px 12px 6px; background: var(--ivory); color: var(--ink); font-size: 11px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; }
+        .badge--black { background: var(--black); color: var(--champagne-light); }
+        .badge--gold { background: var(--champagne); color: var(--black); }
+        .stage-tools { position: absolute; z-index: 2; right: 16px; bottom: 16px; display: flex; align-items: center; gap: 10px; }
+        .stage-counter { padding: 7px 12px; background: rgba(251, 248, 243, .9); font-size: 12px; letter-spacing: .14em; }
+        .stage-tools button { display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 50%; background: rgba(251, 248, 243, .92); cursor: pointer; transition: background-color .3s, color .3s; }
+        .stage-tools button:hover { background: var(--black); color: var(--champagne-light); }
+        .zoom-hint { position: absolute; z-index: 2; left: 18px; bottom: 18px; padding: 7px 12px; background: rgba(13, 12, 11, .62); color: var(--ivory); font-size: 12px; letter-spacing: .12em; pointer-events: none; transition: opacity .4s; }
+        .stage:hover .zoom-hint { opacity: 0; }
+        .dots { display: none; }
+
+        /* Panneau d'achat */
+        .buy { padding-top: 4px; }
+        .buy-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+        .buy h1 { margin: 0; font-family: var(--serif); font-size: clamp(44px, 4.4vw, 64px); font-weight: 400; letter-spacing: -.01em; line-height: 1; }
+        .buy-tagline { margin: 12px 0 18px; color: var(--muted); font-family: var(--serif); font-size: 21px; font-style: italic; line-height: 1.4; }
+        .rating { display: inline-flex; align-items: center; gap: 12px; color: var(--muted); font-size: 13px; }
+        .rating .stars { color: var(--champagne); letter-spacing: .2em; }
+        .price-block { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 16px; margin: 26px 0 6px; padding-top: 24px; border-top: 1px solid var(--line); }
+        .price { font-family: var(--serif); font-size: 44px; font-weight: 500; line-height: 1; transition: opacity .25s; }
+        .price.is-updating { opacity: .25; }
+        .price-caption { color: var(--muted); font-size: 14px; }
+        .tax-note { margin: 0 0 26px; color: var(--muted); font-size: 13px; }
+        .option { margin: 0 0 28px; padding: 0; border: 0; }
+        .option-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; width: 100%; margin-bottom: 14px; padding: 0; }
+        .option-head span { font-size: 12px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; }
+        .option-head output { color: var(--champagne-text); font-family: var(--serif); font-size: 19px; font-style: italic; letter-spacing: 0; text-transform: none; }
+        .lengths { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+        .choice { position: relative; display: block; cursor: pointer; }
+        .choice input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+        .choice-box { display: grid; justify-items: center; gap: 2px; padding: 12px 6px 10px; border: 1px solid var(--line); background: #fff; transition: border-color .35s var(--ease), background-color .35s var(--ease), box-shadow .35s var(--ease); }
+        .choice-box b { font-family: var(--serif); font-size: 21px; font-weight: 500; line-height: 1.1; }
+        .choice-box small { color: var(--muted); font-size: 12px; }
+        .choice:hover .choice-box { border-color: var(--champagne); }
+        .choice input:checked + .choice-box { border-color: var(--black); background: var(--black); color: var(--ivory); }
+        .choice input:checked + .choice-box small { color: var(--champagne-light); }
+        .choice input:focus-visible + .choice-box { outline: 2px solid var(--champagne); outline-offset: 2px; }
+        .laces { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+        .laces .choice-box { justify-items: start; gap: 4px; padding: 16px 14px; text-align: left; }
+        .laces .choice-box em { color: var(--champagne-text); font-size: 12px; font-style: normal; letter-spacing: .14em; text-transform: uppercase; }
+        .laces .choice-box small { line-height: 1.4; }
+        .laces .choice input:checked + .choice-box em { color: var(--champagne-light); }
+        .spec-pills { display: flex; flex-wrap: wrap; gap: 8px; margin: -8px 0 28px; }
+        .spec-pills span { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid var(--line); font-size: 13px; }
+        .spec-pills span::before { width: 5px; height: 5px; border-radius: 50%; background: var(--champagne); content: ""; }
+        .availability { display: flex; align-items: center; gap: 10px; margin: 0 0 18px; font-size: 14px; }
+        .availability::before { width: 8px; height: 8px; border-radius: 50%; background: #6f9a72; box-shadow: 0 0 0 4px rgba(111, 154, 114, .18); content: ""; }
+        .purchase { display: grid; grid-template-columns: 128px 1fr; gap: 10px; }
+        .qty { display: grid; grid-template-columns: 40px 1fr 40px; align-items: center; border: 1px solid var(--line); background: #fff; }
+        .qty button { height: 54px; border: 0; background: none; font-size: 20px; cursor: pointer; }
+        .qty button:disabled { color: #c3b9b2; cursor: not-allowed; }
+        .qty output { text-align: center; font-size: 16px; }
+        .purchase .btn--whatsapp { grid-column: 1 / -1; }
+        .purchase .btn { white-space: nowrap; }
+        .reassure { display: grid; gap: 12px; margin: 26px 0 0; padding: 22px 0 0; border-top: 1px solid var(--line); list-style: none; }
+        .reassure li { display: flex; align-items: center; gap: 14px; font-size: 14px; }
+        .reassure .icon { width: 22px; height: 22px; color: var(--champagne); }
+        .reassure strong { font-weight: 500; }
+
+        /* Accordéons d'informations */
+        .details { margin-top: 30px; border-top: 1px solid var(--line); }
+        .details details { border-bottom: 1px solid var(--line); }
+        .details summary { position: relative; padding: 20px 40px 20px 0; font-size: 12px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; cursor: pointer; list-style: none; }
+        .details summary::-webkit-details-marker { display: none; }
+        .details summary::before, .details summary::after { position: absolute; right: 6px; top: 50%; width: 13px; height: 1px; background: var(--ink); content: ""; transition: transform .45s var(--ease); }
+        .details summary::after { transform: rotate(90deg); }
+        .details details[open] summary::after { transform: rotate(0); }
+        .details .content { padding: 0 0 22px; color: var(--muted); font-size: 15px; animation: rise .5s var(--ease) both; }
+        .details .content p { margin: 0 0 12px; }
+        .spec-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        .spec-table th, .spec-table td { padding: 10px 0; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+        .spec-table th { width: 42%; color: var(--ink); font-weight: 500; }
+        .delivery-mini { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+        .delivery-mini li { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+        .delivery-mini b { color: var(--ink); font-weight: 500; }
+
+        /* ================= 5. Sceau « La promesse IARINTSOA » ================= */
+        .promise { position: relative; overflow: hidden; background: var(--black); color: var(--ivory); }
+        .promise-inner { display: grid; grid-template-columns: auto 1fr; gap: clamp(40px, 7vw, 110px); align-items: center; }
+        .seal { position: relative; width: clamp(200px, 22vw, 300px); aspect-ratio: 1; }
+        .seal-clip { position: absolute; inset: 4%; overflow: hidden; border-radius: 50%; }
+        .seal-clip img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.22); }
+        .seal::before { position: absolute; inset: 0; border: 1px solid var(--champagne-light); border-radius: 50%; content: ""; }
+        .seal::after { position: absolute; inset: -6%; border: 1px solid rgba(227, 207, 159, .25); border-radius: 50%; content: ""; }
+        .promise .eyebrow { color: var(--champagne-light); }
+        .promise-slogan { margin: 0 0 28px; font-family: var(--serif); font-size: clamp(36px, 4.6vw, 62px); font-weight: 400; line-height: 1.06; }
+        .promise-slogan em { color: var(--champagne-light); }
+        .promise-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 40px; margin: 0; padding: 0; list-style: none; }
+        .promise-list li { display: flex; gap: 14px; color: rgba(251, 248, 243, .8); font-size: 15px; }
+        .promise-list .icon { color: var(--champagne-light); }
+        .promise-list strong { display: block; color: var(--ivory); font-family: var(--serif); font-size: 21px; font-weight: 500; }
+
+        /* ================= 6. Guide des longueurs ================= */
+        .guide-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(40px, 7vw, 110px); align-items: center; }
+        .silhouette { width: min(100%, 500px); margin-inline: auto; }
+        .silhouette .body { fill: #ede2d4; stroke: #d9c7ae; stroke-width: 1.2; }
+        .silhouette .mark line { stroke: #cdb898; stroke-width: 1; stroke-dasharray: 3 4; transition: stroke .4s; }
+        .silhouette .mark text { fill: var(--muted); font-family: var(--sans); font-size: 13.5px; transition: fill .4s; }
+        .silhouette .mark.is-active line { stroke: var(--champagne); stroke-width: 2; stroke-dasharray: none; }
+        .silhouette .mark.is-active text { fill: var(--ink); font-weight: 500; }
+        .guide-table { width: 100%; border-collapse: collapse; }
+        .guide-table th, .guide-table td { padding: 13px 8px; border-bottom: 1px solid var(--line); text-align: left; font-size: 14px; }
+        .guide-table th { color: var(--champagne-text); font-size: 12px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; }
+        .guide-table tr.is-active td { background: var(--beige); color: var(--ink); font-weight: 500; }
+        .guide-table td:first-child { font-family: var(--serif); font-size: 19px; }
+        .guide-note { margin: 16px 0 0; color: var(--muted); font-size: 13px; }
+
+        /* ================= 7. Rituel d'entretien ================= */
+        .care { background: var(--beige); }
+        .care-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; border: 1px solid var(--beige-deep); background: var(--beige-deep); counter-reset: step; }
+        .care-step { padding: 34px 28px; background: var(--ivory); transition: background-color .5s var(--ease); }
+        .care-step:hover { background: #fffdf9; }
+        .care-step::before { display: block; margin-bottom: 18px; color: var(--champagne); counter-increment: step; content: "0" counter(step); font-family: var(--serif); font-size: 46px; line-height: 1; }
+        .care-step h3 { margin: 0 0 8px; font-family: var(--serif); font-size: 25px; font-weight: 500; }
+        .care-step p { margin: 0; color: var(--muted); font-size: 14px; }
+
+        /* ================= 8. Avis ================= */
+        .reviews-layout { display: grid; grid-template-columns: .7fr 1.3fr; gap: clamp(40px, 6vw, 90px); }
+        .score { position: sticky; top: calc(var(--header-h) + 30px); align-self: start; }
+        .score-value { margin: 0; font-family: var(--serif); font-size: 76px; line-height: 1; }
+        .score .stars { color: var(--champagne); font-size: 20px; letter-spacing: .2em; }
+        .bars { display: grid; gap: 8px; margin-top: 22px; font-size: 13px; }
+        .bars div { display: grid; grid-template-columns: 26px 1fr; align-items: center; gap: 10px; color: var(--muted); }
+        .bars i { height: 3px; background: linear-gradient(90deg, var(--champagne) var(--w), var(--line) var(--w)); }
+        .review-list { display: grid; gap: 18px; }
+        .review { position: relative; padding: 30px 32px; border: 1px solid var(--line); background: #fff; transition: box-shadow .6s var(--ease); }
+        .review:hover { box-shadow: 0 26px 50px -36px rgba(13, 12, 11, .35); }
+        .review-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+        .review .stars { color: var(--champagne); letter-spacing: .2em; }
+        .review blockquote { margin: 14px 0 16px; font-family: var(--serif); font-size: 22px; font-style: italic; line-height: 1.4; }
+        .review footer { color: var(--muted); font-size: 13px; }
+        .verified { display: inline-flex; align-items: center; gap: 6px; color: var(--champagne-text); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+
+        /* ================= 9. Produits similaires ================= */
+        .similar-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(14px, 2vw, 28px); }
+        .similar-card .media { position: relative; overflow: hidden; aspect-ratio: 4 / 5; background: var(--beige); transition: box-shadow .8s var(--ease), transform .8s var(--ease); }
+        .similar-card .media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1.4s var(--ease); }
+        .similar-card:hover .media { box-shadow: 0 34px 60px -34px rgba(13, 12, 11, .45); transform: translateY(-4px); }
+        .similar-card:hover .media img { transform: scale(1.05); }
+        .similar-card h3 { margin: 16px 0 4px; font-family: var(--serif); font-size: 24px; font-weight: 500; }
+        .similar-card p { margin: 0; color: var(--muted); font-size: 14px; }
+
+        /* ================= 10. Footer ================= */
+        .footer { background: var(--black); color: rgba(251, 248, 243, .76); font-size: 14px; }
+        .footer-signature { padding-block: 64px 48px; border-bottom: 1px solid rgba(251, 248, 243, .1); text-align: center; }
+        .footer-medallion { width: 116px; height: 116px; margin: 0 auto 24px; overflow: hidden; border: 1px solid var(--champagne); border-radius: 50%; box-shadow: 0 0 0 6px var(--black), 0 0 0 7px rgba(227, 207, 159, .3); }
+        .footer-medallion img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.22); }
+        .footer-signature p { margin: 0; color: var(--ivory); font-family: var(--serif); font-size: clamp(30px, 3.6vw, 46px); font-style: italic; line-height: 1.1; }
+        .footer-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding-block: 26px; font-size: 13px; }
+        .footer .brand-mark { width: 52px; height: 52px; color: var(--ivory); }
+        .footer .brand-name strong { font-size: 22px; animation: none; color: var(--ivory); }
+        .footer .brand-name span { color: var(--champagne-light); animation: none; }
+        .socials { display: flex; gap: 10px; }
+        .socials a { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid rgba(251, 248, 243, .22); border-radius: 50%; transition: border-color .3s, color .3s; }
+        .socials a:hover { border-color: var(--champagne-light); color: var(--champagne-light); }
+        .socials .icon { width: 18px; height: 18px; }
+
+        /* ================= 11. Plein écran, guide (boîtes de dialogue), barre mobile ================= */
+        dialog { max-width: none; max-height: none; padding: 0; border: 0; }
+        dialog::backdrop { background: rgba(13, 12, 11, .82); backdrop-filter: blur(4px); }
+        .lightbox { width: 100vw; height: 100dvh; background: transparent; color: var(--ivory); }
+        .lightbox-track { display: flex; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+        .lightbox-track::-webkit-scrollbar { display: none; }
+        .lightbox-track figure { flex: 0 0 100%; display: grid; place-items: center; margin: 0; padding: 70px 80px; scroll-snap-align: center; }
+        .lightbox-track img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+        .lightbox-close, .lightbox-nav { position: fixed; z-index: 2; display: grid; place-items: center; width: 52px; height: 52px; border: 1px solid rgba(251, 248, 243, .4); border-radius: 50%; background: rgba(13, 12, 11, .5); color: var(--ivory); cursor: pointer; }
+        .lightbox-close { top: 18px; right: 18px; }
+        .lightbox-nav { top: 50%; transform: translateY(-50%); }
+        .lightbox-nav--prev { left: 18px; }
+        .lightbox-nav--next { right: 18px; }
+        .lightbox-count { position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%); font-size: 13px; letter-spacing: .2em; }
+        .size-dialog { width: min(92vw, 860px); max-height: 90dvh; overflow-y: auto; padding: clamp(28px, 4vw, 48px); background: var(--ivory); color: var(--ink); }
+        .size-dialog .close { position: absolute; top: 14px; right: 14px; }
+        .mobile-bar { position: fixed; z-index: 45; left: 0; right: 0; bottom: 0; display: none; align-items: center; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); background: rgba(251, 248, 243, .97); backdrop-filter: blur(12px); transform: translateY(110%); transition: transform .5s var(--ease); }
+        .mobile-bar.is-visible { transform: none; }
+        .mobile-bar .mb-price { flex: 1; min-width: 0; line-height: 1.2; }
+        .mobile-bar .mb-price b { display: block; font-family: var(--serif); font-size: 22px; font-weight: 500; }
+        .mobile-bar .mb-price small { color: var(--muted); font-size: 12px; }
+        .mobile-bar .btn { min-height: 48px; padding: 0 18px; }
+        .mobile-bar .icon-btn { border: 1px solid var(--line); border-radius: 0; width: 48px; height: 48px; color: var(--champagne-text); }
+        .toast { position: fixed; z-index: 80; left: 50%; bottom: 28px; max-width: calc(100% - 40px); padding: 14px 22px; background: var(--black); color: var(--ivory); font-size: 14px; opacity: 0; pointer-events: none; transform: translate(-50%, 12px); transition: opacity .45s var(--ease), transform .45s var(--ease); }
+        .toast.is-visible { opacity: 1; transform: translate(-50%, 0); }
+
+        /* ================= 12. Animations ================= */
+        @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+        @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes draw { to { stroke-dashoffset: 0; } }
+        @keyframes write-in { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+        .buy > * { animation: rise 1s var(--ease) both; }
+        .buy > :nth-child(2) { animation-delay: .06s; } .buy > :nth-child(3) { animation-delay: .12s; } .buy > :nth-child(4) { animation-delay: .18s; } .buy > :nth-child(n + 5) { animation-delay: .24s; }
+        .reveal { opacity: 0; transform: translateY(24px); transition: opacity 1.1s var(--ease), transform 1.1s var(--ease); }
+        .reveal.is-in { opacity: 1; transform: none; }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+            .reveal { opacity: 1; transform: none; }
+            .ih-arc { stroke-dashoffset: 0; }
+        }
+
+        /* ================= 13. Responsive ================= */
+        @media (max-width: 1080px) {
+            .nav { display: none; }
+            .burger { display: inline-grid; }
+            .product { grid-template-columns: 1fr; }
+            .gallery { position: static; }
+            .guide-grid, .reviews-layout, .promise-inner { grid-template-columns: 1fr; }
+            .score { position: static; }
+            .seal { margin-inline: auto; }
+            .care-steps { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 760px) {
+            :root { --header-h: 82px; }
+            body { font-size: 15px; }
+            .brand { gap: 10px; }
+            .brand-mark { width: 52px; height: 52px; }
+            .brand-name strong { font-size: 21px; letter-spacing: .17em; padding-left: .17em; }
+            .brand-name span { margin-top: 7px; font-size: 10px; letter-spacing: .42em; padding-left: .42em; }
+            .brand-name span::before, .brand-name span::after { width: 12px; }
+            .header-actions .hide-mobile { display: none; }
+            .announce { font-size: 12px; letter-spacing: .1em; }
+            .breadcrumb { padding-top: 16px; font-size: 12px; }
+            /* Galerie mobile : on fait glisser les photos au doigt */
+            .container.product { width: 100%; }
+            .gallery { display: block; }
+            .thumbs { display: none; }
+            .stage { aspect-ratio: 4 / 5; }
+            .stage-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+            .stage-track::-webkit-scrollbar { display: none; }
+            .slide { position: relative; flex: 0 0 100%; opacity: 1; visibility: visible; scroll-snap-align: center; cursor: pointer; }
+            .zoom-hint { display: none; }
+            .dots { position: absolute; z-index: 2; left: 0; right: 0; bottom: 18px; display: flex; justify-content: center; gap: 8px; pointer-events: none; }
+            .dots span { width: 6px; height: 6px; border-radius: 50%; background: rgba(251, 248, 243, .6); transition: width .4s var(--ease), background-color .4s; }
+            .dots span.is-active { width: 22px; border-radius: 3px; background: var(--ivory); }
+            .stage-tools { bottom: auto; top: 14px; right: 14px; }
+            .stage-counter { display: none; }
+            .buy { padding: 0 var(--gutter); }
+            .lengths { grid-template-columns: repeat(5, 1fr); gap: 6px; }
+            .choice-box { padding: 10px 2px 8px; }
+            .choice-box b { font-size: 19px; }
+            .laces { grid-template-columns: 1fr; }
+            .laces .choice-box { grid-template-columns: auto 1fr; column-gap: 12px; align-items: baseline; }
+            .laces .choice-box small { grid-column: 1 / -1; }
+            .purchase { grid-template-columns: 112px 1fr; }
+            .purchase .btn { padding: 0 16px; letter-spacing: .16em; }
+            .hide-xs { display: none; }
+            /* Silhouette : sur mobile, seul le repère choisi est légendé (le tableau détaille le reste) */
+            .silhouette .mark text { display: none; }
+            .silhouette .mark.is-active text { display: block; font-size: 19px; }
+            .promise-list { grid-template-columns: 1fr; }
+            .care-steps { grid-template-columns: 1fr; }
+            .similar-grid { grid-template-columns: repeat(3, 72%); overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+            .similar-card { scroll-snap-align: start; }
+            .section-head { flex-direction: column; align-items: flex-start; }
+            .review { padding: 24px 20px; }
+            .lightbox-track figure { padding: 70px 10px; }
+            .lightbox-nav { display: none; }
+            .mobile-bar { display: flex; }
+            .footer-bottom { flex-direction: column; align-items: flex-start; padding-bottom: 96px; }
+        }
+        @media (max-width: 380px) {
+            .brand-name strong { font-size: 18px; letter-spacing: .14em; }
+            .lengths { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        /* ================= 13 bis. Vidéo, FAQ, WhatsApp toujours visible, recherche, favoris ================= */
+        .slide--video { cursor: default; background: var(--black); }
+        .slide--video video, .slide--video .video-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+        .slide--video .video-poster { filter: brightness(.72); }
+        .video-play { position: absolute; z-index: 2; left: 50%; top: 50%; display: grid; place-items: center; width: 86px; height: 86px; border: 1px solid rgba(251, 248, 243, .7); border-radius: 50%; background: rgba(13, 12, 11, .45); color: var(--ivory); backdrop-filter: blur(4px); cursor: pointer; transform: translate(-50%, -50%); transition: background-color .4s var(--ease), color .4s var(--ease), opacity .4s; }
+        .video-play .icon { width: 30px; height: 30px; margin-left: 4px; fill: currentColor; stroke: none; }
+        .video-play:hover { background: var(--black); color: var(--rose, #e8c7cf); }
+        .slide--video.is-playing .video-play, .slide--video.is-playing .video-poster, .slide--video.is-playing .video-label { opacity: 0; pointer-events: none; }
+        .video-label { position: absolute; z-index: 2; left: 50%; bottom: 26px; margin: 0; padding: 8px 16px; background: rgba(13, 12, 11, .7); color: var(--ivory); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; white-space: nowrap; transform: translateX(-50%); transition: opacity .4s; }
+        .thumbs .thumb--video::after { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(13, 12, 11, .35); color: var(--ivory); content: "▶"; font-size: 18px; }
+        .lightbox-track video { max-width: 100%; max-height: 100%; }
+        .lightbox-track .lb-soon { display: grid; justify-items: center; gap: 18px; }
+        .lightbox-track .lb-soon img { max-height: 70dvh; filter: brightness(.7); }
+
+        .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(40px, 7vw, 110px); }
+        .faq-list { border-top: 1px solid var(--line); }
+        .faq-list details { border-bottom: 1px solid var(--line); }
+        .faq-list summary { position: relative; padding: 22px 46px 22px 0; font-family: var(--serif); font-size: 22px; cursor: pointer; list-style: none; }
+        .faq-list summary::-webkit-details-marker { display: none; }
+        .faq-list summary::after { position: absolute; right: 4px; top: 50%; width: 13px; height: 13px; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); content: ""; transform: translateY(-70%) rotate(45deg); transition: transform .45s var(--ease); }
+        .faq-list details[open] summary::after { transform: translateY(-20%) rotate(-135deg); }
+        .faq-list details p { margin: -6px 0 22px; padding-right: 46px; color: var(--muted); animation: rise .5s var(--ease) both; }
+
+        /* Bouton WhatsApp toujours visible ; il envoie la sélection en cours */
+        /* Compact (rond) par défaut pour ne jamais masquer le contenu ; le libellé se déploie au survol ou au clavier */
+        .float-wa { position: fixed; z-index: 44; right: max(20px, env(safe-area-inset-right)); bottom: max(20px, env(safe-area-inset-bottom)); display: inline-flex; align-items: center; gap: 0; min-height: 56px; padding: 0 16px; border: 1px solid rgba(227, 207, 159, .45); border-radius: 999px; background: var(--black); color: var(--ivory); box-shadow: 0 16px 36px rgba(13, 12, 11, .3); font-size: 12px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; transition: transform .45s var(--ease), opacity .45s var(--ease), gap .5s var(--ease), padding .5s var(--ease), color .3s; }
+        .float-wa .icon { width: 22px; height: 22px; color: var(--champagne-light); }
+        .float-wa span { max-width: 0; overflow: hidden; white-space: nowrap; transition: max-width .5s var(--ease); }
+        .float-wa:hover, .float-wa:focus-visible { gap: 10px; padding-right: 22px; transform: translateY(-3px); }
+        .float-wa:hover span, .float-wa:focus-visible span { max-width: 220px; }
+        .float-wa.is-tucked { opacity: 0; pointer-events: none; transform: translateY(16px); }
+
+        /* Recherche (identique à l'accueil) */
+        .search-panel { position: fixed; inset: 0 0 auto; z-index: 70; padding: 34px 0 44px; background: var(--ivory); box-shadow: 0 30px 60px rgba(13, 12, 11, .12); transform: translateY(-100%); visibility: hidden; transition: transform .55s var(--ease), visibility .55s; }
+        .search-panel.is-open { transform: none; visibility: visible; }
+        .search-backdrop { position: fixed; inset: 0; z-index: 69; background: rgba(13, 12, 11, .4); opacity: 0; visibility: hidden; transition: opacity .5s var(--ease), visibility .5s; }
+        .search-backdrop.is-open { opacity: 1; visibility: visible; }
+        .search-row { display: flex; align-items: center; gap: 16px; border-bottom: 1px solid var(--ink); }
+        .search-row .icon { width: 26px; height: 26px; color: var(--champagne-text); }
+        .search-row input { flex: 1; min-width: 0; min-height: 72px; border: 0; background: transparent; font-family: var(--serif); font-size: clamp(26px, 3.4vw, 40px); }
+        .search-row input:focus { outline: none; }
+        .search-suggest { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 22px 0 0; padding: 0; list-style: none; }
+        .search-suggest .label { margin-right: 6px; color: var(--muted); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; }
+        .search-suggest a { display: inline-flex; align-items: center; gap: 10px; padding: 10px 16px; border: 1px solid var(--line); background: #fff; font-size: 14px; }
+        .search-suggest a small { color: var(--champagne-text); }
+        .search-empty { margin: 18px 0 0; color: var(--muted); }
+        .title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+        .wish-btn { flex: 0 0 auto; display: grid; place-items: center; width: 48px; height: 48px; margin-top: 6px; border: 1px solid var(--line); border-radius: 50%; background: #fff; cursor: pointer; transition: border-color .3s, transform .3s var(--ease); }
+        .wish-btn:hover { transform: scale(1.06); }
+        .wish-btn[aria-pressed="true"] .icon { fill: var(--rose-deep, #a66e81); stroke: var(--rose-deep, #a66e81); }
+        @media (max-width: 1080px) { .faq-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 760px) {
+            .float-wa { width: 54px; padding: 0; justify-content: center; }
+            .float-wa span { display: none; }
+            .float-wa.is-tucked { transform: translateY(80px); }
+            .header-actions .hide-mobile-2 { display: none; }
+            .faq-list summary { font-size: 20px; }
+        }
+
+        /* ================= 14. Accent rose poudré (touche féminine — jamais dominante) =================
+           #E8C7CF : fonds, survols et éléments sur fond noir · #A66E81 : grands titres et icônes sur fond clair (≥ 3:1 sur ivoire et beige)
+           #8E5A6B : petits textes (contraste AA) · #F6E8EC : voile de survol. Bloc indépendant, retirable. */
+        :root { --rose: #e8c7cf; --rose-soft: #f6e8ec; --rose-deep: #a66e81; --rose-text: #8e5a6b; }
+        .title em { color: var(--rose-deep); }
+        .nav a::after { background: var(--rose-deep); }
+        .cart-count { background: var(--rose); color: var(--black); }
+        .icon-btn:hover { background: var(--rose-soft); }
+        .breadcrumb a:hover { color: var(--rose-text); }
+        .badge:not(.badge--black):not(.badge--gold) { background: var(--rose); color: var(--black); }
+        .btn--dark:hover { color: var(--rose); }
+        .btn--whatsapp:hover .icon { color: var(--rose); }
+        .link-line:hover { color: var(--rose-text); }
+        .thumbs button:hover { border-color: var(--rose); }
+        .stage-tools button:hover { color: var(--rose); }
+        .choice:hover .choice-box { border-color: var(--rose-deep); }
+        .choice input:checked + .choice-box small, .laces .choice input:checked + .choice-box em { color: var(--rose); }
+        .qty button:not(:disabled):hover { color: var(--rose-text); }
+        .reassure .icon { color: var(--rose-deep); }
+        .details details[open] summary::before, .details details[open] summary::after { background: var(--rose-deep); }
+        .promise-list .icon { color: var(--rose); }
+        .seal::after { border-color: rgba(232, 199, 207, .4); }
+        .review:hover { border-color: var(--rose); }
+        .similar-card:hover h3 { color: var(--rose-text); }
+        .mobile-bar .icon-btn { color: var(--rose-text); }
+        .socials a:hover { border-color: var(--rose); color: var(--rose); }
+
+        /* ================= 15. Modèle réutilisable : fuchsia, disponibilité, confiance, « Pourquoi choisir », avis ================= */
+        :root { --fuchsia: #c2306f; --fuchsia-text: #a3245c; }
+        .badge--fuchsia { background: var(--fuchsia); color: var(--ivory); }
+        .wish-btn[aria-pressed="true"] .icon { fill: var(--fuchsia); stroke: var(--fuchsia); }
+        .price-old { color: var(--muted); font-size: 18px; text-decoration: line-through; }
+        .availability[data-state="in"]::before { background: #6f9a72; box-shadow: 0 0 0 4px rgba(111, 154, 114, .18); }
+        .availability[data-state="low"] { color: var(--fuchsia-text); font-weight: 500; }
+        .availability[data-state="low"]::before { background: var(--fuchsia); box-shadow: 0 0 0 4px rgba(194, 48, 111, .16); }
+        .availability[data-state="out"]::before { background: #b9aea6; box-shadow: none; }
+        .availability[data-state="ask"]::before { background: var(--champagne); box-shadow: 0 0 0 4px rgba(201, 169, 110, .2); }
+        .on-request { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 16px 18px; border: 1px dashed var(--champagne); color: var(--muted); font-size: 14px; }
+        .trust-icons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 22px 0 0; padding: 0; list-style: none; }
+        .trust-icons li { display: grid; justify-items: center; gap: 8px; padding: 16px 8px; border: 1px solid var(--line); background: #fff; text-align: center; font-size: 12px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; line-height: 1.4; }
+        .trust-icons .icon { width: 26px; height: 26px; color: var(--rose-deep, #a66e81); }
+        .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; border: 1px solid var(--line); background: var(--line); }
+        .why-card { position: relative; padding: 34px 26px; background: var(--ivory); transition: background-color .5s var(--ease); }
+        .why-card::before { position: absolute; top: -1px; left: 0; right: 0; height: 1px; background: var(--fuchsia); content: ""; transform: scaleX(0); transform-origin: left; transition: transform .7s var(--ease); }
+        .why-card:hover { background: #fffdf9; }
+        .why-card:hover::before { transform: scaleX(1); }
+        .why-card .icon { width: 30px; height: 30px; color: var(--champagne); }
+        .why-card h3 { margin: 16px 0 8px; font-family: var(--serif); font-size: 24px; font-weight: 500; }
+        .why-card p { margin: 0; color: var(--muted); font-size: 14px; }
+        .reviews-empty { display: grid; justify-items: start; gap: 16px; padding: 34px 32px; border: 1px dashed var(--champagne); background: #fff; }
+        .reviews-empty p { margin: 0; color: var(--muted); }
+        .reviews-empty strong { font-family: var(--serif); font-size: 26px; font-weight: 500; color: var(--ink); }
+        .page-state { max-width: 620px; margin: 90px auto; padding: 0 var(--gutter); text-align: center; color: var(--muted); }
+        .page-state h1 { margin: 0 0 14px; color: var(--ink); font-family: var(--serif); font-size: 40px; font-weight: 400; }
+        .page-state .btn { margin-top: 24px; }
+        .skeleton { min-height: 70vh; display: grid; place-items: center; color: var(--muted); letter-spacing: .2em; text-transform: uppercase; font-size: 12px; }
+        [hidden] { display: none !important; }
+        @media (max-width: 1080px) { .why-grid { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 760px) {
+            .why-grid { grid-template-columns: 1fr; }
+            .trust-icons li { padding: 14px 4px; font-size: 12px; letter-spacing: .04em; }
+        }
+
+        /* ================= 16. Page Tissages (mêmes couleurs, typographies et composants que les fiches) ================= */
+        .tx-intro { padding: clamp(18px, 3vw, 34px) 0 clamp(26px, 4vw, 44px); }
+        .tx-intro .title { max-width: 760px; }
+        .tx-intro p.lead { max-width: 620px; margin: 18px 0 0; color: var(--muted); font-size: 16px; }
+        .tx-layout { padding-top: 0; }
+        .tx-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+        .tx-card { position: relative; display: block; cursor: pointer; }
+        .tx-card input { position: absolute; inset: 0; z-index: 1; opacity: 0; cursor: pointer; }
+        .tx-box { display: grid; gap: 4px; height: 100%; padding: 8px 8px 12px; border: 1px solid var(--line); background: #fff; transition: border-color .35s var(--ease), box-shadow .35s var(--ease), transform .35s var(--ease); }
+        .tx-box img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; background: var(--beige); }
+        .tx-box b { margin-top: 8px; font-family: var(--serif); font-size: 19px; font-weight: 500; line-height: 1.15; }
+        .tx-box small { color: var(--muted); font-size: 12px; line-height: 1.35; }
+        .tx-card:hover .tx-box { border-color: var(--rose-deep, #a66e81); transform: translateY(-2px); }
+        .tx-card input:checked + .tx-box { border-color: var(--black); box-shadow: inset 0 0 0 1px var(--black); }
+        .tx-card input:checked + .tx-box b { color: var(--rose-text, #8e5a6b); }
+        .tx-card input:focus-visible + .tx-box { outline: 2px solid var(--champagne); outline-offset: 2px; }
+        .tx-name { margin: 0; font-family: var(--serif); font-size: clamp(38px, 4vw, 52px); font-weight: 400; line-height: 1.05; }
+        .tx-buy { position: sticky; top: 110px; }
+        .tx-lengths { grid-template-columns: repeat(4, 1fr); }
+        .tx-price-section .guide-table { max-width: 760px; }
+        .tx-price-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: start; gap: 0 clamp(24px, 5vw, 64px); }
+        .tx-price-section td small { margin-left: 6px; color: var(--muted); font-family: var(--sans); font-size: 12px; }
+        @media (max-width: 1080px) {
+            .tx-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+            .tx-buy { position: static; }
+        }
+        @media (max-width: 760px) {
+            .tx-layout { padding-left: var(--gutter); padding-right: var(--gutter); }
+            .tx-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+            .tx-box { padding: 6px 6px 10px; }
+            .tx-box b { font-size: 16px; }
+            .tx-layout .buy { padding: 0; }
+            .tx-lengths { grid-template-columns: repeat(4, 1fr); }
+            .tx-price-grid { grid-template-columns: 1fr; }
+        }
+        @media (min-width: 761px) and (max-width: 1080px) { .tx-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+
+        /* ================= 18. Informations légales ================= */
+        .legal { display: grid; grid-template-columns: 220px minmax(0, 760px); gap: clamp(30px, 6vw, 90px); padding-bottom: clamp(70px, 9vw, 120px); }
+        .legal-toc { position: sticky; top: 110px; align-self: start; display: grid; gap: 4px; border-left: 1px solid var(--line); }
+        .legal-toc a { padding: 8px 0 8px 18px; color: var(--muted); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; transition: color .3s; }
+        .legal-toc a:hover { color: var(--rose-text, #8e5a6b); }
+        .legal section { padding: 0 0 clamp(36px, 5vw, 56px); margin-bottom: clamp(36px, 5vw, 56px); border-bottom: 1px solid var(--line); scroll-margin-top: 110px; }
+        .legal section:last-of-type { border-bottom: 0; }
+        .legal h2 { margin: 0 0 18px; font-family: var(--serif); font-size: clamp(32px, 3.4vw, 42px); font-weight: 400; line-height: 1.1; }
+        .legal h3 { margin: 26px 0 8px; font-size: 12px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--champagne-text); }
+        .legal p { margin: 0 0 12px; color: var(--muted); }
+        .legal p a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+        .legal-pending { padding: 12px 16px; border-left: 2px solid var(--champagne); background: #fff; }
+        @media (max-width: 760px) {
+            .legal { grid-template-columns: 1fr; gap: 26px; }
+            .legal-toc { position: static; display: flex; flex-wrap: wrap; gap: 6px 18px; border-left: 0; }
+            .legal-toc a { padding: 6px 0; }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#informations">Aller au contenu</a>
+
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="logo-ih" viewBox="0 0 64 64">
+            <path class="ih-arc" d="M47 8.5A27 27 0 1 0 54.5 50" fill="none" stroke="#c9a96e" stroke-width="1.3" stroke-linecap="round"/>
+            <text class="ih-letter" x="18" y="38" font-family="Cormorant Garamond, serif" font-size="30" font-weight="500" fill="currentColor">I</text>
+            <text class="ih-letter" x="26.5" y="47" font-family="Cormorant Garamond, serif" font-size="30" font-weight="500" fill="currentColor">H</text>
+            <path d="M16 50.5l1.3-3.2 1.3 3.2 3.2 1.3-3.2 1.3-1.3 3.2-1.3-3.2-3.2-1.3z" fill="#c9a96e"/>
+        </symbol>
+        <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+        <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+        <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20.5c1.2-3.8 4-5.6 7.5-5.6s6.3 1.8 7.5 5.6"/></symbol>
+        <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></symbol>
+        <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5-13-7.5Z"/></symbol>
+        <symbol id="i-wa" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.5-4.7A8.5 8.5 0 1 1 20.5 11.7Z"/><path d="M9 8.5c.2-.4.5-.5.8-.5h.4l.9 2-.6.8c.5 1 1.3 1.8 2.3 2.3l.8-.6 2 .9v.4c0 .3-.1.6-.5.8-.9.5-2.2.3-3.6-.7a8 8 0 0 1-2.2-2.4c-.7-1.3-.8-2.3-.3-3Z"/></symbol>
+        <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+        <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+        <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h12"/></symbol>
+        <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+        <symbol id="i-ruler" viewBox="0 0 24 24"><path d="M3 17 17 3l4 4L7 21l-4-4Z"/><path d="M7 13l2 2M10 10l2 2M13 7l2 2"/></symbol>
+        <symbol id="i-strand" viewBox="0 0 24 24"><path d="M8 3c-3 4 3 6 0 10s3 6 0 8M14 3c-3 4 3 6 0 10s3 6 0 8"/></symbol>
+        <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 19 6v5c0 4.6-3 8-7 10-4-2-7-5.4-7-10V6l7-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+        <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 4h12l3 5-9 11L3 9l3-5Z"/><path d="M3 9h18M9 4l3 16 3-16"/></symbol>
+        <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5Z"/><path d="M8 10h8M8 13h5"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></symbol>
+        <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.2 6.8h.01"/></symbol>
+        <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a5 5 0 0 0-5 5v3H6v4h3v5h4v-5h3l1-4h-4V9a1 1 0 0 1 1-1Z"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.8" r="2.3"/></symbol>
+    </svg>
+
+    <div class="announce"><span>Livraison partout à <strong>La Réunion</strong> · dès 5 €</span></div>
+
+    <header class="header">
+        <div class="container header-inner">
+            <div>
+                <button class="icon-btn burger" type="button" aria-label="Menu (démonstration)"><svg class="icon"><use href="#i-menu"/></svg></button>
+                <nav class="nav" aria-label="Navigation principale">
+                    <a href="index.html#boutique">Perruques</a>
+                    <a href="index.html#best-sellers">Best-sellers</a>
+                    <a href="tissages.html">Tissages</a>
+                    <a href="index.html#maison">La Maison</a>
+                </nav>
+            </div>
+            <a class="brand" href="index.html" aria-label="IARINTSOA Hair, accueil">
+                <svg class="brand-mark" aria-hidden="true"><use href="#logo-ih"/></svg>
+                <span class="brand-name"><strong>IARINTSOA</strong><span>HAIR</span></span>
+            </a>
+            <div class="header-actions">
+                <button class="icon-btn" type="button" aria-label="Rechercher" aria-controls="search-panel" aria-expanded="false" data-search-open><svg class="icon"><use href="#i-search"/></svg></button>
+                <a class="icon-btn hide-mobile-2" href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer" aria-label="Conseil sur WhatsApp"><svg class="icon"><use href="#i-wa"/></svg></a>
+                <a class="icon-btn" href="cart.html" aria-label="Panier" data-cart-link><svg class="icon"><use href="#i-bag"/></svg><span class="cart-count" data-cart-count hidden>0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-backdrop" data-search-close></div>
+    <div class="search-panel" id="search-panel" role="dialog" aria-modal="true" aria-label="Rechercher un modèle">
+        <div class="container">
+            <div class="search-row">
+                <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+                <label class="visually-hidden" for="search-input">Rechercher un modèle</label>
+                <input id="search-input" type="search" placeholder="Rechercher une texture, une longueur…" autocomplete="off">
+                <button class="icon-btn" type="button" aria-label="Fermer la recherche" data-search-close><svg class="icon"><use href="#i-close"/></svg></button>
+            </div>
+            <ul class="search-suggest" id="search-results" aria-live="polite"></ul>
+        </div>
+    </div>
+
+    <main id="informations">
+        <nav class="container breadcrumb" aria-label="Fil d’Ariane">
+            <ol><li><a href="index.html">Accueil</a></li><li aria-current="page">Informations légales</li></ol>
+        </nav>
+
+        <section class="container tx-intro" aria-labelledby="legal-title">
+            <p class="eyebrow">Informations légales</p>
+            <h1 class="title" id="legal-title">Mentions légales, <em>conditions de vente</em> et confidentialité</h1>
+            <p class="lead">Les informations d’identification de l’entreprise sont en cours de mise à jour et seront publiées prochainement. Pour toute question, notre équipe vous répond sur WhatsApp au 06 93 60 01 45.</p>
+        </section>
+
+        <div class="container legal">
+            <nav class="legal-toc" aria-label="Sommaire">
+                <a href="#mentions">Mentions légales</a>
+                <a href="#conditions">Conditions de vente</a>
+                <a href="#confidentialite">Confidentialité</a>
+            </nav>
+
+            <section id="mentions" aria-labelledby="mentions-title">
+                <h2 id="mentions-title">Mentions légales</h2>
+                <h3>Éditeur du site</h3>
+                <p>IARINTSOA Hair — vente de perruques et de tissages en cheveux naturels, La Réunion (974).</p>
+                <!-- À COMPLÉTER après mise à jour de l'activité : raison sociale / nom, forme juridique, SIREN/SIRET, adresse du siège, directeur de la publication. -->
+                <p class="legal-pending">Raison sociale, numéro SIRET et adresse : informations en cours de mise à jour.</p>
+                <p>Contact : WhatsApp <a href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer">06 93 60 01 45</a> · Facebook et Instagram : IARINTSOA Hair.</p>
+                <h3>Hébergement</h3>
+                <!-- À COMPLÉTER lors de la mise en ligne : nom, adresse et téléphone de l'hébergeur du site. -->
+                <p class="legal-pending">Hébergeur : information communiquée lors de la mise en ligne définitive.</p>
+                <h3>Propriété intellectuelle</h3>
+                <p>Le nom IARINTSOA Hair, le logo, les textes et les photographies de ce site sont la propriété d’IARINTSOA Hair. Toute reproduction sans autorisation est interdite.</p>
+            </section>
+
+            <section id="conditions" aria-labelledby="conditions-title">
+                <h2 id="conditions-title">Conditions de vente</h2>
+                <h3>Commande</h3>
+                <p>Les commandes se font exclusivement sur WhatsApp. Après votre choix (modèle, longueur, dentelle, quantité), notre équipe vous confirme la disponibilité, le montant total et le mode de livraison. La commande n’est définitive qu’après cette confirmation et votre accord.</p>
+                <h3>Prix et paiement</h3>
+                <p>Les prix sont indiqués en euros, toutes taxes comprises, hors frais de livraison. Aucun paiement n’est demandé en ligne sur ce site : le moyen de paiement vous est communiqué sur WhatsApp, après confirmation de votre commande.</p>
+                <h3>Livraison</h3>
+                <p>Partout à La Réunion : Colissimo suivi (10 €), Point Relais (5 €) ou retrait à Saint-Pierre le samedi matin sur rendez-vous (5 €). Le délai vous est confirmé avec votre commande.</p>
+                <h3>Rétractation et retours</h3>
+                <!-- À COMPLÉTER / FAIRE VALIDER : politique de retour définitive (délai, conditions d'hygiène, frais de retour). -->
+                <p class="legal-pending">Les conditions de retour et de rétractation sont en cours de finalisation. Avant toute commande, notre équipe vous les précise sur WhatsApp.</p>
+                <h3>Réclamations</h3>
+                <p>Pour toute question ou réclamation, contactez-nous sur WhatsApp : nous vous répondons personnellement.</p>
+            </section>
+
+            <section id="confidentialite" aria-labelledby="confidentialite-title">
+                <h2 id="confidentialite-title">Confidentialité</h2>
+                <h3>Données utilisées</h3>
+                <p>Ce site ne crée pas de compte client et n’utilise aucun cookie publicitaire ni outil de mesure d’audience. Votre panier et les informations saisies pour préparer une commande (nom, téléphone, adresse) restent enregistrés dans votre navigateur, sur votre appareil.</p>
+                <p>Lorsque vous cliquez sur « Commander sur WhatsApp », votre sélection et ces informations nous sont transmises par WhatsApp, uniquement pour traiter votre commande et organiser la livraison.</p>
+                <h3>Services tiers</h3>
+                <p>Les polices d’écriture sont chargées depuis Google Fonts, et les liens WhatsApp, Facebook, Instagram et TikTok ouvrent les services correspondants, soumis à leurs propres politiques de confidentialité.</p>
+                <h3>Vos droits</h3>
+                <p>Vous pouvez demander l’accès, la rectification ou la suppression des informations vous concernant en nous écrivant sur WhatsApp. Vous pouvez aussi saisir la CNIL (cnil.fr).</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-signature">
+            <div class="footer-medallion"><img src="image/logo.png" alt="Logo officiel IARINTSOA Hair" width="1080" height="1080" loading="lazy" decoding="async"></div>
+            <p>Votre Signature.<br>Notre Excellence.</p>
+        </div>
+        <div class="container footer-bottom">
+            <span class="brand"><svg class="brand-mark" aria-hidden="true"><use href="#logo-ih"/></svg><span class="brand-name"><strong>IARINTSOA</strong><span>HAIR</span></span></span>
+            <div class="socials">
+                <a href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg class="icon"><use href="#i-wa"/></svg></a>
+                <a href="https://www.facebook.com/share/1a8YLU5VuQ/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="icon"><use href="#i-fb"/></svg></a>
+                <a href="https://www.instagram.com/hairiarintsoahair" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="icon"><use href="#i-ig"/></svg></a>
+            </div>
+            <span>© 2026 IARINTSOA Hair — La Réunion · <a href="informations-legales.html" style="text-decoration:underline;text-underline-offset:3px">Informations légales</a></span>
+        </div>
+    </footer>
+
+    <a class="float-wa" id="float-wa" data-wa-link href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer" aria-label="Commander ou poser une question sur WhatsApp"><svg class="icon"><use href="#i-wa"/></svg><span>Conseil WhatsApp</span></a>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="js/product-data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/page.js"></script>
+</body>
+</html>

@@ -576,6 +576,7 @@
         if (catalog) return Promise.resolve(catalog);
         return api.fetchCatalog().then((ids) => Promise.all(ids.map((cid) => api.fetchProduct(cid).catch(() => null)))).then((list) => {
             catalog = list.filter(Boolean).map((s) => ({ name: s.name, tags: `${s.texture || ""} ${s.tagline || ""}`, price: Number.isFinite(minPrice(s)) ? `Dès ${euro(minPrice(s), s.currency)}` : "Sur demande", href: `fiche-produit.html?id=${encodeURIComponent(s.id)}` }));
+            catalog.push({ name: "Tissages", tags: "tissage paquet 100 g bundle meche", price: "Dès 25 €", href: "tissages.html" });
             return catalog;
         });
     }

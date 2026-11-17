@@ -1,0 +1,33 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "lisse-noire-30-pouces",
+    "name": "Lisse noire 30 pouces",
+    "tagline": "Une longueur spectaculaire : 76 cm de lisse noir soyeux.",
+    "price": 280,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": null,
+    "promotionPrice": null,
+    "texture": "Straight",
+    "description": "La Lisse noire 30 pouces déploie une longueur spectaculaire de 76 cm, pour un lisse noir profond, fluide et brillant qui ne passe pas inaperçu.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+    "photos": [
+      { "src": "image/produits/lisse-noire-30-pouces/lisse-noire-30-pouces-1.jpg", "alt": "Perruque lisse noire 30 pouces portée, longueur spectaculaire" }
+    ],
+    "lengths": [30],
+    "lace": "4x4 transparente",
+    "laceOptions": ["4x4"],
+    "density": 200,
+    "stock": null,
+    "available": true,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Origine : cheveux naturels brésiliens",
+      "Couleur : Noir naturel",
+      "Pose : sans colle, cordon de sécurité fourni"
+    ],
+    "similarProducts": ["lisse-noire-longue", "lisse-noire", "natural-wave"],
+    "featured": false
+  }
+}

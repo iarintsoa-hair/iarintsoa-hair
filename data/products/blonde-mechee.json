@@ -1,0 +1,33 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "blonde-mechee",
+    "name": "Blonde méchée",
+    "tagline": "Un lisse lumineux aux mèches blondes, pour un effet soleil sophistiqué.",
+    "price": 200,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": null,
+    "promotionPrice": null,
+    "texture": "Straight",
+    "description": "La Blonde méchée associe une base brune à des mèches blondes lumineuses, pour un effet soleil naturel sur une chevelure lisse et fluide.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle est disponible en 20 ou 24 pouces. Les détails de dentelle et de densité vous sont confirmés sur WhatsApp.",
+    "photos": [
+      { "src": "image/produits/blonde-mechee/blonde-mechee-1.jpg", "alt": "Perruque lisse blonde méchée sur mannequin, mèches blondes lumineuses" }
+    ],
+    "lengths": [20, 24],
+    "defaultLength": 20,
+    "pricesByLength": { "20": 200, "24": 230 },
+    "lace": null,
+    "density": null,
+    "stock": null,
+    "available": true,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Couleur : Blonde méchée",
+      "Origine : cheveux naturels brésiliens"
+    ],
+    "similarProducts": ["straight-hd-lace", "lisse-chatain-cuivre", "bouclee-blond-miel"],
+    "featured": false
+  }
+}

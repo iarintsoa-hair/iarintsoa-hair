@@ -1,0 +1,37 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "lisse-noire",
+    "name": "Lisse noire",
+    "tagline": "Un lisse noir profond, fluide et brillant, de 20 à 28 pouces.",
+    "price": 180,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": null,
+    "promotionPrice": null,
+    "texture": "Straight",
+    "description": "La Lisse noire offre une chevelure parfaitement lisse, d’un noir profond et naturel, avec une chute fluide et une brillance soyeuse.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle affiche une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni. Disponible de 20 à 28 pouces : la photo présente le modèle en 22 pouces.",
+    "photos": [
+      { "src": "image/produits/lisse-noire/lisse-noire-1.jpg", "alt": "Perruque lisse noire 22 pouces sur mannequin, dentelle 4×4 transparente" },
+      { "src": "image/produits/lisse-noire/lisse-noire-2.jpg", "alt": "Perruque lisse noire longue, chute fluide et brillante" }
+    ],
+    "lengths": [20, 22, 24, 26, 28],
+    "defaultLength": 22,
+    "pricesByLength": { "20": 180, "22": 200, "24": 220, "26": 250, "28": 270 },
+    "lace": "4x4 transparente",
+    "laceOptions": ["4x4"],
+    "density": 200,
+    "stock": null,
+    "available": true,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Origine : cheveux naturels brésiliens",
+      "Couleur : Noir naturel",
+      "Pose : sans colle, cordon de sécurité fourni",
+      "Coiffage : colorable, décolorable, se coiffe comme vos cheveux"
+    ],
+    "similarProducts": ["lisse-noire-longue", "lisse-noire-30-pouces", "bob-noir"],
+    "featured": false
+  }
+}

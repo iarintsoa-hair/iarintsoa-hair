@@ -1,0 +1,33 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "lisse-noire-longue",
+    "name": "Lisse noire longue",
+    "tagline": "26 pouces de lisse noir fluide, pour une allure longue et élégante.",
+    "price": 250,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": null,
+    "promotionPrice": null,
+    "texture": "Straight",
+    "description": "La Lisse noire longue offre 26 pouces (66 cm) de cheveux parfaitement lisses, d’un noir naturel profond, pour une allure longue, fluide et élégante.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle affiche une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+    "photos": [
+      { "src": "image/produits/lisse-noire-longue/lisse-noire-longue-1.jpg", "alt": "Perruque lisse noire longue 26 pouces sur mannequin" }
+    ],
+    "lengths": [26],
+    "lace": "4x4 transparente",
+    "laceOptions": ["4x4"],
+    "density": 200,
+    "stock": null,
+    "available": true,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Origine : cheveux naturels brésiliens",
+      "Couleur : Noir naturel",
+      "Pose : sans colle, cordon de sécurité fourni"
+    ],
+    "similarProducts": ["lisse-noire", "lisse-noire-30-pouces", "body-wave-26-pouces"],
+    "featured": false
+  }
+}

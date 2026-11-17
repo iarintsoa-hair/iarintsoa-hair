@@ -17,5 +17,13 @@ Important
 - Pour voir la version mobile : touche F12, puis l'icône téléphone (Ctrl + Maj + M).
 - Si Windows demande l'autorisation d'exécuter le fichier, choisissez « Exécuter quand même ».
 
-Lors de la mise en ligne (Netlify), ce dossier « outils-local » et le fichier
-« Voir-le-site.bat » ne seront pas publiés.
+Publier le site sur Netlify (et chaque mise à jour)
+---------------------------------------------------
+1. Double-cliquez sur « Publier-le-site.bat ».
+   Il crée le dossier « publication » : le site SANS la page d'administration,
+   ni ce dossier « outils-local », ni les fichiers .bat. Puis il ouvre ce dossier
+   et la page Netlify du projet « iarintsoa-hair ».
+2. Connectez-vous à Netlify si besoin, onglet « Deploys ».
+3. Faites glisser le dossier « publication » (le dossier entier) dans la zone
+   « Drag and drop your project folder here ».
+4. Après quelques secondes, le site est en ligne : https://iarintsoa-hair.netlify.app

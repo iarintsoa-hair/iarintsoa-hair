@@ -1,0 +1,4 @@
+# Dossier régénéré par outils-local/preparer-publication.ps1 (ne pas versionner)
+publication/
+# Configuration locale Netlify
+.netlify/

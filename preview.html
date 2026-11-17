@@ -493,6 +493,43 @@
             .brand-name strong { font-size: 17px; letter-spacing: .14em; }
             .collections-grid { grid-template-columns: 1fr; }
         }
+
+        /* ================= 20. Accent rose poudré (touche féminine — jamais dominante) =================
+           #E8C7CF : fonds, survols et éléments sur fond noir · #A66E81 : grands titres et icônes sur fond clair (≥ 3:1 sur ivoire et beige)
+           #8E5A6B : petits textes (contraste AA) · #F6E8EC : voile de survol. Bloc indépendant, retirable. */
+        :root { --rose: #e8c7cf; --rose-soft: #f6e8ec; --rose-deep: #a66e81; --rose-text: #8e5a6b; }
+        .title em { color: var(--rose-deep); }
+        .delivery .title em { color: var(--rose); }
+        .header .nav a::after, .header .nav-item > button::after { background: var(--rose); }
+        .header.is-solid .nav a::after, .header.is-solid .nav-item > button::after, .header:has(.nav-item:hover) .nav-item > button::after { background: var(--rose-deep); }
+        .header .cart-count, .header.is-solid .cart-count, .header:has(.nav-item:hover) .cart-count, .header:has(.nav-item.is-open) .cart-count { background: var(--rose); color: var(--black); }
+        .header.is-solid .icon-btn:hover, .header:has(.nav-item:hover) .icon-btn:hover { background: var(--rose-soft); }
+        .mega li a:hover { color: var(--rose-text); }
+        .drawer nav a small { color: var(--rose-text); }
+        .btn--champagne:hover { background: var(--rose); }
+        .btn--ghost-light:hover { border-color: var(--rose); color: var(--rose); }
+        .btn--dark:hover { color: var(--rose); }
+        .link-line:hover { color: var(--rose-text); }
+        .badge:not(.badge--black):not(.badge--gold) { background: var(--rose); color: var(--black); }
+        .wish:hover { color: var(--rose-text); }
+        .wish[aria-pressed="true"] .icon { fill: var(--rose-deep); stroke: var(--rose-deep); }
+        .trust .icon, .pillar .icon { color: var(--rose-deep); }
+        .pillar::before, .review::before { background: var(--rose-deep); }
+        .medallion::after { border-color: rgba(221, 182, 196, .55); }
+        .ribbon-track span::after { background: var(--rose-deep); }
+        .collection-card .label span { color: var(--rose); }
+        .product-card:hover .product-info h3 { color: var(--rose-text); }
+        .compare-line { background: var(--rose); }
+        .slider-nav button:hover { border-color: var(--rose); background: var(--rose); color: var(--black); }
+        .faq-list details[open] summary::after { border-color: var(--rose-deep); }
+        .delivery-option:hover { border-color: var(--rose); }
+        .search-suggest a:hover { border-color: var(--rose-deep); background: var(--rose-soft); }
+        .newsletter form:focus-within { border-color: var(--rose-deep); }
+        .consent input { accent-color: var(--rose-text); }
+        .footer ul a:hover { color: var(--rose); }
+        .socials a:hover { border-color: var(--rose); color: var(--rose); }
+        .float-wa { border-color: rgba(232, 199, 207, .5); }
+        .float-wa:hover { color: var(--rose); }
     </style>
 </head>
 <body>

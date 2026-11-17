@@ -389,6 +389,33 @@
             .brand-name strong { font-size: 18px; letter-spacing: .14em; }
             .lengths { grid-template-columns: repeat(3, 1fr); }
         }
+
+        /* ================= 14. Accent rose poudré (touche féminine — jamais dominante) =================
+           #E8C7CF : fonds, survols et éléments sur fond noir · #A66E81 : grands titres et icônes sur fond clair (≥ 3:1 sur ivoire et beige)
+           #8E5A6B : petits textes (contraste AA) · #F6E8EC : voile de survol. Bloc indépendant, retirable. */
+        :root { --rose: #e8c7cf; --rose-soft: #f6e8ec; --rose-deep: #a66e81; --rose-text: #8e5a6b; }
+        .title em { color: var(--rose-deep); }
+        .nav a::after { background: var(--rose-deep); }
+        .cart-count { background: var(--rose); color: var(--black); }
+        .icon-btn:hover { background: var(--rose-soft); }
+        .breadcrumb a:hover { color: var(--rose-text); }
+        .badge:not(.badge--black):not(.badge--gold) { background: var(--rose); color: var(--black); }
+        .btn--dark:hover { color: var(--rose); }
+        .btn--whatsapp:hover .icon { color: var(--rose); }
+        .link-line:hover { color: var(--rose-text); }
+        .thumbs button:hover { border-color: var(--rose); }
+        .stage-tools button:hover { color: var(--rose); }
+        .choice:hover .choice-box { border-color: var(--rose-deep); }
+        .choice input:checked + .choice-box small, .laces .choice input:checked + .choice-box em { color: var(--rose); }
+        .qty button:not(:disabled):hover { color: var(--rose-text); }
+        .reassure .icon { color: var(--rose-deep); }
+        .details details[open] summary::before, .details details[open] summary::after { background: var(--rose-deep); }
+        .promise-list .icon { color: var(--rose); }
+        .seal::after { border-color: rgba(232, 199, 207, .4); }
+        .review:hover { border-color: var(--rose); }
+        .similar-card:hover h3 { color: var(--rose-text); }
+        .mobile-bar .icon-btn { color: var(--rose-text); }
+        .socials a:hover { border-color: var(--rose); color: var(--rose); }
     </style>
 </head>
 <body>

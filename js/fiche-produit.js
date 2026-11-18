@@ -496,6 +496,8 @@
         $("#qty-minus").addEventListener("click", () => { state.qty = Math.max(1, state.qty - 1); update(); });
         $("#qty-plus").addEventListener("click", () => { state.qty = Math.min(maxQty(), state.qty + 1); update(); });
         $("#add-to-cart").addEventListener("click", addToCart);
+        // « Acheter maintenant » : ajoute la sélection au panier puis ouvre directement la finalisation (envoi WhatsApp)
+        $("#buy-now").addEventListener("click", () => { if (addToCart()) location.href = "checkout.html"; });
         $("#mb-add").addEventListener("click", addToCart);
     }
     function addToCart() {
@@ -509,8 +511,10 @@
                 cart.addItem({ id: p.id, name: p.name, length: state.length, lace: state.lace, image: photoSrc(p.photos[0]), price, priceIsEstimate: !exactLength && Boolean(p.priceLabel) && price !== null, currency: p.currency || "EUR", stock: p.stock });
             }
             notify(`${p.name}${state.length ? ` ${state.length}″` : ""}${state.lace ? ` · ${laceLabel(state.lace)}` : ""} ajoutée au panier.`);
+            return true;
         } catch (error) {
             notify(error.code === "cart-unreadable" ? "Votre panier enregistré n’a pas pu être lu : ouvrez le panier pour le réinitialiser." : error.message);
+            return false;
         }
     }
 
@@ -556,6 +560,7 @@
         else { av.dataset.state = "ask"; av.textContent = "Disponibilité confirmée avec vous avant validation"; }
         add.disabled = p.stock === 0;
         $("#mb-add").disabled = p.stock === 0;
+        $("#buy-now").disabled = p.stock === 0;
         // WhatsApp : toujours la sélection en cours
         const message = [
             `Bonjour, je souhaite commander la perruque ${p.name}`,

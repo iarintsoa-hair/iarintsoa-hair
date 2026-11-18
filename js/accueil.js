@@ -195,6 +195,10 @@
                 products = list.filter(Boolean);
                 const byId = new Map(products.map((p) => [p.id, p]));
                 $("#bestseller-grid").replaceChildren(...BESTSELLERS.map((id) => byId.get(id)).filter(Boolean).map(card));
+                // Nouveautés : badge « New » ; les plus récemment ajoutées au catalogue en premier (4 au maximum)
+                const fresh = products.filter((p) => (p.badges || []).some((b) => /^(new|nouveau)/i.test(b))).reverse().slice(0, 4);
+                $("#new-grid").replaceChildren(...fresh.map(card));
+                $("#nouveautes").hidden = fresh.length === 0;
                 renderShop();
                 // Arrivée depuis une autre page sur index.html#boutique : la boutique est déjà visible
             })

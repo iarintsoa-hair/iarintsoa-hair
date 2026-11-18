@@ -1,0 +1,48 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "curly-naturelle-hd-lace",
+    "name": "Curly naturelle HD Lace",
+    "tagline": "Des boucles naturelles au volume exceptionnel, sur une dentelle HD invisible.",
+    "price": 190,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": null,
+    "promotionPrice": null,
+    "texture": "Curly",
+    "description": "Découvrez notre magnifique perruque Curly en cheveux 100 % naturels, d’un noir naturel profond. Ses boucles définies et rebondies offrent un volume exceptionnel et un mouvement plein de vie.\n\nSa dentelle HD 4×4 transparente se fond sur la peau pour une naissance des cheveux d’un naturel saisissant, et sa densité de 200 % lui donne une chevelure généreuse. Elle peut être lissée, teintée et décolorée selon vos envies.\n\nSon petit cordon de sécurité réglable assure un maintien parfait : confortable et facile à porter au quotidien. Disponible en 20 et 24 pouces.",
+    "photos": [
+      { "src": "image/produits/photo-a-venir.svg", "alt": "Perruque Curly naturelle HD Lace noir naturel — photos bientôt disponibles" }
+    ],
+    "lengths": [20, 24],
+    "defaultLength": 20,
+    "pricesByLength": { "20": 190, "24": 220 },
+    "lace": "HD 4x4 transparente",
+    "laceOptions": ["HD 4x4"],
+    "laceDescriptions": { "HD 4x4": "Dentelle HD ultra fine et transparente : raie centrale, fonte invisible sur la peau." },
+    "density": 200,
+    "stock": null,
+    "available": true,
+    "badges": ["New"],
+    "characteristics": [
+      "Couleur : Noir naturel",
+      "Coiffage : peut être lissée, teintée et décolorée",
+      "Bonnet : petit cordon de sécurité ajustable",
+      "Confort : léger et facile à porter"
+    ],
+    "highlights": [
+      { "title": "Dentelle HD invisible", "text": "Une dentelle 4×4 ultra fine et transparente, pour une naissance des cheveux très naturelle." },
+      { "title": "Densité 200 %", "text": "Un volume exceptionnel : des boucles généreuses, définies et rebondies." },
+      { "title": "Liberté de style", "text": "Cheveux 100 % naturels : elle se lisse, se teint et se décolore selon vos envies." },
+      { "title": "Maintien parfait", "text": "Un petit cordon de sécurité réglable, pour une perruque confortable et facile à porter." }
+    ],
+    "faq": [
+      { "q": "Qu’est-ce qu’une dentelle HD ?", "a": "La dentelle HD (haute définition) est plus fine et plus transparente qu’une dentelle classique : elle se fond sur la peau pour une ligne frontale très naturelle. Elle est aussi plus délicate, manipulez-la avec douceur." },
+      { "q": "Peut-on la teindre ou la décolorer ?", "a": "Oui, ce sont des cheveux 100 % naturels. Pour une coloration claire ou une décoloration, faites appel à un professionnel : la décoloration fragilise toujours le cheveu et la dentelle." },
+      { "q": "Les boucles reviennent-elles après un lissage ?", "a": "Oui : après un lissage, un shampoing et un séchage à l’air libre permettent aux boucles naturelles de retrouver leur forme." }
+    ],
+    "similarProducts": ["jerry-curly-hd-lace", "jerry-curly-16-pouces", "jerry-curly-noire"],
+    "featured": false
+  }
+}

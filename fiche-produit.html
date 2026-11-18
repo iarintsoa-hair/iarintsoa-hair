@@ -200,7 +200,10 @@
         .qty button { height: 54px; border: 0; background: none; font-size: 20px; cursor: pointer; }
         .qty button:disabled { color: #c3b9b2; cursor: not-allowed; }
         .qty output { text-align: center; font-size: 16px; }
-        .purchase .btn--whatsapp { grid-column: 1 / -1; }
+        .purchase .btn--whatsapp, .purchase .btn--buy { grid-column: 1 / -1; }
+        .btn--buy { border-color: var(--champagne); background: var(--champagne); color: var(--black); }
+        .btn--buy:hover { border-color: var(--black); }
+        .btn--buy:disabled { opacity: .5; cursor: not-allowed; }
         .purchase .btn { white-space: nowrap; }
         .reassure { display: grid; gap: 12px; margin: 26px 0 0; padding: 22px 0 0; border-top: 1px solid var(--line); list-style: none; }
         .reassure li { display: flex; align-items: center; gap: 14px; font-size: 14px; }
@@ -601,7 +604,7 @@
                 <button class="icon-btn" type="button" aria-label="Fermer le menu" data-menu-close><svg class="icon"><use href="#i-close"/></svg></button>
             </div>
             <nav aria-label="Navigation mobile">
-                <a href="index.html#boutique">Toutes les perruques <small>35 modèles</small></a>
+                <a href="index.html#boutique">Toutes les perruques <small>36 modèles</small></a>
                 <a href="index.html#best-sellers">Best-sellers</a>
                 <a href="tissages.html">Tissages <small>100 g</small></a>
                 <a href="index.html#maison">La Maison</a>
@@ -695,6 +698,7 @@
                             <button type="button" id="qty-plus" aria-label="Augmenter la quantité">+</button>
                         </div>
                         <button class="btn btn--dark" type="button" id="add-to-cart">Ajouter<span class="hide-xs"> au panier</span> · <span data-price-short></span></button>
+                        <button class="btn btn--buy" type="button" id="buy-now">Acheter maintenant</button>
                         <a class="btn btn--whatsapp" id="whatsapp-order" data-wa-link href="https://wa.me/262693600145" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-wa"/></svg> Commander sur WhatsApp</a>
                     </div>
 

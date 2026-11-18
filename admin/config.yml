@@ -5,7 +5,7 @@
 
 backend:
   name: github
-  repo: iarintsoa-hair/iarintsoa-hair
+  repo: iarintsoa-hair/boutique
   branch: main
   commit_messages:
     update: "Boutique : mise à jour du catalogue"

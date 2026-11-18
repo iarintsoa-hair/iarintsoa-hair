@@ -14,7 +14,8 @@
     "description": "La Lisse brun avec mèches blondes associe une base brune chaleureuse à des mèches blondes lumineuses, pour un effet soleil naturel sur une chevelure parfaitement lisse et fluide.\n\nConfectionnée en cheveux naturels, en 22 pouces, elle offre une densité de 100 % pour un volume léger et naturel, et une dentelle 4×4 transparente qui se fond avec discrétion. Elle se lisse et se boucle selon vos envies.\n\nSon bonnet ajustable, doté d’un cordon de serrage, s’adapte à votre tour de tête pour un maintien sûr et confortable. Disponible uniquement en 22 pouces.",
     "photos": [
       { "src": "image/produits/lisse-brun-meches-blondes/lisse-brun-meches-blondes-1.jpg", "alt": "Perruque lisse brun avec mèches blondes 22 pouces vue de face, dentelle 4×4 transparente" },
-      { "src": "image/produits/lisse-brun-meches-blondes/lisse-brun-meches-blondes-2.jpg", "alt": "Perruque lisse brun avec mèches blondes de trois quarts, longueur 22 pouces et mèches lumineuses" }
+      { "src": "image/produits/lisse-brun-meches-blondes/lisse-brun-meches-blondes-2.jpg", "alt": "Perruque lisse brun avec mèches blondes de trois quarts, longueur 22 pouces et mèches lumineuses" },
+      { "src": "image/produits/lisse-brun-meches-blondes/lisse-brun-meches-blondes-3.jpg", "alt": "Perruque lisse brun avec mèches blondes sur mannequin, chute lisse et soyeuse" }
     ],
     "lengths": [22],
     "lace": "4x4 transparente",
@@ -34,7 +35,7 @@
       { "title": "Liberté de style", "text": "Cheveux naturels : elle se lisse et se boucle selon vos envies." },
       { "title": "Confort ajustable", "text": "Un bonnet avec cordon de serrage qui s’adapte à votre tour de tête." }
     ],
-    "similarProducts": ["blonde-mechee", "straight-hd-lace", "lisse-chatain-cuivre"],
+    "similarProducts": ["straight-hd-lace", "lisse-chatain-cuivre", "bordeaux-racines-noires"],
     "featured": false
   }
 }

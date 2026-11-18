@@ -80,7 +80,11 @@
     const maxQty = () => (Number.isInteger(state.product.stock) && state.product.stock > 0 ? Math.min(state.product.stock, 10) : 10);
 
     // ---------- Chargement ----------
-    const id = new URLSearchParams(location.search).get("id") || "jerry-curly-hd-lace";
+    // Anciennes fiches réunies dans une autre : l'ancienne adresse mène à la fiche actuelle
+    const ALIASES = { "blonde-mechee": "lisse-brun-meches-blondes" };
+    const askedId = new URLSearchParams(location.search).get("id") || "jerry-curly-hd-lace";
+    const id = ALIASES[askedId] || askedId;
+    if (id !== askedId) history.replaceState(null, "", `fiche-produit.html?id=${encodeURIComponent(id)}${location.hash}`);
     const api = window.IARINTSOAProductData;
     if (!api) { showError(); return; }
     api.fetchProduct(id).then(render).catch(showError);

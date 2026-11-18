@@ -271,7 +271,7 @@
         $("#why-name").textContent = p.name;
         $("#faq-name").textContent = p.name;
         const texture = `${p.texture || ""} ${p.name}`;
-        $("#crumb-collection").textContent = /curl|boucl/i.test(texture) ? "Perruques bouclées" : /wave|ond/i.test(texture) ? "Perruques ondulées" : /straight|lisse|bob|carr/i.test(texture) ? "Perruques lisses" : "Perruques";
+        $("#crumb-collection").textContent = /curl|boucl/i.test(texture) ? "Perruques bouclées" : /wave|vague|ondul/i.test(texture) ? "Perruques ondulées" : /straight|lisse|bob|carr/i.test(texture) ? "Perruques lisses" : "Perruques";
         $("#product-tagline").textContent = p.tagline || "";
         const reviews = Array.isArray(p.reviews) ? p.reviews : [];
         const link = $("#rating-link");
@@ -415,7 +415,8 @@
 
     // ---------- Conseils d'entretien ----------
     function renderCare(p) {
-        const curly = /curl|boucl|wave|ond/i.test(`${p.texture} ${p.name}`);
+        // « ondul » et non « ond » : sinon « blonde » serait prise pour une texture ondulée
+        const curly = /curl|boucl|wave|vague|ondul/i.test(`${p.texture} ${p.name}`);
         const steps = Array.isArray(p.care) && p.care.length ? p.care : [
             { title: "Démêler", text: "Des pointes vers les racines, avec les doigts ou un peigne à dents larges, jamais à sec." },
             { title: "Laver", text: "Shampoing doux et soin hydratant adaptés aux cheveux humains, sans frotter." },

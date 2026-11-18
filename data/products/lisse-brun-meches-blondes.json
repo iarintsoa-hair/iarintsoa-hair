@@ -1,0 +1,39 @@
+{
+  "format": "iarintsoa-product",
+  "version": 1,
+  "product": {
+    "id": "lisse-brun-meches-blondes",
+    "name": "Lisse brun avec mèches blondes",
+    "tagline": "Un lisse brun lumineux, réveillé par des mèches blondes, en 22 pouces.",
+    "price": 220,
+    "currency": "EUR",
+    "priceLabel": null,
+    "promotion": null,
+    "promotionPrice": null,
+    "texture": "Straight",
+    "description": "La Lisse brun avec mèches blondes associe une base brune chaleureuse à des mèches blondes lumineuses, pour un effet soleil naturel sur une chevelure parfaitement lisse et fluide.\n\nConfectionnée en cheveux naturels, en 22 pouces, elle offre une densité de 100 % pour un volume léger et naturel, et une dentelle 4×4 transparente qui se fond avec discrétion. Elle se lisse et se boucle selon vos envies.\n\nSon bonnet ajustable, doté d’un cordon de serrage, s’adapte à votre tour de tête pour un maintien sûr et confortable. Disponible uniquement en 22 pouces.",
+    "photos": [
+      { "src": "image/produits/photo-a-venir.svg", "alt": "Perruque lisse brun avec mèches blondes 22 pouces — photos bientôt disponibles" }
+    ],
+    "lengths": [22],
+    "lace": "4x4 transparente",
+    "laceOptions": ["4x4"],
+    "density": 100,
+    "stock": null,
+    "available": true,
+    "characteristics": [
+      "Cheveux 100 % humains Remy",
+      "Couleur : Brun avec mèches blondes",
+      "Coiffage : peut être lissée et bouclée",
+      "Bonnet : ajustable avec cordon de serrage"
+    ],
+    "highlights": [
+      { "title": "Un effet soleil naturel", "text": "Une base brune chaleureuse illuminée de mèches blondes, pour un rendu lumineux." },
+      { "title": "Densité 100 %", "text": "Un volume léger et naturel, pour un lisse fluide qui bouge avec vous." },
+      { "title": "Liberté de style", "text": "Cheveux naturels : elle se lisse et se boucle selon vos envies." },
+      { "title": "Confort ajustable", "text": "Un bonnet avec cordon de serrage qui s’adapte à votre tour de tête." }
+    ],
+    "similarProducts": ["blonde-mechee", "straight-hd-lace", "lisse-chatain-cuivre"],
+    "featured": false
+  }
+}

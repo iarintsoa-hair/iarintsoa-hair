@@ -98,26 +98,125 @@
         return catalog;
     }
 
+    // ------------------------------------------------------------------
+    // Catalogue unique : data/catalogue.json, modifié par l'administration (/admin, Decap CMS).
+    // Chaque perruque y est convertie vers le format attendu par les pages, puis vérifiée
+    // par validateProductDocument (mêmes règles qu'avant). Une fiche invalide est écartée
+    // sans casser la boutique ; une fiche « masquée » n'apparaît nulle part.
+    // ------------------------------------------------------------------
+    const CATALOGUE_URL = "data/catalogue.json";
+    let cataloguePromise = null;
+
+    function slugify(text) {
+        return String(text || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
+            .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+    }
+
+    // Photos téléversées depuis l'administration : redimensionnées à la volée par Netlify une fois en ligne
+    const onlineSite = typeof location !== "undefined" && location.protocol === "https:"
+        && !/^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+    function optimizedPhoto(src) {
+        return onlineSite && /^\/?image\/produits\/ajouts\//.test(src)
+            ? `/.netlify/images?url=/${encodeURI(src.replace(/^\//, ""))}&w=1200&q=78`
+            : src;
+    }
+
+    function toNumber(value) {
+        const n = typeof value === "string" && value.trim() !== "" ? Number(value.replace(",", ".")) : value;
+        return Number.isFinite(n) ? n : null;
+    }
+
+    function normalizeItem(item) {
+        const id = productIdPattern.test(item.id || "") ? item.id : slugify(item.name);
+        const variants = Array.isArray(item.variants) ? item.variants : [];
+        const lengths = [...new Set(variants.map((v) => toNumber(v && v.length)).filter((l) => l !== null && l > 0))].sort((a, b) => a - b);
+        const pricesByLength = {};
+        variants.forEach((v) => {
+            const length = toNumber(v && v.length), price = toNumber(v && v.price);
+            if (length !== null && lengths.includes(length) && price !== null && price >= 0) pricesByLength[String(length)] = price;
+        });
+        const lengthPrices = Object.values(pricesByLength);
+        const basePrice = toNumber(item.price);
+        const price = basePrice !== null ? basePrice : lengthPrices.length ? Math.min(...lengthPrices) : null;
+        const promoPrice = toNumber(item.promotionPrice);
+        const promoValid = Boolean(item.promotion) && promoPrice !== null && price !== null && promoPrice < price;
+        const laceDescriptions = {};
+        (Array.isArray(item.laceInfo) ? item.laceInfo : []).forEach((x) => { if (x && x.lace && x.text) laceDescriptions[x.lace] = x.text; });
+        const product = {
+            id,
+            name: String(item.name || "").trim(),
+            tagline: item.tagline || "",
+            price,
+            currency: "EUR",
+            priceLabel: null,
+            promotion: promoValid ? item.promotion : null,
+            promotionPrice: promoValid ? promoPrice : null,
+            texture: item.texture || "",
+            description: String(item.description || ""),
+            photos: (Array.isArray(item.photos) ? item.photos : [])
+                .map((ph) => (typeof ph === "string" ? { src: ph, alt: "" } : ph))
+                .filter((ph) => ph && typeof ph.src === "string" && ph.src.trim())
+                .map((ph) => ({ src: optimizedPhoto(ph.src.trim()), alt: ph.alt || "" })),
+            lengths,
+            lace: item.lace || null,
+            laceOptions: (Array.isArray(item.laceOptions) ? item.laceOptions : []).filter((l) => typeof l === "string" && l.trim()),
+            density: toNumber(item.density),
+            stock: item.availability === "epuise" ? 0 : null,
+            available: item.availability === "en-stock",
+            badges: (Array.isArray(item.badges) ? item.badges : []).filter(Boolean),
+            characteristics: (Array.isArray(item.characteristics) ? item.characteristics : []).filter((c) => typeof c === "string" && c.trim()),
+            similarProducts: (Array.isArray(item.similarProducts) ? item.similarProducts : []).filter((s) => typeof s === "string" && productIdPattern.test(s)),
+            featured: false
+        };
+        if (lengthPrices.length) product.pricesByLength = pricesByLength;
+        const defaultLength = toNumber(item.defaultLength);
+        if (defaultLength !== null && lengths.includes(defaultLength)) product.defaultLength = defaultLength;
+        if (item.lengthNote) product.lengthNote = item.lengthNote;
+        if (Object.keys(laceDescriptions).length) product.laceDescriptions = laceDescriptions;
+        if (Array.isArray(item.highlights) && item.highlights.length) product.highlights = item.highlights.filter((h) => h && h.title && h.text);
+        if (Array.isArray(item.faq) && item.faq.length) product.faq = item.faq.filter((f) => f && f.q && f.a);
+        product.laceOptions = [...new Set(product.laceOptions)];
+        return validateProductDocument({ format: "iarintsoa-product", version: 1, product }, id);
+    }
+
+    function loadCatalogue() {
+        if (!cataloguePromise) {
+            cataloguePromise = fetch(CATALOGUE_URL, { cache: "no-cache" }).then((response) => {
+                if (!response.ok) throw new Error(`Le catalogue ${CATALOGUE_URL} est introuvable (${response.status}).`);
+                return response.json();
+            }).then((doc) => {
+                const items = doc && Array.isArray(doc.products) ? doc.products : [];
+                const products = new Map();
+                items.forEach((item, index) => {
+                    if (!item || item.hidden === true) return;
+                    try {
+                        const product = normalizeItem(item);
+                        if (products.has(product.id)) throw new Error(`identifiant « ${product.id} » déjà utilisé`);
+                        products.set(product.id, product);
+                    } catch (error) {
+                        if (global.console) global.console.warn(`Perruque n° ${index + 1} (${item.name || "sans nom"}) ignorée : ${error.message}`);
+                    }
+                });
+                return products;
+            });
+            cataloguePromise.catch(() => { cataloguePromise = null; });
+        }
+        return cataloguePromise;
+    }
+
     async function fetchProduct(id) {
         if (!isProductId(id)) {
             throw new Error("Identifiant produit invalide.");
         }
-
-        const response = await fetch(`data/products/${id}.json`, { cache: "no-cache" });
-        if (!response.ok) {
-            throw new Error(`Le fichier data/products/${id}.json est introuvable (${response.status}).`);
+        const product = (await loadCatalogue()).get(id);
+        if (!product) {
+            throw new Error(`Le modèle « ${id} » est introuvable.`);
         }
-
-        return validateProductDocument(await response.json(), id);
+        return JSON.parse(JSON.stringify(product));
     }
 
     async function fetchCatalog() {
-        const response = await fetch("data/products/index.json", { cache: "no-cache" });
-        if (!response.ok) {
-            throw new Error(`Le catalogue data/products/index.json est introuvable (${response.status}).`);
-        }
-
-        return validateCatalogDocument(await response.json()).products;
+        return Array.from((await loadCatalogue()).keys());
     }
 
     function isProductId(id) {

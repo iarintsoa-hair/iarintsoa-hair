@@ -1,0 +1,1659 @@
+{
+  "products": [
+    {
+      "hidden": false,
+      "id": "jerry-curly-16-pouces",
+      "name": "Jerry Curly 16 pouces",
+      "tagline": "Des boucles rebondies et pleines de volume, posées en moins de 5 minutes.",
+      "description": "La Jerry Curly 16 pouces offre des boucles rebondies, souples et naturellement définies, pour un volume généreux qui encadre joliment le visage.\n\nConfectionnée en cheveux naturels brésiliens Remy aux cuticules alignées, elle affiche une densité de 200 % et une dentelle 4×4 transparente qui se fond avec discrétion. Sans colle, avec cordon de sécurité fourni, elle se pose en moins de 5 minutes.\n\nColorable et décolorable, elle se coiffe comme vos propres cheveux.",
+      "texture": "Jerry Curly",
+      "photos": [
+        {
+          "src": "image/produits/jerry-curly-16-pouces/jerry-curly-16-pouces-1.jpg",
+          "alt": "Perruque Jerry Curly 16 pouces vue de face, boucles volumineuses et dentelle 4×4 transparente"
+        },
+        {
+          "src": "image/produits/jerry-curly-16-pouces/jerry-curly-16-pouces-2.jpg",
+          "alt": "Jerry Curly 16 pouces de trois quarts : raie centrale et naissance des cheveux naturelle"
+        },
+        {
+          "src": "image/produits/jerry-curly-16-pouces/jerry-curly-16-pouces-3.jpg",
+          "alt": "Jerry Curly 16 pouces vue de dos : boucles denses et définies"
+        },
+        {
+          "src": "image/produits/jerry-curly-16-pouces/jerry-curly-16-pouces-4.jpg",
+          "alt": "Jerry Curly 16 pouces vue de profil : volume et tenue des boucles"
+        },
+        {
+          "src": "image/produits/jerry-curly-16-pouces/jerry-curly-16-pouces-5.jpg",
+          "alt": "Jerry Curly 16 pouces sur mannequin, boucles noires rebondies"
+        },
+        {
+          "src": "image/produits/jerry-curly-16-pouces/jerry-curly-16-pouces-6.jpg",
+          "alt": "Jerry Curly 16 pouces, longueur épaules, boucles définies"
+        }
+      ],
+      "variants": [
+        {
+          "length": 16
+        }
+      ],
+      "price": 160,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [
+        "Best Seller"
+      ],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Couleur : Noir naturel",
+        "Pose : sans colle, en moins de 5 minutes, cordon de sécurité fourni",
+        "Coiffage : colorable, décolorable, se coiffe comme vos cheveux"
+      ],
+      "similarProducts": [
+        "curly-naturelle-hd-lace",
+        "jerry-curly-noire",
+        "jerry-curly-hd-lace"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "jerry-curly-hd-lace",
+      "name": "Bouclée noire HD lace",
+      "tagline": "Des boucles noires naturelles et une dentelle HD invisible, pour un rendu d’une grande finesse.",
+      "description": "La Bouclée noire HD lace associe des boucles naturelles, souples et légères à la finesse d’une dentelle HD, qui se fond sur la peau pour une naissance des cheveux d’un naturel saisissant.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 20 pouces, elle offre une densité de 100 % pour un volume léger et naturel. Sans colle, elle est fournie avec un cordon de sécurité pour un maintien sûr et confortable.\n\nColorable et décolorable, elle se coiffe comme vos propres cheveux.",
+      "texture": "Bouclée",
+      "photos": [
+        {
+          "src": "image/produits/jerry-curly-hd-lace/jerry-curly-hd-lace-hd-1.jpg",
+          "alt": "Perruque bouclée noire HD lace 20 pouces sur mannequin, boucles naturelles"
+        }
+      ],
+      "variants": [
+        {
+          "length": 20
+        }
+      ],
+      "price": 190,
+      "lace": "HD",
+      "laceOptions": [
+        "HD"
+      ],
+      "laceInfo": [
+        {
+          "lace": "HD",
+          "text": "Dentelle HD ultra fine et transparente : fonte invisible sur la peau."
+        }
+      ],
+      "density": 100,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Couleur : Noir naturel",
+        "Pose : sans colle, cordon de sécurité fourni",
+        "Coiffage : colorable, décolorable, se coiffe comme vos cheveux"
+      ],
+      "highlights": [
+        {
+          "title": "Dentelle HD invisible",
+          "text": "Une dentelle ultra fine qui se fond sur la peau pour une naissance naturelle."
+        },
+        {
+          "title": "Densité 100 %",
+          "text": "Un volume léger et naturel, pour des boucles qui bougent avec vous."
+        },
+        {
+          "title": "Sans colle",
+          "text": "Cordon de sécurité fourni : un maintien sûr, sans colle."
+        },
+        {
+          "title": "Accompagnée à La Réunion",
+          "text": "Conseil personnalisé sur WhatsApp et livraison sur toute l’île."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Qu’est-ce qu’une dentelle HD ?",
+          "a": "La dentelle HD (haute définition) est plus fine et plus transparente qu’une dentelle classique : elle se fond sur la peau pour une ligne frontale très naturelle. Elle est aussi plus délicate, manipulez-la avec douceur."
+        },
+        {
+          "q": "À quoi sert le cordon de sécurité ?",
+          "a": "Le cordon ajuste le bonnet à votre tour de tête et maintient la perruque bien en place, sans colle."
+        }
+      ],
+      "similarProducts": [
+        "curly-naturelle-hd-lace",
+        "jerry-curly-16-pouces",
+        "bouclee-naturelle"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "straight-hd-lace",
+      "name": "Lisse blonde racines noires",
+      "tagline": "L’élégance des cheveux lisses, soyeux et naturels, en Ombré 1B/27 Blond Miel.",
+      "description": "La Lisse blonde racines noires incarne l’élégance des cheveux parfaitement lisses : une chute fluide, un toucher soyeux et une brillance naturelle.\n\nSa couleur Ombré 1B/27 Blond Miel fait fondre des racines noir naturel dans un blond miel lumineux. Confectionnée en cheveux naturels brésiliens Remy, en 22 pouces, elle est montée sur une dentelle HD qui se fond sur la peau. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Straight",
+      "photos": [
+        {
+          "src": "image/produits/straight-hd-lace/straight-hd-lace-hd-1.jpg",
+          "alt": "Perruque lisse blonde racines noires Ombré 1B/27 Blond Miel de trois quarts, chute lisse et soyeuse"
+        },
+        {
+          "src": "image/produits/straight-hd-lace/straight-hd-lace-1.jpg",
+          "alt": "Perruque lisse blonde racines noires Ombré 1B/27 Blond Miel 22 pouces vue de face, dentelle HD"
+        },
+        {
+          "src": "image/produits/straight-hd-lace/straight-hd-lace-hd-2.jpg",
+          "alt": "Lisse blonde Ombré 1B/27 Blond Miel vue de dos, longueurs blond miel"
+        }
+      ],
+      "variants": [
+        {
+          "length": 22
+        }
+      ],
+      "price": 240,
+      "promotion": "Promo",
+      "promotionPrice": 220,
+      "lace": "HD",
+      "laceOptions": [
+        "HD"
+      ],
+      "laceInfo": [
+        {
+          "lace": "HD",
+          "text": "Dentelle HD ultra fine et transparente : fonte invisible sur la peau."
+        }
+      ],
+      "density": null,
+      "availability": "en-stock",
+      "badges": [
+        "New"
+      ],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Couleur : Ombré 1B/27 Blond Miel (racines noires)",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "lisse-brun-meches-blondes",
+        "lisse-chatain-cuivre",
+        "bordeaux-racines-noires"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "body-wave",
+      "name": "Body Wave",
+      "tagline": "De larges ondulations souples, pour un mouvement glamour et naturel.",
+      "description": "La Body Wave dessine de larges ondulations souples qui donnent du mouvement et de la lumière à la chevelure, pour un style glamour au quotidien.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni. Proposée en 22 pouces.",
+      "texture": "Body Wave",
+      "photos": [
+        {
+          "src": "image/produits/body-wave/body-wave-hd-1.jpg",
+          "alt": "Perruque Body Wave 22 pouces sur mannequin, larges ondulations noires"
+        },
+        {
+          "src": "image/produits/body-wave/body-wave-1.jpg",
+          "alt": "Perruque Body Wave sur mannequin, larges ondulations noires, dentelle 4×4 transparente"
+        }
+      ],
+      "variants": [
+        {
+          "length": 22
+        }
+      ],
+      "price": 200,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "body-wave-26-pouces",
+        "vague-naturelle",
+        "natural-wave"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "water-wave",
+      "name": "Water Wave",
+      "tagline": "De petites vagues effet mouillé, pleines de volume et de caractère.",
+      "description": "La Water Wave réunit de petites vagues serrées à l’effet mouillé, pour un volume généreux et un mouvement plein de vie.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 18 pouces, elle offre une densité de 200 % et une dentelle 5×5 transparente qui laisse la raie plus libre. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Water Wave",
+      "photos": [
+        {
+          "src": "image/produits/water-wave/water-wave-1.jpg",
+          "alt": "Perruque Water Wave 18 pouces portée, petites vagues volumineuses"
+        }
+      ],
+      "variants": [
+        {
+          "length": 18
+        }
+      ],
+      "price": 170,
+      "lace": "5x5 transparente",
+      "laceOptions": [
+        "5x5"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "water-wave-frontale",
+        "demi-perruque-water-wave",
+        "wave-frontale"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "lisse-noire",
+      "name": "Lisse noire",
+      "tagline": "Un lisse noir profond, fluide et brillant, de 20 à 28 pouces.",
+      "description": "La Lisse noire offre une chevelure parfaitement lisse, d’un noir profond et naturel, avec une chute fluide et une brillance soyeuse.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle affiche une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni. Disponible de 20 à 28 pouces : la photo présente le modèle en 22 pouces.",
+      "texture": "Straight",
+      "photos": [
+        {
+          "src": "image/produits/lisse-noire/lisse-noire-hd-1.jpg",
+          "alt": "Perruque lisse noire 22 pouces sur mannequin, dentelle 4×4 transparente"
+        },
+        {
+          "src": "image/produits/lisse-noire/lisse-noire-2.jpg",
+          "alt": "Perruque lisse noire longue, chute fluide et brillante"
+        }
+      ],
+      "variants": [
+        {
+          "length": 20,
+          "price": 180
+        },
+        {
+          "length": 22,
+          "price": 200
+        },
+        {
+          "length": 24,
+          "price": 220
+        },
+        {
+          "length": 26,
+          "price": 250
+        },
+        {
+          "length": 28,
+          "price": 270
+        }
+      ],
+      "price": 180,
+      "defaultLength": 22,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Couleur : Noir naturel",
+        "Pose : sans colle, cordon de sécurité fourni",
+        "Coiffage : colorable, décolorable, se coiffe comme vos cheveux"
+      ],
+      "similarProducts": [
+        "lisse-noire-longue",
+        "lisse-noire-30-pouces",
+        "bob-noir"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "lisse-noire-30-pouces",
+      "name": "Lisse noire 30 pouces",
+      "tagline": "Une longueur spectaculaire : 76 cm de lisse noir soyeux.",
+      "description": "La Lisse noire 30 pouces déploie une longueur spectaculaire de 76 cm, pour un lisse noir profond, fluide et brillant qui ne passe pas inaperçu.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Straight",
+      "photos": [
+        {
+          "src": "image/produits/lisse-noire-30-pouces/lisse-noire-30-pouces-1.jpg",
+          "alt": "Perruque lisse noire 30 pouces portée, longueur spectaculaire"
+        }
+      ],
+      "variants": [
+        {
+          "length": 30
+        }
+      ],
+      "price": 280,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Couleur : Noir naturel",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "lisse-noire-longue",
+        "lisse-noire",
+        "natural-wave"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "lisse-noire-longue",
+      "name": "Lisse noire longue",
+      "tagline": "26 pouces de lisse noir fluide, pour une allure longue et élégante.",
+      "description": "La Lisse noire longue offre 26 pouces (66 cm) de cheveux parfaitement lisses, d’un noir naturel profond, pour une allure longue, fluide et élégante.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle affiche une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Straight",
+      "photos": [
+        {
+          "src": "image/produits/lisse-noire-longue/lisse-noire-longue-1.jpg",
+          "alt": "Perruque lisse noire longue 26 pouces sur mannequin"
+        }
+      ],
+      "variants": [
+        {
+          "length": 26
+        }
+      ],
+      "price": 250,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Couleur : Noir naturel",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "lisse-noire",
+        "lisse-noire-30-pouces",
+        "body-wave-26-pouces"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "lisse-chatain-cuivre",
+      "name": "Lisse châtain cuivré",
+      "tagline": "Un lisse lumineux aux reflets châtain cuivré, chaleureux et sophistiqué.",
+      "description": "La Lisse châtain cuivré illumine le visage de reflets chauds et chaleureux, sur une chevelure parfaitement lisse, fluide et soyeuse.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 20 pouces, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Straight",
+      "photos": [
+        {
+          "src": "image/produits/lisse-chatain-cuivre/lisse-chatain-cuivre-1.jpg",
+          "alt": "Perruque lisse châtain cuivré 20 pouces, dentelle 4×4 transparente"
+        }
+      ],
+      "variants": [
+        {
+          "length": 20
+        }
+      ],
+      "price": 200,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Couleur : Châtain cuivré",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "straight-hd-lace",
+        "lisse-brun-meches-blondes",
+        "bordeaux-racines-noires"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "lisse-brun-meches-blondes",
+      "name": "Lisse brun avec mèches blondes",
+      "tagline": "Un lisse brun lumineux, réveillé par des mèches blondes, en 22 pouces.",
+      "description": "La Lisse brun avec mèches blondes associe une base brune chaleureuse à des mèches blondes lumineuses, pour un effet soleil naturel sur une chevelure parfaitement lisse et fluide.\n\nConfectionnée en cheveux naturels, en 22 pouces, elle offre une densité de 100 % pour un volume léger et naturel, et une dentelle 4×4 transparente qui se fond avec discrétion. Elle se lisse et se boucle selon vos envies.\n\nSon bonnet ajustable, doté d’un cordon de serrage, s’adapte à votre tour de tête pour un maintien sûr et confortable. Disponible uniquement en 22 pouces.",
+      "texture": "Straight",
+      "photos": [
+        {
+          "src": "image/produits/lisse-brun-meches-blondes/lisse-brun-meches-blondes-1.jpg",
+          "alt": "Perruque lisse brun avec mèches blondes 22 pouces vue de face, dentelle 4×4 transparente"
+        },
+        {
+          "src": "image/produits/lisse-brun-meches-blondes/lisse-brun-meches-blondes-2.jpg",
+          "alt": "Perruque lisse brun avec mèches blondes de trois quarts, longueur 22 pouces et mèches lumineuses"
+        },
+        {
+          "src": "image/produits/lisse-brun-meches-blondes/lisse-brun-meches-blondes-3.jpg",
+          "alt": "Perruque lisse brun avec mèches blondes sur mannequin, chute lisse et soyeuse"
+        }
+      ],
+      "variants": [
+        {
+          "length": 22
+        }
+      ],
+      "price": 220,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 100,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Couleur : Brun avec mèches blondes",
+        "Coiffage : peut être lissée et bouclée",
+        "Bonnet : ajustable avec cordon de serrage"
+      ],
+      "highlights": [
+        {
+          "title": "Un effet soleil naturel",
+          "text": "Une base brune chaleureuse illuminée de mèches blondes, pour un rendu lumineux."
+        },
+        {
+          "title": "Densité 100 %",
+          "text": "Un volume léger et naturel, pour un lisse fluide qui bouge avec vous."
+        },
+        {
+          "title": "Liberté de style",
+          "text": "Cheveux naturels : elle se lisse et se boucle selon vos envies."
+        },
+        {
+          "title": "Confort ajustable",
+          "text": "Un bonnet avec cordon de serrage qui s’adapte à votre tour de tête."
+        }
+      ],
+      "similarProducts": [
+        "straight-hd-lace",
+        "lisse-chatain-cuivre",
+        "bordeaux-racines-noires"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "body-wave-26-pouces",
+      "name": "Body Wave 26 pouces",
+      "tagline": "26 pouces de larges ondulations glamour, pour une allure de star.",
+      "description": "La Body Wave 26 pouces déploie de larges ondulations souples sur 66 cm, pour une chevelure longue, glamour et pleine de mouvement.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Body Wave",
+      "photos": [
+        {
+          "src": "image/produits/body-wave-26-pouces/body-wave-26-pouces-1.jpg",
+          "alt": "Perruque Body Wave 26 pouces portée, longues ondulations glamour"
+        }
+      ],
+      "variants": [
+        {
+          "length": 26
+        }
+      ],
+      "price": 250,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "body-wave",
+        "natural-wave",
+        "vague-naturelle"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "vague-naturelle-hd",
+      "name": "Vague naturelle HD",
+      "tagline": "Des vagues naturelles et une dentelle HD invisible, pour un rendu tout en finesse.",
+      "description": "La Vague naturelle HD dessine des ondulations souples et naturelles, sublimées par une dentelle HD qui se fond sur la peau pour une naissance des cheveux d’une grande finesse.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 20 pouces, elle offre une densité de 200 %. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Natural Wave",
+      "photos": [
+        {
+          "src": "image/produits/vague-naturelle-hd/vague-naturelle-hd-1.jpg",
+          "alt": "Perruque vague naturelle HD 20 pouces sur mannequin, ondulations souples, dentelle HD"
+        }
+      ],
+      "variants": [
+        {
+          "length": 20
+        }
+      ],
+      "price": 190,
+      "lace": "HD",
+      "laceOptions": [
+        "HD"
+      ],
+      "laceInfo": [
+        {
+          "lace": "HD",
+          "text": "Dentelle HD ultra fine et transparente : fonte invisible sur la peau."
+        }
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "vague-naturelle",
+        "natural-wave",
+        "body-wave"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "vague-naturelle",
+      "name": "Vague naturelle",
+      "tagline": "Des ondulations souples et naturelles, pour un style féminin au quotidien.",
+      "description": "La Vague naturelle offre des ondulations souples et légères, pour une chevelure féminine qui bouge naturellement avec vous.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 22 pouces, elle affiche une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Natural Wave",
+      "photos": [
+        {
+          "src": "image/produits/vague-naturelle/vague-naturelle-1.jpg",
+          "alt": "Perruque vague naturelle 22 pouces sur mannequin, dentelle 4×4 transparente"
+        }
+      ],
+      "variants": [
+        {
+          "length": 22
+        }
+      ],
+      "price": 200,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "vague-naturelle-hd",
+        "body-wave",
+        "wave-frontale"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "natural-wave",
+      "name": "Natural Wave",
+      "tagline": "De longues vagues naturelles sur frontale 13×4, pour une liberté de coiffage totale.",
+      "description": "La Natural Wave réunit de longues vagues naturelles et une frontale 13×4 qui couvre le front d’une oreille à l’autre : raie libre et naissance des cheveux d’un naturel saisissant.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle offre une densité de 200 %. Sans colle, avec cordon de sécurité fourni. Disponible de 20 à 26 pouces : la photo présente le modèle en 26 pouces.",
+      "texture": "Natural Wave",
+      "photos": [
+        {
+          "src": "image/produits/natural-wave/natural-wave-hd-1.jpg",
+          "alt": "Perruque Natural Wave 26 pouces frontale 13×4 sur mannequin"
+        }
+      ],
+      "variants": [
+        {
+          "length": 20,
+          "price": 180
+        },
+        {
+          "length": 22,
+          "price": 200
+        },
+        {
+          "length": 24,
+          "price": 220
+        },
+        {
+          "length": 26,
+          "price": 250
+        }
+      ],
+      "price": 250,
+      "defaultLength": 26,
+      "lace": "13x4 transparente",
+      "laceOptions": [
+        "13x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "wave-frontale-longue",
+        "water-wave-frontale",
+        "body-wave-26-pouces"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "water-wave-frontale",
+      "name": "Water Wave frontale",
+      "tagline": "De longues vagues effet mouillé sur frontale transparente, en 22 ou 24 pouces.",
+      "description": "La Water Wave frontale offre de longues vagues serrées à l’effet mouillé, pour un volume spectaculaire et un mouvement plein de vie.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle affiche une densité de 200 % et une frontale transparente qui libère la raie et sublime la naissance des cheveux. Disponible en 22 ou 24 pouces. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Water Wave",
+      "photos": [
+        {
+          "src": "image/produits/water-wave-frontale/water-wave-frontale-1.jpg",
+          "alt": "Perruque Water Wave frontale transparente sur mannequin, longues vagues"
+        }
+      ],
+      "variants": [
+        {
+          "length": 22,
+          "price": 220
+        },
+        {
+          "length": 24,
+          "price": 250
+        }
+      ],
+      "price": 220,
+      "defaultLength": 22,
+      "lace": "Frontale transparente",
+      "laceOptions": [
+        "Frontale"
+      ],
+      "laceInfo": [
+        {
+          "lace": "Frontale",
+          "text": "Frontale transparente d’une oreille à l’autre : raie libre, naissance naturelle."
+        }
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "water-wave",
+        "natural-wave",
+        "wave-frontale-longue"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "wave-frontale",
+      "name": "Wave frontale",
+      "tagline": "Des vagues généreuses sur frontale 13×4, pour une raie totalement libre.",
+      "description": "La Wave frontale associe des vagues généreuses et pleines de volume à une frontale 13×4 qui couvre le front d’une oreille à l’autre, pour une raie libre et une naissance des cheveux naturelle.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 20 pouces. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Wave",
+      "photos": [
+        {
+          "src": "image/produits/wave-frontale/wave-frontale-1.jpg",
+          "alt": "Perruque wave frontale 13×4, 20 pouces, vagues volumineuses sur mannequin"
+        }
+      ],
+      "variants": [
+        {
+          "length": 20
+        }
+      ],
+      "price": 180,
+      "lace": "13x4 transparente",
+      "laceOptions": [
+        "13x4"
+      ],
+      "density": null,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "wave-frontale-longue",
+        "water-wave-frontale",
+        "natural-wave"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "wave-frontale-longue",
+      "name": "Wave frontale longue",
+      "tagline": "22 pouces de vagues généreuses sur frontale 13×4, pour une allure spectaculaire.",
+      "description": "La Wave frontale longue déploie 22 pouces de vagues généreuses, sublimées par une frontale 13×4 d’une oreille à l’autre : raie libre et naissance des cheveux naturelle.\n\nConfectionnée en cheveux naturels brésiliens Remy. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Wave",
+      "photos": [
+        {
+          "src": "image/produits/wave-frontale-longue/wave-frontale-longue-hd-1.jpg",
+          "alt": "Perruque wave frontale longue 22 pouces vue de profil, longues vagues"
+        }
+      ],
+      "variants": [
+        {
+          "length": 22
+        }
+      ],
+      "price": 200,
+      "lace": "13x4 transparente",
+      "laceOptions": [
+        "13x4"
+      ],
+      "density": null,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "wave-frontale",
+        "natural-wave",
+        "water-wave-frontale"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "demi-perruque-water-wave",
+      "name": "Demi-perruque Water Wave",
+      "tagline": "Des vagues pleines de volume en demi-perruque : pose express, rendu naturel.",
+      "description": "La Demi-perruque Water Wave offre de petites vagues volumineuses en 18 pouces, dans un format pratique qui se pose en quelques minutes.\n\nUne demi-perruque se place à l’arrière de la tête et laisse apparaître la naissance de vos propres cheveux, que vous fondez avec la perruque : sans colle et sans dentelle, pour un rendu naturel. Confectionnée en cheveux naturels brésiliens Remy.",
+      "texture": "Water Wave",
+      "photos": [
+        {
+          "src": "image/produits/demi-perruque-water-wave/demi-perruque-water-wave-1.jpg",
+          "alt": "Demi-perruque Water Wave 18 pouces sur mannequin, petites vagues volumineuses"
+        }
+      ],
+      "variants": [
+        {
+          "length": 18
+        }
+      ],
+      "price": 160,
+      "promotion": "Promo",
+      "promotionPrice": 140,
+      "lace": "Sans dentelle (demi-perruque)",
+      "laceOptions": [],
+      "density": null,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Format : demi-perruque",
+        "Origine : cheveux naturels brésiliens"
+      ],
+      "highlights": [
+        {
+          "title": "Pose express",
+          "text": "Une demi-perruque se pose en quelques minutes, sans colle ni dentelle."
+        },
+        {
+          "title": "Votre naissance des cheveux",
+          "text": "Vos propres cheveux restent visibles devant, pour un rendu parfaitement naturel."
+        },
+        {
+          "title": "Volume Water Wave",
+          "text": "De petites vagues effet mouillé, pleines de volume et de caractère."
+        },
+        {
+          "title": "Accompagnée à La Réunion",
+          "text": "Conseil personnalisé sur WhatsApp et livraison sur toute l’île."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Qu’est-ce qu’une demi-perruque ?",
+          "a": "Une demi-perruque se pose à l’arrière de la tête et laisse visible la naissance de vos propres cheveux, que vous lissez ou coiffez pour les fondre avec la perruque. La pose est rapide, sans colle ni dentelle."
+        }
+      ],
+      "similarProducts": [
+        "water-wave",
+        "water-wave-frontale",
+        "perruque-bandeau"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "bordeaux-racines-noires",
+      "name": "Bordeaux racines noires",
+      "tagline": "Un lisse bordeaux intense aux racines noires, audacieux et élégant.",
+      "description": "La Bordeaux racines noires associe des racines noir naturel à des longueurs bordeaux intenses, pour un lisse audacieux, lumineux et terriblement élégant.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 22 pouces, elle offre une densité de 200 % et une dentelle 4×4. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Straight",
+      "photos": [
+        {
+          "src": "image/produits/bordeaux-racines-noires/bordeaux-racines-noires-hd-1.jpg",
+          "alt": "Perruque lisse bordeaux racines noires 22 pouces portée"
+        },
+        {
+          "src": "image/produits/bordeaux-racines-noires/bordeaux-racines-noires-2.jpg",
+          "alt": "Perruque lisse bordeaux racines noires sur mannequin, longueurs bordeaux intenses"
+        }
+      ],
+      "variants": [
+        {
+          "length": 22
+        }
+      ],
+      "price": 220,
+      "lace": "4x4",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Couleur : Bordeaux, racines noires",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "jerry-curly-bordeaux",
+        "bob-bordeaux",
+        "straight-hd-lace"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "bouclee-blond-miel",
+      "name": "Bouclée blond miel",
+      "tagline": "Des boucles blond miel solaires et pleines de volume.",
+      "description": "La Bouclée blond miel illumine le visage de boucles serrées aux reflets miel, pour un volume solaire et plein de caractère.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 20 ou 24 pouces, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Bouclée",
+      "photos": [
+        {
+          "src": "image/produits/bouclee-blond-miel/bouclee-blond-miel-hd-1.jpg",
+          "alt": "Perruque bouclée blond miel racines foncées sur mannequin, boucles volumineuses"
+        },
+        {
+          "src": "image/produits/bouclee-blond-miel/bouclee-blond-miel-1.jpg",
+          "alt": "Perruque bouclée blond miel 20 pouces sur mannequin, boucles solaires"
+        }
+      ],
+      "variants": [
+        {
+          "length": 20,
+          "price": 190
+        },
+        {
+          "length": 24,
+          "price": 240
+        }
+      ],
+      "price": 190,
+      "defaultLength": 20,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Couleur : Blond miel",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "jerry-curly-piano",
+        "bouclee-coloree-brun-chocolat",
+        "lisse-brun-meches-blondes"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "jerry-curly-noire",
+      "name": "Jerry Curly noire",
+      "tagline": "Des boucles noires rebondies et généreuses, en 20 pouces.",
+      "description": "La Jerry Curly noire offre des boucles rebondies et naturellement définies, d’un noir profond, pour un volume généreux et plein de caractère.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 20 pouces, elle est montée sur une dentelle 4×4 transparente qui se fond avec discrétion. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Jerry Curly",
+      "photos": [
+        {
+          "src": "image/produits/jerry-curly-noire/jerry-curly-noire-1.jpg",
+          "alt": "Perruque Jerry Curly noire 20 pouces sur mannequin, boucles rebondies"
+        }
+      ],
+      "variants": [
+        {
+          "length": 20
+        }
+      ],
+      "price": 180,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": null,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Couleur : Noir naturel",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "jerry-curly-16-pouces",
+        "curly-naturelle-hd-lace",
+        "kinky-curly"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "kinky-curly",
+      "name": "Kinky Curly",
+      "tagline": "De petites boucles serrées au rendu naturel, pleines de volume.",
+      "description": "La Kinky Curly reproduit de petites boucles serrées au rendu très naturel, pour un volume généreux et une texture proche des cheveux afro.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 14 pouces, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Kinky Curly",
+      "photos": [
+        {
+          "src": "image/produits/kinky-curly/kinky-curly-1.jpg",
+          "alt": "Perruque Kinky Curly 14 pouces sur mannequin, petites boucles serrées"
+        }
+      ],
+      "variants": [
+        {
+          "length": 14
+        }
+      ],
+      "price": 150,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "bouclee-courte",
+        "jerry-curly-16-pouces",
+        "bouncy"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "bouclee-frontale",
+      "name": "Bouclée frontale",
+      "tagline": "Des boucles longues et définies sur frontale 13×4, pour une raie totalement libre.",
+      "description": "La Bouclée frontale réunit de longues boucles définies et une frontale 13×4 transparente, d’une oreille à l’autre, pour une raie libre et une naissance des cheveux naturelle.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 22 pouces, elle offre une densité de 200 %. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Bouclée",
+      "photos": [
+        {
+          "src": "image/produits/bouclee-frontale/bouclee-frontale-hd-1.jpg",
+          "alt": "Perruque bouclée frontale 13×4 transparente 22 pouces sur mannequin"
+        }
+      ],
+      "variants": [
+        {
+          "length": 22
+        }
+      ],
+      "price": 200,
+      "lace": "13x4 transparente",
+      "laceOptions": [
+        "13x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "bouclee-naturelle",
+        "jerry-curly-noire",
+        "wave-frontale-longue"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "bouclee-naturelle",
+      "name": "Bouclée naturelle",
+      "tagline": "Des boucles longues et naturelles, pour un volume plein de vie.",
+      "description": "La Bouclée naturelle offre de longues boucles souples et naturellement définies, pour une chevelure volumineuse et pleine de vie.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 22 pouces, elle est montée sur une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Bouclée",
+      "photos": [
+        {
+          "src": "image/produits/bouclee-naturelle/bouclee-naturelle-1.jpg",
+          "alt": "Perruque bouclée naturelle 22 pouces sur mannequin, dentelle 4×4 transparente"
+        }
+      ],
+      "variants": [
+        {
+          "length": 22
+        }
+      ],
+      "price": 200,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": null,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "bouclee-frontale",
+        "jerry-curly-noire",
+        "jerry-curly-hd-lace"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "bouclee-courte",
+      "name": "Bouclée courte",
+      "tagline": "Des boucles courtes et pétillantes, faciles à porter au quotidien.",
+      "description": "La Bouclée courte offre des boucles pétillantes en 14 pouces, pour une coupe légère, pratique et pleine de caractère au quotidien.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle est montée sur une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Bouclée",
+      "photos": [
+        {
+          "src": "image/produits/bouclee-courte/bouclee-courte-hd-1.jpg",
+          "alt": "Perruque bouclée courte 14 pouces vue de face, boucles pétillantes"
+        },
+        {
+          "src": "image/produits/bouclee-courte/bouclee-courte-1.jpg",
+          "alt": "Perruque bouclée courte 14 pouces sur mannequin, dentelle 4×4 transparente"
+        }
+      ],
+      "variants": [
+        {
+          "length": 14
+        }
+      ],
+      "price": 150,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": null,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "kinky-curly",
+        "bouncy",
+        "jerry-curly-16-pouces"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "bouncy",
+      "name": "Bouncy",
+      "tagline": "Des boucles rebondies et volumineuses, pour un carré plein de peps.",
+      "description": "La Bouncy offre de grandes boucles rebondies et volumineuses en 12 pouces, pour un carré glamour, léger et plein de peps.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle affiche une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Bouncy Curl",
+      "photos": [
+        {
+          "src": "image/produits/bouncy/bouncy-1.jpg",
+          "alt": "Perruque Bouncy 12 pouces sur mannequin, boucles rebondies volumineuses"
+        }
+      ],
+      "variants": [
+        {
+          "length": 12
+        }
+      ],
+      "price": 150,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "bouclee-courte",
+        "kinky-curly",
+        "bob-noir"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "perruque-bandeau",
+      "name": "Perruque bandeau bouclée",
+      "tagline": "Des boucles volumineuses à enfiler en quelques secondes, sans colle ni dentelle.",
+      "description": "La Perruque bandeau bouclée offre des boucles volumineuses en 18 pouces, dans le format le plus simple à porter : elle s’enfile en quelques secondes et se maintient grâce à son bandeau.\n\nSans colle et sans dentelle, elle est idéale pour un look soigné en un instant, tout en préservant vos cheveux naturels. Confectionnée en cheveux naturels brésiliens Remy.",
+      "texture": "Bouclée",
+      "photos": [
+        {
+          "src": "image/produits/perruque-bandeau/perruque-bandeau-1.jpg",
+          "alt": "Perruque bandeau bouclée 18 pouces sur mannequin, bandeau noir"
+        }
+      ],
+      "variants": [
+        {
+          "length": 18
+        }
+      ],
+      "price": 160,
+      "lace": "Sans dentelle (bandeau)",
+      "laceOptions": [],
+      "density": null,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Format : perruque bandeau",
+        "Origine : cheveux naturels brésiliens"
+      ],
+      "highlights": [
+        {
+          "title": "Pose en quelques secondes",
+          "text": "Elle s’enfile comme un bonnet et se maintient grâce à son bandeau."
+        },
+        {
+          "title": "Sans colle ni dentelle",
+          "text": "Aucune préparation : un look soigné en un instant, en préservant vos cheveux."
+        },
+        {
+          "title": "Boucles volumineuses",
+          "text": "Des boucles généreuses en 18 pouces, pleines de caractère."
+        },
+        {
+          "title": "Accompagnée à La Réunion",
+          "text": "Conseil personnalisé sur WhatsApp et livraison sur toute l’île."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Comment se pose une perruque bandeau ?",
+          "a": "Elle s’enfile comme un bonnet, puis se maintient grâce à son bandeau : aucune colle ni dentelle à poser. Vous pouvez changer de bandeau pour varier les looks."
+        }
+      ],
+      "similarProducts": [
+        "demi-perruque-water-wave",
+        "jerry-curly-16-pouces",
+        "bouclee-naturelle"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "bouclee-coloree-brun-chocolat",
+      "name": "Bouclée colorée brun chocolat",
+      "tagline": "Des boucles gourmandes aux reflets brun chocolat, pleines de volume.",
+      "description": "La Bouclée colorée brun chocolat associe des boucles volumineuses à une couleur brun chocolat chaleureuse, pour un rendu gourmand et lumineux.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 14 pouces, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Bouclée",
+      "photos": [
+        {
+          "src": "image/produits/bouclee-coloree-brun-chocolat/bouclee-coloree-brun-chocolat-hd-1.jpg",
+          "alt": "Perruque bouclée colorée brun chocolat 14 pouces sur mannequin"
+        }
+      ],
+      "variants": [
+        {
+          "length": 14
+        }
+      ],
+      "price": 160,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Couleur : Brun chocolat",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "jerry-curly-piano",
+        "bouclee-blond-miel",
+        "bouclee-courte"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "jerry-curly-piano",
+      "name": "Jerry Curly piano",
+      "tagline": "Des boucles rebondies au coloris piano, lumineuses et pleines de relief.",
+      "description": "La Jerry Curly piano mêle plusieurs nuances dans des boucles rebondies et définies : un coloris piano qui apporte lumière et relief à chaque mouvement.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 22 pouces, elle offre une densité de 200 % et une dentelle HD 4×4 qui se fond sur la peau. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Jerry Curly",
+      "photos": [
+        {
+          "src": "image/produits/jerry-curly-piano/jerry-curly-piano-hd-1.jpg",
+          "alt": "Perruque Jerry Curly piano 22 pouces sur mannequin, boucles aux reflets méchés"
+        },
+        {
+          "src": "image/produits/jerry-curly-piano/jerry-curly-piano-hd-2.jpg",
+          "alt": "Jerry Curly piano de trois quarts, boucles définies et dentelle HD 4×4"
+        },
+        {
+          "src": "image/produits/jerry-curly-piano/jerry-curly-piano-hd-3.jpg",
+          "alt": "Jerry Curly piano vue de dos, boucles volumineuses aux nuances méchées"
+        }
+      ],
+      "variants": [
+        {
+          "length": 22
+        }
+      ],
+      "price": 210,
+      "lace": "HD 4x4",
+      "laceOptions": [
+        "HD 4x4"
+      ],
+      "laceInfo": [
+        {
+          "lace": "HD 4x4",
+          "text": "Dentelle HD ultra fine et transparente : raie centrale, fonte invisible sur la peau."
+        }
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Couleur : Piano (nuances méchées)",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "jerry-curly-bordeaux",
+        "bouclee-coloree-brun-chocolat",
+        "bouclee-blond-miel"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "jerry-curly-bordeaux",
+      "name": "Jerry Curly bordeaux",
+      "tagline": "Des boucles bordeaux intenses aux racines noires, sur dentelle HD.",
+      "description": "La Jerry Curly bordeaux associe des boucles rebondies d’un bordeaux intense à des racines noir naturel, pour un look audacieux et lumineux.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 24 pouces, elle est montée sur une dentelle HD qui se fond sur la peau. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Jerry Curly",
+      "photos": [
+        {
+          "src": "image/produits/jerry-curly-bordeaux/jerry-curly-bordeaux-1.jpg",
+          "alt": "Perruque Jerry Curly bordeaux racines noires 24 pouces sur mannequin, dentelle HD"
+        }
+      ],
+      "variants": [
+        {
+          "length": 24
+        }
+      ],
+      "price": 240,
+      "promotion": "Promo",
+      "promotionPrice": 220,
+      "lace": "HD",
+      "laceOptions": [
+        "HD"
+      ],
+      "laceInfo": [
+        {
+          "lace": "HD",
+          "text": "Dentelle HD ultra fine et transparente : fonte invisible sur la peau."
+        }
+      ],
+      "density": null,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Couleur : Bordeaux, racines noires",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "bordeaux-racines-noires",
+        "jerry-curly-piano",
+        "bob-bordeaux"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "bob-noir",
+      "name": "Bob noir",
+      "tagline": "Un carré lisse noir, net et intemporel.",
+      "description": "Le Bob noir offre un carré lisse, net et brillant, d’un noir naturel profond : une coupe intemporelle, élégante et facile à porter.\n\nConfectionné en cheveux naturels brésiliens Remy, en 10 pouces, il affiche une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Bob",
+      "photos": [
+        {
+          "src": "image/produits/bob-noir/bob-noir-1.jpg",
+          "alt": "Perruque bob noir 10 pouces lisse sur mannequin, carré net, dentelle 4×4 transparente"
+        }
+      ],
+      "variants": [
+        {
+          "length": 10
+        }
+      ],
+      "price": 110,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Origine : cheveux naturels brésiliens",
+        "Couleur : Noir naturel",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "bob-blond",
+        "bob-bordeaux",
+        "pixie-noir"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "bob-blond",
+      "name": "Bob blond",
+      "tagline": "Un carré blond lumineux, net et moderne.",
+      "description": "Le Bob blond illumine le visage d’un carré lisse et lumineux, à la coupe nette et moderne.\n\nConfectionné en cheveux naturels brésiliens Remy, en 10 pouces, il offre une densité de 200 % et une dentelle 4×4. Sans colle, avec cordon de sécurité fourni.",
+      "texture": "Bob",
+      "photos": [
+        {
+          "src": "image/produits/bob-blond/bob-blond-hd-1.jpg",
+          "alt": "Perruque bob blond 10 pouces vue de face, carré lisse lumineux et dentelle 4×4"
+        },
+        {
+          "src": "image/produits/bob-blond/bob-blond-1.jpg",
+          "alt": "Perruque bob blond 10 pouces vue de profil, carré lisse lumineux"
+        },
+        {
+          "src": "image/produits/bob-blond/bob-blond-hd-2.jpg",
+          "alt": "Bob blond vue de dos, coupe nette et droite"
+        }
+      ],
+      "variants": [
+        {
+          "length": 10
+        }
+      ],
+      "price": 120,
+      "lace": "4x4",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Couleur : Blond",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "bob-bordeaux",
+        "bob-noir",
+        "straight-hd-lace"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "bob-bordeaux",
+      "name": "Bob bordeaux",
+      "tagline": "Un carré bordeaux profond, chic et affirmé.",
+      "description": "Le Bob bordeaux associe un carré lisse et net à une couleur bordeaux profonde, pour un style chic et affirmé.\n\nConfectionné en cheveux naturels brésiliens Remy, en 10 pouces, il est monté sur une dentelle 4×4. Cordon de sécurité fourni.",
+      "texture": "Bob",
+      "photos": [
+        {
+          "src": "image/produits/bob-bordeaux/bob-bordeaux-hd-1.jpg",
+          "alt": "Perruque bob bordeaux 10 pouces portée, carré lisse bordeaux"
+        },
+        {
+          "src": "image/produits/bob-bordeaux/bob-bordeaux-1.jpg",
+          "alt": "Perruque bob bordeaux 10 pouces vue de profil, carré lisse"
+        },
+        {
+          "src": "image/produits/bob-bordeaux/bob-bordeaux-hd-2.jpg",
+          "alt": "Bob bordeaux vue de dos sur mannequin, coupe nette"
+        }
+      ],
+      "variants": [
+        {
+          "length": 10
+        }
+      ],
+      "price": 120,
+      "lace": "4x4",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": null,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Couleur : Bordeaux",
+        "Origine : cheveux naturels brésiliens",
+        "Pose : cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "bob-blond",
+        "pixie-bordeaux",
+        "bordeaux-racines-noires"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "pixie-noir",
+      "name": "Pixie noir",
+      "tagline": "Une coupe courte pixie, audacieuse et ultra féminine.",
+      "description": "Le Pixie noir offre une coupe courte audacieuse et ultra féminine, d’un noir naturel profond, qui met le visage en valeur.\n\nConfectionné en cheveux naturels brésiliens Remy, il est monté sur une dentelle 4×4 transparente pour une naissance des cheveux naturelle. Prêt à porter, facile à coiffer au quotidien.",
+      "texture": "Pixie",
+      "photos": [
+        {
+          "src": "image/produits/pixie-noir/pixie-noir-1.jpg",
+          "alt": "Perruque pixie noir coupe courte portée"
+        },
+        {
+          "src": "image/produits/pixie-noir/pixie-noir-2.jpg",
+          "alt": "Perruque pixie noir naturel coupe courte sur mannequin, vue de profil"
+        }
+      ],
+      "variants": [],
+      "price": 80,
+      "lengthNote": "Coupe courte",
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": null,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Couleur : Noir naturel",
+        "Origine : cheveux naturels brésiliens"
+      ],
+      "similarProducts": [
+        "pixie-bordeaux",
+        "bob-noir",
+        "bob-blond"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "pixie-bordeaux",
+      "name": "Pixie bordeaux",
+      "tagline": "Une coupe courte pixie couleur bordeaux, chic et audacieuse.",
+      "description": "Le Pixie bordeaux associe une coupe courte ultra féminine à une couleur bordeaux intense, pour un look chic, audacieux et lumineux.\n\nConfectionné en cheveux naturels brésiliens Remy, il est prêt à porter et facile à coiffer au quotidien. Les détails de dentelle vous sont confirmés sur WhatsApp.",
+      "texture": "Pixie",
+      "photos": [
+        {
+          "src": "image/produits/pixie-bordeaux/pixie-bordeaux-1.jpg",
+          "alt": "Perruque pixie bordeaux coupe courte sur mannequin, vue de profil"
+        }
+      ],
+      "variants": [],
+      "price": 80,
+      "lengthNote": "Coupe courte",
+      "lace": null,
+      "laceOptions": [],
+      "density": null,
+      "availability": "en-stock",
+      "badges": [],
+      "characteristics": [
+        "Cheveux 100 % humains Remy",
+        "Couleur : Bordeaux",
+        "Origine : cheveux naturels brésiliens"
+      ],
+      "similarProducts": [
+        "pixie-noir",
+        "bob-bordeaux",
+        "jerry-curly-bordeaux"
+      ]
+    },
+    {
+      "hidden": false,
+      "id": "curly-naturelle-hd-lace",
+      "name": "Curly naturelle HD Lace",
+      "tagline": "Des boucles naturelles au volume exceptionnel, sur une dentelle HD invisible.",
+      "description": "Découvrez notre magnifique perruque Curly en cheveux 100 % naturels, d’un noir naturel profond. Ses boucles définies et rebondies offrent un volume exceptionnel et un mouvement plein de vie.\n\nSa dentelle HD 4×4 transparente se fond sur la peau pour une naissance des cheveux d’un naturel saisissant, et sa densité de 200 % lui donne une chevelure généreuse. Elle peut être lissée, teintée et décolorée selon vos envies.\n\nSon petit cordon de sécurité réglable assure un maintien parfait : confortable et facile à porter au quotidien. Disponible en 20 et 24 pouces.",
+      "texture": "Curly",
+      "photos": [
+        {
+          "src": "image/produits/photo-a-venir.svg",
+          "alt": "Perruque Curly naturelle HD Lace noir naturel — photos bientôt disponibles"
+        }
+      ],
+      "variants": [
+        {
+          "length": 20,
+          "price": 190
+        },
+        {
+          "length": 24,
+          "price": 220
+        }
+      ],
+      "price": 190,
+      "defaultLength": 20,
+      "lace": "HD 4x4 transparente",
+      "laceOptions": [
+        "HD 4x4"
+      ],
+      "laceInfo": [
+        {
+          "lace": "HD 4x4",
+          "text": "Dentelle HD ultra fine et transparente : raie centrale, fonte invisible sur la peau."
+        }
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [
+        "New"
+      ],
+      "characteristics": [
+        "Couleur : Noir naturel",
+        "Coiffage : peut être lissée, teintée et décolorée",
+        "Bonnet : petit cordon de sécurité ajustable",
+        "Confort : léger et facile à porter"
+      ],
+      "highlights": [
+        {
+          "title": "Dentelle HD invisible",
+          "text": "Une dentelle 4×4 ultra fine et transparente, pour une naissance des cheveux très naturelle."
+        },
+        {
+          "title": "Densité 200 %",
+          "text": "Un volume exceptionnel : des boucles généreuses, définies et rebondies."
+        },
+        {
+          "title": "Liberté de style",
+          "text": "Cheveux 100 % naturels : elle se lisse, se teint et se décolore selon vos envies."
+        },
+        {
+          "title": "Maintien parfait",
+          "text": "Un petit cordon de sécurité réglable, pour une perruque confortable et facile à porter."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Qu’est-ce qu’une dentelle HD ?",
+          "a": "La dentelle HD (haute définition) est plus fine et plus transparente qu’une dentelle classique : elle se fond sur la peau pour une ligne frontale très naturelle. Elle est aussi plus délicate, manipulez-la avec douceur."
+        },
+        {
+          "q": "Peut-on la teindre ou la décolorer ?",
+          "a": "Oui, ce sont des cheveux 100 % naturels. Pour une coloration claire ou une décoloration, faites appel à un professionnel : la décoloration fragilise toujours le cheveu et la dentelle."
+        },
+        {
+          "q": "Les boucles reviennent-elles après un lissage ?",
+          "a": "Oui : après un lissage, un shampoing et un séchage à l’air libre permettent aux boucles naturelles de retrouver leur forme."
+        }
+      ],
+      "similarProducts": [
+        "jerry-curly-hd-lace",
+        "jerry-curly-16-pouces",
+        "jerry-curly-noire"
+      ]
+    }
+  ]
+}

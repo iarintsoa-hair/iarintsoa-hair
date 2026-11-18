@@ -1,0 +1,48 @@
+IARINTSOA Hair - Gérer la boutique depuis l'administration
+==========================================================
+
+ADRESSE : https://iarintsoa-hair.netlify.app/admin/
+(fonctionne une fois la mise en route ci-dessous terminée)
+
+
+A. UTILISATION AU QUOTIDIEN
+---------------------------
+1. Ouvrir l'adresse /admin/ sur l'ordinateur, cliquer « Se connecter avec GitHub ».
+2. Cliquer « Boutique » puis « Mes perruques ».
+3. AJOUTER une perruque : bouton « Ajouter perruque » en bas de la liste.
+   - Remplir le nom, la description, la texture, les longueurs et les prix.
+   - Laisser « Adresse de la fiche » VIDE : elle est créée à partir du nom.
+   - Photos : « Ajouter photo » puis « Choisir une image » > « Téléverser ».
+     La première photo est la photo principale.
+4. MODIFIER : cliquer sur la perruque, changer ce qu'il faut.
+5. MASQUER (sans supprimer) : cocher « Masquer du site ».
+6. SUPPRIMER : icône « X » à droite du nom de la perruque.
+7. Cliquer « Publier » (en haut) puis « Publier maintenant ».
+   Le site se met à jour tout seul en 1 à 2 minutes :
+   accueil, boutique, recherche, fiche, panier, commande WhatsApp.
+
+Conseils
+- « New » dans Étiquettes = la perruque apparaît dans « Nouveautés ».
+- Prix différent selon la longueur : remplir le prix sur chaque ligne de longueur.
+- Une perruque incomplète (sans photo par exemple) n'est pas affichée : rien ne casse.
+- Tout est historisé dans GitHub : une erreur peut toujours être annulée.
+
+
+B. MISE EN ROUTE (une seule fois)
+---------------------------------
+1. GitHub : créer un dépôt PRIVÉ nommé « iarintsoa-hair » et y envoyer le site.
+2. Dans admin/config.yml, ligne « repo: », remplacer VOTRE-COMPTE-GITHUB
+   par votre nom de compte GitHub.
+3. Netlify, projet iarintsoa-hair : « Project configuration > Build & deploy >
+   Link repository » > GitHub > choisir le dépôt. Les réglages sont lus
+   automatiquement dans netlify.toml (rien à saisir).
+4. GitHub > Settings > Developer settings > OAuth Apps > New OAuth App :
+     Homepage URL               : https://iarintsoa-hair.netlify.app
+     Authorization callback URL : https://api.netlify.com/auth/done
+   Noter le « Client ID » et générer un « Client secret ».
+5. Netlify > « Project configuration > Access & security > OAuth » >
+   Install provider > GitHub > coller le Client ID et le Client secret.
+6. Ouvrir https://iarintsoa-hair.netlify.app/admin/ et se connecter.
+
+Sécurité : seules les personnes ayant accès en écriture au dépôt GitHub
+peuvent modifier la boutique. Activer la double authentification sur GitHub.

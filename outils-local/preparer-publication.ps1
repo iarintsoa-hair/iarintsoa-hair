@@ -7,7 +7,7 @@ $out = Join-Path $root "publication"
 # Fichiers et dossiers jamais publies
 # (admin : l'administration ne fonctionne qu'avec la mise en ligne automatique GitHub + Netlify, voir netlify.toml)
 $skipDirs = @(".git", "outils-local", "publication", ".netlify", ".claude", "admin", "_site")
-$skipFiles = @("Voir-le-site.bat", "Publier-le-site.bat", "netlify.toml",
+$skipFiles = @("Voir-le-site.bat", "Publier-le-site.bat", "netlify.toml", "README.md",
                "style.css", "visual-effects.css", "Nouveau Document texte.txt", ".gitignore")
 $skipJs = @("visual-effects.js")
 

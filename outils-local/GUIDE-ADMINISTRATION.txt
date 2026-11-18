@@ -7,7 +7,7 @@ ADRESSE : https://iarintsoa-hair.netlify.app/admin/
 
 A. UTILISATION AU QUOTIDIEN
 ---------------------------
-1. Ouvrir l'adresse /admin/ sur l'ordinateur, cliquer « Se connecter avec GitHub ».
+1. Ouvrir l'adresse /admin/ sur l'ordinateur, cliquer « Se connecter avec Netlify Identity » (e-mail + mot de passe).
 2. Cliquer « Boutique » puis « Mes perruques ».
 3. AJOUTER une perruque : bouton « Ajouter perruque » en bas de la liste.
    - Remplir le nom, la description, la texture, les longueurs et les prix.
@@ -28,21 +28,18 @@ Conseils
 - Tout est historisé dans GitHub : une erreur peut toujours être annulée.
 
 
-B. MISE EN ROUTE (une seule fois)
----------------------------------
-1. GitHub : créer un dépôt PRIVÉ nommé « iarintsoa-hair » et y envoyer le site.
-2. Dans admin/config.yml, ligne « repo: », remplacer VOTRE-COMPTE-GITHUB
-   par votre nom de compte GitHub.
-3. Netlify, projet iarintsoa-hair : « Project configuration > Build & deploy >
-   Link repository » > GitHub > choisir le dépôt. Les réglages sont lus
-   automatiquement dans netlify.toml (rien à saisir).
-4. GitHub > Settings > Developer settings > OAuth Apps > New OAuth App :
-     Homepage URL               : https://iarintsoa-hair.netlify.app
-     Authorization callback URL : https://api.netlify.com/auth/done
-   Noter le « Client ID » et générer un « Client secret ».
-5. Netlify > « Project configuration > Access & security > OAuth » >
-   Install provider > GitHub > coller le Client ID et le Client secret.
-6. Ouvrir https://iarintsoa-hair.netlify.app/admin/ et se connecter.
+B. MISE EN ROUTE (une seule fois, sur Netlify)
+----------------------------------------------
+Connexion par e-mail + mot de passe (Netlify Identity + Git Gateway).
+Aucune application OAuth à créer.
+1. Projet iarintsoa-hair > Project configuration > Build & deploy >
+   Link repository > GitHub > iarintsoa-hair/iarintsoa-hair (branche main).
+2. Project configuration > Identity > Enable Identity.
+3. Identity > Registration : choisir « Invite only » (sur invitation).
+4. Identity > Services > Git Gateway > Enable Git Gateway.
+5. Onglet Identity (en haut) > Invite users > votre e-mail.
+6. Ouvrir l'e-mail reçu, cliquer le lien, choisir un mot de passe.
+7. Se connecter sur https://iarintsoa-hair.netlify.app/admin/
 
-Sécurité : seules les personnes ayant accès en écriture au dépôt GitHub
-peuvent modifier la boutique. Activer la double authentification sur GitHub.
+Sécurité : inscription « sur invitation » uniquement ; seules les personnes
+invitées peuvent modifier la boutique.

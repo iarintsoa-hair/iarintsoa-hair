@@ -1,11 +1,10 @@
 # IARINTSOA Hair - administration de la boutique (Decap CMS)
-# Connexion par compte GitHub : seules les personnes autorisées sur le dépôt peuvent modifier.
-# Chaque « Publier » enregistre data/catalogue.json (et les photos) dans GitHub,
-# puis Netlify remet le site en ligne automatiquement (1 à 2 minutes).
+# Connexion par e-mail + mot de passe (Netlify Identity, sur invitation uniquement).
+# Chaque « Publier » enregistre data/catalogue.json (et les photos) dans le dépôt GitHub
+# relié au projet Netlify (via Git Gateway), puis Netlify remet le site en ligne (1 à 2 minutes).
 
 backend:
-  name: github
-  repo: iarintsoa-hair/boutique
+  name: git-gateway
   branch: main
   commit_messages:
     update: "Boutique : mise à jour du catalogue"

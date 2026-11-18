@@ -22,6 +22,8 @@
         "sameAs": ["https://www.instagram.com/hairiarintsoahair", "https://www.facebook.com/share/1a8YLU5VuQ/?mibextid=wwXIfr"]
     }
     </script>
+    <!-- Liens d'invitation / mot de passe oublié de l'administration : ouverts dans /admin -->
+    <script>if (/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)) location.replace("/admin/" + location.hash);</script>
     <link rel="icon" type="image/svg+xml" href="image/favicon-ih.svg">
     <link rel="apple-touch-icon" href="image/logo.png">
     <link rel="preload" as="image" href="image/bob.jpg" fetchpriority="high">

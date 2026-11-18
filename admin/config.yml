@@ -5,7 +5,7 @@
 
 backend:
   name: github
-  repo: VOTRE-COMPTE-GITHUB/iarintsoa-hair   # À COMPLÉTER : compte/nom-du-dépôt
+  repo: iarintsoa-hair/iarintsoa-hair
   branch: main
   commit_messages:
     update: "Boutique : mise à jour du catalogue"

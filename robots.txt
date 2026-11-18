@@ -3,8 +3,7 @@ User-agent: *
 Allow: /
 
 # Outils internes et anciennes adresses (redirections)
-Disallow: /admin-products.html
-Disallow: /admin-product-jerry-curly.html
+Disallow: /admin/
 Disallow: /preview.html
 Disallow: /preview-produit.html
 Disallow: /product.html

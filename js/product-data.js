@@ -89,7 +89,7 @@
     function validateCatalogDocument(catalog) {
         if (!catalog || typeof catalog !== "object"
             || catalog.format !== "iarintsoa-product-catalog" || catalog.version !== 1 || !Array.isArray(catalog.products)) {
-            throw new Error("Format JSON non reconnu dans data/products/index.json.");
+            throw new Error("Format de catalogue non reconnu.");
         }
         if (!catalog.products.every((id) => typeof id === "string" && productIdPattern.test(id))
             || new Set(catalog.products).size !== catalog.products.length) {

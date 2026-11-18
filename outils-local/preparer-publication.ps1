@@ -5,10 +5,11 @@ $root = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot ".."))
 $out = Join-Path $root "publication"
 
 # Fichiers et dossiers jamais publies
-$skipDirs = @(".git", "outils-local", "publication", ".netlify", ".claude")
-$skipFiles = @("admin-products.html", "admin-product-jerry-curly.html", "Voir-le-site.bat", "Publier-le-site.bat",
+# (admin : l'administration ne fonctionne qu'avec la mise en ligne automatique GitHub + Netlify, voir netlify.toml)
+$skipDirs = @(".git", "outils-local", "publication", ".netlify", ".claude", "admin", "_site")
+$skipFiles = @("Voir-le-site.bat", "Publier-le-site.bat", "netlify.toml",
                "style.css", "visual-effects.css", "Nouveau Document texte.txt", ".gitignore")
-$skipJs = @("product-admin.js", "visual-effects.js")
+$skipJs = @("visual-effects.js")
 
 if (Test-Path $out) { Remove-Item -Recurse -Force $out }
 New-Item -ItemType Directory -Force $out | Out-Null
@@ -43,7 +44,7 @@ $headers = @"
 [IO.File]::WriteAllText((Join-Path $out "_headers"), $headers.Replace("`r`n", "`n"), (New-Object System.Text.UTF8Encoding $false))
 
 # Verification : rien d'interne ne doit partir en ligne
-$forbidden = Get-ChildItem $out -Recurse -File | Where-Object { $_.Name -match "admin|serveur-local|verification|Voir-le-site" }
+$forbidden = Get-ChildItem $out -Recurse -File | Where-Object { $_.FullName.Substring($out.Length) -match "admin|serveur-local|verification|Voir-le-site" }
 $size = (Get-ChildItem $out -Recurse -File | Measure-Object Length -Sum).Sum / 1MB
 Write-Host ""
 Write-Host "  Dossier pret : $out" -ForegroundColor Yellow

@@ -2,3 +2,4 @@
 publication/
 # Configuration locale Netlify
 .netlify/
+_site/

@@ -1,8 +1,8 @@
 /*
  * IARINTSOA Hair — Modèle de fiche produit réutilisable
  * -----------------------------------------------------
- * Remplit fiche-produit.html à partir de data/products/<id>.json (format « iarintsoa-product » v1).
- * Ajouter une perruque = ajouter son JSON (+ photos) et son identifiant dans data/products/index.json.
+ * Remplit fiche-produit.html à partir de data/catalogue.json (lu et vérifié par js/product-data.js).
+ * Ajouter une perruque = l'administration du site (/admin, Decap CMS).
  * Aucune donnée n'est injectée comme HTML : tout passe par textContent (sécurité).
  */
 (function () {
@@ -577,7 +577,7 @@
     $$("[data-close]").forEach((b) => b.addEventListener("click", () => b.closest("dialog").close()));
     $("#size-dialog").addEventListener("click", (e) => { if (e.target === $("#size-dialog")) $("#size-dialog").close(); });
 
-    // ---------- Recherche (catalogue lu depuis data/products) ----------
+    // ---------- Recherche (catalogue lu depuis data/catalogue.json) ----------
     let catalog = null;
     const searchPanel = $("#search-panel"), searchInput = $("#search-input"), searchResults = $("#search-results"), searchOpener = $("[data-search-open]");
     const normalize = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");

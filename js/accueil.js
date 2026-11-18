@@ -1,7 +1,7 @@
 /*
  * IARINTSOA Hair — Page d'accueil
  * -------------------------------
- * - Vitrines réelles : best-sellers et boutique filtrable, générées depuis data/products/*.json
+ * - Vitrines réelles : best-sellers et boutique filtrable, générées depuis data/catalogue.json
  * - Recherche dans tout le catalogue (+ tissages)
  * - En-tête, méga-menu, menu mobile, apparitions douces
  * Aucune donnée n'est injectée comme HTML : tout passe par textContent / attributs.

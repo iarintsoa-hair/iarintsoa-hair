@@ -122,7 +122,10 @@
             document.getElementById("pages").append(...pages.map(([t, s, h]) => row("page:" + h, t, s, h)));
             document.getElementById("reset").addEventListener("click", () => { done = {}; save(); document.querySelectorAll(".item input").forEach((x) => { x.checked = false; }); update(); });
             const euro = (n) => new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR" }).format(n);
-            fetch("../data/products/index.json", { cache: "no-store" }).then((r) => r.json()).then((cat) => Promise.all(cat.products.map((id) => fetch(`../data/products/${id}.json`, { cache: "no-store" }).then((r) => r.json()).then((j) => j.product).catch(() => null))))
+            fetch("../data/catalogue.json", { cache: "no-store" }).then((r) => r.json()).then((cat) => cat.products.filter((p) => !p.hidden).map((p) => {
+                const priced = (p.variants || []).filter((v) => Number.isFinite(Number(v.price)) && v.price !== "" && v.price !== null);
+                return Object.assign({}, p, { lengths: (p.variants || []).map((v) => v.length), pricesByLength: priced.length ? Object.fromEntries(priced.map((v) => [v.length, Number(v.price)])) : null });
+            }))
                 .then((list) => {
                     const ul = document.getElementById("products");
                     ul.replaceChildren(...list.filter(Boolean).map((p) => {

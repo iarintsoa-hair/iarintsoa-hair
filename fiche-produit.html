@@ -16,7 +16,7 @@
         IARINTSOA Hair — MODÈLE DE FICHE PRODUIT (réutilisable pour toute la boutique)
         ---------------------------------------------------------------------
         Adresse : fiche-produit.html?id=<identifiant>   (ex. ?id=jerry-curly-hd-lace)
-        Données : data/products/<identifiant>.json  (même format que le site actuel)
+        Données : data/catalogue.json (modifié depuis l'administration /admin), converti par js/product-data.js
         Champs optionnels reconnus par ce modèle (ignorés sans erreur s'ils manquent) :
           badges[]           ex. ["Best Seller", "New", "Limited Edition"]
           video              { "src": "video/<identifiant>.mp4", "poster": "image/produits/<identifiant>/<photo>.jpg" }
@@ -30,8 +30,8 @@
           care[]             [{ "title": "…", "text": "…" }]  conseils d'entretien
           faq[]              [{ "q": "…", "a": "…" }]  questions propres au produit
           reviews[]          [{ "name": "Prénom N.", "rating": 5, "text": "…", "variant": "18″ · 13×4" }]
-        Ne jamais modifier la mise en page pour ajouter un produit : ajouter uniquement son JSON
-        et l'identifiant dans data/products/index.json.
+        Ne jamais modifier la mise en page pour ajouter un produit : passer par l'administration (/admin)
+        qui enregistre data/catalogue.json.
         Signature de marque : « Votre Signature. Notre Excellence. »
         =====================================================================
     -->

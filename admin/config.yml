@@ -1,0 +1,156 @@
+# IARINTSOA Hair - administration de la boutique (Decap CMS)
+# Connexion par compte GitHub : seules les personnes autorisées sur le dépôt peuvent modifier.
+# Chaque « Publier » enregistre data/catalogue.json (et les photos) dans GitHub,
+# puis Netlify remet le site en ligne automatiquement (1 à 2 minutes).
+
+backend:
+  name: github
+  repo: VOTRE-COMPTE-GITHUB/iarintsoa-hair   # À COMPLÉTER : compte/nom-du-dépôt
+  branch: main
+  commit_messages:
+    update: "Boutique : mise à jour du catalogue"
+    uploadMedia: "Boutique : ajout de la photo {{path}}"
+    deleteMedia: "Boutique : suppression de la photo {{path}}"
+
+locale: fr
+site_url: https://iarintsoa-hair.netlify.app
+display_url: https://iarintsoa-hair.netlify.app
+logo_url: /image/logo.png
+
+# Photos téléversées depuis l'administration (optimisées automatiquement à l'affichage par Netlify)
+media_folder: image/produits/ajouts
+public_folder: image/produits/ajouts
+
+collections:
+  - name: catalogue
+    label: Boutique
+    editor:
+      preview: false
+    files:
+      - name: produits
+        label: Mes perruques
+        file: data/catalogue.json
+        format: json
+        fields:
+          - name: products
+            label: Perruques
+            label_singular: perruque
+            widget: list
+            collapsed: true
+            add_to_top: false
+            summary: "{{fields.name}} — {{fields.price}} €"
+            hint: "Cliquez sur une perruque pour la modifier. « Ajouter perruque » en bas de la liste pour en créer une. Les flèches ⋮⋮ servent à changer l'ordre d'affichage."
+            fields:
+              - { name: hidden, label: "Masquer du site", widget: boolean, default: false, required: false,
+                  hint: "Activé = la perruque disparaît du site, du panier et de la recherche, sans être supprimée." }
+              - { name: name, label: "Nom de la perruque", widget: string,
+                  hint: "Exemple : Curly naturelle HD Lace" }
+              - { name: id, label: "Adresse de la fiche (identifiant)", widget: string, required: false,
+                  pattern: ["^([a-z0-9]+(-[a-z0-9]+)*)?$", "Uniquement des minuscules, des chiffres et des tirets, sans accent (ex. : curly-naturelle-20-pouces)"],
+                  hint: "Laissez VIDE pour une nouvelle perruque : il sera créé à partir du nom. Ne le changez plus ensuite (les liens partagés en dépendent)." }
+              - { name: tagline, label: "Phrase d'accroche (facultatif)", widget: string, required: false }
+              - { name: description, label: "Description", widget: text }
+              - name: texture
+                label: Texture
+                widget: select
+                options: ["Straight", "Bob", "Pixie", "Body Wave", "Natural Wave", "Water Wave", "Wave", "Curly", "Jerry Curly", "Kinky Curly", "Bouncy Curl", "Bouclée"]
+                hint: "Sert à classer la perruque (lisses, ondulées, bouclées) dans la boutique."
+              - name: photos
+                label: Photos
+                label_singular: photo
+                widget: list
+                min: 1
+                summary: "{{fields.src}}"
+                hint: "La première photo est la photo principale. Format conseillé : JPG, portrait."
+                fields:
+                  - { name: src, label: "Photo", widget: image, choose_url: false }
+                  - { name: alt, label: "Description de la photo (pour Google et l'accessibilité)", widget: string, required: false }
+              - name: variants
+                label: Longueurs disponibles
+                label_singular: longueur
+                widget: list
+                summary: "{{fields.length}} pouces {{fields.price}}"
+                hint: "Ajoutez une ligne par longueur. Le prix de la ligne est facultatif : vide = prix normal ci-dessous."
+                fields:
+                  - { name: length, label: "Longueur (pouces)", widget: number, value_type: int, min: 1 }
+                  - { name: price, label: "Prix pour cette longueur (€, facultatif)", widget: number, value_type: float, min: 0, required: false }
+              - { name: price, label: "Prix normal (€)", widget: number, value_type: float, min: 0, required: false,
+                  hint: "Si chaque longueur a son prix, vous pouvez laisser vide : le plus petit prix sera affiché « Dès … »." }
+              - { name: defaultLength, label: "Longueur sélectionnée à l'ouverture (facultatif)", widget: number, value_type: int, required: false }
+              - { name: lengthNote, label: "Note sur la longueur (facultatif)", widget: string, required: false,
+                  hint: "Exemple : Longueur à préciser lors de la commande" }
+              - { name: promotion, label: "Texte de la promotion (facultatif)", widget: string, required: false,
+                  hint: "Exemple : Offre de lancement. Laissez vide pour aucune promotion." }
+              - { name: promotionPrice, label: "Prix promotionnel (€, facultatif)", widget: number, value_type: float, min: 0, required: false,
+                  hint: "Doit être inférieur au prix normal. Ignoré si une longueur a son propre prix." }
+              - { name: lace, label: "Dentelle", widget: string, required: false,
+                  hint: "Exemple : HD 4x4 transparente, 13x4 transparente, Sans dentelle (bandeau)" }
+              - name: laceOptions
+                label: Choix de dentelle proposés au client (facultatif)
+                widget: select
+                multiple: true
+                required: false
+                options: ["4x4", "5x5", "13x4", "HD", "HD 4x4", "Frontale"]
+              - name: laceInfo
+                label: Explication des dentelles (facultatif)
+                label_singular: explication
+                widget: list
+                required: false
+                summary: "{{fields.lace}}"
+                fields:
+                  - { name: lace, label: "Dentelle", widget: string }
+                  - { name: text, label: "Explication", widget: text }
+              - { name: density, label: "Densité (%)", widget: number, value_type: int, min: 0, required: false,
+                  hint: "Exemple : 180 ou 200" }
+              - name: availability
+                label: Disponibilité
+                widget: select
+                default: en-stock
+                options:
+                  - { label: "En stock", value: "en-stock" }
+                  - { label: "Sur demande", value: "sur-demande" }
+                  - { label: "Épuisé (achat impossible)", value: "epuise" }
+              - name: badges
+                label: Étiquettes (facultatif)
+                widget: select
+                multiple: true
+                required: false
+                options: ["New", "Best Seller"]
+                hint: "« New » fait apparaître la perruque dans la section Nouveautés de l'accueil."
+              - name: characteristics
+                label: Caractéristiques
+                label_singular: caractéristique
+                widget: list
+                required: false
+                field: { name: text, label: "Caractéristique", widget: string }
+                hint: "Format conseillé « Titre : détail », par exemple « Couleur : Noir naturel »."
+              - name: highlights
+                label: Points forts (facultatif)
+                label_singular: point fort
+                widget: list
+                required: false
+                summary: "{{fields.title}}"
+                fields:
+                  - { name: title, label: "Titre", widget: string }
+                  - { name: text, label: "Texte", widget: text }
+              - name: faq
+                label: Questions fréquentes (facultatif)
+                label_singular: question
+                widget: list
+                required: false
+                summary: "{{fields.q}}"
+                fields:
+                  - { name: q, label: "Question", widget: string }
+                  - { name: a, label: "Réponse", widget: text }
+              - name: similarProducts
+                label: Perruques similaires (3 maximum)
+                widget: relation
+                collection: catalogue
+                file: produits
+                multiple: true
+                required: false
+                max: 3
+                search_fields: ["products.*.name"]
+                value_field: "products.*.id"
+                display_fields: ["products.*.name"]
+                hint: "Pour une nouvelle perruque, enregistrez-la une première fois avant de la proposer ailleurs."

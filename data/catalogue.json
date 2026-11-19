@@ -1660,7 +1660,9 @@
         {
           "src": "image/produits/ajouts/img_9311.jpg"
         },
-        {},
+        {
+          "src": "image/produits/ajouts/img_9314.jpg"
+        },
         {}
       ],
       "density": 200,

@@ -12,8 +12,8 @@ backend:
     deleteMedia: "Boutique : suppression de la photo {{path}}"
 
 locale: fr
-site_url: https://iarintsoa-hair.netlify.app
-display_url: https://iarintsoa-hair.netlify.app
+# Pas d'adresse fixe : l'administration utilise automatiquement l'adresse du site où elle est ouverte
+# (indispensable pour Netlify Identity / Git Gateway, qui répondent sur /.netlify/... de ce même site).
 logo_url: /image/logo.png
 
 # Photos téléversées depuis l'administration (optimisées automatiquement à l'affichage par Netlify)

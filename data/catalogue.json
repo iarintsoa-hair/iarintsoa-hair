@@ -1658,16 +1658,18 @@
     {
       "photos": [
         {
-          "src": "image/produits/ajouts/img_9311.jpg"
+          "src": "image/produits/ajouts/img_9311.jpg",
+          "alt": "Perruque Curly naturel transparent lace portée, vue de trois quarts"
         },
         {
-          "src": "image/produits/ajouts/img_9314.jpg"
-        },
-        {}
+          "src": "image/produits/ajouts/img_9314.jpg",
+          "alt": "Perruque Curly naturel transparent lace, vue de dos"
+        }
       ],
       "density": 200,
       "price": 170,
       "hidden": false,
+      "id": "curly-naturel-transparent-lace",
       "name": "Curly naturel transparent lace",
       "variants": [
         {

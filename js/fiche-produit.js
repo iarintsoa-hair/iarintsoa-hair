@@ -538,8 +538,9 @@
             lace ? (extra > 0 ? `dentelle ${lace} (+ ${euro(extra, p.currency)})` : "dentelle incluse") : null
         ].filter(Boolean).join(" · ");
         const min = minPrice(p);
-        $("#tax-note").textContent = p.pricesByLength && Object.keys(p.pricesByLength).length
-            ? `De ${euro(Math.min(...Object.values(p.pricesByLength)), p.currency)} à ${euro(Math.max(...Object.values(p.pricesByLength)), p.currency)} selon la longueur. Le montant final est confirmé avec vous avant tout paiement.`
+        const lengthPrices = p.pricesByLength ? Object.values(p.pricesByLength) : [];
+        $("#tax-note").textContent = lengthPrices.length && Math.min(...lengthPrices) < Math.max(...lengthPrices)
+            ? `De ${euro(Math.min(...lengthPrices), p.currency)} à ${euro(Math.max(...lengthPrices), p.currency)} selon la longueur. Le montant final est confirmé avec vous avant tout paiement.`
             : Number.isFinite(min) ? "Le montant final est confirmé avec vous avant tout paiement." : "Le prix de ce modèle vous est communiqué sur WhatsApp.";
         if (state.length !== null) $("#length-output").textContent = `${state.length} pouces · ${Math.round(state.length * 2.54)} cm`;
         if (lace) $("#lace-output").textContent = lace;

@@ -161,7 +161,7 @@
         "HD"
       ],
       "density": null,
-      "price": 240,
+      "price": 220,
       "hidden": false,
       "name": "Lisse blonde racines noires",
       "variants": [
@@ -340,15 +340,15 @@
         "4x4"
       ],
       "density": 200,
-      "price": 280,
+      "price": 230,
       "hidden": false,
-      "name": "Lisse noire 30 pouces",
+      "name": "Lisse noire 24 pouces",
       "variants": [
         {
           "length": 30
         }
       ],
-      "tagline": "Une longueur spectaculaire : 76 cm de lisse noir soyeux.",
+      "tagline": "Une longueur spectaculaire : 60cm de lisse noir soyeux.",
       "similarProducts": [
         "lisse-noire-longue",
         "lisse-noire",
@@ -362,10 +362,10 @@
         "Couleur : Noir naturel",
         "Pose : sans colle, cordon de sécurité fourni"
       ],
-      "id": "lisse-noire-30-pouces",
+      "id": "lisse-noire-24-pouces",
       "texture": "Straight",
       "availability": "en-stock",
-      "description": "La Lisse noire 30 pouces déploie une longueur spectaculaire de 76 cm, pour un lisse noir profond, fluide et brillant qui ne passe pas inaperçu.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni."
+      "description": "La Lisse noire 24 pouces déploie une longueur spectaculaire de 76 cm, pour un lisse noir profond, fluide et brillant qui ne passe pas inaperçu.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni."
     },
     {
       "photos": [
@@ -1654,36 +1654,6 @@
           "text": "Un petit cordon de sécurité réglable, pour une perruque confortable et facile à porter."
         }
       ]
-    },
-    {
-      "photos": [
-        {
-          "src": "image/produits/ajouts/img_9311.jpg",
-          "alt": "Perruque Curly naturel transparent lace portée, vue de trois quarts"
-        },
-        {
-          "src": "image/produits/ajouts/img_9314.jpg",
-          "alt": "Perruque Curly naturel transparent lace, vue de dos"
-        }
-      ],
-      "density": 200,
-      "price": 170,
-      "hidden": false,
-      "id": "curly-naturel-transparent-lace",
-      "name": "Curly naturel transparent lace",
-      "variants": [
-        {
-          "length": 20,
-          "price": 170
-        }
-      ],
-      "tagline": "Des boucles naturelles avec une dentelle HD invisible",
-      "characteristics": [
-        "mi long"
-      ],
-      "texture": "Water Wave",
-      "availability": "sur-demande",
-      "description": "naturel wave 18 pouce 4x4 dentelle"
     }
   ]
 }

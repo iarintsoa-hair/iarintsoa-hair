@@ -1729,7 +1729,7 @@
       "id": "demi-perruque-kinky-curly",
       "name": "Demi-perruque Kinky Curly",
       "tagline": "Des boucles serrées pleines de volume, en 2 en 1 : perruque ou queue de cheval.",
-      "description": "La Demi-perruque Kinky Curly offre de petites boucles serrées, d’un noir naturel profond, pour un volume généreux et un rendu très naturel.\n\nConfectionnée en cheveux 100 % naturels, elle affiche une densité de 200 % et une dentelle 4×4 transparente qui se fond avec discrétion sur la peau. Modèle 2 en 1 : portez-la en perruque ou attachez-la en queue de cheval, toujours bien maintenue grâce à son petit cordon de sécurité.\n\nDisponible en 16 et 18 pouces.",
+      "description": "La Demi-perruque Kinky Curly offre de petites boucles serrées, d’un noir naturel profond, pour un volume généreux et un rendu très naturel.\n\nConfectionnée en cheveux 100 % naturels, elle affiche une densité de 200 %. Sans dentelle ni colle, elle se pose à l’arrière de la tête en quelques minutes. Modèle 2 en 1 : portez-la en perruque ou attachez-la en queue de cheval, toujours bien maintenue grâce à son petit cordon de sécurité.\n\nDisponible en 16 et 18 pouces.",
       "texture": "Kinky Curly",
       "photos": [
         {
@@ -1757,10 +1757,8 @@
       ],
       "price": 140,
       "defaultLength": 16,
-      "lace": "4x4 transparente",
-      "laceOptions": [
-        "4x4"
-      ],
+      "lace": "Sans dentelle (demi-perruque)",
+      "laceOptions": [],
       "density": 200,
       "availability": "en-stock",
       "badges": [
@@ -1771,7 +1769,7 @@
         "Format : demi-perruque 2 en 1 (perruque ou queue de cheval)",
         "Couleur : Noir naturel",
         "Densité : 200 %",
-        "Dentelle : 4×4 transparente",
+        "Pose : sans dentelle ni colle",
         "Maintien : petit cordon de sécurité"
       ],
       "highlights": [

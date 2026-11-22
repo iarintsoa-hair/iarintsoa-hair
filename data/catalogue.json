@@ -1733,28 +1733,16 @@
       "texture": "Kinky Curly",
       "photos": [
         {
-          "src": "image/produits/demi-perruque-kinky-curly/demi-perruque-kinky-curly-1.jpg",
-          "alt": "Demi-perruque Kinky Curly noire sur mannequin, vue de trois quarts, dentelle 4×4 transparente"
+          "src": "image/produits/demi-perruque-kinky-curly/demi-perruque-kinky-curly-v2-1.jpg",
+          "alt": "Demi-perruque Kinky Curly noire sur mannequin, vue de face, boucles serrées volumineuses"
         },
         {
-          "src": "image/produits/demi-perruque-kinky-curly/demi-perruque-kinky-curly-2.jpg",
-          "alt": "Demi-perruque Kinky Curly noire, vue de face, boucles volumineuses"
+          "src": "image/produits/demi-perruque-kinky-curly/demi-perruque-kinky-curly-v2-2.jpg",
+          "alt": "Demi-perruque Kinky Curly noire, vue de trois quarts"
         },
         {
-          "src": "image/produits/demi-perruque-kinky-curly/demi-perruque-kinky-curly-3.jpg",
-          "alt": "Demi-perruque Kinky Curly noire, vue de côté"
-        },
-        {
-          "src": "image/produits/demi-perruque-kinky-curly/demi-perruque-kinky-curly-4.jpg",
-          "alt": "Demi-perruque Kinky Curly noire, vue de profil, petites boucles serrées"
-        },
-        {
-          "src": "image/produits/demi-perruque-kinky-curly/demi-perruque-kinky-curly-5.jpg",
-          "alt": "Demi-perruque Kinky Curly noire, vue de trois quarts arrière"
-        },
-        {
-          "src": "image/produits/demi-perruque-kinky-curly/demi-perruque-kinky-curly-6.jpg",
-          "alt": "Demi-perruque Kinky Curly noire, vue de dos"
+          "src": "image/produits/demi-perruque-kinky-curly/demi-perruque-kinky-curly-v2-3.jpg",
+          "alt": "Demi-perruque Kinky Curly noire, vue de profil"
         }
       ],
       "variants": [

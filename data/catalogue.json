@@ -1658,6 +1658,73 @@
           "text": "Un petit cordon de sécurité réglable, pour une perruque confortable et facile à porter."
         }
       ]
+    },
+    {
+      "hidden": false,
+      "id": "lisse-noire-mi-longue",
+      "name": "Lisse noire mi-longue",
+      "tagline": "Un lisse noir naturel et soyeux, de 18 à 24 pouces, à porter sans colle.",
+      "description": "La Lisse noire mi-longue offre une chevelure parfaitement lisse, d’un noir naturel profond, avec une chute fluide qui encadre joliment le visage.\n\nConfectionnée en cheveux 100 % naturels, elle affiche une densité de 200 % et une dentelle 4×4 transparente qui se fond avec discrétion sur la peau. Elle se porte sans colle grâce à son cordon de sécurité fourni, pour une pose simple et rapide.\n\nDisponible en 18, 20 et 24 pouces.",
+      "texture": "Straight",
+      "photos": [
+        {
+          "src": "image/produits/lisse-noire-mi-longue/lisse-noire-mi-longue-1.jpg",
+          "alt": "Perruque lisse noire mi-longue sur mannequin, vue de face, dentelle 4×4 transparente"
+        },
+        {
+          "src": "image/produits/lisse-noire-mi-longue/lisse-noire-mi-longue-2.jpg",
+          "alt": "Perruque lisse noire mi-longue, vue de trois quarts"
+        },
+        {
+          "src": "image/produits/lisse-noire-mi-longue/lisse-noire-mi-longue-3.jpg",
+          "alt": "Perruque lisse noire mi-longue, raie sur le côté et dentelle transparente"
+        },
+        {
+          "src": "image/produits/lisse-noire-mi-longue/lisse-noire-mi-longue-4.jpg",
+          "alt": "Perruque lisse noire mi-longue, vue de dos, cheveux brillants"
+        },
+        {
+          "src": "image/produits/lisse-noire-mi-longue/lisse-noire-mi-longue-5.jpg",
+          "alt": "Perruque lisse noire mi-longue, vue de dos"
+        }
+      ],
+      "variants": [
+        {
+          "length": 18,
+          "price": 160
+        },
+        {
+          "length": 20,
+          "price": 180
+        },
+        {
+          "length": 24,
+          "price": 220
+        }
+      ],
+      "price": 160,
+      "defaultLength": 20,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "badges": [
+        "New"
+      ],
+      "characteristics": [
+        "Cheveux 100 % naturels",
+        "Couleur : Noir naturel",
+        "Densité : 200 %",
+        "Dentelle : 4×4 transparente",
+        "Pose : sans colle, cordon de sécurité fourni"
+      ],
+      "similarProducts": [
+        "lisse-noire",
+        "lisse-noire-24-pouces",
+        "lisse-noire-longue"
+      ]
     }
   ]
 }

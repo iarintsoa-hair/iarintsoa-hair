@@ -81,7 +81,7 @@
 
     // ---------- Chargement ----------
     // Anciennes fiches réunies dans une autre : l'ancienne adresse mène à la fiche actuelle
-    const ALIASES = { "blonde-mechee": "lisse-brun-meches-blondes" };
+    const ALIASES = { "blonde-mechee": "lisse-brun-meches-blondes", "lisse-noire-30-pouces": "lisse-noire-24-pouces" };
     const askedId = new URLSearchParams(location.search).get("id") || "jerry-curly-hd-lace";
     const id = ALIASES[askedId] || askedId;
     if (id !== askedId) history.replaceState(null, "", `fiche-produit.html?id=${encodeURIComponent(id)}${location.hash}`);

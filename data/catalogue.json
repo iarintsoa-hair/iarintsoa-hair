@@ -312,7 +312,7 @@
       "tagline": "Un lisse noir profond, fluide et brillant, de 20 à 28 pouces.",
       "similarProducts": [
         "lisse-noire-longue",
-        "lisse-noire-30-pouces",
+        "lisse-noire-24-pouces",
         "bob-noir"
       ],
       "badges": [],
@@ -345,10 +345,10 @@
       "name": "Lisse noire 24 pouces",
       "variants": [
         {
-          "length": 30
+          "length": 24
         }
       ],
-      "tagline": "Une longueur spectaculaire : 60cm de lisse noir soyeux.",
+      "tagline": "Une longueur spectaculaire : 61 cm de lisse noir soyeux.",
       "similarProducts": [
         "lisse-noire-longue",
         "lisse-noire",
@@ -365,7 +365,7 @@
       "id": "lisse-noire-24-pouces",
       "texture": "Straight",
       "availability": "en-stock",
-      "description": "La Lisse noire 24 pouces déploie une longueur spectaculaire de 76 cm, pour un lisse noir profond, fluide et brillant qui ne passe pas inaperçu.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni."
+      "description": "La Lisse noire 24 pouces déploie une longueur spectaculaire de 61 cm, pour un lisse noir profond, fluide et brillant qui ne passe pas inaperçu.\n\nConfectionnée en cheveux naturels brésiliens Remy, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni."
     },
     {
       "photos": [
@@ -389,7 +389,7 @@
       "tagline": "26 pouces de lisse noir fluide, pour une allure longue et élégante.",
       "similarProducts": [
         "lisse-noire",
-        "lisse-noire-30-pouces",
+        "lisse-noire-24-pouces",
         "body-wave-26-pouces"
       ],
       "badges": [],
@@ -1574,8 +1574,12 @@
     {
       "photos": [
         {
-          "src": "image/produits/photo-a-venir.svg",
-          "alt": "Perruque Curly naturelle HD Lace noir naturel — photos bientôt disponibles"
+          "src": "image/produits/ajouts/img_9311.jpg",
+          "alt": "Perruque Curly naturelle HD Lace noir naturel portée, vue de trois quarts"
+        },
+        {
+          "src": "image/produits/ajouts/img_9314.jpg",
+          "alt": "Perruque Curly naturelle HD Lace noir naturel, vue de dos"
         }
       ],
       "laceInfo": [

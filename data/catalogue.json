@@ -1748,14 +1748,14 @@
       "variants": [
         {
           "length": 16,
-          "price": 140
+          "price": 150
         },
         {
           "length": 18,
-          "price": 150
+          "price": 160
         }
       ],
-      "price": 140,
+      "price": 150,
       "defaultLength": 16,
       "lace": "Sans dentelle (demi-perruque)",
       "laceOptions": [],

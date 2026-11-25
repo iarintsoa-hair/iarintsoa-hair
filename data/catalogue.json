@@ -915,13 +915,13 @@
         "4x4"
       ],
       "density": 200,
-      "price": 190,
+      "price": 210,
       "hidden": false,
       "name": "Bouclée blond miel",
       "variants": [
         {
           "length": 20,
-          "price": 190
+          "price": 210
         },
         {
           "length": 24,

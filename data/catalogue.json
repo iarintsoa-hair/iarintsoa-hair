@@ -1948,6 +1948,85 @@
         "curly-naturelle-hd-lace",
         "bouclee-naturelle"
       ]
+    },
+    {
+      "id": "natural-wave-longue",
+      "name": "Natural Wave longue",
+      "texture": "Natural Wave",
+      "tagline": "De longues ondulations naturelles, légères et lumineuses, à porter sans colle.",
+      "price": 230,
+      "variants": [
+        {
+          "length": 24,
+          "price": 230
+        },
+        {
+          "length": 26,
+          "price": 250
+        }
+      ],
+      "defaultLength": 24,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "hidden": false,
+      "badges": [
+        "New"
+      ],
+      "photos": [
+        {
+          "src": "image/produits/natural-wave-longue/natural-wave-longue-1.jpg",
+          "alt": "Perruque Natural Wave longue noire portée de face, dentelle 4x4 transparente"
+        },
+        {
+          "src": "image/produits/natural-wave-longue/natural-wave-longue-2.jpg",
+          "alt": "Perruque Natural Wave longue de face, longues ondulations naturelles"
+        },
+        {
+          "src": "image/produits/natural-wave-longue/natural-wave-longue-3.jpg",
+          "alt": "Gros plan sur la dentelle 4x4 transparente de la perruque Natural Wave longue"
+        },
+        {
+          "src": "image/produits/natural-wave-longue/natural-wave-longue-4.jpg",
+          "alt": "Perruque Natural Wave longue vue de profil"
+        },
+        {
+          "src": "image/produits/natural-wave-longue/natural-wave-longue-5.jpg",
+          "alt": "Perruque Natural Wave longue vue de trois quarts dos"
+        },
+        {
+          "src": "image/produits/natural-wave-longue/natural-wave-longue-6.jpg",
+          "alt": "Perruque Natural Wave longue vue de dos, ondulations sur toute la longueur"
+        }
+      ],
+      "description": "La Natural Wave longue offre une chevelure aux ondulations naturelles, souples et lumineuses, d’un noir naturel profond, pour un mouvement fluide sur toute la longueur.\n\nMontée sur une dentelle 4×4 transparente qui se fond sur la peau, elle offre une densité de 200 % pour un rendu généreux. Elle se porte sans colle, pour une pose simple et rapide au quotidien. Disponible en 24 et 26 pouces.",
+      "characteristics": [
+        "Couleur : Noir naturel",
+        "Ondulation : Natural Wave",
+        "Pose : sans colle"
+      ],
+      "highlights": [
+        {
+          "title": "Sans colle",
+          "text": "Une pose simple et rapide, sans colle, pour un quotidien sans contrainte."
+        },
+        {
+          "title": "Dentelle 4×4 transparente",
+          "text": "Une dentelle discrète qui se fond sur la peau, pour une naissance des cheveux naturelle."
+        },
+        {
+          "title": "Grande longueur",
+          "text": "De longues ondulations naturelles en 24 ou 26 pouces (61 ou 66 cm)."
+        }
+      ],
+      "similarProducts": [
+        "natural-wave",
+        "vague-naturelle",
+        "body-wave-26-pouces"
+      ]
     }
   ]
 }

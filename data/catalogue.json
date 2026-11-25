@@ -908,6 +908,18 @@
         {
           "src": "image/produits/bouclee-blond-miel/bouclee-blond-miel-1.jpg",
           "alt": "Perruque bouclée blond miel 20 pouces sur mannequin, boucles solaires"
+        },
+        {
+          "src": "image/produits/bouclee-blond-miel/bouclee-blond-miel-v2-1.jpg",
+          "alt": "Perruque bouclée blond miel racines foncées vue de trois quarts, dentelle 4x4"
+        },
+        {
+          "src": "image/produits/bouclee-blond-miel/bouclee-blond-miel-v2-2.jpg",
+          "alt": "Perruque bouclée blond miel portée, rendu naturel des boucles"
+        },
+        {
+          "src": "image/produits/bouclee-blond-miel/bouclee-blond-miel-v2-3.jpg",
+          "alt": "Perruque bouclée blond miel vue de dos, boucles volumineuses"
         }
       ],
       "defaultLength": 20,

@@ -1873,6 +1873,81 @@
         "jerry-curly-16-pouces",
         "jerry-curly-piano"
       ]
+    },
+    {
+      "id": "deep-curly-22-pouces",
+      "name": "Deep Curly 22 pouces",
+      "texture": "Deep Curly",
+      "tagline": "De longues boucles profondes et rebondies, à porter sans colle.",
+      "price": 200,
+      "variants": [
+        {
+          "length": 22,
+          "price": 200
+        }
+      ],
+      "defaultLength": 22,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": null,
+      "availability": "en-stock",
+      "hidden": false,
+      "badges": [
+        "New"
+      ],
+      "photos": [
+        {
+          "src": "image/produits/deep-curly-22-pouces/deep-curly-22-pouces-1.jpg",
+          "alt": "Perruque Deep Curly 22 pouces noire portée de face, raie sur le côté"
+        },
+        {
+          "src": "image/produits/deep-curly-22-pouces/deep-curly-22-pouces-2.jpg",
+          "alt": "Perruque Deep Curly 22 pouces de face, dentelle 4x4 transparente"
+        },
+        {
+          "src": "image/produits/deep-curly-22-pouces/deep-curly-22-pouces-3.jpg",
+          "alt": "Perruque Deep Curly 22 pouces, longues boucles profondes"
+        },
+        {
+          "src": "image/produits/deep-curly-22-pouces/deep-curly-22-pouces-4.jpg",
+          "alt": "Perruque Deep Curly 22 pouces vue de trois quarts"
+        },
+        {
+          "src": "image/produits/deep-curly-22-pouces/deep-curly-22-pouces-5.jpg",
+          "alt": "Perruque Deep Curly 22 pouces vue de profil"
+        },
+        {
+          "src": "image/produits/deep-curly-22-pouces/deep-curly-22-pouces-6.jpg",
+          "alt": "Perruque Deep Curly 22 pouces vue de dos, volume des boucles"
+        }
+      ],
+      "description": "La Deep Curly 22 pouces offre une longue chevelure de boucles profondes, définies et rebondies, d’un noir naturel intense, pour un volume généreux et un mouvement plein de vie.\n\nEn 22 pouces (56 cm), elle est montée sur une dentelle 4×4 transparente qui se fond sur la peau. Elle se porte sans colle, pour une pose simple et rapide au quotidien.",
+      "characteristics": [
+        "Couleur : Noir naturel",
+        "Boucles : Deep Curly (boucles profondes)",
+        "Pose : sans colle"
+      ],
+      "highlights": [
+        {
+          "title": "Sans colle",
+          "text": "Une pose simple et rapide, sans colle, pour un quotidien sans contrainte."
+        },
+        {
+          "title": "Dentelle 4×4 transparente",
+          "text": "Une dentelle discrète qui se fond sur la peau, pour une naissance des cheveux naturelle."
+        },
+        {
+          "title": "Boucles profondes",
+          "text": "De longues boucles définies et rebondies, pleines de volume sur 56 cm."
+        }
+      ],
+      "similarProducts": [
+        "curly-naturelle-20-pouces",
+        "curly-naturelle-hd-lace",
+        "bouclee-naturelle"
+      ]
     }
   ]
 }

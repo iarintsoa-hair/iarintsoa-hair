@@ -1891,7 +1891,7 @@
       "laceOptions": [
         "4x4"
       ],
-      "density": null,
+      "density": 200,
       "availability": "en-stock",
       "hidden": false,
       "badges": [
@@ -1923,7 +1923,7 @@
           "alt": "Perruque Deep Curly 22 pouces vue de dos, volume des boucles"
         }
       ],
-      "description": "La Deep Curly 22 pouces offre une longue chevelure de boucles profondes, définies et rebondies, d’un noir naturel intense, pour un volume généreux et un mouvement plein de vie.\n\nEn 22 pouces (56 cm), elle est montée sur une dentelle 4×4 transparente qui se fond sur la peau. Elle se porte sans colle, pour une pose simple et rapide au quotidien.",
+      "description": "La Deep Curly 22 pouces offre une longue chevelure de boucles profondes, définies et rebondies, d’un noir naturel intense, pour un volume généreux et un mouvement plein de vie.\n\nEn 22 pouces (56 cm), elle est montée sur une dentelle 4×4 transparente qui se fond sur la peau. Sa densité de 200 % lui donne une chevelure généreuse, et elle se porte sans colle, pour une pose simple et rapide au quotidien.",
       "characteristics": [
         "Couleur : Noir naturel",
         "Boucles : Deep Curly (boucles profondes)",

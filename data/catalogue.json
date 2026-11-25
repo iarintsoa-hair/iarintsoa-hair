@@ -1795,6 +1795,84 @@
         "demi-perruque-water-wave",
         "curly-naturelle-hd-lace"
       ]
+    },
+    {
+      "id": "curly-naturelle-20-pouces",
+      "name": "Curly naturelle 20 pouces",
+      "texture": "Curly",
+      "tagline": "Des boucles naturelles généreuses, sur une dentelle HD invisible.",
+      "price": 190,
+      "variants": [
+        {
+          "length": 20,
+          "price": 190
+        }
+      ],
+      "defaultLength": 20,
+      "lace": "HD 4x4 transparente",
+      "laceOptions": [
+        "HD 4x4"
+      ],
+      "laceInfo": [
+        {
+          "lace": "HD 4x4",
+          "text": "Dentelle HD ultra fine et transparente : raie centrale, fonte invisible sur la peau."
+        }
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "hidden": false,
+      "badges": [
+        "New"
+      ],
+      "photos": [
+        {
+          "src": "image/produits/curly-naturelle-20-pouces/curly-naturelle-20-pouces-1.jpg",
+          "alt": "Perruque Curly naturelle 20 pouces noir naturel portée de face, raie centrale"
+        },
+        {
+          "src": "image/produits/curly-naturelle-20-pouces/curly-naturelle-20-pouces-2.jpg",
+          "alt": "Perruque Curly naturelle 20 pouces de face avec cordon de sécurité"
+        },
+        {
+          "src": "image/produits/curly-naturelle-20-pouces/curly-naturelle-20-pouces-3.jpg",
+          "alt": "Perruque Curly naturelle 20 pouces vue de trois quarts"
+        },
+        {
+          "src": "image/produits/curly-naturelle-20-pouces/curly-naturelle-20-pouces-4.jpg",
+          "alt": "Perruque Curly naturelle 20 pouces vue de profil, boucles longues"
+        },
+        {
+          "src": "image/produits/curly-naturelle-20-pouces/curly-naturelle-20-pouces-5.jpg",
+          "alt": "Perruque Curly naturelle 20 pouces vue de dos, volume des boucles"
+        }
+      ],
+      "description": "La Curly naturelle 20 pouces offre une chevelure de boucles définies et rebondies, d’un noir naturel profond, pour un volume généreux et un mouvement plein de vie.\n\nConfectionnée en cheveux 100 % naturels, en 20 pouces (51 cm), elle est montée sur une dentelle HD 4×4 transparente qui se fond sur la peau, avec une densité de 200 %. Elle peut être lissée, teintée et décolorée selon vos envies.\n\nSon petit cordon de sécurité réglable assure un maintien parfait, pour une perruque confortable et facile à porter au quotidien.",
+      "characteristics": [
+        "Cheveux 100 % naturels",
+        "Couleur : Noir naturel",
+        "Coiffage : peut être lissée, teintée et décolorée",
+        "Pose : cordon de sécurité fourni"
+      ],
+      "highlights": [
+        {
+          "title": "Dentelle HD invisible",
+          "text": "Une dentelle 4×4 ultra fine et transparente, pour une naissance des cheveux très naturelle."
+        },
+        {
+          "title": "Densité 200 %",
+          "text": "Des boucles généreuses, définies et rebondies sur toute la longueur."
+        },
+        {
+          "title": "Maintien parfait",
+          "text": "Un petit cordon de sécurité réglable, pour une perruque confortable et facile à porter."
+        }
+      ],
+      "similarProducts": [
+        "curly-naturelle-hd-lace",
+        "jerry-curly-16-pouces",
+        "jerry-curly-piano"
+      ]
     }
   ]
 }

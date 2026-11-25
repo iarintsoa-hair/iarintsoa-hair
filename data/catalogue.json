@@ -2027,6 +2027,78 @@
         "vague-naturelle",
         "body-wave-26-pouces"
       ]
+    },
+    {
+      "id": "natural-wave-blond-miel",
+      "name": "Natural Wave blond miel racines noires",
+      "texture": "Natural Wave",
+      "tagline": "Des ondulations naturelles en dégradé blond miel, racines noires, à porter sans colle.",
+      "price": 230,
+      "promotion": "Promo",
+      "promotionPrice": 200,
+      "variants": [
+        {
+          "length": 24
+        }
+      ],
+      "defaultLength": 24,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": null,
+      "availability": "en-stock",
+      "hidden": false,
+      "badges": [
+        "New"
+      ],
+      "photos": [
+        {
+          "src": "image/produits/natural-wave-blond-miel/natural-wave-blond-miel-1.jpg",
+          "alt": "Perruque Natural Wave blond miel racines noires 24 pouces portée de face"
+        },
+        {
+          "src": "image/produits/natural-wave-blond-miel/natural-wave-blond-miel-2.jpg",
+          "alt": "Perruque Natural Wave blond miel vue de trois quarts, dentelle 4x4 transparente"
+        },
+        {
+          "src": "image/produits/natural-wave-blond-miel/natural-wave-blond-miel-3.jpg",
+          "alt": "Perruque Natural Wave blond miel racines noires vue de trois quarts"
+        },
+        {
+          "src": "image/produits/natural-wave-blond-miel/natural-wave-blond-miel-4.jpg",
+          "alt": "Perruque Natural Wave blond miel vue de dos et de côté, dégradé de couleur"
+        },
+        {
+          "src": "image/produits/natural-wave-blond-miel/natural-wave-blond-miel-5.jpg",
+          "alt": "Perruque Natural Wave blond miel vue de dos, ondulations sur toute la longueur"
+        }
+      ],
+      "description": "La Natural Wave blond miel racines noires associe des ondulations naturelles et légères à un dégradé chaleureux : des racines noires qui s’éclaircissent en un blond miel lumineux sur les longueurs.\n\nEn 24 pouces (61 cm), elle est montée sur une dentelle 4×4 transparente qui se fond sur la peau. Elle se porte sans colle, pour une pose simple et rapide au quotidien.",
+      "characteristics": [
+        "Couleur : blond miel, racines noires",
+        "Ondulation : Natural Wave",
+        "Pose : sans colle"
+      ],
+      "highlights": [
+        {
+          "title": "Sans colle",
+          "text": "Une pose simple et rapide, sans colle, pour un quotidien sans contrainte."
+        },
+        {
+          "title": "Dentelle 4×4 transparente",
+          "text": "Une dentelle discrète qui se fond sur la peau, pour une naissance des cheveux naturelle."
+        },
+        {
+          "title": "Dégradé blond miel",
+          "text": "Des racines noires naturelles qui s’éclaircissent en blond miel lumineux."
+        }
+      ],
+      "similarProducts": [
+        "natural-wave-longue",
+        "bouclee-blond-miel",
+        "natural-wave"
+      ]
     }
   ]
 }

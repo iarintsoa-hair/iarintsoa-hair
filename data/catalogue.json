@@ -438,7 +438,7 @@
       ],
       "id": "lisse-chatain-cuivre",
       "texture": "Straight",
-      "availability": "en-stock",
+      "availability": "epuise",
       "description": "La Lisse châtain cuivré illumine le visage de reflets chauds et chaleureux, sur une chevelure parfaitement lisse, fluide et soyeuse.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 20 pouces, elle offre une densité de 200 % et une dentelle 4×4 transparente. Sans colle, avec cordon de sécurité fourni."
     },
     {
@@ -1056,7 +1056,7 @@
       ],
       "id": "bouclee-frontale",
       "texture": "Bouclée",
-      "availability": "en-stock",
+      "availability": "epuise",
       "description": "La Bouclée frontale réunit de longues boucles définies et une frontale 13×4 transparente, d’une oreille à l’autre, pour une raie libre et une naissance des cheveux naturelle.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 22 pouces, elle offre une densité de 200 %. Sans colle, avec cordon de sécurité fourni."
     },
     {
@@ -1366,7 +1366,7 @@
       ],
       "id": "jerry-curly-bordeaux",
       "texture": "Jerry Curly",
-      "availability": "en-stock",
+      "availability": "epuise",
       "description": "La Jerry Curly bordeaux associe des boucles rebondies d’un bordeaux intense à des racines noir naturel, pour un look audacieux et lumineux.\n\nConfectionnée en cheveux naturels brésiliens Remy, en 24 pouces, elle est montée sur une dentelle HD qui se fond sur la peau. Sans colle, avec cordon de sécurité fourni."
     },
     {
@@ -1450,7 +1450,7 @@
       ],
       "id": "bob-blond",
       "texture": "Bob",
-      "availability": "en-stock",
+      "availability": "epuise",
       "description": "Le Bob blond illumine le visage d’un carré lisse et lumineux, à la coupe nette et moderne.\n\nConfectionné en cheveux naturels brésiliens Remy, en 10 pouces, il offre une densité de 200 % et une dentelle 4×4. Sans colle, avec cordon de sécurité fourni."
     },
     {

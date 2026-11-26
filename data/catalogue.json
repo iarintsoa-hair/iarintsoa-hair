@@ -1486,6 +1486,14 @@
         {
           "src": "image/produits/bob-bordeaux/bob-bordeaux-v2-2.jpg",
           "alt": "Perruque bob bordeaux vue de dos, carré net au niveau des épaules"
+        },
+        {
+          "src": "image/produits/bob-bordeaux/bob-bordeaux-v3-1.jpg",
+          "alt": "Perruque bob bordeaux vue de face en lumière tamisée, raie et dentelle 4x4"
+        },
+        {
+          "src": "image/produits/bob-bordeaux/bob-bordeaux-v3-2.jpg",
+          "alt": "Perruque bob bordeaux vue de trois quarts en lumière tamisée"
         }
       ],
       "laceOptions": [

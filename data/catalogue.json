@@ -2127,6 +2127,81 @@
         "bouclee-blond-miel",
         "natural-wave"
       ]
+    },
+    {
+      "id": "kinky-curly-brun-chocolat-miel",
+      "name": "Kinky Curly brun chocolat blond miel",
+      "texture": "Kinky Curly",
+      "tagline": "Des boucles Kinky Curly en dégradé brun chocolat et blond miel, pleines de volume.",
+      "price": 180,
+      "variants": [
+        {
+          "length": 18,
+          "price": 180
+        }
+      ],
+      "defaultLength": 18,
+      "lace": "4x4 transparente",
+      "laceOptions": [
+        "4x4"
+      ],
+      "density": 200,
+      "availability": "en-stock",
+      "hidden": false,
+      "badges": [
+        "New"
+      ],
+      "photos": [
+        {
+          "src": "image/produits/kinky-curly-brun-chocolat-miel/kinky-curly-brun-chocolat-miel-1.jpg",
+          "alt": "Perruque Kinky Curly brun chocolat blond miel 18 pouces vue de trois quarts, dentelle 4x4 transparente"
+        },
+        {
+          "src": "image/produits/kinky-curly-brun-chocolat-miel/kinky-curly-brun-chocolat-miel-2.jpg",
+          "alt": "Perruque Kinky Curly brun chocolat blond miel, raie sur le côté et boucles définies"
+        },
+        {
+          "src": "image/produits/kinky-curly-brun-chocolat-miel/kinky-curly-brun-chocolat-miel-3.jpg",
+          "alt": "Perruque Kinky Curly brun chocolat blond miel de face avec cordon de sécurité"
+        },
+        {
+          "src": "image/produits/kinky-curly-brun-chocolat-miel/kinky-curly-brun-chocolat-miel-4.jpg",
+          "alt": "Perruque Kinky Curly brun chocolat blond miel vue de profil"
+        },
+        {
+          "src": "image/produits/kinky-curly-brun-chocolat-miel/kinky-curly-brun-chocolat-miel-5.jpg",
+          "alt": "Perruque Kinky Curly brun chocolat blond miel vue de dos, volume des boucles"
+        },
+        {
+          "src": "image/produits/kinky-curly-brun-chocolat-miel/kinky-curly-brun-chocolat-miel-6.jpg",
+          "alt": "Gros plan sur les boucles Kinky Curly en dégradé brun chocolat et blond miel"
+        }
+      ],
+      "description": "La Kinky Curly brun chocolat blond miel offre des boucles serrées, rebondies et pleines de volume, dans un dégradé chaleureux : des racines brun chocolat qui s’éclaircissent en reflets blond miel sur les longueurs.\n\nEn 18 pouces (46 cm), elle est montée sur une dentelle 4×4 transparente qui se fond sur la peau, avec une densité de 200 %. Son petit cordon de sécurité réglable, fourni, assure un maintien confortable au quotidien.",
+      "characteristics": [
+        "Couleur : brun chocolat, reflets blond miel",
+        "Boucles : Kinky Curly",
+        "Pose : cordon de sécurité fourni"
+      ],
+      "highlights": [
+        {
+          "title": "Dégradé chocolat et miel",
+          "text": "Des racines brun chocolat qui s’éclaircissent en reflets blond miel lumineux."
+        },
+        {
+          "title": "Dentelle 4×4 transparente",
+          "text": "Une dentelle discrète qui se fond sur la peau, pour une naissance des cheveux naturelle."
+        },
+        {
+          "title": "Maintien sûr",
+          "text": "Un petit cordon de sécurité réglable, fourni, pour une perruque confortable et bien en place."
+        }
+      ],
+      "similarProducts": [
+        "kinky-curly",
+        "bouclee-coloree-brun-chocolat",
+        "bouclee-blond-miel"
+      ]
     }
   ]
 }

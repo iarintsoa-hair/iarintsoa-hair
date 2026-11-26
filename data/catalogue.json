@@ -1478,6 +1478,14 @@
         {
           "src": "image/produits/bob-bordeaux/bob-bordeaux-hd-2.jpg",
           "alt": "Bob bordeaux vue de dos sur mannequin, coupe nette"
+        },
+        {
+          "src": "image/produits/bob-bordeaux/bob-bordeaux-v2-1.jpg",
+          "alt": "Perruque bob bordeaux vue de trois quarts, dentelle 4x4 et carré lisse"
+        },
+        {
+          "src": "image/produits/bob-bordeaux/bob-bordeaux-v2-2.jpg",
+          "alt": "Perruque bob bordeaux vue de dos, carré net au niveau des épaules"
         }
       ],
       "laceOptions": [

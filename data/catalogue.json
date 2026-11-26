@@ -2198,6 +2198,79 @@
         "bouclee-coloree-brun-chocolat",
         "bouclee-blond-miel"
       ]
+    },
+    {
+      "id": "curly-highlights-20-pouces",
+      "name": "Curly highlights 20 pouces",
+      "texture": "Curly",
+      "tagline": "Des boucles brun chocolat illuminées de mèches caramel, sur une dentelle HD invisible.",
+      "price": 210,
+      "variants": [
+        {
+          "length": 20,
+          "price": 210
+        }
+      ],
+      "defaultLength": 20,
+      "lace": "HD 4x4 transparente",
+      "laceOptions": [
+        "HD 4x4"
+      ],
+      "laceInfo": [
+        {
+          "lace": "HD 4x4",
+          "text": "Dentelle HD ultra fine et transparente : fonte invisible sur la peau."
+        }
+      ],
+      "density": null,
+      "availability": "en-stock",
+      "hidden": false,
+      "badges": [
+        "New"
+      ],
+      "photos": [
+        {
+          "src": "image/produits/curly-highlights-20-pouces/curly-highlights-20-pouces-1.jpg",
+          "alt": "Perruque Curly highlights 20 pouces de face, boucles brun chocolat et mèches caramel"
+        },
+        {
+          "src": "image/produits/curly-highlights-20-pouces/curly-highlights-20-pouces-2.jpg",
+          "alt": "Perruque Curly highlights 20 pouces vue de trois quarts, dentelle HD 4x4"
+        },
+        {
+          "src": "image/produits/curly-highlights-20-pouces/curly-highlights-20-pouces-3.jpg",
+          "alt": "Perruque Curly highlights 20 pouces vue de profil, longues boucles"
+        },
+        {
+          "src": "image/produits/curly-highlights-20-pouces/curly-highlights-20-pouces-4.jpg",
+          "alt": "Perruque Curly highlights 20 pouces vue de dos, mèches caramel sur toute la longueur"
+        }
+      ],
+      "description": "La Curly highlights 20 pouces associe des boucles définies et rebondies à des mèches caramel lumineuses sur une base brun chocolat, pour un effet ensoleillé et plein de relief.\n\nEn 20 pouces (51 cm), elle est montée sur une dentelle HD 4×4 ultra fine et transparente, qui se fond sur la peau pour une naissance des cheveux très naturelle.",
+      "characteristics": [
+        "Couleur : brun chocolat, mèches caramel (highlights)",
+        "Boucles : Curly",
+        "Dentelle : HD 4×4 transparente"
+      ],
+      "highlights": [
+        {
+          "title": "Mèches lumineuses",
+          "text": "Des mèches caramel sur une base brun chocolat, pour un effet ensoleillé."
+        },
+        {
+          "title": "Dentelle HD invisible",
+          "text": "Une dentelle 4×4 ultra fine qui se fond sur la peau, pour une naissance des cheveux très naturelle."
+        },
+        {
+          "title": "Boucles définies",
+          "text": "De longues boucles rebondies et pleines de volume sur 51 cm."
+        }
+      ],
+      "similarProducts": [
+        "kinky-curly-brun-chocolat-miel",
+        "curly-naturelle-20-pouces",
+        "bouclee-blond-miel"
+      ]
     }
   ]
 }

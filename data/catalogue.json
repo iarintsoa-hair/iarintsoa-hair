@@ -2222,7 +2222,7 @@
           "text": "Dentelle HD ultra fine et transparente : fonte invisible sur la peau."
         }
       ],
-      "density": null,
+      "density": 200,
       "availability": "en-stock",
       "hidden": false,
       "badges": [
@@ -2246,7 +2246,7 @@
           "alt": "Perruque Curly highlights 20 pouces vue de dos, mèches caramel sur toute la longueur"
         }
       ],
-      "description": "La Curly highlights 20 pouces associe des boucles définies et rebondies à des mèches caramel lumineuses sur une base brun chocolat, pour un effet ensoleillé et plein de relief.\n\nEn 20 pouces (51 cm), elle est montée sur une dentelle HD 4×4 ultra fine et transparente, qui se fond sur la peau pour une naissance des cheveux très naturelle. Son petit cordon de sécurité réglable, fourni, assure un maintien confortable au quotidien.",
+      "description": "La Curly highlights 20 pouces associe des boucles définies et rebondies à des mèches caramel lumineuses sur une base brun chocolat, pour un effet ensoleillé et plein de relief.\n\nEn 20 pouces (51 cm), elle est montée sur une dentelle HD 4×4 ultra fine et transparente, qui se fond sur la peau pour une naissance des cheveux très naturelle, avec une densité de 200 %. Son petit cordon de sécurité réglable, fourni, assure un maintien confortable au quotidien.",
       "characteristics": [
         "Couleur : brun chocolat, mèches caramel (highlights)",
         "Boucles : Curly",
